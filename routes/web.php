@@ -11,11 +11,11 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('test1');
-// });
+Route::get('/', function () {
+    return view('home');
+});
 
-Route::get('/','TeamController@showForm');
+Route::get('/showform','TeamController@showForm');
 Route::get('/showbayar','TeamController@showBayar');
 Route::get('/showberkas','TeamController@showBerkas');
 
