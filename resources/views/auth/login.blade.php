@@ -33,7 +33,7 @@
                             <label for="email" style="color: white;" class="col-sm-4 col-form-label text-md-right">E-Mail Address</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" style=" border-radius: 0 !important;" name="email" value="{{ old('email') }}" required autofocus>
+                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
 
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback">
@@ -58,10 +58,10 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-6 col-md-offset-4">
-                                <div class="checkbox">
+                            <div class="col-md-6 col-md-offset-3">
+                                <div class="checkbox" style="color: #FFFFFF !important;">
                                     <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
+                                        <input type="checkbox"  name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
                                     </label>
                                 </div>
                             </div>
@@ -69,7 +69,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button style="font-size: 14px !important;" type="submit" class="btn btn-primary">
                                     Login
                                 </button>
                             
