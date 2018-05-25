@@ -95,7 +95,7 @@ class TeamController extends Controller
         return "sukses bro";
     }
 
-    public function addTeam(Request $request,$id){
+    public function addTeam(Request $reqeauest,$id){
         $this->validate($request,[
             'member_one'=>'required',
             'school'=>'required',
