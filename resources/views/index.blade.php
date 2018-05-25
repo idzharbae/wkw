@@ -176,7 +176,7 @@
 	</section>
 
 	<!-- Dokumentasi -->
-	<section class="bg-dark pb64" style="background-image: url('/img/bglogin2.png')">
+	<section class="bg-dark pb64" style="background-image: url('/img/bglogin2.png'); padding-bottom: 0px">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 text-center">
@@ -258,7 +258,7 @@
 		<div class="nav-container">
 
 		<div class="main-container">					
-			<footer class="footer-2">
+			<footer class="footer-2" style="padding-bottom: 0px;">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center mb64 mb-xs-24">
@@ -266,9 +266,10 @@
 								<img alt="Logo" class="image-xs mb16" src="img/logo-light.png">
 							</a>
 							<p class="lead mb48 mb-xs-16">
-								1450 Malvern Rd • Suite 10 2nd Floor<br>
-								Glen Iris, Melbourne 3146<br>
-								(03) 83726 4782
+								Jln. Meranti • Wing 20 • Level 5 <br>
+								Kampus IPB Dramaga <br>
+								Dramaga, Bogor <br>
+								Jawa Barat 16680
 							</p>
 							<ul class="list-inline social-list spread-children">
 								<li><a href="https://twitter.com/ittoday_ipb" target="_blank"><i class="icon icon-sm ti-twitter-alt"></i></a></li>
@@ -294,12 +295,12 @@
 					</div> -->
 				</div>
 			</footer>
-		</div>	   
+		</section>
 		<script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/scripts.js"></script>
-	</section>
+
 
 	</div>
 	

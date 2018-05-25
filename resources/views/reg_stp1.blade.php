@@ -1,4 +1,4 @@
-@extends('layouts.navbar')
+@extends('layouts.navbar2')
 
 @section('content')
 
@@ -15,9 +15,9 @@
     </head>
     <body>	
 		<div class="main-container">
-		    <section class="cover fullscreen image-bg overlay">
+		    <section class="cover fullscreen image-bg">
 		        <div class="background-image-holder">
-		            <img alt="image" class="background-image" src="img/page-coming-soon.jpg">
+		            <img alt="image" class="background-image" src="img/bglogin.png">
 		        </div>
 		        <div class="container v-align-transform">
 		            <div class="row">
