@@ -42,6 +42,10 @@ class TeamController extends Controller
 
     }
 
+    public function teamProfile(){
+        return view('profile');
+    }
+
     public function uploadLetter(Request $request,$id){//ini id di tabel teams
         $this->validate($request,[
             'letter' => 'mimes:pdf|max:2048',

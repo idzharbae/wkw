@@ -30,6 +30,7 @@ Route::post('/daftar/{id}','TeamController@addTeam');
 Route::post('/bayar/{id}','TeamController@uploadPay');
 Route::post('/berkas/{id}','TeamController@uploadLetter');
 
+Route::get('/profile','TeamController@teamProfile')->name('team.profile');
 
 Auth::routes();
 
