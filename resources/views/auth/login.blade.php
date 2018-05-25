@@ -1,4 +1,4 @@
-@extends('layouts.navbar')
+@extends('layouts.navbar2')
 
 @section('content')
 
@@ -16,15 +16,15 @@
     <body>
 				
 		<div class="main-container">
-		<section class="cover fullscreen image-bg overlay">
+		<section class="cover fullscreen image-bg">
 		        <div class="background-image-holder">
-		            <img alt="image" class="background-image" src="img/page-coming-soon.jpg">
+		            <img alt="image" class="background-image" src="img/bglogin.png">
 		        </div>
 		        <div class="container v-align-transform">
 		            <div class="row">
 		                <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
 		                    <div class="feature bordered text-center">
-		                        <h3 class="uppercase">Login</h3>
+		                        <h3 class="uppercase" >Login</h3>
 		                       
 		                        <form method="POST" action="{{ route('login') }}">
                         @csrf
@@ -69,11 +69,11 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 col-md-offset-4">
-                                <button style="font-size: 14px !important;" type="submit" class="btn btn-primary">
+                                <button style="font-size: 14px; background-color: #7c6bee;" type="submit" class="btn btn-primary">
                                     Login
                                 </button>
                             
-                                <a class="btn btn-link col-md-12" href="{{ route('password.request') }}">
+                                <a class="btn btn-link col-md-12" href="{{ route('password.request') }}" style="text-decoration: none;">
                                     Forgot Your Password?
                                 </a>
                             </div>

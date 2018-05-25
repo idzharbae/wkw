@@ -1,6 +1,6 @@
 <!doctype html>
 
-@extends('layouts.navbar')
+@extends('layouts.navbar2')
 
 @section('content')
 
@@ -17,7 +17,16 @@
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
- 	</head>
+		 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+    
+	</head>
     <body>
 	<div class="main-container">
 	<!-- image slider -->
@@ -55,7 +64,7 @@
 				<div class="col-sm-12">
 					<div class="text-center">
 						<h3 class="uppercase mb40 mb-xs-24">Launching Soon</h3>
-						<div class="countdown mb40" data-date="2018/05/26"></div>
+						<div class="countdown mb40" data-date="2018/05/27"></div>
 					</div>
 				</div>
 			</div>
@@ -78,98 +87,72 @@
 		</div>		
 	</section>
 					
-
-	<!-- Dokumentasi -->
-	<section class="bg-dark pb64">
+	<section class="image-bg parallax pt180 pb180 pt-xs-80 pb-xs-80" id="appstoday">
+		<div class="background-image-holder">
+			<img alt="image" class="background-image" src="img/apps.png">
+		</div>
+		
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 text-center">
-					<h4 class="uppercase mb16">DOKUMENTASI</h4>
-					<h2 class="uppercase bold italic"><i class="ti-instagram">&nbsp;</i>ittoday_ipb</h2>
-					<p class="lead mb64">
-						pokoknya ini dokum it today taun2 lalu.
+				<div class="col-md-5 col-sm-6 col-md-push-7 col-sm-push-6">
+					<h2>APPSTODAY</h2>
+					<p class="lead mb48 mb-xs-32">
+					AppsToday merupakan salah satu cabang kompetisi IT Today 2018 pada bidang inovasi aplikasi. Lomba ini dibuat sebagai wadah bagi peserta yang akan menjadi generasi developer baru yang kreatif dan inovatif untuk memajukan daya saing Indonesia di bidang teknologi informasi. Peserta dari kompetisi AppsToday merupakan mahasiswa S1/Diploma.
 					</p>
 				</div>
 			</div>
-			
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="lightbox-grid square-thumbs" data-gallery-title="Gallery">
-						<ul>
-							<li>
-								<a href="img/cover1.jpg" data-lightbox="true">
-									<div class="background-image-holder">
-										<img alt="image" class="background-image" src="img/cover1.jpg">
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="img/home12.jpg" data-lightbox="true">
-									<div class="background-image-holder">
-										<img alt="image" class="background-image" src="img/home12.jpg">
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="img/home14.jpg" data-lightbox="true">
-									<div class="background-image-holder">
-										<img alt="image" class="background-image" src="img/home14.jpg">
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="img/home17.jpg" data-lightbox="true">
-									<div class="background-image-holder">
-										<img alt="image" class="background-image" src="img/home17.jpg">
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="img/cover5.jpg" data-lightbox="true">
-									<div class="background-image-holder">
-										<img alt="image" class="background-image" src="img/cover5.jpg">
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="img/cover6.jpg" data-lightbox="true">
-									<div class="background-image-holder">
-										<img alt="image" class="background-image" src="img/cover6.jpg">
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="img/cover7.jpg" data-lightbox="true">
-									<div class="background-image-holder">
-										<img alt="image" class="background-image" src="img/cover7.jpg">
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="img/cover8.jpg" data-lightbox="true">
-									<div class="background-image-holder">
-										<img alt="image" class="background-image" src="img/cover8.jpg">
-									</div>
-								</a>
-							</li>
-						</ul>
-					</div>
-					
-				</div>
-			</div>
-			
 		</div>
+	</section>
 
+	<section class="image-bg parallax pt180 pb180 pt-xs-80 pb-xs-80" id="hacktoday">
+		<div class="background-image-holder">
+			<img alt="image" class="background-image" src="img/hack.png">
+		</div>
+		
 		<div class="container">
-			<div class="row mb64 mb-xs-32">
-				<div class="col-sm-6 col-sm-offset-3 text-center">
-					<div class="col-sm-6 col-sm-offset-3 text-center">
-						<a class="btn btn-lg btn-filled mb0" href="https://www.instagram.com/ittoday_ipb" target="_blank">See more on Instagram</a>
-					</div>
+			<div class="row">
+				<div class="col-md-5 col-sm-6 col-md-push-7 col-sm-push-6">
+					<h2>HACKTODAY</h2>
+					<p class="lead mb48 mb-xs-32">
+					HackToday atau yang lebih dikenal dengan Capture The Flag adalah salah satu cabang kompetisi IT Today 2018 dalam bidang keamanan teknologi informasi. Dalam lomba ini, peserta  diharuskan untuk mencari celah-celah keamanan jaringan sehingga peserta mampu untuk menembus target yang disediakan oleh panitia. Lomba HackToday yang diadakan IT Today 2018 bertujuan agar setiap peserta mampu mengembangkan kemampuannya pada bidang Information Security.
+					</p>
 				</div>
 			</div>
 		</div>
+	</section>
 
+	<section class="image-bg parallax pt180 pb180 pt-xs-80 pb-xs-80" id="business">
+		<div class="background-image-holder">
+			<img alt="image" class="background-image" src="img/app9.jpg">
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-sm-6 col-md-push-7 col-sm-push-6">
+					<h2>BUSINESS IT CASE</h2>
+					<p class="lead mb48 mb-xs-32">
+					Business IT Case merupakan salah satu cabang kompetisi IT Today 2018 berbasis case-solving bisnis berskala nasional. Business IT Case menguji kemampuan problem solving peserta dalam menganalisa dan memecahkan kasus bisnis yang diberikan dengan memberikan solusi melalui pendekatan Teknologi Informasi.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="image-bg parallax pt180 pb180 pt-xs-80 pb-xs-80" id="seminar">
+		<div class="background-image-holder">
+			<img alt="image" class="background-image" src="img/app9.jpg">
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-sm-6 col-md-push-7 col-sm-push-6">
+					<h2>NATIONAL SEMINAR</h2>
+					<p class="lead mb48 mb-xs-32">
+						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.
+					</p>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section class="image-bg bg-light parallax overlay pt160 pb160 pt-xs-80 pb-xs-80">
@@ -180,85 +163,146 @@
 			<div class="row">
 				<div class="col-md-7 col-sm-8">
 					<i class="ti-quote-left icon icon-sm mb16"></i>
-					<h3 class="mb32">ini pokoknya buat quotes ala ala</h3>
+					<h3 class="mb32">#MAKEITDISRUPTIVE</h3>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					"The key is to embrace disruption and change early. Don't react to it decades later. You can't fight innovation." - Ryan Kavanaugh
 					</p>
+					<div class="col-md-offset-10"><i class="ti-quote-right icon icon-sm mb16"></i></div>
 				</div>
 			</div>
 			
 		</div>
 	</section>
 
-	<section class="image-bg overlay parallax pt180 pb180 pt-xs-80 pb-xs-80" id="appstoday">
-		<div class="background-image-holder">
-			<img alt="image" class="background-image" src="img/apps.png">
-		</div>
-		
+	<!-- Dokumentasi -->
+	<section class="bg-dark pb64" style="background-image: url('/img/bglogin2.png')">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-5 col-sm-6 col-md-push-7 col-sm-push-6">
-					<h2>INI BUAT PENJELAS APPS TODAY</h2>
-					<p class="lead mb48 mb-xs-32">
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.
-					</p>
+				<div class="col-sm-12 text-center">
+					<h4 class="uppercase mb16">DOKUMENTASI</h4>
+					<h2 class="uppercase bold italic"><i class="ti-instagram">&nbsp;</i>ittoday_ipb</h2>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="lightbox-grid square-thumbs" data-gallery-title="Gallery">
+						<ul>
+							<li>
+								<a href="img/cover1.jpg" data-lightbox="true">
+									<div class="background-image-holder">
+										<img alt="image" class="background-image" src="img/feed1.jpg">
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="img/home12.jpg" data-lightbox="true">
+									<div class="background-image-holder">
+										<img alt="image" class="background-image" src="img/feed3.jpg">
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="img/home14.jpg" data-lightbox="true">
+									<div class="background-image-holder">
+										<img alt="image" class="background-image" src="img/feed2.jpg">
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="img/home17.jpg" data-lightbox="true">
+									<div class="background-image-holder">
+										<img alt="image" class="background-image" src="img/feed5.jpg">
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="img/cover5.jpg" data-lightbox="true">
+									<div class="background-image-holder">
+										<img alt="image" class="background-image" src="img/feed6.jpg">
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="img/cover6.jpg" data-lightbox="true">
+									<div class="background-image-holder">
+										<img alt="image" class="background-image" src="img/feed8.jpg">
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="img/cover7.jpg" data-lightbox="true">
+									<div class="background-image-holder">
+										<img alt="image" class="background-image" src="img/feed7.jpg">
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="img/cover8.jpg" data-lightbox="true">
+									<div class="background-image-holder">
+										<img alt="image" class="background-image" src="img/feed4.jpg">
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					
 				</div>
 			</div>
 		</div>
-	</section>
+		<div class="col-sm-6 col-sm-offset-3 text-center">
+			<a class="btn btn-lg btn-filled mb0" href="https://www.instagram.com/ittoday_ipb" target="_blank">See more on Instagram</a>
+		</div>
+	
+		<div class="nav-container">
 
-	<section class="image-bg overlay parallax pt180 pb180 pt-xs-80 pb-xs-80" id="hacktoday">
-		<div class="background-image-holder">
-			<img alt="image" class="background-image" src="img/hack.png">
-		</div>
-		
-		<div class="container">
-			<div class="row">
-				<div class="col-md-5 col-sm-6 col-md-push-7 col-sm-push-6">
-					<h2>INI BUAT PENJELAS HACK TODAY</h2>
-					<p class="lead mb48 mb-xs-32">
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.
-					</p>
+		<div class="main-container">					
+			<footer class="footer-2">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center mb64 mb-xs-24">
+							<a href="#">
+								<img alt="Logo" class="image-xs mb16" src="img/logo-light.png">
+							</a>
+							<p class="lead mb48 mb-xs-16">
+								1450 Malvern Rd • Suite 10 2nd Floor<br>
+								Glen Iris, Melbourne 3146<br>
+								(03) 83726 4782
+							</p>
+							<ul class="list-inline social-list spread-children">
+								<li><a href="#"><i class="icon icon-sm ti-twitter-alt"></i></a></li>
+								<li><a href="#"><i class="icon icon-sm ti-facebook"></i></a></li>
+								<li><a href="#"><i class="icon icon-sm ti-dribbble"></i></a></li>
+								<li><a href="#"><i class="icon icon-sm ti-vimeo-alt"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				
+					<div class="row fade-half">
+						<div class="col-sm-4 text-center-xs">
+							<span>© Copyright 2015 Medium Rare</span>
+						</div>
+					
+						<div class="col-sm-4 text-center hidden-xs">
+							<span>Website Design &amp; Development</span>
+						</div>
+					
+						<div class="col-sm-4 text-right hidden-xs">
+							<span>hello@mrare.co</span>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="image-bg overlay parallax pt180 pb180 pt-xs-80 pb-xs-80" id="business">
-		<div class="background-image-holder">
-			<img alt="image" class="background-image" src="img/app9.jpg">
-		</div>
-		
-		<div class="container">
-			<div class="row">
-				<div class="col-md-5 col-sm-6 col-md-push-7 col-sm-push-6">
-					<h2>INI BUAT PENJELAS BUSINESS IT CASE</h2>
-					<p class="lead mb48 mb-xs-32">
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="image-bg overlay parallax pt180 pb180 pt-xs-80 pb-xs-80" id="seminar">
-		<div class="background-image-holder">
-			<img alt="image" class="background-image" src="img/app9.jpg">
-		</div>
-		
-		<div class="container">
-			<div class="row">
-				<div class="col-md-5 col-sm-6 col-md-push-7 col-sm-push-6">
-					<h2>INI BUAT PENJELAS NATIONAL SEMINAR</h2>
-					<p class="lead mb48 mb-xs-32">
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.
-					</p>
-				</div>
-			</div>
-		</div>
+			</footer>
+		</div>	   
+    </div>
+	<script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/scripts.js"></script>
 	</section>
 	
 	</div>
+	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/flexslider.min.js"></script>
