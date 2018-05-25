@@ -14,10 +14,9 @@
             
                 <div class="col-sm-4 text-right text-center-xs">
                     <ul class="list-inline social-list">
-                        <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                        <li><a href="#"><i class="ti-facebook"></i></a></li>
-                        <li><a href="#"><i class="ti-instagram"></i></a></li>
-                        <li><a href="#"><i class="ti-email"></i></a></li>
+                        <li><a href="https://twitter.com/ittoday_ipb" target="_blank"><i class="ti-twitter-alt"></i></a></li>
+                        <li><a href="https://id-id.facebook.com/ipbittoday" target="_blank"><i class="ti-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/ittoday_ipb" target="_blank"><i class="ti-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>

@@ -11,7 +11,6 @@ use Auth;
 class TeamController extends Controller
 {
     public function __construct(){
-<<<<<<< HEAD
     	// $this->middleware('auth');//matiin kalo lagi testing mode
 	}
 	
@@ -23,19 +22,9 @@ class TeamController extends Controller
 
     public function showForm(){
 
-        // $users = Auth::user()->id;
-        $users = 1;
-        
-        return view('reg_stp1', compact('users'));
-=======
-        // $this->middleware('auth');//matiin kalo lagi testing mode
-    }
-    public function showForm(){
-
         $users = Auth::user()->id;
 
-        return view('test1', compact('users'));
->>>>>>> 797e7ef4bb30792739d1b7df56f5cb16d26fe7d5
+        return view('reg_stp1', compact('users'));
 
     }
     public function showBayar(){
