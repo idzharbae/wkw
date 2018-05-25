@@ -11,16 +11,16 @@
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
 		<link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
 	</head>
-	<body>				
+	<body>
 		<div class="nav-container">
-		    <nav>
+		    <nav class="absolute transparent">
 		        <div class="nav-bar text-center">
 		            <div class="col-md-2 col-md-push-5 col-sm-12 text-center">
 		                <a href="/">
 		                    <img alt="logo" class="image-xxs" src="img/logo-dark.png">
 		                </a>
 		            </div>
-		
+
 		            <div class="col-sm-12 col-md-5 col-md-pull-2 overflow-hidden-xs">
 		                <ul class="menu inline-block pull-right">
 		                    <li><a href="/">Home</a></li>
@@ -34,7 +34,7 @@
 							</li>
 		                </ul>
 		            </div>
-		        
+
 		            <div class="col-sm-12 col-md-5 pb-xs-24">
 						<ul class="navbar-nav ml-auto">
 							<!-- Authentication Links -->
@@ -63,7 +63,7 @@
 						</ul>
 		            </div>
 		        </div>
-		
+
 		        <div class="module widget-handle mobile-toggle right visible-sm visible-xs absolute-xs">
 		            <i class="ti-menu"></i>
 		        </div>
