@@ -123,7 +123,7 @@ class TeamController extends Controller
         $team->line_id = $request->input('line_id');
         $team->type = $request->input('tipe');
         $team->save();
-        return "done broh";
+        return redirect()->route('team.profile');
     }
 
     
