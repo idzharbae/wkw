@@ -36,16 +36,31 @@
 		            </div>
 		        
 		            <div class="col-sm-12 col-md-5 pb-xs-24">
-		                <ul class="menu">
-		                    <li><a href="{{route('login')}}">Login</a></li>
-							<li><a href="{{route('register')}}">Register</a></li>
-		                    <!-- <li><a href="#">Dropdown</a>
-		                        <ul>
-		                            <li><a href="#">Register</a></li>
-									<li><a href="#">Login</a></li>
-		                        </ul>
-		                    </li> -->
-		                </ul>
+						<ul class="navbar-nav ml-auto">
+							<!-- Authentication Links -->
+							@guest
+								<li><a class="nav-link" href="{{ route('login') }}">Login</a></li>
+								<li><a class="nav-link" href="{{ route('register') }}">Register</a></li>
+							@else
+								<li class="nav-item dropdown">
+									<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										{{ Auth::user()->name }} <span class="caret"></span>
+									</a>
+
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="{{ route('logout') }}"
+										onclick="event.preventDefault();
+														document.getElementById('logout-form').submit();">
+											Logout
+										</a>
+
+										<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+											@csrf
+										</form>
+									</div>
+								</li>
+							@endguest
+						</ul>
 		            </div>
 		        </div>
 		

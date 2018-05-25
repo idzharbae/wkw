@@ -192,7 +192,7 @@
 
 	<section class="image-bg overlay parallax pt180 pb180 pt-xs-80 pb-xs-80" id="appstoday">
 		<div class="background-image-holder">
-			<img alt="image" class="background-image" src="img/app9.jpg">
+			<img alt="image" class="background-image" src="img/apps.png">
 		</div>
 		
 		<div class="container">
@@ -209,7 +209,7 @@
 
 	<section class="image-bg overlay parallax pt180 pb180 pt-xs-80 pb-xs-80" id="hacktoday">
 		<div class="background-image-holder">
-			<img alt="image" class="background-image" src="img/app9.jpg">
+			<img alt="image" class="background-image" src="img/hack.png">
 		</div>
 		
 		<div class="container">

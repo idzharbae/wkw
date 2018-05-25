@@ -11,11 +11,10 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/xx', function () {
     return view('home');
 });
 
-Route::get('/login','LoginController@login')->name('login');
 Route::get('/register','RegisterController@create')->name('register');
 
 Route::get('/stp1','TeamController@showForm');
