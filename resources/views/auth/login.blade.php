@@ -58,7 +58,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-6 col-md-offset-3">
+                            <div class="col-md-6 col-md-offset-0">
                                 <div class="checkbox" style="color: #FFFFFF !important;">
                                     <label>
                                         <input type="checkbox"  name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
@@ -68,15 +68,26 @@
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-6 col-md-offset-4">
+                            <!-- <div class="col-md-6 col-md-offset-0">
                                 <button style="font-size: 14px; background-color: #7c6bee;" type="submit" class="btn btn-primary">
                                     Login
                                 </button>
-                            
                                 <a class="btn btn-link col-md-12" href="{{ route('password.request') }}" style="text-decoration: none;">
                                     Forgot Your Password?
                                 </a>
+                                Not a member yet?
+                                <a class="btn btn-link col-md-12" href="{{ route('register') }}" style="text-decoration: none;">
+                                    Register
+                                </a>
+                            </div> -->
+                            <div class="row col-md-offset-1">
+                                <div class="col-lg-5" style="padding: 0px"><a type="submit" class="btn btn-primary form-control" style="text-transform: uppercase;border-radius:0; background-color: #7c6bee;">Login</a></div>
+                                <div class="col-lg-6" style="padding: 0px"><a href="{{ route('password.request') }}" class="btn btn-link" style="text-decoration: none; text-transform: uppercase;border-radius:0;">Forgot Password?</a></div>
                             </div>
+                            Not a member yet?
+                            <a class="btn btn-link col-md-10 col-md-offset-1" href="{{ route('register') }}" style="text-decoration: none; background-color: #7c6bee;">
+                                Register
+                            </a>          
                         </div>
                     </form>
 		                    </div>
