@@ -1,11 +1,12 @@
-@extends('layouts.app')
+@extends('layouts.navbar')
 
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-8 col-md-offset-3">
             <div class="card">
-                <div class="card-header">Register</div>
+                <br>
+                <h3 class="card-header">Register</h3>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -62,7 +63,7 @@
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
+                            <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
                                     Register
                                 </button>

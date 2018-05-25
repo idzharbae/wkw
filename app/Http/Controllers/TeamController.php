@@ -12,13 +12,20 @@ class TeamController extends Controller
 {
     public function __construct(){
     	// $this->middleware('auth');//matiin kalo lagi testing mode
-    }
+	}
+	
+	public function start(){
+
+		return view('index', compact('users'));
+	
+	}
+
     public function showForm(){
 
         // $users = Auth::user()->id;
         $users = 1;
         
-        return view('index', compact('users'));
+        return view('reg_stp1', compact('users'));
 
     }
     public function showBayar(){
@@ -26,7 +33,7 @@ class TeamController extends Controller
         // $users = Auth::user()->id;
         $users = 1;
         
-        return view('test2',compact('users'));
+        return view('reg_stp3',compact('users'));
 
     }
     public function showBerkas(){
@@ -34,10 +41,9 @@ class TeamController extends Controller
         // $users = Auth::user()->id;
         $users = 1;
         
-        return view('test3', compact('users'));
+        return view('reg_stp2', compact('users'));
 
     }
-
 
     public function uploadLetter(Request $request,$id){//ini id di tabel teams
     	$this->validate($request,[
