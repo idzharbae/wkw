@@ -170,7 +170,94 @@
 			</div>
 		</div>
 
-	</section>	
+	</section>
+
+	<section class="image-bg bg-light parallax overlay pt160 pb160 pt-xs-80 pb-xs-80">
+		<div class="background-image-holder">
+			<img alt="image" class="background-image" src="img/intro1.jpg">
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7 col-sm-8">
+					<i class="ti-quote-left icon icon-sm mb16"></i>
+					<h3 class="mb32">ini pokoknya buat quotes ala ala</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="image-bg overlay parallax pt180 pb180 pt-xs-80 pb-xs-80" id="appstoday">
+		<div class="background-image-holder">
+			<img alt="image" class="background-image" src="img/app9.jpg">
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-sm-6 col-md-push-7 col-sm-push-6">
+					<h2>INI BUAT PENJELAS APPS TODAY</h2>
+					<p class="lead mb48 mb-xs-32">
+						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="image-bg overlay parallax pt180 pb180 pt-xs-80 pb-xs-80" id="hacktoday">
+		<div class="background-image-holder">
+			<img alt="image" class="background-image" src="img/app9.jpg">
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-sm-6 col-md-push-7 col-sm-push-6">
+					<h2>INI BUAT PENJELAS HACK TODAY</h2>
+					<p class="lead mb48 mb-xs-32">
+						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="image-bg overlay parallax pt180 pb180 pt-xs-80 pb-xs-80" id="business">
+		<div class="background-image-holder">
+			<img alt="image" class="background-image" src="img/app9.jpg">
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-sm-6 col-md-push-7 col-sm-push-6">
+					<h2>INI BUAT PENJELAS BUSINESS IT CASE</h2>
+					<p class="lead mb48 mb-xs-32">
+						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="image-bg overlay parallax pt180 pb180 pt-xs-80 pb-xs-80" id="seminar">
+		<div class="background-image-holder">
+			<img alt="image" class="background-image" src="img/app9.jpg">
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-sm-6 col-md-push-7 col-sm-push-6">
+					<h2>INI BUAT PENJELAS NATIONAL SEMINAR</h2>
+					<p class="lead mb48 mb-xs-32">
+						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
 	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

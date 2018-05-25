@@ -24,11 +24,14 @@
 		            <div class="col-sm-12 col-md-5 col-md-pull-2 overflow-hidden-xs">
 		                <ul class="menu inline-block pull-right">
 		                    <li><a href="/">Home</a></li>
-		                    <!-- <li><a href="#">Dropdown</a> -->
-		                        <!-- <ul>
-		                            <li><a href="#">Single</a></li>
-		                        </ul> -->
-		                    </li>
+		                    <li><a href="#">Event</a>
+		                        <ul>
+									<li><a href="#appstoday">AppsToday</a></li>
+									<li><a href="#hacktoday">HackToday</a></li>
+									<li><a href="#business">Business IT Case</a></li>
+									<li><a href="#seminar">Seminar</a></li>
+		                        </ul>
+							</li>
 		                </ul>
 		            </div>
 		        
@@ -36,12 +39,12 @@
 		                <ul class="menu">
 		                    <li><a href="{{route('login')}}">Login</a></li>
 							<li><a href="{{route('register')}}">Register</a></li>
-		                    <!-- <li><a href="#">Dropdown</a> -->
-		                        <!-- <ul>
+		                    <!-- <li><a href="#">Dropdown</a>
+		                        <ul>
 		                            <li><a href="#">Register</a></li>
 									<li><a href="#">Login</a></li>
-		                        </ul> -->
-		                    </li>
+		                        </ul>
+		                    </li> -->
 		                </ul>
 		            </div>
 		        </div>
