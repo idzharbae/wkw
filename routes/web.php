@@ -11,10 +11,11 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('test1');
-// });
+Route::get('/', function () {
+    return view('home');
+});
 
+<<<<<<< HEAD
 Route::get('/login','LoginController@login')->name('login');
 Route::get('/register','RegisterController@create')->name('register');
 
@@ -23,6 +24,9 @@ Route::get('/stp2','TeamController@showBerkas');
 Route::get('/stp3','TeamController@stepBayar');
 
 Route::get('/','TeamController@start')->name('index');
+=======
+Route::get('/showform','TeamController@showForm');
+>>>>>>> 797e7ef4bb30792739d1b7df56f5cb16d26fe7d5
 Route::get('/showbayar','TeamController@showBayar');
 Route::get('/showberkas','TeamController@showBerkas');
 
