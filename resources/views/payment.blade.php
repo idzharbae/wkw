@@ -16,7 +16,7 @@
     </head>
     <body>
 	
-		
+		<form method="POST" action='{{ url("/bayar/{$data->team_id}") }}'>
 		<div class="main-container">
 		<section style="background-image: url('/img/footer.png'); background-attachment: fixed;">
 				<div class="container">
@@ -38,13 +38,16 @@
 							<p>Nomor Rekening: xxxxxx<br>Atas Nama: Leni Angraeni</p>
 							<h4 style="color: white ;">HackToday</h4>
 							<p><b>Tidak ada biaya pendaftaran yang dibebankan kepada peserta HackToday.</b></p>
-							<div class="col-md-8"><input type="button" class="btn btn-lg btn-white mb8 mt-xs-24" value="UPLOAD BUKTI PEMBAYARAN" onclick="document.getElementById('selectedFile4').click();" /></div>
+							<div class="col-md-8"><input type="file" name="payment" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile4" style="display: none;" />
+							<input type="button" class="btn btn-lg btn-white mb8 mt-xs-24" value="UPLOAD BUKTI PEMBAYARAN" onclick="document.getElementById('selectedFile4').click();" /></div>
 							<div class="col-md-5"><input class="btn btn-lg mb8 mt-xs-24" type="submit" value="SAVE CHANGES" style="background-color: #7c6bee;"/></div>
 						</div>
 					</div>
 				</div>
 			</section>
 		</div>
+		</form>
+
 		
 				
 		<script src="js/jquery.min.js"></script>

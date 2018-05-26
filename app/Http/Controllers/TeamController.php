@@ -35,8 +35,9 @@ class TeamController extends Controller
     }
 
     public function payment(){
-
-        return view('payment');
+        $user_id = Auth::user()->id;
+        $data = Team::where('team_id',$user_id)->first();
+        return view('payment',compact('data'));
 
     }
 
