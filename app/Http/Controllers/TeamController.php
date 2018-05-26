@@ -20,31 +20,26 @@ class TeamController extends Controller
 	
 	}
 
-    public function showForm(){
-
-        $users = Auth::user()->id;
-
-        return view('reg_stp1', compact('users'));
-
-    }
-    public function showBayar(){
-
-        $users = Auth::user()->id;
-        
-        return view('reg_stp3',compact('users'));
-
-    }
-    public function showBerkas(){
-
-        $users = Auth::user()->id;
-        
-        return view('reg_stp2', compact('users'));
-
-    }
-
     public function teamProfile(){
-        return view('profile');
+        $user_id = Auth::user()->id;
+        $data = Team::where('team_id',$user_id)->first();
+        return view('profile',compact('data'));
     }
+
+    public function showForm(){
+    
+        $users = Auth::user()->id;
+
+    return view('reg_stp1', compact('users')); 
+
+    }
+
+    public function payment(){
+
+        return view('payment');
+
+    }
+
 
     public function uploadLetter(Request $request,$id){//ini id di tabel teams
         $this->validate($request,[
@@ -123,7 +118,7 @@ class TeamController extends Controller
         $team->line_id = $request->input('line_id');
         $team->type = $request->input('tipe');
         $team->save();
-        return "done broh";
+        return redirect()->route('team.profile');
     }
 
     

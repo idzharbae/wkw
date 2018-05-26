@@ -44,34 +44,39 @@
 		        <div class="container">
 		            <div class="row">
                     <div class="feature bordered text-center bg-secondary" style=" box-shadow: 0 9px 30px 10px rgba(0, 0, 0, 0.2);">
-		                        <h3 class="uppercase mb40 mb-xs-24">NAMA_GRUP</h3>
+		                        <h3 class="uppercase mb40 mb-xs-24">{{App\User::find($data->team_id)->name}}</h3>
 		                        <div class="mb40">
 		                            <h6 class="mb8 uppercase">Members</h6>
 		                            <p style="color:black !important;">
-                                        Iqoh Cans<br>
-                                        Mia Larisa<br>
-                                        Shaqida Arya<br>
-
+		                            	@if($data->member_one!=NULL)
+		                            	{{$data->member_one}}<br />
+		                            	@endif
+		                            	@if($data->member_two!=NULL)
+		                            	{{$data->member_two}}<br />
+		                            	@endif
+		                            	@if($data->member_three!=NULL)
+		                            	{{$data->member_three}}
+		                            	@endif
 		                            </p>
 		                        </div>
 		                        <div class="mb40">
 		                            <h6 class="mb8 uppercase">School</h6>
 		                            <p style="color:black !important;">
-		                                Institut Pertanian Bogor
+		                                {{$data->school}}
 		                            </p>
 		                        </div>
 		                        <div class="mb40">
 		                            <h6 class="mb8 uppercase">Province</h6>
 		                            <p style="color:black !important;">
-		                                Jawa Barat
+		                                {{$data->province}}
 		                            </p>
                                 </div>
                                 <div class="mb40">
 		                            <h6 class="mb8 uppercase">Kontak</h6>
 		                            <p style="color:black !important;">
-                                        mia@email.com<br>
-                                        0812378162<br>
-                                        shadiqa_arya
+                                        {{App\User::find($data->team_id)->email}}<br>
+                                        {{$data->phone_num}}<br>
+                                        {{$data->line_id}}
 		                            </p>
                                 </div>
 		                    </div>
@@ -85,9 +90,13 @@
 		            <div class="row">
 		                <div class="col-md-4 col-sm-6">
 		                    <div class="image-tile outer-title text-center">
+		                        @if($data->ktm_img1 != NULL)
+		                        <img alt="Pic" src="{{asset($data->ktm_img1)}}">
+		                        @else
 		                        <img alt="Pic" src="img/team-1.jpg">
+		                        @endif
 		                        <div class="title mb16">
-		                            <h5 class="uppercase mb0">Sally Marsh</h5>
+		                            <h5 class="uppercase mb0">@if($data->member_one!=NULL){{$data->member_one}}@else NONE @endif</h5>
 		                        </div>
 		                        <a class="btn btn-lg btn-white mb8 mt-xs-24" href="#">Upload KTM/Kartu Pelajar</a>
                                 <p>Foto/hasil scan KTM/Kartu Pelajar diupload dalam format .jpg,.jpeg, atau .png dengan ukuran file tidak lebih dari 2 MB</p>
@@ -95,9 +104,12 @@
 		                </div>
 		                <div class="col-md-4 col-sm-6">
 		                    <div class="image-tile outer-title text-center">
+		                        @if($data->ktm_img2 != NULL)
+		                        <img alt="Pic" src="{{asset($data->ktm_img2)}}">
+		                        @else
 		                        <img alt="Pic" src="img/team-2.jpg">
-		                        <div class="title mb16">
-		                            <h5 class="uppercase mb0">Tim Foley</h5>  
+		                        @endif<div class="title mb16">
+		                            <h5 class="uppercase mb0">@if($data->member_two!=NULL){{$data->member_two}}@else NONE @endif</h5>  
 		                        </div>
 		                        <a class="btn btn-lg btn-white mb8 mt-xs-24" href="#">Upload KTM/Kartu Pelajar</a>
                                 <p>Foto/hasil scan KTM/Kartu Pelajar diupload dalam format .jpg,.jpeg, atau .png dengan ukuran file tidak lebih dari 2 MB</p>                            
@@ -105,9 +117,13 @@
 		                </div>
 		                <div class="col-md-4 col-sm-6">
 		                    <div class="image-tile outer-title text-center">
+		                        @if($data->ktm_img3 != NULL)
+		                        <img alt="Pic" src="{{asset($data->ktm_img3)}}">
+		                        @else
 		                        <img alt="Pic" src="img/team-3.jpg">
+		                        @endif
 		                        <div class="title mb16">
-		                            <h5 class="uppercase mb0">Jake Robbins</h5>
+		                            <h5 class="uppercase mb0">@if($data->member_three!=NULL){{$data->member_three}}@else NONE @endif</h5>
 		                        </div>
 		                        <a class="btn btn-lg btn-white mb8 mt-xs-24" href="#">Upload KTM/Kartu Pelajar</a>
                                 <p>Foto/hasil scan KTM/Kartu Pelajar diupload dalam format .jpg,.jpeg, atau .png dengan ukuran file tidak lebih dari 2 MB</p>
@@ -118,16 +134,24 @@
 		                <div class="col-sm-12 text-center">
 		                    <a class="btn btn-lg btn-white mb8 mt-xs-24" href="#">Upload Surat Keterangan Mahasiswa/Siswa Aktif</a>
                             <br><p>Surat keterangan semua anggota tim disatukan menjadi satu file dalam format .pdf dengan ukuran file tidak lebih dari 2 MB</p>
+                            
+                            @if($data->letter == NULL)
+                            <h5 class="uppercase mb0">Surat Belum Diupload</h5>                       
+                            @else
                             <h5 class="uppercase mb0">Surat Telah Diupload</h5>                       
+                            @endif
+							<br>
+							<a class="btn btn-lg btn-white mb8 mt-xs-24" href="#" style="background-color: #7c6bee;"> SAVE CHANGES </a>
                         </div>
 		            </div>
 		        </div>
+
 		        </section><section class="bg-primary" id="buktibayar">
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-12 text-center">
 		                    <h3 class="uppercase mb40 mb-xs-24" style="color:white;">BUKTI PEMBAYARAN TELAH DI UPLOAD</h3>
-		                    <a class="btn btn-lg btn-white mb8 mt-xs-24" href="#">Upload Bukti Pembayaran</a>
+		                    <a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{route('payment')}}">Upload Bukti Pembayaran</a>
 		                </div>
 		            </div>
 		            
