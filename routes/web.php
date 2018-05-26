@@ -23,6 +23,7 @@ Route::post('/berkas/{id}','TeamController@uploadLetter');
 Route::get('/stp1','TeamController@showForm');
 
 Route::get('/profile','TeamController@teamProfile')->name('team.profile');
+Route::get('/payment','TeamController@payment')->name('payment');
 
 Auth::routes();
 
