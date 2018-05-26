@@ -54,17 +54,11 @@ class TeamController extends Controller
                 $name = Storage::disk('local')->put('images', $request->ktm_img1);
                 $team->ktm_img1 = $name; 
             }
-            else{
-                return "Member 1 ga ada ktmnya boss";   
-            }
         }
         if($team->member_two !== NULL ){
             if($request->hasFile('ktm_img2')){
                 $name = Storage::disk('local')->put('images', $request->ktm_img2);
                 $team->ktm_img2 = $name;
-            }
-            else{
-                return "Member 2 ga ada ktmnya boss";   
             }
         }
         if($team->member_three !== NULL ){
@@ -72,11 +66,11 @@ class TeamController extends Controller
                 $name = Storage::disk('local')->put('images', $request->ktm_img3);
                 $team->ktm_img3 = $name;
             }
-            else{
-                return "Member 3 ga ada ktmnya boss";   
-            }
         }
-        $team->letter = $request->input('letter');
+            if($request->hasFile('letter')){
+                $name = Storage::disk('local')->put('doc', $request->letter);
+                $team->letter = $name;
+            }
         $team->save();
         return "sukses bro uploadnya";
     }

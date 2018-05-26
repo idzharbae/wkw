@@ -38,7 +38,8 @@
 							<p>Nomor Rekening: xxxxxx<br>Atas Nama: Leni Angraeni</p>
 							<h4 style="color: white ;">HackToday</h4>
 							<p><b>Tidak ada biaya pendaftaran yang dibebankan kepada peserta HackToday.</b></p>
-                            <div class="col-lg-7" style="padding: 0px"><button type="submit" class="btn btn-primary form-control" style="text-transform: uppercase;border-radius:0; background-color: #7c6bee;">Upload Bukti Pembayaran</button></div>
+							<div class="col-md-8"><input type="button" class="btn btn-lg btn-white mb8 mt-xs-24" value="UPLOAD BUKTI PEMBAYARAN" onclick="document.getElementById('selectedFile4').click();" /></div>
+							<div class="col-md-5"><input class="btn btn-lg mb8 mt-xs-24" type="submit" value="SAVE CHANGES" style="background-color: #7c6bee;"/></div>
 						</div>
 					</div>
 				</div>
@@ -46,7 +47,7 @@
 		</div>
 		
 				
-	<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/scripts.js"></script>

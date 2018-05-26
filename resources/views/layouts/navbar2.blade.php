@@ -17,7 +17,7 @@
 		        <div class="nav-bar text-center">
 		            <div class="col-md-2 col-md-push-5 col-sm-12 text-center">
 		                <a href="/">
-		                    <img alt="logo" class="image-xxs" src="img/logo-dark.png">
+		                    <img alt="logo" class="image-xs" src="img/ittodayhitam.png">
 		                </a>
 		            </div>
 		
