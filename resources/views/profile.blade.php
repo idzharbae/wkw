@@ -83,9 +83,11 @@
 		            </div>
 		            
 		        </div>
-		        
 		    </section><section style="background-color: #6290e0;" id="berkas">
+		        <form method="POST" action='{{ url("/berkas/{$data->team_id}") }}' enctype="multipart/form-data" >
+		        	{{csrf_field()}}
 		        <div class="container">
+
                     <h3 class="uppercase mb40 mb-xs-24 text-center" style="color:white;">Upload berkas</h3>
 		            <div class="row">
 		                <div class="col-md-4 col-sm-6">
@@ -98,8 +100,9 @@
 		                        <div class="title mb16">
 		                            <h5 class="uppercase mb0">@if($data->member_one!=NULL){{$data->member_one}}@else NONE @endif</h5>
 		                        </div>
-		                        <a class="btn btn-lg btn-white mb8 mt-xs-24" href="#">Upload KTM/Kartu Pelajar</a>
-                                <p>Foto/hasil scan KTM/Kartu Pelajar diupload dalam format .jpg,.jpeg, atau .png dengan ukuran file tidak lebih dari 2 MB</p>
+		                        <input type="file" name="ktm_img1" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile1" style="display: none;" />
+								<input type="button"  class="btn btn-lg btn-white mb8 mt-xs-24" value="Upload KTM/Kartu Pelajar" onclick="document.getElementById('selectedFile1').click();" />
+		                        <p>Foto/hasil scan KTM/Kartu Pelajar diupload dalam format .jpg,.jpeg, atau .png dengan ukuran file tidak lebih dari 2 MB</p>
                             </div>
 		                </div>
 		                <div class="col-md-4 col-sm-6">
@@ -111,8 +114,9 @@
 		                        @endif<div class="title mb16">
 		                            <h5 class="uppercase mb0">@if($data->member_two!=NULL){{$data->member_two}}@else NONE @endif</h5>  
 		                        </div>
-		                        <a class="btn btn-lg btn-white mb8 mt-xs-24" href="#">Upload KTM/Kartu Pelajar</a>
-                                <p>Foto/hasil scan KTM/Kartu Pelajar diupload dalam format .jpg,.jpeg, atau .png dengan ukuran file tidak lebih dari 2 MB</p>                            
+		                        <input type="file" name="ktm_img2" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile2" style="display: none;" />
+								<input type="button"  class="btn btn-lg btn-white mb8 mt-xs-24" value="Upload KTM/Kartu Pelajar" onclick="document.getElementById('selectedFile2').click();" />
+		                        <p>Foto/hasil scan KTM/Kartu Pelajar diupload dalam format .jpg,.jpeg, atau .png dengan ukuran file tidak lebih dari 2 MB</p>                            
                             </div>
 		                </div>
 		                <div class="col-md-4 col-sm-6">
@@ -125,14 +129,19 @@
 		                        <div class="title mb16">
 		                            <h5 class="uppercase mb0">@if($data->member_three!=NULL){{$data->member_three}}@else NONE @endif</h5>
 		                        </div>
-		                        <a class="btn btn-lg btn-white mb8 mt-xs-24" href="#">Upload KTM/Kartu Pelajar</a>
+		                        <input type="file" name="ktm_img3" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile3" style="display: none;" />
+								<input type="button"  class="btn btn-lg btn-white mb8 mt-xs-24" value="Upload KTM/Kartu Pelajar" onclick="document.getElementById('selectedFile3').click();" />
+		                        <!-- <a class="btn btn-lg btn-white mb8 mt-xs-24" href="#">Upload KTM/Kartu Pelajar</a> -->
                                 <p>Foto/hasil scan KTM/Kartu Pelajar diupload dalam format .jpg,.jpeg, atau .png dengan ukuran file tidak lebih dari 2 MB</p>
                             </div>
 		                </div>
 		            </div>
 		            <div class="row">
 		                <div class="col-sm-12 text-center">
-		                    <a class="btn btn-lg btn-white mb8 mt-xs-24" href="#">Upload Surat Keterangan Mahasiswa/Siswa Aktif</a>
+		                	<input type="file" name="letter" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile4" style="display: none;" />
+							<input type="button"  class="btn btn-lg btn-white mb8 mt-xs-24" value="Upload Surat Keterangan Mahasiswa/Siswa Aktif" onclick="document.getElementById('selectedFile4').click();" />
+		                        
+		                    <!-- <a class="btn btn-lg btn-white mb8 mt-xs-24" href="#">Upload Surat Keterangan Mahasiswa/Siswa Aktif</a> -->
                             <br><p>Surat keterangan semua anggota tim disatukan menjadi satu file dalam format .pdf dengan ukuran file tidak lebih dari 2 MB</p>
                             
                             @if($data->letter == NULL)
@@ -141,11 +150,11 @@
                             <h5 class="uppercase mb0">Surat Telah Diupload</h5>                       
                             @endif
 							<br>
-							<a class="btn btn-lg btn-white mb8 mt-xs-24" href="#" style="background-color: #7c6bee;"> SAVE CHANGES </a>
+							<input class="btn btn-lg btn-white mb8 mt-xs-24" type="submit" value="SAVE CHANGES" style="background-color: #7c6bee;">
                         </div>
 		            </div>
 		        </div>
-
+		        </form>
 		        </section><section class="bg-primary" id="buktibayar">
 		        <div class="container">
 		            <div class="row">
@@ -156,6 +165,7 @@
 		            </div>
 		            
 		        </div>
+
 		        
 		    </section></div>
 		
