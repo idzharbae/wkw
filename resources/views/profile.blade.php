@@ -151,7 +151,7 @@
 		            <div class="row">
 		                <div class="col-sm-12 text-center">
 		                    <h3 class="uppercase mb40 mb-xs-24" style="color:white;">BUKTI PEMBAYARAN TELAH DI UPLOAD</h3>
-		                    <a class="btn btn-lg btn-white mb8 mt-xs-24" href="#">Upload Bukti Pembayaran</a>
+		                    <a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{route('payment')}}">Upload Bukti Pembayaran</a>
 		                </div>
 		            </div>
 		            
