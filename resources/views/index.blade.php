@@ -190,56 +190,56 @@
 					<div class="lightbox-grid square-thumbs" data-gallery-title="Gallery">
 						<ul>
 							<li>
-								<a href="img/cover1.jpg" data-lightbox="true">
+								<a href="img/feed1.jpg" data-lightbox="true">
 									<div class="background-image-holder">
 										<img alt="image" class="background-image" src="img/feed1.jpg">
 									</div>
 								</a>
 							</li>
 							<li>
-								<a href="img/home12.jpg" data-lightbox="true">
+								<a href="img/feed3.jpg" data-lightbox="true">
 									<div class="background-image-holder">
 										<img alt="image" class="background-image" src="img/feed3.jpg">
 									</div>
 								</a>
 							</li>
 							<li>
-								<a href="img/home14.jpg" data-lightbox="true">
+								<a href="img/feed2.jpg" data-lightbox="true">
 									<div class="background-image-holder">
 										<img alt="image" class="background-image" src="img/feed2.jpg">
 									</div>
 								</a>
 							</li>
 							<li>
-								<a href="img/home17.jpg" data-lightbox="true">
+								<a href="img/feed5.jpg" data-lightbox="true">
 									<div class="background-image-holder">
 										<img alt="image" class="background-image" src="img/feed5.jpg">
 									</div>
 								</a>
 							</li>
 							<li>
-								<a href="img/cover5.jpg" data-lightbox="true">
+								<a href="img/feed6.jpg" data-lightbox="true">
 									<div class="background-image-holder">
 										<img alt="image" class="background-image" src="img/feed6.jpg">
 									</div>
 								</a>
 							</li>
 							<li>
-								<a href="img/cover6.jpg" data-lightbox="true">
+								<a href="img/feed8.jpg" data-lightbox="true">
 									<div class="background-image-holder">
 										<img alt="image" class="background-image" src="img/feed8.jpg">
 									</div>
 								</a>
 							</li>
 							<li>
-								<a href="img/cover7.jpg" data-lightbox="true">
+								<a href="img/feed7.jpg" data-lightbox="true">
 									<div class="background-image-holder">
 										<img alt="image" class="background-image" src="img/feed7.jpg">
 									</div>
 								</a>
 							</li>
 							<li>
-								<a href="img/cover8.jpg" data-lightbox="true">
+								<a href="img/feed4.jpg" data-lightbox="true">
 									<div class="background-image-holder">
 										<img alt="image" class="background-image" src="img/feed4.jpg">
 									</div>
