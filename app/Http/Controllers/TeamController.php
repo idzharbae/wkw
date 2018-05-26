@@ -20,30 +20,10 @@ class TeamController extends Controller
 	
 	}
 
-    public function showForm(){
-
-        $users = Auth::user()->id;
-
-        return view('reg_stp1', compact('users'));
-
-    }
-    public function showBayar(){
-
-        $users = Auth::user()->id;
-        
-        return view('reg_stp3',compact('users'));
-
-    }
-    public function showBerkas(){
-
-        $users = Auth::user()->id;
-        
-        return view('reg_stp2', compact('users'));
-
-    }
-
     public function teamProfile(){
-        return view('profile');
+        $user_id = Auth::user()->id;
+        $data = Team::where('team_id',$user_id)->first();
+        return view('profile',compact('data'));
     }
 
     public function uploadLetter(Request $request,$id){//ini id di tabel teams
