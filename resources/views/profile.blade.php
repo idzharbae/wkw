@@ -140,9 +140,12 @@
                             @else
                             <h5 class="uppercase mb0">Surat Telah Diupload</h5>                       
                             @endif
+							<br>
+							<a class="btn btn-lg btn-white mb8 mt-xs-24" href="#" style="background-color: #7c6bee;"> SAVE CHANGES </a>
                         </div>
 		            </div>
 		        </div>
+
 		        </section><section class="bg-primary" id="buktibayar">
 		        <div class="container">
 		            <div class="row">

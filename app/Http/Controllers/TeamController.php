@@ -26,6 +26,14 @@ class TeamController extends Controller
         return view('profile',compact('data'));
     }
 
+    public function showForm(){
+    
+        $users = Auth::user()->id;
+
+    return view('reg_stp1', compact('users')); 
+
+    }
+    
     public function uploadLetter(Request $request,$id){//ini id di tabel teams
         $this->validate($request,[
             'letter' => 'mimes:pdf|max:2048',
