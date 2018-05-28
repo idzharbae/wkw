@@ -93,9 +93,9 @@
 		                <div class="col-md-4 col-sm-6">
 		                    <div class="image-tile outer-title text-center">
 		                        @if($data->ktm_img1 != NULL)
-		                        <img alt="Pic" src="{{asset($data->ktm_img1)}}">
+		                        <img alt="Pic" src="{{asset($data->ktm_img1)}}" style="width: 577px; height: 224px; object-fit:cover;">
 		                        @else
-		                        <img alt="Pic" src="img/team-1.jpg">
+		                        <img alt="Pic" src="img/team-1.jpg" style="width: 577px; height: 224px; object-fit:cover;">
 		                        @endif
 		                        <div class="title mb16">
 		                            <h5 class="uppercase mb0">@if($data->member_one!=NULL){{$data->member_one}}@else NONE @endif</h5>
@@ -108,9 +108,9 @@
 		                <div class="col-md-4 col-sm-6">
 		                    <div class="image-tile outer-title text-center">
 		                        @if($data->ktm_img2 != NULL)
-		                        <img alt="Pic" src="{{asset($data->ktm_img2)}}">
+		                        <img alt="Pic" src="{{asset($data->ktm_img2)}}" style="width: 577px; height: 224px; object-fit:cover;">
 		                        @else
-		                        <img alt="Pic" src="img/team-2.jpg">
+		                        <img alt="Pic" src="img/team-2.jpg" style="width: 577px; height: 224px; object-fit:cover;">
 		                        @endif<div class="title mb16">
 		                            <h5 class="uppercase mb0">@if($data->member_two!=NULL){{$data->member_two}}@else NONE @endif</h5>  
 		                        </div>
@@ -122,9 +122,9 @@
 		                <div class="col-md-4 col-sm-6">
 		                    <div class="image-tile outer-title text-center">
 		                        @if($data->ktm_img3 != NULL)
-		                        <img alt="Pic" src="{{asset($data->ktm_img3)}}">
+		                        <img alt="Pic" src="{{asset($data->ktm_img3)}}" style="width: 577px; height: 224px; object-fit:cover;">
 		                        @else
-		                        <img alt="Pic" src="img/team-3.jpg">
+		                        <img alt="Pic" src="img/team-3.jpg" style="width: 577px; height: 224px; object-fit:cover;">
 		                        @endif
 		                        <div class="title mb16">
 		                            <h5 class="uppercase mb0">@if($data->member_three!=NULL){{$data->member_three}}@else NONE @endif</h5>
@@ -145,7 +145,7 @@
                             <br><p>Surat keterangan semua anggota tim disatukan menjadi satu file dalam format .pdf dengan ukuran file tidak lebih dari 2 MB</p>
                             
                             @if($data->letter == NULL)
-                            <h5 class="uppercase mb0">Surat Belum Diupload</h5>                       
+                            <h5 class="uppercase mb0">Surat <b>Belum </b> Diupload</h5>                       
                             @else
                             <h5 class="uppercase mb0">Surat Telah Diupload</h5>                       
                             @endif

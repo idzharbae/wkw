@@ -17,25 +17,24 @@
 		<div class="main-container">
 		    <section class="cover fullscreen image-bg">
 		        <div class="background-image-holder">
-		            <img alt="image" class="background-image" src="img/bglogin.png">
+		            <img alt="image" class="background-image" src="img/bglogin.png" style="background-repeat: no-repeat; background-attachment: fixed;">
 		        </div>
 		        <div class="container v-align-transform">
 		            <div class="row">
 		                <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
-		                    <div class="feature bordered text-center">
-                            <br><br>
+		                    <div class="feature bordered text-center"><br><br><br>
 		                        <h3 class="uppercase">Register</h3>
                                         
                                 <form method="POST" action = '{{ url("/daftar/{$users}") }}'>
                                     {{csrf_field()}}
 
                                     <div class="form-group row">
-                                        <label for="name" class="col-md-4 col-form-label text-md-right"> Group Members </label>
+                                        <label for="name" class="col-md-4 col-form-label text-md-right"> Group Member </label>
 
                                         <div class="col-md-6">
-                                            <input type = 'text' name = 'member_one' required/>
-                                            <input type = 'text' name = 'member_two' />
-                                            <input type = 'text' name = 'member_three' />
+                                            <input type = 'text' name = 'member_one' placeholder="Group Leader" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Group Leader'" required />
+                                            <input type = 'text' name = 'member_two' placeholder="Group Member 1" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Group Member 1'"/>
+                                            <input type = 'text' name = 'member_three' placeholder="Group Member 2" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Group Member 2'" />
                                         </div>
                                     </div>
 

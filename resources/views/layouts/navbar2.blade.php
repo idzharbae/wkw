@@ -13,34 +13,26 @@
 	</head>
 	<body>
 		<div class="nav-container">
-		    <nav>
+		    <nav class="transparent absolute">
 		        <div class="nav-bar text-center">
 		            <div class="col-md-2 col-md-push-5 col-sm-12 text-center">
 		                <a href="/">
-		                    <img alt="logo" style="height: 75px; width: 75px;" src="">
+		                    <img alt="logo" style="height: 45px; width: auto;" src="img/ittodayhitam.png">
 		                </a>
 		            </div>
 		
 		            <div class="col-sm-12 col-md-5 col-md-pull-2 overflow-hidden-xs">
 		                <ul class="menu inline-block pull-right">
 		                    <li><a href="/">Home</a></li>
-		                    <li><a href="#">Event</a>
-		                        <ul>
-									<li><a href="#appstoday">AppsToday</a></li>
-									<li><a href="#hacktoday">HackToday</a></li>
-									<li><a href="#business">Business IT Case</a></li>
-									<li><a href="#seminar">Seminar</a></li>
-		                        </ul>
-							</li>
 		                </ul>
 		            </div>
 		        
-		            <div class="col-sm-12 col-md-5 pb-xs-24">
+		            <div class="module right">
 						<ul class="navbar-nav ml-auto">
 							<!-- Authentication Links -->
 							@guest
 								<ul class="menu inline-block pull-right">
-									<li><a href="{{ route('login') }}">Login</a></li>
+									<li><a class="btn btn-sm hidden-xs hidden-sm hidden-md" href="{{ route('login') }}">Login</a></li>
 									<!-- <li><a href="{{ route('register') }}">Register</a></li> -->
 								</ul>
 							@else
@@ -63,6 +55,23 @@
 								</li>
 							@endguest
 						</ul>
+		            </div>
+		                <ul class="menu inline-block pull-left">
+		                    <li><a href="#">Competition</a>
+		                        <ul>
+									<li><a href="#appstoday">AppsToday</a></li>
+									<li><a href="#hacktoday">HackToday</a></li>
+									<li><a href="#business">Business IT Case</a></li>
+		                        </ul>
+							</li>
+							<li><a href="#">Event</a>
+		                        <ul>
+									<li><a href="#seminar">National Seminar</a></li>
+									<li><a href="#seminar">Workshop</a></li>
+									<li><a href="#seminar">Pasca-Event</a></li>
+		                        </ul>
+							</li>
+		                </ul>
 		            </div>
 		        </div>
 		
