@@ -59,16 +59,16 @@
 		                <ul class="menu inline-block pull-left">
 		                    <li><a href="#">Competition</a>
 		                        <ul>
-									<li><a href="#appstoday">AppsToday</a></li>
-									<li><a href="#hacktoday">HackToday</a></li>
-									<li><a href="#business">Business IT Case</a></li>
+									<li><a href="{{route('appstoday')}}">AppsToday</a></li>
+									<li><a href="{{route('hacktoday')}}">HackToday</a></li>
+									<li><a href="{{route('business')}}">Business IT Case</a></li>
 		                        </ul>
 							</li>
 							<li><a href="#">Event</a>
 		                        <ul>
-									<li><a href="#seminar">National Seminar</a></li>
-									<li><a href="#seminar">Workshop</a></li>
-									<li><a href="#seminar">Pasca-Event</a></li>
+									<li><a href="{{route('seminar')}}">National Seminar</a></li>
+									<li><a href="{{route('workshop')}}">Workshop</a></li>
+									<li><a href="{{route('pascaevent')}}">Pasca-Event</a></li>
 		                        </ul>
 							</li>
 		                </ul>

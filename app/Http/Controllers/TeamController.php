@@ -26,6 +26,29 @@ class TeamController extends Controller
         return view('profile',compact('data'));
     }
 
+    public function appsToday(){
+        return view('apps');
+    }
+
+    public function hackToday(){
+        return view('hack');
+    }
+
+    public function businessIT(){
+        return view('business');
+    }
+
+    public function seminarIT(){
+        return view('seminar');
+    }
+    
+    public function workshop(){
+        return view('workshop');
+    }
+
+    public function pascaEvent(){
+        return view('pascaevent');
+    }
     public function showForm(){
     
         $users = Auth::user()->id;

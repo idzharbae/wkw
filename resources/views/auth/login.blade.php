@@ -23,7 +23,7 @@
 		        <div class="container v-align-transform">
 		            <div class="row">
 		                <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
-		                    <div class="feature bordered text-center">
+		                    <div class="feature bordered text-center">  
 		                        <h3 class="uppercase" >Login</h3>
 		                       
 		                        <form method="POST" action="{{ route('login') }}">
