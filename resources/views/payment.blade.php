@@ -1,12 +1,10 @@
 @extends('layouts.navbar2')
 @section('content')
-
-	
 		<form method="POST" action='{{ url("/bayar/{$data->team_id}") }}' enctype="multipart/form-data">
     	{{csrf_field()}}
 
 		<div class="main-container">
-		<section style="background-image: url('/img/footer.png'); background-attachment: fixed;">
+		<section style="background-image:url({{url('img/footer.png')}}); background-attachment: fixed;">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-4 col-md-offset-1 text-right text-left-xs col-sm-5">

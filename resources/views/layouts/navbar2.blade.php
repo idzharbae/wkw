@@ -3,12 +3,17 @@
 	<head>
 		<meta charset="utf-8">
         <title></title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {{-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
         <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/custom.css" rel="stylesheet" type="text/css" media="all" /> --}}
+		<link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet">
+		<link href="{{asset('css/themify-icons.css')}}" rel="stylesheet">
+		<link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
+		<link href="{{asset('css/theme.css')}}" rel="stylesheet">
+		<link href="{{asset('css/custom.css')}}" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
@@ -36,7 +41,7 @@
 									<!-- <li><a href="{{ route('register') }}">Register</a></li> -->
 								</ul>
 							@else
-								<li class="nav-item dropdown">
+								<li class="nav-item dropdown pull-right">
 									<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										{{ Auth::user()->name }} <span class="caret"></span>
 									</a>
@@ -45,7 +50,7 @@
 										<a class="dropdown-item" href="{{ route('logout') }}"
 										onclick="event.preventDefault();
 														document.getElementById('logout-form').submit();">
-											Logout
+											&nbsp;&nbsp;&nbsp;Logout
 										</a>
 
 										<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -84,4 +89,16 @@
         </main>
 		</div>
 	</body>
+	<script src="{{asset('js/app.js')}}"></script>
+<script>
+$(document).ready(function(){
+    $(".dropdown-toggle").dropdown();
+});
+$('.dropdown').on('show.bs.dropdown', function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+  });
+  $('.dropdown').on('hide.bs.dropdown', function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+  });
+</script>
 </html>
