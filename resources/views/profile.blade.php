@@ -1,20 +1,6 @@
 @extends('layouts.navbar2')
 
 @section('content')
-
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
-    </head>
-    <body>
     <div class="main-container">
 		<section class="page-title page-title-1 image-bg overlay parallax">
 		        <div class="background-image-holder">
@@ -40,7 +26,8 @@
 		                <a href="#buktibayar">Upload Bukti Pembayaran</a>
 		            </li>
 		        </ol>
-		    </section></div><section style="background-color:#26c99e;" id="profil">
+			</section>
+			<section style="background-color:#26c99e;" id="profil">
 		        <div class="container">
 		            <div class="row">
                     <div class="feature bordered text-center bg-secondary" style=" box-shadow: 0 9px 30px 10px rgba(0, 0, 0, 0.2);">
@@ -179,15 +166,12 @@
 		            
 		        </div>
 
-		        
+			</div>
 		    </section></div>
 		
 				
 		<script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/parallax.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
-</html>
-							
+        <script src="js/scripts.js"></script>							
 @endsection

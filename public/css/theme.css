@@ -665,6 +665,7 @@ footer.bg-dark li,
   color: #ffffff;
 }
 .image-bg .container,
+.image-bg .main-container,
 .image-bg div[class*='col-'] {
   position: relative;
   z-index: 3;
@@ -1559,7 +1560,7 @@ nav.transparent.fixed .logo-dark {
 }
 nav.transparent.fixed .menu > li > a,
 nav.transparent.fixed .module.widget-handle i {
-  color: #292929;
+  color: whitesmoke;
 }
 nav.transparent.fixed .menu > .has-dropdown:after {
   color: #fff;
@@ -1595,6 +1596,20 @@ nav.transparent.fixed.bg-dark .module.widget-handle i {
 nav.nav-centered.outOfSight .logo {
   display: none;
 }
+nav.transparent.absolute.fixed.outOfSight.scrolled{
+  background-color: black;
+  opacity:0.9;
+}
+nav.transparent.absolute.fixed.outOfSight.scrolled .col-md-2.col-md-push-5.col-sm-12.text-center a:hover{
+  background-color: grey;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+nav.transparent.absolute.fixed.outOfSight.scrolled .col-md-2.col-md-push-5.col-sm-12.text-center a:hover{
+  background-color: grey;
+}
+
 /*!---------- 8. TOOLTIPS ----------*/
 .tooltip {
   font-weight: 600;
@@ -2854,7 +2869,7 @@ button[type="submit"] .form-loading {
 .nav-is-overlay.page-title-1.bg-dark:first-child,
 .nav-is-overlay .page-title-2.image-bg:first-child,
 .nav-is-overlay.page-title-2.bg-dark:first-child {
-  height: 455px;
+  height: 200px;
   padding-top: 55px;
 }
 @media all and (max-width: 767px) {
