@@ -266,7 +266,7 @@
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center mb64 mb-xs-24">
 							<a href="#">
-								<img alt="Logo" class="" style="height: auto; width: 200px;" src="img/ittoday.png">
+								<img alt="Logo" class="" style="height: auto; width: 200px;" src="img/logoittoday.png">
 							</a>
 							<p class="lead mb48 mb-xs-16">
 							<br>Jln. Meranti • Wing 20 • Level 5 <br>

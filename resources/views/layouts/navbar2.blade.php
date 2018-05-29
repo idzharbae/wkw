@@ -17,7 +17,7 @@
 		        <div class="nav-bar text-center">
 		            <div class="col-md-2 col-md-push-5 col-sm-12 text-center">
 		                <a href="/">
-		                    <img alt="logo" style="height: 45px; width: auto;" src="img/ittodayhitam.png">
+		                    <img alt="logo" style="height: 45px; width: auto;" src="img/logoittoday.png">
 		                </a>
 		            </div>
 		
