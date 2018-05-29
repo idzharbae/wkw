@@ -22,6 +22,10 @@ Route::post('/berkas/{id}','TeamController@uploadLetter');
 
 Route::get('/stp1','TeamController@showForm');
 
+Route::get('/appstoday','TeamController@appsToday')->name('appstoday');
+Route::get('/hacktoday','TeamController@hackToday')->name('hacktoday');
+Route::get('/business','TeamController@businessIT')->name('business');
+
 Route::get('/profile','TeamController@teamProfile')->name('team.profile');
 Route::get('/payment','TeamController@payment')->name('payment');
 

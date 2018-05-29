@@ -59,9 +59,9 @@
 		                <ul class="menu inline-block pull-left">
 		                    <li><a href="#">Competition</a>
 		                        <ul>
-									<li><a href="#appstoday">AppsToday</a></li>
-									<li><a href="#hacktoday">HackToday</a></li>
-									<li><a href="#business">Business IT Case</a></li>
+									<li><a href="{{route('appstoday')}}">AppsToday</a></li>
+									<li><a href="{{route('hacktoday')}}">HackToday</a></li>
+									<li><a href="{{route('business')}}">Business IT Case</a></li>
 		                        </ul>
 							</li>
 							<li><a href="#">Event</a>
