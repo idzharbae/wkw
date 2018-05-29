@@ -30,7 +30,7 @@ class AdminController extends Controller
     {
         return view('admin.home');
     }
-    
+
     public function main(){
         $user = Team::all();
         return view('admin.index',compact('user'));
