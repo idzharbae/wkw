@@ -18,7 +18,7 @@
     <div class="main-container">
 		<section class="page-title page-title-1 image-bg overlay parallax">
 		        <div class="background-image-holder">
-		            <img alt="Background Image" class="background-image" src="img/apps.png">
+		            <img alt="Background Image" class="background-image" src="img/footer.png">
 		        </div>
 		        <div class="container">
 		            <div class="row">
@@ -72,7 +72,7 @@
 		                            </p>
                                 </div>
                                 <div class="mb40">
-		                            <h6 class="mb8 uppercase">Kontak</h6>
+		                            <h6 class="mb8 uppercase">Contact</h6>
 		                            <p style="color:black !important;">
                                         {{App\User::find($data->team_id)->email}}<br>
                                         {{$data->phone_num}}<br>

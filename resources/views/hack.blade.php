@@ -20,7 +20,7 @@
 		<div class="main-container">
 		<section class="page-title page-title-4 image-bg overlay parallax">
 		        <div class="background-image-holder">
-		            <img alt="Background Image" class="background-image" src="img/cover14.jpg">
+		            <img alt="Background Image" class="background-image" src="img/hack2.png">
 		        </div>
 		        <div class="container">
 		            <div class="row">
