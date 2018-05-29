@@ -23,7 +23,12 @@ class TeamController extends Controller
     public function teamProfile(){
         $user_id = Auth::user()->id;
         $data = Team::where('team_id',$user_id)->first();
-        return view('profile',compact('data'));
+        if($data == NULL){    	
+		    return view('reg_stp1', compact('user_id')); 
+        }
+        else{
+	        return view('profile',compact('data'));
+        }
     }
 
     public function appsToday(){
@@ -52,8 +57,7 @@ class TeamController extends Controller
     public function showForm(){
     
         $users = Auth::user()->id;
-
-    return view('reg_stp1', compact('users')); 
+	    return view('reg_stp1', compact('users')); 
 
     }
 
