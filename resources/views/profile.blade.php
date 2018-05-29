@@ -155,11 +155,11 @@
 		            </div>
 		        </div>
 		        </form>
-		        </section><section class="bg-primary" id="buktibayar">
+		        </section><section style="background-color: #ff3333" id="buktibayar">
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-12 text-center">
-		                    <h3 class="uppercase mb40 mb-xs-24" style="color:white;">BUKTI PEMBAYARAN TELAH DI UPLOAD</h3>
+		                    <h3 class="uppercase mb40 mb-xs-24" style="color:white;">BUKTI PEMBAYARAN BELUM DIUPLOAD</h3>
 		                    <a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{route('payment')}}">Upload Bukti Pembayaran</a>
 		                </div>
 		            </div>
@@ -170,7 +170,7 @@
 		    </section></div>
 		
 				
-	<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/scripts.js"></script>

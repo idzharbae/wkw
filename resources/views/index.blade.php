@@ -65,7 +65,7 @@
 				<div class="col-sm-12">
 					<div class="text-center">
 						<h3 class="uppercase mb40 mb-xs-24">Launching Soon</h3>
-						<div class="countdown mb40" data-date="2018/05/27"></div>
+						<div class="countdown mb40" data-date="2018/05/30"></div>
 					</div>
 				</div>
 			</div>
@@ -165,11 +165,13 @@
 				<div class="col-md-7 col-sm-8">
 					<i class="ti-quote-left icon icon-sm mb16"></i>
 					<h3 class="mb32">#MAKEITDISRUPTIVE</h3>
-					<p style="color: white; font-size: 14p">
-					"The key is to embrace disruption and change early. Don't react to it decades later.<br>
-					You can't fight innovation." - Ryan Kavanaugh
+					<p style="color: white; font-size: 16px">
+					"The key is to embrace disruption and change early.<br>
+					Don't react to it decades later.<br>
+					You can't fight innovation."<br>
+					- Ryan Kavanaugh
 					</p>
-					<div class="col-md-offset-10"><i class="ti-quote-right icon icon-sm mb16"></i></div>
+					<div class="col-md-offset-6"><i class="ti-quote-right icon icon-sm mb16"></i></div>
 				</div>
 			</div>
 			
@@ -177,7 +179,7 @@
 	</section>
 
 	<!-- Dokumentasi -->
-	<section class="bg-dark pb64" style="background-image: url('/img/footer.png'); padding-bottom: 0px">
+	<section class="bg-dark pb64" style="background-image: url('/img/footer.png'); padding-bottom: 0px; background-repeat: no-repeat; background-attachment: fixed;">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 text-center">
@@ -264,7 +266,7 @@
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center mb64 mb-xs-24">
 							<a href="#">
-								<img alt="Logo" class="image-xs mb16" src="img/ittoday.png">
+								<img alt="Logo" class="" style="height: 200px; weight: 200px;" src="img/ittoday.png">
 							</a>
 							<p class="lead mb48 mb-xs-16">
 								Jln. Meranti • Wing 20 • Level 5 <br>
