@@ -9,15 +9,20 @@
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-12 text-center">
-						<img alt="Screenshot" align="left" class="mb-xs-24" src="img/iconapps.png" style="width: 150px; height: 200px;">
-		                    
+		                	@if($data->type == "AppsToday")
+		                		<img alt="Screenshot" align="left" class="mb-xs-24" src="img/iconapps.png" style="width: 150px; height: 200px;">
+		                	@elseif($data->type == "HackToday")
+								<img alt="Screenshot" align="left" class="mb-xs-24" src="img/iconhack.png" style="width: 150px; height: 200px;">
+		                	@elseif($data->type == "Business IT Case")
+			                	<img alt="Screenshot" align="left" class="mb-xs-24" src="img/iconbisnis.png" style="width: 150px; height: 200px;">
+		                	@endif
 		                </div>
 		            </div>
 		            
 		        </div>
 		        
 		        <ol class="breadcrumb breadcrumb-2">
-					<h3> APPS TODAY </h3>
+					<h3> {{$data->type}} </h3>
 		            <li>
 		                <a href="#profil">Profile</a>
 		            </li>
