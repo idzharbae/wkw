@@ -2618,7 +2618,7 @@ button[type="submit"] .form-loading {
 }
 .feature.bordered {
   padding: 32px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
 }
 .feature {
   margin-bottom: 24px;
