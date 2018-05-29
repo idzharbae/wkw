@@ -13,7 +13,7 @@
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
     </head>
-    <body style="background-image: url('/img/footer.png'); padding-bottom: 0px; background-repeat: no-repeat; background-attachment: fixed;">	
+    <body style="background: url('/img/footer.png') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">	
 		<div class="nav-container">
 		</div>
 		
@@ -186,7 +186,7 @@
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-12 text-center">
-		                    <h4 class="mb16">Frequently Asked Questions</h4>
+		                    <h3 class="mb16">FREQUENTLY ASKED QUESTIONS</h3>
 		                    <p class="lead mb64">
 		                        Holla @mrareweb if you've got more questions and we'll do our best to answer.
 		                    </p>

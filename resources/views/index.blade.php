@@ -195,7 +195,7 @@
 	</section>
 
 	<!-- Dokumentasi -->
-	<section class="bg-dark pb64" style="background-image: url('/img/footer.png'); padding-bottom: 0px; background-repeat: no-repeat; background-attachment: fixed;">
+	<section class="bg-dark pb64" style="background: url('/img/footer.png') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;" padding-bottom: 0px; background-repeat: no-repeat; background-attachment: fixed;">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 text-center">

@@ -2234,6 +2234,7 @@ button[type="submit"] .form-loading {
 .button-tabs .tabs > li {
   margin-bottom: 8px;
   float: left;
+  color: #000;
 }
 .button-tabs .tabs > li:last-child {
   margin-right: 0;
@@ -2604,6 +2605,7 @@ button[type="submit"] .form-loading {
 .feature.boxed {
   padding: 32px;
   background: #f8f8f8;
+  color: #292929;
 }
 .feature.boxed.bg-dark {
   background: #292929;
