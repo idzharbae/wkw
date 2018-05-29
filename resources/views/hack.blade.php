@@ -63,7 +63,7 @@
                 <div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
                     <!-- <h1 class="large mb40 mb-xs-16">Sleek, Smart and Modern.</h1> -->
                     <div class="feature bordered text-center">
-                        <p class="lead mb40" style="color: #282825;">
+                        <p class="lead mb40" style="color: white">
                         HackToday atau yang lebih dikenal dengan Capture The Flag adalah salah satu cabang kompetisi IT Today 2018 dalam bidang keamanan teknologi informasi. Dalam lomba ini, peserta  diharuskan untuk mencari celah-celah keamanan jaringan sehingga peserta mampu untuk menembus target yang disediakan oleh panitia. Lomba HackToday yang diadakan IT Today 2018 bertujuan agar setiap peserta mampu mengembangkan kemampuannya pada bidang Information Security.
                         </p>
                         <a class="btn btn-lg btn-white mb8 mt-xs-24" target="_blank" href="https://drive.google.com/a/apps.ipb.ac.id/uc?authuser=0&id=1o1vxfQcdhxorBuDZRMBvc9qKYI08wvQq&export=download">DOWNLOAD RULEBOOK</a>
@@ -88,7 +88,7 @@
                 <div class="panel-body">
                     <div class="tab-content">
                         <div class="tab-pane fade in active" id="tab1primary">
-                            <h4 align="center">26 Mei – 28 Juli 2018</h4>
+                            <h4 align="center">30 Mei – 28 Juli 2018</h4>
                             <h4 align="center">Pendaftaran</h4>
                         </div>
                         <div class="tab-pane fade" id="tab2primary">
@@ -100,7 +100,7 @@
                             <h4 align="center">Submisi Writeup</h4>
                         </div>
                         <div class="tab-pane fade" id="tab4primary">
-                            <h4 align="center">31 Agustus 2018</h4>
+                            <h4 align="center">22 Agustus 2018</h4>
                             <h4 align="center">Pengumuman Finalis</h4>
                         </div>
                         <div class="tab-pane fade" id="tab5primary">
@@ -210,10 +210,10 @@
 		                                <h4 class="inline-block mb0">Kapan dan dimana HackToday dilaksanakan?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Hacktoday terdiri dari 2 Tahap, Tahap Penyisihan bersifat Remote yaitu via online yang artinya peserta dapat mengerjakan soal dimanapun pada hari Sabtu tanggal 4 Agustus 2018 pukul 09.00 WIB sampai dengan 16.00 WIB.
 										Tahap final dilaksanakan secara onsite di FMIPA IPB, Kampus IPB Dramaga, Bogor pada hari Minggu, 9 September 2018 pukul 10.00 WIB sampai 16.00 WIB.
-		                                </p>
+		                                </h5>
 		                            </div>
 		                        </li>
 		                        <li>
@@ -221,9 +221,9 @@
 		                                <h4 class="inline-block mb0">Apakah HackToday 2018 dipungut biaya?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Tidak, HackToday 2018 <b>gratis</b>. 
-		                                </p>
+		                                </h5>
 		                            </div>
 		                        </li>
 		                        <li>
@@ -231,9 +231,9 @@
 		                                <h4 class="inline-block mb0">Apakah benar peserta SMA/SMK atau sederajat dapat mengikuti hacktoday 2018?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Benar, namun tidak akan ada perbedaan kesulitan soal atau hal lain. Setiap peserta mendapatkan porsi jumlah dan kesulitan soal yang sama dalam HackToday 2018.
-		                                </p>
+		                                </h5>
 		                            </div>
 		                        </li>
 		                        <li>
@@ -241,9 +241,9 @@
 		                                <h4 class="inline-block mb0">Apakah peserta SMA/SMK atau sederajat mendapatkan penghargaan khusus?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Apabila ada peserta SMA/SMK atau sederajat yang dapat masuk ke dalam 3 tim terbaik pada HackToday 2018 akan mendapatkan penghargaan khusus yaitu tim SMA/SMK atau sederajat terbaik dalam HackToday. Maka tim tersebut akan mendapatkan kejuaraan ganda yaitu tim terbaik SMA/SMK atau sederajat dan tim juara 1/2/3.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -251,9 +251,9 @@
 		                                <h4 class="inline-block mb0">Bagaimana cara mendaftar HackToday?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Pendaftaran melewati website resmi ITTODAY 2018 yaitu ittoday.web.id.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -261,9 +261,9 @@
 		                                <h4 class="inline-block mb0">Apakah persyaratan administrasi peserta dalam HackToday 2018?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Setiap peserta dalam tim wajib menyertakan surat keterangan mahasiswa aktif dan kartu tanda mahasiswa (KTM) dan untuk SMA/SMK wajib menyertakan kartu tanda siswa dan surat keterangan siswa dari sekolah asal peserta. Apabila ada peserta dengan administrasi yang tidak lengkap maka peserta tersebut dianggap gugur dan jumlah peserta tim yang diakui hanyalah yang melengkapi persyaratan administrasi.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -271,9 +271,9 @@
 		                                <h4 class="inline-block mb0">Seperti apa rundown tahap penyisihan 1?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Tahap penyisihan 1 dilaksanakan pada tanggal 4 agustus 2018 dengan 2 sesi yaitu sesi 1 pada jam 09.00-16.00 dengan sistem jeopardy dengan scoreboard yang akan di freeze pada 1 jam sebelum penutupan sesi 1 dan sesi 2 yang akan dilaksanakan pada hari yang sama pada jam 16.00-20.00 yaitu pengumpulan/submisi write up.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -281,9 +281,9 @@
 		                                <h4 class="inline-block mb0">Format flag HackToday?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Setiap flag di HackToday berformat HacktToday{\w+}$, 
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -291,9 +291,9 @@
 		                                <h4 class="inline-block mb0">Apa itu write up?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Write up adalah dokumentasi peserta yang berisi bagaimana peserta tersebut menyelesaikan soal. 
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -301,9 +301,9 @@
 		                                <h4 class="inline-block mb0">Seperti apakah format write up?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Write up berbentuk pdf dengan format tiap penyelesaian judul soal,isi soal *optional* ,solusi dan flag yang didapatkan untuk setiap soal lebih baik beserta screenshot. PDF dikirim paling lambat tanggal 4 agustus 2018 pada jam 20.00 kepada kestari.ittoday@gmail.com. Lebih dari itu maka peserta dianggap tidak mengumpulkan write up.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -311,9 +311,9 @@
 		                                <h4 class="inline-block mb0">Apa yang terjadi apabila peserta tidak mengumpulkan write up?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Write up merupakan sebuah aspek peniliaian untuk memastikan peserta memang menyelesaikan soal tersebut, juga menghindari adanya plagiarisme dalam penyelesaian soal. Apabila peserta tersebut tidak mengumpulkan atau menyertakan write up keseluruhan maka seluruh point yang peserta dapatkan akan hangus. Apabila peserta hanya tidak menyertakan write up untuk soal tertentu maka point untuk soal tersebut dianggap hangus.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -321,9 +321,9 @@
 		                                <h4 class="inline-block mb0">Apakah kualitas write up mempengaruhi peniliaian?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Write up akan bergantung terhadap kretifitas peserta dalam menyelesaikan soal. Singkat maupun tidak, tidak akan berpengaruh terhadap penilian asalkan write up memang dapat menyelesaikan soalnya. Apabila write up dinilai tidak menyelesaikan soal ataupun tidak lengkap, maka point peserta untuk soal tersebut dianggap hangus.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -331,9 +331,9 @@
 		                                <h4 class="inline-block mb0">Apakah kami atau orang lain dapat mengakses write up peserta HackToday?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Write up 10 tim terbaik pada tahap penyisihan 1 akan dipublikasikan di facebook page resmi Cyber Security IPB https://www.facebook.com/cysecipb/
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -341,9 +341,9 @@
 		                                <h4 class="inline-block mb0">Berapakah tim yang akan lolos ke final?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Tim yang akan lolos ke final berjumlah 10 tim terbaik pada saat penyisihan tahap 1 apabila terdapat tim SMA/SMK. Apabila tidak ada tim SMA/SMK dalam 10 tim terbaik maka hanya akan diambil 9 dan diambil 1 tim terbaik SMA/SMK. Pengumuman akan dilaksanakan pada tanggal 22 Agustus 2018.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
