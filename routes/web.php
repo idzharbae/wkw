@@ -22,9 +22,29 @@ Route::post('/berkas/{id}','TeamController@uploadLetter');
 
 Route::get('/stp1','TeamController@showForm');
 
+Route::get('/appstoday','TeamController@appsToday')->name('appstoday');
+Route::get('/hacktoday','TeamController@hackToday')->name('hacktoday');
+Route::get('/business','TeamController@businessIT')->name('business');
+Route::get('/seminar','TeamController@seminarIT')->name('seminar');
+Route::get('/workshop','TeamController@workshop')->name('workshop');
+Route::get('/pascaevent','TeamController@pascaEvent')->name('pascaevent');
+
 Route::get('/profile','TeamController@teamProfile')->name('team.profile');
 Route::get('/payment','TeamController@payment')->name('payment');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+/***
+*ADMIN ROUTE
+***/
+Route::GET('admin/home','AdminController@index');
+Route::GET('admin','Admin\LoginController@showLoginForm')->name('admin.login');
+Route::POST('admin','Admin\LoginController@login');
+Route::POST('admin-password/email','Admin\ForgotPasswordController@sendResetLinkEmail')->name('admin.password.email');
+Route::GET('admin-password/reset','Admin\ForgotPasswordController@showLinkRequestForm')->name('admin.password.request');
+Route::POST('admin-password/reset','Admin\ResetPasswordController@reset');
+Route::GET('admin-password/reset/{token}','Admin\ResetPasswordController@showResetForm');

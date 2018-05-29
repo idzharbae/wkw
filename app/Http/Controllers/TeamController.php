@@ -26,6 +26,29 @@ class TeamController extends Controller
         return view('profile',compact('data'));
     }
 
+    public function appsToday(){
+        return view('apps');
+    }
+
+    public function hackToday(){
+        return view('hack');
+    }
+
+    public function businessIT(){
+        return view('business');
+    }
+
+    public function seminarIT(){
+        return view('seminar');
+    }
+    
+    public function workshop(){
+        return view('workshop');
+    }
+
+    public function pascaEvent(){
+        return view('pascaevent');
+    }
     public function showForm(){
     
         $users = Auth::user()->id;
@@ -76,8 +99,9 @@ class TeamController extends Controller
         return "sukses bro uploadnya";
     }
     public function uploadPay(Request $request, $id){
+        
         $this->validate($request,[
-            'payment' => 'required|image|mimes:jpeg,png,jpg,svg|max:2048',
+            'payment' => 'image|mimes:jpeg,png,jpg,svg|max:2048',
         ]);
         $name = Storage::disk('local')->put('images', $request->payment);   
         $data=array(
