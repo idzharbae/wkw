@@ -95,12 +95,12 @@ class TeamController extends Controller
                 $team->ktm_img3 = $name;
             }
         }
-            if($request->hasFile('letter')){
-                $name = Storage::disk('local')->put('doc', $request->letter);
-                $team->letter = $name;
-            }
+        if($request->hasFile('letter')){
+            $name = Storage::disk('local')->put('doc', $request->letter);
+            $team->letter = $name;
+        }
         $team->save();
-        return view('profile');
+        return redirect('/profile/');
     }
     public function uploadPay(Request $request, $id){
         
@@ -112,7 +112,7 @@ class TeamController extends Controller
             'payment'=>$name,
         );
         Team::where('team_id',$id)->update($data);
-        return view('profile');
+        return redirect('/profile/');
     }
 
     public function addTeam(Request $request,$id){
