@@ -155,11 +155,24 @@
 		            </div>
 		        </div>
 		        </form>
-		        </section><section style="background-color: #ff3333" id="buktibayar">
+		        </section>
+		        @if($data->payment == NULL)
+		        <section style="background-color: #ff3333" id="buktibayar">
+		        @else
+		        	@if($data->verify == 1)
+		        	<section style="background-color: #26c99e" id="buktibayar">
+		        	@else
+					<section style="background-color: #fff83f" id="buktibayar">
+		        	@endif
+		        @endif
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-12 text-center">
-		                    <h3 class="uppercase mb40 mb-xs-24" style="color:white;">BUKTI PEMBAYARAN BELUM DIUPLOAD</h3>
+		                    @if($data->payment == NULL)
+                            <h3 class="uppercase mb40 mb-xs-24" style="color:white;">BUKTI PEMBAYARAN BELUM DIUPLOAD</h3>
+                            @else
+                            <h3 class="uppercase mb40 mb-xs-24" style="color:white;">BUKTI PEMBAYARAN TELAH DIUPLOAD</h3>
+                            @endif
 		                    <a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{route('payment')}}">Upload Bukti Pembayaran</a>
 		                </div>
 		            </div>
