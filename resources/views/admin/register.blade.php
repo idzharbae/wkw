@@ -25,7 +25,7 @@
 		            <div class="row">
 		                <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
 		                    <div class="feature bordered text-center">
-		                        <h3 class="uppercase">Register</h3>
+		                        <h3 class="uppercase">Admin Register</h3>
 		                       
 		        	<form method="POST" action="{{ route('register') }}">
                         @csrf

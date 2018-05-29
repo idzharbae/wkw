@@ -24,7 +24,7 @@
 		            <div class="row">
 		                <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
 		                    <div class="feature bordered text-center">
-		                        <h3 class="uppercase" >Login</h3>
+		                        <h3 class="uppercase" >Admin Login</h3>
 		                       
                     <form method="POST" action="{{ route('admin.login') }}">
                         @csrf
