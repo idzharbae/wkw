@@ -66,9 +66,9 @@
 							</li>
 							<li><a href="#">Event</a>
 		                        <ul>
-									<li><a href="#seminar">National Seminar</a></li>
-									<li><a href="#seminar">Workshop</a></li>
-									<li><a href="#seminar">Pasca-Event</a></li>
+									<li><a href="{{route('seminar')}}">National Seminar</a></li>
+									<li><a href="{{route('workshop')}}">Workshop</a></li>
+									<li><a href="{{route('pascaevent')}}">Pasca-Event</a></li>
 		                        </ul>
 							</li>
 		                </ul>

@@ -38,6 +38,17 @@ class TeamController extends Controller
         return view('business');
     }
 
+    public function seminarIT(){
+        return view('seminar');
+    }
+    
+    public function workshop(){
+        return view('workshop');
+    }
+
+    public function pascaEvent(){
+        return view('pascaevent');
+    }
     public function showForm(){
     
         $users = Auth::user()->id;
