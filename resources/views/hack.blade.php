@@ -12,6 +12,11 @@
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+    
+        <link rel="stylesheet" type="text/css" href="css/timeline.css">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>        
     </head>
     <body style="background: url('/img/footer.png') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">	
 		<div class="nav-container">
@@ -50,53 +55,53 @@
 		    </section>
             
             <section id="timeline">
-		    <div class="container">
-		        <div class="row mb64 mb-xs-24">
-		            <div class="col-sm-12 text-center">
-		                <h3>Timeline</h3>
-		                <p class="lead">
-		                    Prepare for a full day of discussion from some of the web's best and brightest.
-		                </p>
-		            </div>
-		        </div>
-		        
-		        <div class="row">
-		            <div class="col-md-8 col-md-offset-2">
-		                <div class="tabbed-content button-tabs">
-		                    <ul class="tabs thirds mb64 mb-xs-24">
-		                        <li class="active">
-		                            <div class="tab-title">
-		                                <span>Morning</span>
-		                            </div>
-		                            <div class="tab-content text-left">
-                                        <p style="text-align: center;">PENDAFTARAN LOMBA</p>
-		                            </div>
-		                        </li>
-		                        <li>
-		                            <div class="tab-title">
-		                                <span>Afternoon</span>
-		                            </div>
-		                            <div class="tab-content text-left">
-                                        <p style="text-align: center;">FINAL LOMBA</p>
-		                            </div>
-		                        </li>
-		                        <li>
-		                            <div class="tab-title">
-		                                <span>Evening</span>
-		                            </div>
-		                            <div class="tab-content text-left">
-                                        <p style="text-align: center;">PENGUMUMAN JUARA</p>
-		                            </div>
-		                        </li>
-		                    </ul>
-		                </div>
-		                
-		            </div>
-		        </div>
-		        
-		    </div>
-		    
-		</section>
+            <div class="col-md-4 col-md-offset-4">
+                <h3 align="center">Timeline</h3>
+                <div class="panel-heading">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab1primary" data-toggle="tab">1</a></li>
+                            <li><a href="#tab2primary" data-toggle="tab">2</a></li>
+                            <li><a href="#tab3primary" data-toggle="tab">3</a></li>
+                            <li><a href="#tab4primary" data-toggle="tab">4</a></li>
+                            <li><a href="#tab5primary" data-toggle="tab">5</a></li>
+                            <li><a href="#tab6primary" data-toggle="tab">6</a></li>
+                            <li><a href="#tab7primary" data-toggle="tab">7</a></li>
+                        </ul>
+                </div>
+                <div class="panel-body">
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="tab1primary">
+                            <p align="center">26 Mei – 11 Juli 2018</p>
+                            <p align="center">Pendaftaran</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab2primary">
+                            <p align="center">26 Mei – 18 Juli 2018</p>
+                            <p align="center">Submisi Tahap 1</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab3primary">
+                            <p align="center">27 Juli 2018</p>
+                                <p align="center">Pengumuman Peserta Tahap 2</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab4primary">
+                            <p align="center">28 Juli – 13 Agustus 2018</p>
+                            <p align="center">Submisi Tahap 2</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab5primary">
+                            <p align="center">31 Agustus 2018</p>
+                            <p align="center">Pengumuman Finalis</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab6primary">
+                            <p align="center">15 September 2018</p>
+                            <p align="center">Final</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab7primary">
+                            <p align="center">16 September 2018</p>
+                            <p align="center">Pameran Karya Finalis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
         <section id="rewards">
 		        <div class="container">

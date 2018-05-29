@@ -31,10 +31,10 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">Team Name</label>
+                            <!-- <label for="name" class="col-md-4 col-form-label text-md-right">Team Name</label> -->
 
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}"  required autofocus>
+                            <div class="col-md-10 col-md-offset-1">
+                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" placeholder="Team Name" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Team Name'" required>
 
                                 @if ($errors->has('name'))
                                     <span class="invalid-feedback">
@@ -45,10 +45,10 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+                            <!-- <label for="email" class="col-md-4 col-form-label text-md-right">E-Mail Address</label> -->
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+                            <div class="col-md-10 col-md-offset-1">
+                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="E-mail Address" onfocus="this.placeholder = ''"onblur="this.placeholder = 'E-mail Address'" required>
 
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback">
@@ -59,10 +59,10 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password"  class="col-md-4 col-form-label text-md-right">Password</label>
+                            <!-- <label for="password"  class="col-md-4 col-form-label text-md-right">Password</label> -->
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+                            <div class="col-md-10 col-md-offset-1">
+                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="Password" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Password'"  required>
 
                                 @if ($errors->has('password'))
                                     <span class="invalid-feedback">
@@ -73,15 +73,15 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Confirm Password</label>
+                            <!-- <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Confirm Password</label> -->
 
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                            <div class="col-md-10 col-md-offset-1">
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Confirm Password'" required>
                             </div>
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-6 col-md-offset-4">
+                            <div class="col-md-10 col-md-offset-1">
                                 <button style="font-size: 14px; background-color: #7c6bee" type="submit" class="btn btn-primary">
                                     Next Step
                                 </button>

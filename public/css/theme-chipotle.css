@@ -2221,7 +2221,7 @@ button[type="submit"] .form-loading {
 .tabs.thirds {
   width: 100%;
 }
-.tabs.thirds li {
+.tabs.thirds li bs.{
   width: 33.3333333%;
 }
 .tabs.thirds .tab-title {

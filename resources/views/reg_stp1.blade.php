@@ -29,9 +29,9 @@
                                     {{csrf_field()}}
 
                                     <div class="form-group row">
-                                        <label for="name" class="col-md-4 col-form-label text-md-right"> Group Member </label>
+                                        <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> Group Member </label> -->
 
-                                        <div class="col-md-6">
+                                        <div class="col-md-10 col-md-offset-1">
                                             <input type = 'text' name = 'member_one' placeholder="Group Leader" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Group Leader'" required />
                                             <input type = 'text' name = 'member_two' placeholder="Group Member 1" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Group Member 1'"/>
                                             <input type = 'text' name = 'member_three' placeholder="Group Member 2" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Group Member 2'" />
@@ -39,45 +39,53 @@
                                     </div>
 
                                     <div class="form-group row">
-                                        <label for="name" class="col-md-4 col-form-label text-md-right"> University/School </label>
+                                        <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> Competition </label> -->
 
-                                        <div class="col-md-6">
-                                            <input type = 'text' name = 'school' required/>
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <select name="tipe" class="form-control">
+                                                <option value="AppsToday">AppsToday</option>
+                                                <option value="HackToday">HackToday</option>
+                                                <option value="Business IT Case">Business IT Case</option>
+                                            </select>
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
-                                        <label for="name" class="col-md-4 col-form-label text-md-right"> Province </label>
+                                        <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> University/School </label> -->
 
-                                        <div class="col-md-6">
-                                            <input type = 'text' name = 'province' required/>
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <input type = 'text' name = 'school'  placeholder="University/School Name" onfocus="this.placeholder = ''"onblur="this.placeholder = 'University/School Name'" required/>
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
-                                        <label for="name" class="col-md-4 col-form-label text-md-right"> Phone Number </label>
+                                        <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> Province </label> -->
 
-                                        <div class="col-md-6">
-                                            <input type = 'text' name = 'phone_num' />
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <input type = 'text' name = 'province'  placeholder="Province" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Province'"  required/>
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
-                                        <label for="name" class="col-md-4 col-form-label text-md-right"> Line ID </label>
+                                        <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> Phone Number </label> -->
 
-                                        <div class="col-md-6">
-                                            <input type = 'text' name = 'line_id' required/>
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <input type = 'text' name = 'phone_num'  placeholder="Phone Number" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Phone Number'" />
                                         </div>
                                     </div>
 
-                                    <div class="form-group row mb-0">
-                                        <div class="col-md-6 col-md-offset-4">
-                                        <input type='hidden' name='tipe' value="apps" /> 
-                                            <button type="submit" name='submit' class="btn btn-primary">
-                                                Register
-                                            </button>
+                                    <div class="form-group row">
+                                        <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> Line ID </label> -->
+
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <input type = 'text' name = 'line_id'  placeholder="LINE ID" onfocus="this.placeholder = ''"onblur="this.placeholder = 'LINE ID'"  required/>
                                         </div>
                                     </div>
+
+                                    <button type="submit" name='submit' class="btn btn-primary">
+                                        Register
+                                    </button>
+
                                 </form>
 		                    </div>
 		                </div>

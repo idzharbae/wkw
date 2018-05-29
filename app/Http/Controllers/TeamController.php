@@ -96,7 +96,7 @@ class TeamController extends Controller
                 $team->letter = $name;
             }
         $team->save();
-        return "sukses bro uploadnya";
+        return view('profile');
     }
     public function uploadPay(Request $request, $id){
         
@@ -108,7 +108,7 @@ class TeamController extends Controller
             'payment'=>$name,
         );
         Team::where('team_id',$id)->update($data);
-        return "sukses bro";
+        return view('profile');
     }
 
     public function addTeam(Request $request,$id){
