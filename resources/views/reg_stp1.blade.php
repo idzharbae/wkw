@@ -15,14 +15,14 @@
     </head>
     <body>	
 		<div class="main-container">
-		    <section class="cover fullscreen image-bg">
+		    <section class="cover fullscreen image-bg" style="padding-top: 300px">
 		        <div class="background-image-holder">
 		            <img alt="image" class="background-image" src="img/bglogin.png" style="background-repeat: no-repeat; background-attachment: fixed;">
 		        </div>
 		        <div class="container v-align-transform">
 		            <div class="row">
 		                <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
-		                    <div class="feature bordered text-center"><br><br><br>
+		                    <div class="feature bordered text-center">
 		                        <h3 class="uppercase">Register</h3>
                                         
                                 <form method="POST" action = '{{ url("/daftar/{$users}") }}'>
@@ -42,7 +42,7 @@
                                         <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> Competition </label> -->
 
                                         <div class="col-md-10 col-md-offset-1">
-                                            <select name="tipe" class="form-control">
+                                            <select name="tipe" class="">
                                                 <option value="AppsToday">AppsToday</option>
                                                 <option value="HackToday">HackToday</option>
                                                 <option value="Business IT Case">Business IT Case</option>

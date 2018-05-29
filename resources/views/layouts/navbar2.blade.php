@@ -19,7 +19,7 @@
 	<body>
 		<div class="nav-container">
 		    <nav class="transparent absolute">
-		        <div class="nav-bar text-center">
+		        <div class="nav-bar text-center" style="border-bottom: 0px">
 		            <div class="col-md-2 col-md-push-5 col-sm-12 text-center">
 		                <a href="/">
 		                    <img alt="logo" style="height: 45px; width: auto;" src="img/logoittoday.png">
@@ -28,7 +28,7 @@
 		
 		            <div class="col-sm-12 col-md-5 col-md-pull-2 overflow-hidden-xs">
 		                <ul class="menu inline-block pull-right">
-		                    <li><a href="/">Home</a></li>
+		                    <li><a href="/" style="font-size: 16px;">Home</a></li>
 		                </ul>
 		            </div>
 		        
@@ -37,7 +37,7 @@
 							<!-- Authentication Links -->
 							@guest
 								<ul class="menu inline-block pull-right">
-									<li><a class="btn btn-sm hidden-xs hidden-sm hidden-md" href="{{ route('login') }}">Login</a></li>
+									<li><a class="btn btn-sm hidden-xs hidden-sm hidden-md" style="font-size: 16px;" href="{{ route('login') }}">Login</a></li>
 									<!-- <li><a href="{{ route('register') }}">Register</a></li> -->
 								</ul>
 							@else
@@ -67,14 +67,14 @@
 						</ul>
 		            </div>
 		                <ul class="menu inline-block pull-left">
-		                    <li><a href="#">Competition</a>
+		                    <li><a style="font-size: 16px;" href="#">Competition <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 		                        <ul>
 									<li><a href="{{route('appstoday')}}">AppsToday</a></li>
 									<li><a href="{{route('hacktoday')}}">HackToday</a></li>
 									<li><a href="{{route('business')}}">Business IT Case</a></li>
 		                        </ul>
 							</li>
-							<li><a href="#">Event</a>
+							<li><a style="font-size: 16px;" href="#">Event <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 		                        <ul>
 									<li><a href="{{route('seminar')}}">National Seminar</a></li>
 									<li><a href="{{route('workshop')}}">Workshop</a></li>

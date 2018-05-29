@@ -12,11 +12,11 @@
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
-    
+        
         <link rel="stylesheet" type="text/css" href="css/timeline.css">
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>    
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     </head>
     <body style="background:url({{url('img/footer.png')}}) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">	
 		<div class="nav-container">
@@ -34,6 +34,9 @@
 		                </div>
 		                <div class="col-md-6 text-right">
 		                    <ol class="breadcrumb breadcrumb-2">
+                                <li>
+		                            <a href="#rulebook">Rulebook</a>
+		                        </li>
 		                        <li>
 		                            <a href="#timeline">Timeline</a>
 		                        </li>
@@ -49,87 +52,98 @@
 		                    </ol>
 		                </div>
 		            </div>
-		            
-		        </div>
-		        
-		    </section>
+		        </div>   
+        </section>
+
+        <section id="rulebook" class="image-edge" style="padding-bottom: 0px">
+            <div class="col-md-6 col-sm-4 p0 col-md-push-6 col-sm-push-8">
+                <img alt="Screenshot" class="mb-xs-24" src="img/phone2.png">
+            </div>
+            <div class="container">
+                <div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
+                    <!-- <h1 class="large mb40 mb-xs-16">Sleek, Smart and Modern.</h1> -->
+                    <div class="feature bordered text-center">
+                        <p class="lead mb40" style="color: #282825;">
+                        Business IT Case merupakan salah satu cabang kompetisi IT Today 2018 berbasis case-solving bisnis berskala nasional. Business IT Case menguji kemampuan problem solving peserta dalam menganalisa dan memecahkan kasus bisnis yang diberikan dengan memberikan solusi melalui pendekatan Teknologi Informasi.
+                        </p>
+                        <a class="btn btn-lg btn-white mb8 mt-xs-24" target="_blank" href="https://drive.google.com/a/apps.ipb.ac.id/uc?authuser=0&id=1o1vxfQcdhxorBuDZRMBvc9qKYI08wvQq&export=download">DOWNLOAD RULEBOOK</a>
+                    </div>
+                </div>
+            </div>
             
-        <section id="timeline">
-            <div class="col-md-4 col-md-offset-4">
-                <h3 align="center">Timeline</h3>
+        </section>
+            
+        <section id="timeline" style="padding-bottom: 0px">
+            <div class="col-md-4 col-md-offset-4 feature bordered text-center">
+                <h3 align="center">TIMELINE</h3>
                 <div class="panel-heading">
                         <ul class="nav nav-tabs">
-                            <li class="active"><a href="#tab1primary" data-toggle="tab">1</a></li>
-                            <li><a href="#tab2primary" data-toggle="tab">2</a></li>
-                            <li><a href="#tab3primary" data-toggle="tab">3</a></li>
-                            <li><a href="#tab4primary" data-toggle="tab">4</a></li>
-                            <li><a href="#tab5primary" data-toggle="tab">5</a></li>
-                            <li><a href="#tab6primary" data-toggle="tab">6</a></li>
-                            <li><a href="#tab7primary" data-toggle="tab">7</a></li>
+                            <li class="active"><a href="#tab1primary" style="color: black;" data-toggle="tab">1</a></li>
+                            <li><a href="#tab2primary" style="color: black;" data-toggle="tab">2</a></li>
+                            <li><a href="#tab3primary" style="color: black;" data-toggle="tab">3</a></li>
+                            <li><a href="#tab4primary" style="color: black;" data-toggle="tab">4</a></li>
+                            <li><a href="#tab5primary" style="color: black;" data-toggle="tab">5</a></li>
+                            <li><a href="#tab6primary" style="color: black;" data-toggle="tab">6</a></li>
                         </ul>
                 </div>
                 <div class="panel-body">
                     <div class="tab-content">
                         <div class="tab-pane fade in active" id="tab1primary">
-                            <p align="center">26 Mei – 11 Juli 2018</p>
-                            <p align="center">Pendaftaran</p>
+                            <h4 align="center">26 Mei – 18 Juli 2018</h4>
+                            <h4 align="center">Pendaftaran</h4>
                         </div>
                         <div class="tab-pane fade" id="tab2primary">
-                            <p align="center">26 Mei – 18 Juli 2018</p>
-                            <p align="center">Submisi Tahap 1</p>
+                            <h4 align="center">10 Juni – 25 Juli 2018</h4>
+                            <h4 align="center">Submisi Tahap 1</h4>
                         </div>
                         <div class="tab-pane fade" id="tab3primary">
-                            <p align="center">27 Juli 2018</p>
-                                <p align="center">Pengumuman Peserta Tahap 2</p>
+                            <h4 align="center">2 Agustus 2018</h4>
+                            <h4 align="center">Pengumuman Lolos Tahap 2</h4>
                         </div>
                         <div class="tab-pane fade" id="tab4primary">
-                            <p align="center">28 Juli – 13 Agustus 2018</p>
-                            <p align="center">Submisi Tahap 2</p>
+                            <h4 align="center">3 – 17  Agustus 2018</h4>
+                            <h4 align="center">Submisi Tahap 2</h4>
                         </div>
                         <div class="tab-pane fade" id="tab5primary">
-                            <p align="center">31 Agustus 2018</p>
-                            <p align="center">Pengumuman Finalis</p>
+                            <h4 align="center">31 Agustus 2018</h4>
+                            <h4 align="center">Pengumuman Finalis</h4>
                         </div>
                         <div class="tab-pane fade" id="tab6primary">
-                            <p align="center">15 September 2018</p>
-                            <p align="center">Final</p>
-                        </div>
-                        <div class="tab-pane fade" id="tab7primary">
-                            <p align="center">16 September 2018</p>
-                            <p align="center">Pameran Karya Finalis</p>
+                            <h4 align="center">15 September 2018</h4>
+                            <h4 align="center">Final</h4>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         
-        <section id="rewards">
+        <section id="rewards" style="padding-bottom: 0px">
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-4 text-center">
 		                    <div class="feature">
-		                        <i class="ti-gallery icon fade-3-4 inline-block mb16"></i>
-		                        <h4>JUARA 3</h4>
+		                        <i class="fa fa-trophy icon fade-3-4 inline-block mb16"></i>
+		                        <h4>3rd WINNER</h4>
 		                        <p>
-		                            We've built a buttery smooth parallax scrolling experience with a heavy focus on performance. Extensively tested across a range of browser and mouse types.
+                                Rp 1.500.000 + SERTIFIKAT + PLAKAT
 		                        </p>
 		                    </div>
 		                </div>
 		                <div class="col-sm-4 text-center">
 		                    <div class="feature">
-		                        <i class="ti-package icon fade-3-4 inline-block mb16"></i>
-		                        <h4>JUARA 1</h4>
+		                        <i class="fa fa-trophy icon fade-3-4 inline-block mb16"></i>
+		                        <h3>1st WINNER</h3>
 		                        <p>
-		                            10 Fresh and unique concepts included out of the box. From portfolio to property showcase, Foundry's adaptable look is perfect for your next project.
+                                Rp 5.000.000 + SERTIFIKAT + PLAKAT
 		                        </p>
 		                    </div>
 		                </div>
 		                <div class="col-sm-4 text-center">
 		                    <div class="feature">
-		                        <i class="ti-layers icon fade-3-4 inline-block mb16"></i>
-		                        <h4>JUARA 2</h4>
+		                        <i class="fa fa-trophy icon fade-3-4 inline-block mb16"></i>
+		                        <h4>2nd WINNER</h4>
 		                        <p>
-		                            With a plethora of purpose-built content blocks, colors and fonts, Foundry presents a mind-boggling number of combinations. Test drive the builder now!
+                                Rp 3.000.000 + SERTIFIKAT + PLAKAT
 		                        </p>
 		                    </div>
 		                </div>
@@ -139,7 +153,7 @@
 		        
 		    </section>
             
-            <section id="testimonies">
+            <!-- <section id="testimonies" style="padding-bottom: 0px">
 		        <div class="container">
 		            <div class="row mb64 mb-xs-24">
 		                <div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
@@ -182,19 +196,14 @@
 		                    </div>
 		                </div>
 		            </div>
-		            
 		        </div>
-		        
-		    </section>
+		    </section> -->
             
             <section id="faq">
 		        <div class="container">
 		            <div class="row">
-		                <div class="col-sm-12 text-center">
+		                <div class="col-sm-6 col-md-offset-3 text-center feature bordered text-center">
 		                    <h3 class="mb16">FREQUENTLY ASKED QUESTIONS</h3>
-		                    <p class="lead mb64">
-		                        Holla @mrareweb if you've got more questions and we'll do our best to answer.
-		                    </p>
 		                </div>
 		            </div>
 		            
@@ -203,44 +212,120 @@
 		                    <ul class="accordion accordion-2 one-open">
 		                        <li>
 		                            <div class="title">
-		                                <h4 class="inline-block mb0">Is Foundry fully responsive?</h4>
+		                                <h4 class="inline-block mb0">Apa itu Business IT Case?</h4>
 		                            </div>
 		                            <div class="content">
 		                                <p>
-		                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Business IT Case adalah salah satu cabang kompetisi IT Today 2018 berbasis case-solving 
+                                        bisnis berskala nasional. Kompetisi ini menguji kemampuan problem solving peserta dalam
+                                        menganalisa dan memcahkan kasus bisnis yang diberikan dengan memberi solusi melalui
+                                        pendekatan IT.
 		                                </p>
 		                            </div>
 		                        </li>
 		                        <li>
 		                            <div class="title">
-		                                <h4 class="inline-block mb0">Where can I purchase this template?</h4>
+		                                <h4 class="inline-block mb0">Bagaimana bentuk perlombaan dari business IT case?</h4>
 		                            </div>
 		                            <div class="content">
 		                                <p>
-		                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Kompetisi ini terdiri dari 3 tahap, yaitu tahap 1 berupa pengumpulan BMC, tahap 2 berupa
+                                        pengumpulan proposal Business Plan dan tahap final dimana peserta mempresentasikan solusi
+                                        di hadapan para juri.
 		                                </p>
 		                            </div>
 		                        </li>
 		                        <li>
 		                            <div class="title">
-		                                <h4 class="inline-block mb0">Do I need to be a pro to use this?</h4>
+		                                <h4 class="inline-block mb0">Apakah peserta harus berasal dari satu institusi yang sama?</h4>
 		                            </div>
 		                            <div class="content">
 		                                <p>
-		                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Ya, anggota tim harus berasal dari universitas/institusi yang sama tapi boleh lintas jurusan.
 		                                </p>
 		                            </div>
 		                        </li>
 		                        <li>
 		                            <div class="title">
-		                                <h4 class="inline-block mb0">Is it ok if I buy 400 copies?</h4>
+		                                <h4 class="inline-block mb0">Berapa anggota per tim yang diperbolehkan?</h4>
 		                            </div>
 		                            <div class="content">
 		                                <p>
-		                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Tim terdiri dari 1-3 anggota.
 		                                </p>
 		                            </div>
-		                        </li>
+                                </li>
+                                <li>
+		                            <div class="title">
+		                                <h4 class="inline-block mb0">Siapa saja yang boleh mengikuti kompetisi ini?</h4>
+		                            </div>
+		                            <div class="content">
+		                                <p>
+                                        Mahasiswa S1/D3 seluruh indonesia
+		                                </p>
+		                            </div>
+                                </li>
+                                <li>
+		                            <div class="title">
+		                                <h4 class="inline-block mb0">Kapan periode pendaftaran dibuka?</h4>
+		                            </div>
+		                            <div class="content">
+		                                <p>
+                                        Untuk tahap pendaftaran Early Bird akan dibuka pada tanggal 30 Mei-20 Juni 2018,
+                                        sedangkan thap pendaftaran reguler dibuka pada tanggal 21 Juni-11 Juli 2018.
+		                                </p>
+		                            </div>
+                                </li>
+                                <li>
+		                            <div class="title">
+		                                <h4 class="inline-block mb0">Berapa biaya pendaftaran untuk mengikuti kompeitisi business IT case?</h4>
+		                            </div>
+		                            <div class="content">
+		                                <p>
+                                        Untuk tahap pendaftaran Early Bird, biaya pendaftaran sebesar Rp 100.000, sedangkan untuk tahap pendaftaran reguler biaya sebesar Rp 150.000.
+		                                </p>
+		                            </div>
+                                </li>
+                                <li>
+		                            <div class="title">
+		                                <h4 class="inline-block mb0">Bagaimana dengan format pengumpulan?</h4>
+		                            </div>
+		                            <div class="content">
+		                                <p>
+                                        Untuk pengumpulan BMC dan proposal Business Plan, dikumpulkan dalam format pdf. 
+		                                </p>
+		                            </div>
+                                </li>
+                                <li>
+		                            <div class="title">
+		                                <h4 class="inline-block mb0">Berapa banyak tim yang lolos ke tahap final?</h4>
+		                            </div>
+		                            <div class="content">
+		                                <p>
+                                        Tim yang lolos tahap final sebanyak 5 tim.
+		                                </p>
+		                            </div>
+                                </li>
+                                <li>
+		                            <div class="title">
+		                                <h4 class="inline-block mb0">Berapa tim yang lolos ke tahap dua?</h4>
+		                            </div>
+		                            <div class="content">
+		                                <p>
+                                        Tim yang lolos tahap dua sebanyak 15 tim.
+		                                </p>
+		                            </div>
+                                </li>
+                                <li>
+		                            <div class="title">
+		                                <h4 class="inline-block mb0">Apakah ada ketentuan penggunaan bahasa?</h4>
+		                            </div>
+		                            <div class="content">
+		                                <p>
+                                            Tidak ada, gunakan bahasa yang mudah dimengerti oleh orang lain.
+		                                </p>
+		                            </div>
+                                </li>
 		                    </ul>
 		                    
 		                </div>

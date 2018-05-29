@@ -55,7 +55,7 @@
 				<div class="col-sm-12">
 					<div class="text-center">
 						<h3 class="uppercase mb40 mb-xs-24">Launching Soon</h3>
-						<div class="countdown mb40" data-date="2018/05/30"></div>
+						<div class="countdown mb40" data-date="2018/05/31"></div>
 					</div>
 				</div>
 			</div>
