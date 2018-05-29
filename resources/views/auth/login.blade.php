@@ -18,7 +18,7 @@
 		<div class="main-container">
 		<section class="cover fullscreen image-bg">
 		        <div class="background-image-holder">
-		            <img alt="image" class="background-image" src="img/bglogin.png">
+		            <img alt="image" class="background-image" src="img/bglogin.png" style=" background-repeat: no-repeat; background-attachment: fixed;">
 		        </div>
 		        <div class="container v-align-transform">
 		            <div class="row">
