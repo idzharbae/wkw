@@ -39,9 +39,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 /***
-*ADMIN ROUTE
+*ADMIN ROUTE, GAUSAH DIGANTI JADI PREFIX, tp klo mau, monggo. 
 ***/
-Route::GET('admin/home','AdminController@index');
+Route::GET('admin/home','AdminController@main');
 Route::GET('admin','Admin\LoginController@showLoginForm')->name('admin.login');
 Route::POST('admin','Admin\LoginController@login');
 Route::POST('admin/main','Admin\AdminController@main');
@@ -49,3 +49,5 @@ Route::POST('admin-password/email','Admin\ForgotPasswordController@sendResetLink
 Route::GET('admin-password/reset','Admin\ForgotPasswordController@showLinkRequestForm')->name('admin.password.request');
 Route::POST('admin-password/reset','Admin\ResetPasswordController@reset');
 Route::GET('admin-password/reset/{token}','Admin\ResetPasswordController@showResetForm');
+Route::GET('admin/detail/{id}','AdminController@detail');
+Route::GET('admin/verify/{id}','AdminController@verify');
