@@ -51,8 +51,6 @@ class TeamController extends Controller
 
     }
 
-<<<<<<< HEAD
-=======
     public function payment(){
         $user_id = Auth::user()->id;
         $data = Team::where('team_id',$user_id)->first();
