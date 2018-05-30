@@ -111,7 +111,6 @@ class TeamController extends Controller
         return redirect('/profile/');
     }
 
->>>>>>> f4b8a9101496ed257f6a587643869445ad277a3b
     public function addTeam(Request $request,$id){
         $this->validate($request,[
             'member_one'=>'required',
