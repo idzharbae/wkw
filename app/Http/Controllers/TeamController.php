@@ -19,8 +19,6 @@ class TeamController extends Controller
 		return view('index', compact('users'));
 	
 	}
-
-
     public function appsToday(){
         return view('apps');
     }
@@ -50,9 +48,6 @@ class TeamController extends Controller
 	    return view('reg_stp1', compact('users')); 
 
     }
-
-<<<<<<< HEAD
-=======
     public function payment(){
         $user_id = Auth::user()->id;
         $data = Team::where('team_id',$user_id)->first();
@@ -65,8 +60,6 @@ class TeamController extends Controller
     public function admindetail(){
         return view('admindetail');
     }
-
-
     public function uploadLetter(Request $request,$id){//ini id di tabel teams
         $this->validate($request,[
             'letter' => 'mimes:pdf|max:2048',
@@ -113,7 +106,6 @@ class TeamController extends Controller
         return redirect('/profile/');
     }
 
->>>>>>> f4b8a9101496ed257f6a587643869445ad277a3b
     public function addTeam(Request $request,$id){
         $this->validate($request,[
             'member_one'=>'required',
