@@ -352,18 +352,18 @@
 		                                <h4 class="inline-block mb0">Seperti apakah sistem CTF pada saat final?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Final CTF menggunakan sistem Jeopardy.
-		                                </p>
+										</h5>
 		                            </div>
                                 </li><li>
 		                            <div class="title">
 		                                <h4 class="inline-block mb0">Dimanakah final akan dilaksanakan?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Final dilaksanakan pada hari Minggu,9 September 2018 pada pukul 10.00 hingga 16.00 di Fakultas MIPA,Institut Pertanian Bogor, Dramaga, Bogor.
-		                                </p>
+										</h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -371,9 +371,9 @@
 		                                <h4 class="inline-block mb0">Apakah peserta mendapatkan akomodasi pada saat final?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Tidak,namun peserta akan dibantu oleh pj HackToday untuk dicarikan akomodasi selama berada di IPB.
-		                                </p>
+										</h5>
 		                            </div>
                                 </li>
 		                    </ul>
