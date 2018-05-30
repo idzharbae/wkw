@@ -63,7 +63,7 @@
                 <div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
                     <!-- <h1 class="large mb40 mb-xs-16">Sleek, Smart and Modern.</h1> -->
                     <div class="feature bordered text-center">
-                        <p class="lead mb40" style="color: #282825;">
+                        <p class="lead mb40" style="color: white">
                         Business IT Case merupakan salah satu cabang kompetisi IT Today 2018 berbasis case-solving bisnis berskala nasional. Business IT Case menguji kemampuan problem solving peserta dalam menganalisa dan memecahkan kasus bisnis yang diberikan dengan memberikan solusi melalui pendekatan Teknologi Informasi.
                         </p>
                         <a class="btn btn-lg btn-white mb8 mt-xs-24" target="_blank" href="https://drive.google.com/a/apps.ipb.ac.id/uc?authuser=0&id=1o1vxfQcdhxorBuDZRMBvc9qKYI08wvQq&export=download">DOWNLOAD RULEBOOK</a>
@@ -215,12 +215,12 @@
 		                                <h4 class="inline-block mb0">Apa itu Business IT Case?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Business IT Case adalah salah satu cabang kompetisi IT Today 2018 berbasis case-solving 
                                         bisnis berskala nasional. Kompetisi ini menguji kemampuan problem solving peserta dalam
                                         menganalisa dan memcahkan kasus bisnis yang diberikan dengan memberi solusi melalui
                                         pendekatan IT.
-		                                </p>
+		                                </h5>
 		                            </div>
 		                        </li>
 		                        <li>
@@ -228,11 +228,11 @@
 		                                <h4 class="inline-block mb0">Bagaimana bentuk perlombaan dari business IT case?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Kompetisi ini terdiri dari 3 tahap, yaitu tahap 1 berupa pengumpulan BMC, tahap 2 berupa
                                         pengumpulan proposal Business Plan dan tahap final dimana peserta mempresentasikan solusi
                                         di hadapan para juri.
-		                                </p>
+		                                </h5>
 		                            </div>
 		                        </li>
 		                        <li>
@@ -240,9 +240,9 @@
 		                                <h4 class="inline-block mb0">Apakah peserta harus berasal dari satu institusi yang sama?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Ya, anggota tim harus berasal dari universitas/institusi yang sama tapi boleh lintas jurusan.
-		                                </p>
+		                                </h5>
 		                            </div>
 		                        </li>
 		                        <li>
@@ -250,9 +250,9 @@
 		                                <h4 class="inline-block mb0">Berapa anggota per tim yang diperbolehkan?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Tim terdiri dari 1-3 anggota.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -260,9 +260,9 @@
 		                                <h4 class="inline-block mb0">Siapa saja yang boleh mengikuti kompetisi ini?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Mahasiswa S1/D3 seluruh indonesia
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -270,10 +270,10 @@
 		                                <h4 class="inline-block mb0">Kapan periode pendaftaran dibuka?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Untuk tahap pendaftaran Early Bird akan dibuka pada tanggal 30 Mei-20 Juni 2018,
                                         sedangkan thap pendaftaran reguler dibuka pada tanggal 21 Juni-11 Juli 2018.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -281,9 +281,9 @@
 		                                <h4 class="inline-block mb0">Berapa biaya pendaftaran untuk mengikuti kompeitisi business IT case?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Untuk tahap pendaftaran Early Bird, biaya pendaftaran sebesar Rp 100.000, sedangkan untuk tahap pendaftaran reguler biaya sebesar Rp 150.000.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -291,9 +291,9 @@
 		                                <h4 class="inline-block mb0">Bagaimana dengan format pengumpulan?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Untuk pengumpulan BMC dan proposal Business Plan, dikumpulkan dalam format pdf. 
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -301,9 +301,9 @@
 		                                <h4 class="inline-block mb0">Berapa banyak tim yang lolos ke tahap final?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Tim yang lolos tahap final sebanyak 5 tim.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -311,9 +311,9 @@
 		                                <h4 class="inline-block mb0">Berapa tim yang lolos ke tahap dua?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Tim yang lolos tahap dua sebanyak 15 tim.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -321,9 +321,9 @@
 		                                <h4 class="inline-block mb0">Apakah ada ketentuan penggunaan bahasa?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                             Tidak ada, gunakan bahasa yang mudah dimengerti oleh orang lain.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
 		                    </ul>
