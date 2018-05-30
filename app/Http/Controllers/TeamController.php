@@ -20,7 +20,6 @@ class TeamController extends Controller
 	
 	}
 
-
     public function appsToday(){
         return view('apps');
     }
@@ -51,8 +50,6 @@ class TeamController extends Controller
 
     }
 
-<<<<<<< HEAD
-=======
     public function payment(){
         $user_id = Auth::user()->id;
         $data = Team::where('team_id',$user_id)->first();
@@ -62,6 +59,7 @@ class TeamController extends Controller
     public function adminhome(){
         return view('adminhome');
     }
+
     public function admindetail(){
         return view('admindetail');
     }
@@ -113,7 +111,6 @@ class TeamController extends Controller
         return redirect('/profile/');
     }
 
->>>>>>> f4b8a9101496ed257f6a587643869445ad277a3b
     public function addTeam(Request $request,$id){
         $this->validate($request,[
             'member_one'=>'required',

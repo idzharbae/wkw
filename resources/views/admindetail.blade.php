@@ -18,18 +18,12 @@
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-md-6">
-		                    <h3 class="uppercase mb0">Admin Page</h3>
+		                    <h1 align="center" class="uppercase mb0">Admin Page</h1>
 		                </div>
-		                <div class="col-md-6 text-right">
-		                    <ol class="breadcrumb breadcrumb-2">
-		                        <li>
-		                            <a href="/adminhome">Home</a>
-		                        </li>
-		                       
-		                    </ol>
+		                <div class="col-md-6 text-right" align="center">
+							<a class="btn btn-lg btn-white mb8 mt-xs-24" href="/admin/home">Home</a>      
 		                </div>
 		            </div>
-		            
 		        </div>
 		        
 		    </section><section>
@@ -38,8 +32,8 @@
 		        <div class="container">
 		            <div class="row">
 					
-                    <div class="feature bordered text-center bg-secondary" style="box-shadow: 0 9px 30px 10px rgba(0, 0, 0, 0.2);">
-						<h3 class="uppercase mb40 mb-xs-24">Restu</h3>
+                    <div class="feature bordered text-center bg-secondary" style="background-color: white; box-shadow: 0 9px 30px 10px rgba(0, 0, 0, 0.2);" align="center">
+						<h3 class="uppercase mb40 mb-xs-24">Member Details</h3>
 						<div class="mb40">
 							<h6 class="mb8 uppercase">Members</h6>
 							<p style="color:black !important;">
@@ -83,15 +77,14 @@
 			<section>
 		        <div class="container">
 		            <div class="row">
-
 						@if($user->member_one !=NULL)
 							@if($user->ktm_img1!=NULL)
 							<div class="col-md-4 col-sm-6">
-			                    <div class="image-tile outer-title text-center">
-			                        <img alt="Pic" src="{{asset($user->ktm_img1)}}">
+			                    <div class="image-tile outer-title text-center" align="center">
+									<h3 class="uppercase mb0">{{$user->member_one}}</h3>  
+			                        <img alt="Pic" src="{{asset($user->ktm_img1)}}" style="display: block; max-width:400px; max-height:200px; width: auto; height: auto; margin: auto">
 			                        <div class="title mb16">
-			                            <h5 class="uppercase mb0">{{$user->member_one}}</h5>
-			                            
+										<a href="{{asset($user->ktm_img1)}}">Lihat KTM</a>
 			                        </div>
 			                        
 			                    </div>
@@ -103,13 +96,12 @@
 						@if($user->member_two !=NULL)
 							@if($user->ktm_img2)
 							<div class="col-md-4 col-sm-6">
-			                    <div class="image-tile outer-title text-center">
-			                        <img alt="Pic" src="{{asset($user->ktm_img2)}}">
+			                    <div class="image-tile outer-title text-center" align="center">
+									<h3 class="uppercase mb0">{{$user->member_two}}</h3>
+			                        <img alt="Pic" src="{{asset($user->ktm_img2)}}" style="display: block; max-width:400px; max-height:200px; width: auto; height: auto; margin: auto">
 			                        <div class="title mb16">
-			                            <h5 class="uppercase mb0">{{$user->member_two}}</h5>
-			                            
+										<a href="{{asset($user->ktm_img2)}}">Lihat KTM</a>
 			                        </div>
-			                        
 			                    </div>
 			                </div>
 			                @else
@@ -119,13 +111,12 @@
 						@if($user->member_three !=NULL)
 							@if($user->ktm_img3 != NULL)
 							<div class="col-md-4 col-sm-6">
-			                    <div class="image-tile outer-title text-center">
-			                        <img alt="Pic" src="{{asset($user->ktm_img3)}}">
+			                    <div class="image-tile outer-title text-center" align="center">
+									<h3 class="uppercase mb0">{{$user->member_three}}</h3>	
+			                        <img alt="Pic" src="{{asset($user->ktm_img3)}}" style="display: block; max-width:400px; max-height:200px; width: auto; height: auto; margin: auto">
 			                        <div class="title mb16">
-			                            <h5 class="uppercase mb0">{{$user->member_three}}</h5>
-			                            
+										<a href="{{asset($user->ktm_img3)}}">Lihat KTM</a>	                            
 			                        </div>
-			                        
 			                    </div>
 			                </div>
 			                @else
@@ -133,49 +124,46 @@
 			                @endif
 						@endif
 		            </div>
-		            
-		        </div>
-		        
+		        </div><br>
                 <section>
-                <div class="container">
-		            <div class="feed-item mb96 mb-xs-48 text-center">
-		                <h4>Surat Keterangan Siswa Aktif</h4><br>	                
-		                	@if($user->letter !=NULL)
-	                		<a href="{{asset($user->letter)}}">Download Berkas Here</a>
-		                	@else
-		                	NOT UPLOADED
-		                	@endif		                
-		            </div>
-		            
-		        </div></section>
-		        <div class="container">
-		            <div class="feed-item mb96 mb-xs-48 text-center">
-		                <h4>Bukti Pembayaran</h4><br>	                
-		                <div class="row mb32 mb-xs-16">
-		                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-		                    	@if($user->payment!=NULL)
-		                        <img alt="Article Image" class="mb32 mb-xs-16" src="{{asset($user->payment)}}">
+					<div class="container">
+						<div class="feed-item mb96 mb-xs-48 text-center" align="center">
+							<h4 align="center">Surat Keterangan Siswa Aktif</h4><br>	                
+								@if($user->letter !=NULL)
+								<a target="_blank" href="{{asset($user->letter)}}">Download Surat Keterangan</a>
 								@else
 								NOT UPLOADED
-								@endif        
-		                    </div>
-		                </div>
-		                
-		                <div class="row">
-                        <a class="btn btn-lg btn-white mb8 mt-xs-24" href='{{ url("admin/verify/{$user->id}") }}'>Konfirmasi Pendaftaran</a>
-		                </div>
-		            </div>
-		            
-		        </div></section>
+								@endif		                
+						</div>
+					</div><br>
+				</section>
+					<div class="container">
+						<div class="feed-item mb96 mb-xs-48 text-center">
+							<h4 align="center">Bukti Pembayaran</h4>                
+							<div class="row mb32 mb-xs-16">
+								<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1" align="center">
+									@if($user->payment!=NULL)
+									<img alt="Article Image" class="mb32 mb-xs-16" src="{{asset($user->payment)}}" style="display: block; max-width:400px; max-height:200px; width: auto; height: auto; margin: auto">
+									<a href="{{asset($user->payment)}}">Lihat Bukti Pembayaran</a>
+									@else
+									NOT UPLOADED
+									@endif        
+								</div>
+							</div>
+							<br>
+							<div class="row" align="center">
+							<a class="btn btn-lg btn-white mb8 mt-xs-24" href='{{ url("admin/verify/{$user->id}") }}'>Konfirmasi Pendaftaran</a>
+							</div><br>
+						</div>
+					</div>
+				</section>
 		                    
-		                    </div>
-		                </div>
-		                
-		            </div>
-		            
-		        </div>
-		        
-		    </section></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
 		
 				
 	<script src="js/jquery.min.js"></script>
