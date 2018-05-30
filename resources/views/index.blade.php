@@ -138,7 +138,7 @@
 	</section>
 
 	<!-- Dokumentasi -->
-	<section class="bg-dark pb64" style="background: url('/img/footer.png') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover; padding-bottom: 0px; background-repeat: no-repeat; background-attachment: fixed;">
+	<section class="bg-dark pb64" style="background:url({{url('img/footer.png')}}) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover; padding-bottom: 0px; background-repeat: no-repeat; background-attachment: fixed;">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 text-center">
@@ -228,9 +228,9 @@
 								<img alt="Logo" class="" style="height: auto; width: 200px;" src="img/logoittoday.png">
 							</a>
 							<p class="lead mb48 mb-xs-16">
-							<br>Jln. Meranti • Wing 20 • Level 5 <br>
-								Kampus IPB Dramaga <br>
-								Dramaga, Bogor <br>
+							<br>Sekretariat Himalkom IPB<br>
+								Gedung Student Center FMIPA IPB<br>
+								Jalan Meranti &bull; Kampus IPB Dramaga &bull; Bogor <br>
 								Jawa Barat 16680
 							</p>
 							<ul class="list-inline social-list spread-children">
