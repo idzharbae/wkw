@@ -14,10 +14,10 @@ class ProfileController extends Controller
     	$this->middleware('auth'); //matiin kalo lagi testing mode
 	}
     public function teamProfile(){
-        $user_id = Auth::user()->id;
-        $data = Team::where('team_id',$user_id)->first();
+        $users = Auth::user()->id;
+        $data = Team::where('team_id',$users)->first();
         if($data == NULL){    	
-		    return view('reg_stp1', compact('user_id')); 
+		    return view('reg_stp1', compact('users')); 
         }
         else{
 	        return view('profile',compact('data'));
@@ -31,13 +31,14 @@ class ProfileController extends Controller
     }
 
 
-    public function uploadLetter(Request $request,$id){//ini id di tabel teams
+    public function uploadLetter(Request $request){//ini id di tabel teams
         $this->validate($request,[
             'letter' => 'mimes:pdf|max:2048',
             'ktm_img1' => 'image|mimes:jpeg,png,jpg,svg|max:2048',
             'ktm_img2' => 'image|mimes:jpeg,png,jpg,svg|max:2048',
             'ktm_img3' => 'image|mimes:jpeg,png,jpg,svg|max:2048'
         ]);
+        $id = $request->input('id');
         $team=Team::where('team_id',$id)->first();
         if($team->member_one !== NULL ){
             if($request->hasFile('ktm_img1')){
@@ -64,11 +65,13 @@ class ProfileController extends Controller
         $team->save();
         return redirect('/profile/');
     }
-    public function uploadPay(Request $request, $id){
+    public function uploadPay(Request $request){
         
         $this->validate($request,[
             'payment' => 'image|mimes:jpeg,png,jpg,svg|max:2048',
         ]);
+        
+        $id = $request->input('id');
         $name = Storage::disk('local')->put('images', $request->payment);   
         $data=array(
             'payment'=>$name,

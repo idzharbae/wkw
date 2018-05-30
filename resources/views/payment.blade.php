@@ -1,8 +1,8 @@
 @extends('layouts.navbar2')
 @section('content')
-		<form method="POST" action='{{ url("/bayar/{$data->team_id}") }}' enctype="multipart/form-data">
+		<form method="POST" action='{{ url("/bayar") }}' enctype="multipart/form-data">
     	{{csrf_field()}}
-
+    	<input type="hidden" name="id" value="{{$data->team_id}}">
 		<div class="main-container">
 		<section style="background-image:url({{url('img/footer.png')}}); background-attachment: fixed;">
 				<div class="container">

@@ -25,8 +25,9 @@
 		                    <div class="feature bordered text-center">
 		                        <h3 class="uppercase">Register</h3>
                                         
-                                <form method="POST" action = '{{ url("/daftar/{$users}") }}'>
+                                <form method="POST" action = '{{ url("/daftar") }}'>
                                     {{csrf_field()}}
+                                    <input type="hidden" name="id" value="{{$users}}">
 
                                     <div class="form-group row">
                                         <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> Group Member </label> -->
