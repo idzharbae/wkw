@@ -95,7 +95,7 @@
 		</div>
 	</section>
 
-	<section class="image-bg parallax pt180 pb180 pt-xs-80 pb-xs-80" id="hacktoday">
+	<section class="image-bg parallax pt180 pb180 pt-xs-80" id="hacktoday">
 		<div class="background-image-holder">
 			<img alt="image" class="background-image" src="img/hack.png">
 		</div>
@@ -105,7 +105,7 @@
 				<div class="col-md-5 col-sm-6 col-md-push-7 col-sm-push-6">
 					<h2>HACKTODAY</h2>
 					<p class="lead mb48 mb-xs-32">
-					HackToday atau yang lebih dikenal dengan Capture The Flag adalah salah satu cabang kompetisi IT Today 2018 dalam bidang keamanan teknologi informasi. Dalam lomba ini, peserta  diharuskan untuk mencari celah-celah keamanan jaringan sehingga peserta mampu untuk menembus target yang disediakan oleh panitia. Lomba HackToday yang diadakan IT Today 2018 bertujuan agar setiap peserta mampu mengembangkan kemampuannya pada bidang Information Security.
+					HackToday ( Capture The Flag ) adalah salah satu cabang kompetisi IT Today 2018 dalam bidang keamanan teknologi informasi. Dalam lomba ini, peserta  diharuskan untuk mencari celah-celah keamanan jaringan sehingga peserta mampu untuk menembus target yang disediakan oleh panitia. Lomba HackToday yang diadakan IT Today 2018 pada bidang Information Security.
 					</p>
 				</div>
 			</div>
