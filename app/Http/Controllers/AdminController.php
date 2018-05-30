@@ -2,7 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Http\UploadedFile;
 use Illuminate\Http\Request;
+use App\Team;
+use Auth;
 
 class AdminController extends Controller
 {
@@ -25,8 +30,19 @@ class AdminController extends Controller
     {
         return view('admin.home');
     }
-    
+
     public function main(){
-        return view('admin.index');
+        $user = Team::all();
+        return view('admin.index',compact('user'));
+    }
+    public function detail($id){
+        $user = Team::where('id',$id)->first();
+        return $user;
+    }
+    public function verify($id){
+        $user = Team::where('id',$id)->first();
+        $user->verify = 1;
+        $user->save();
+        return $user;
     }
 }

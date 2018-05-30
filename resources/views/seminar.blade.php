@@ -49,15 +49,15 @@
 		        
 		    </section>
           
-			<section id="about" class="image-edge" style="padding-bottom: 0px">
+			<section id="rulebook" class="image-edge" style="padding-bottom: 0px; padding-top: 10px">
             <div class="col-md-6 col-sm-4 p0 col-md-push-6 col-sm-push-8">
-                <img alt="Screenshot" class="mb-xs-24" src="img/iconseminar.png">
+                <img alt="Screenshot" class="mb-xs-24" src="img/iconseminar.png" style="height: 600px; weight: 450px">
             </div>
             <div class="container">
                 <div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
                     <!-- <h1 class="large mb40 mb-xs-16">Sleek, Smart and Modern.</h1> -->
                     <div class="feature bordered text-center">
-                        <p class="lead mb40" style="color: #282825;">
+                        <p class="lead mb40" style="color: white">
 						National Seminar ITTODAY 2018 merupakan seminar bertaraf nasional yang diisi oleh pembicara yang berasal dari perusahaan, startup, ataupun praktisi-praktisi di bidang IT. Seminar berisi presentasi dan interaksi antara pembicara dengan peserta.
                         </p>
                         <a class="btn btn-lg btn-white mb8 mt-xs-24" onclick="alert('Pendaftaran seminar belum dibuka.')">Register Now</a>
@@ -67,7 +67,7 @@
             
         </section>
             
-            <section id="speakers">
+            <section id="speakers" style="padding-bottom: 0px">
 		        <div class="container">
 				<div class="row">
 		                <div class="col-sm-6 col-md-offset-3 text-center feature bordered text-center">
@@ -124,7 +124,7 @@
 		            </div>
 		        </div>
 		    </section> -->
-			<section id="faq">
+			<section id="faq" style="padding-bottom: 0px">
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-6 col-md-offset-3 text-center feature bordered text-center">
