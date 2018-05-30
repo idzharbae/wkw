@@ -24,11 +24,12 @@
 							<p>Nomor Rekening: BNI 0450376082<br>Atas Nama: Leni Angraeni</p>
 							<h4 style="color: white ;">HackToday</h4>
 							<p><b>Tidak ada biaya pendaftaran yang dibebankan kepada peserta HackToday.</b></p>
-							<div class="col-md-8">
+							<div class="col-md-8" style="padding: 0px;">
 							<input type="file" name="payment" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile4" style="display: none;" />
 							<input type="button" class="btn btn-lg btn-white mb8 mt-xs-24" value="UPLOAD BUKTI PEMBAYARAN" onclick="document.getElementById('selectedFile4').click();" />
+							<p>Bukti pembayaran difoto dan diupload dalam format .jpg atau .png.</p>
 							</div>
-							<div class="col-md-5"><input class="btn btn-lg mb8 mt-xs-24" type="submit" value="SAVE CHANGES" style="background-color: #7c6bee;"/></div>
+							<div class="col-md-5" style="padding: 0px;"><input class="btn btn-lg mb8 mt-xs-24" type="submit" value="SAVE CHANGES" style="background-color: #7c6bee;"/></div>
 						</div>
 					</div>
 				</div>
