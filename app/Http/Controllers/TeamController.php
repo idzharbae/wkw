@@ -19,7 +19,6 @@ class TeamController extends Controller
 		return view('index', compact('users'));
 	
 	}
-
     public function appsToday(){
         return view('apps');
     }
@@ -47,9 +46,15 @@ class TeamController extends Controller
     
         $users = Auth::user()->id;
 	    return view('reg_stp1', compact('users')); 
-
     }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> d4a92ef615c3a93dd5465c6b8ef583860d09a3c6
+>>>>>>> 94fd862adcc66cec1ea9162fec2a20556814feec
     public function payment(){
         $user_id = Auth::user()->id;
         $data = Team::where('team_id',$user_id)->first();
@@ -63,6 +68,10 @@ class TeamController extends Controller
     public function admindetail(){
         return view('admindetail');
     }
+<<<<<<< HEAD
+    
+    public function addTeam(Request $request){
+=======
 
 
     public function uploadLetter(Request $request,$id){//ini id di tabel teams
@@ -112,6 +121,7 @@ class TeamController extends Controller
     }
 
     public function addTeam(Request $request,$id){
+>>>>>>> d4a92ef615c3a93dd5465c6b8ef583860d09a3c6
         $this->validate($request,[
             'member_one'=>'required',
             'school'=>'required',
@@ -119,7 +129,7 @@ class TeamController extends Controller
             'phone_num'=>'required',
             'tipe' =>'required'
         ]);
-
+        $id = $request->input('id');
         $team = new Team;
         //cek kalo member 2 ama 3 ada atau tidak
         $team->team_id = $id;

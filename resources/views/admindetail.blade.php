@@ -5,10 +5,10 @@
         <meta charset="utf-8">
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{asset('css/themify-icons.css')}}" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{asset('css/theme.css')}}" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{asset('css/custom.css')}}" rel="stylesheet" type="text/css" media="all" />
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
     </head>
     <body style="background:url({{url('img/footer.png')}}) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">
@@ -166,10 +166,10 @@
 	</div>
 		
 				
-	<script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/parallax.js"></script>
-        <script src="js/scripts.js"></script>
+		<script src="{{asset('js/jquery.min.js')}}"></script>
+        <script src="{{asset('js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('js/parallax.js')}}"></script>
+        <script src="{{asset('js/scripts.js')}}"></script>
     </body>
 </html>
 				

@@ -81,8 +81,10 @@
 			</section>
 			
 			<section style="background-color: #6290e0;" id="berkas">
-		        <form method="POST" action='{{ url("/berkas/{$data->team_id}") }}' enctype="multipart/form-data" >
+		        <form method="POST" action='{{ url("/berkas") }}' enctype="multipart/form-data" >
 		        	{{csrf_field()}}
+
+		    	<input type="hidden" name="id" value="{{$data->team_id}}">
 		        <div class="container">
 
                     <h3 class="uppercase mb40 mb-xs-24 text-center" style="color:white;">Upload berkas</h3>

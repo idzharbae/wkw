@@ -228,7 +228,7 @@
 		                        </li>
 		                        <li>
 		                            <div class="title">
-		                                <h4 class="inline-block mb0">Apakah benar peserta SMA/SMK atau sederajat dapat mengikuti hacktoday 2018?</h4>
+		                                <h4 class="inline-block mb0">Apakah benar peserta SMA/SMK atau sederajat dapat mengikuti HackToday 2018?</h4>
 		                            </div>
 		                            <div class="content">
 		                                <h5>
@@ -278,31 +278,11 @@
                                 </li>
                                 <li>
 		                            <div class="title">
-		                                <h4 class="inline-block mb0">Format flag HackToday?</h4>
-		                            </div>
-		                            <div class="content">
-		                                <h5>
-                                        Setiap flag di HackToday berformat HacktToday{\w+}$, 
-		                                </h5>
-		                            </div>
-                                </li>
-                                <li>
-		                            <div class="title">
 		                                <h4 class="inline-block mb0">Apa itu write up?</h4>
 		                            </div>
 		                            <div class="content">
 		                                <h5>
                                         Write up adalah dokumentasi peserta yang berisi bagaimana peserta tersebut menyelesaikan soal. 
-		                                </h5>
-		                            </div>
-                                </li>
-                                <li>
-		                            <div class="title">
-		                                <h4 class="inline-block mb0">Seperti apakah format write up?</h4>
-		                            </div>
-		                            <div class="content">
-		                                <h5>
-                                        Write up berbentuk pdf dengan format tiap penyelesaian judul soal,isi soal *optional* ,solusi dan flag yang didapatkan untuk setiap soal lebih baik beserta screenshot. PDF dikirim paling lambat tanggal 4 agustus 2018 pada jam 20.00 kepada kestari.ittoday@gmail.com. Lebih dari itu maka peserta dianggap tidak mengumpulkan write up.
 		                                </h5>
 		                            </div>
                                 </li>
@@ -326,16 +306,7 @@
 		                                </h5>
 		                            </div>
                                 </li>
-                                <li>
-		                            <div class="title">
-		                                <h4 class="inline-block mb0">Apakah kami atau orang lain dapat mengakses write up peserta HackToday?</h4>
-		                            </div>
-		                            <div class="content">
-		                                <h5>
-                                        Write up 10 tim terbaik pada tahap penyisihan 1 akan dipublikasikan di facebook page resmi Cyber Security IPB https://www.facebook.com/cysecipb/
-		                                </h5>
-		                            </div>
-                                </li>
+                                
                                 <li>
 		                            <div class="title">
 		                                <h4 class="inline-block mb0">Berapakah tim yang akan lolos ke final?</h4>
@@ -347,16 +318,7 @@
 		                            </div>
                                 </li>
                                 <li>
-                                <li>
-		                            <div class="title">
-		                                <h4 class="inline-block mb0">Seperti apakah sistem CTF pada saat final?</h4>
-		                            </div>
-		                            <div class="content">
-		                                <h5>
-                                        Final CTF menggunakan sistem Jeopardy.
-										</h5>
-		                            </div>
-                                </li><li>
+                               <li>
 		                            <div class="title">
 		                                <h4 class="inline-block mb0">Dimanakah final akan dilaksanakan?</h4>
 		                            </div>

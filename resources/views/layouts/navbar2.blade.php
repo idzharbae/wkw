@@ -42,11 +42,11 @@
 								</ul>
 							@else
 								<li class="nav-item dropdown pull-right">
-									<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#b2c0ff;">
 										{{ Auth::user()->name }} <span class="caret"></span>
 									</a>
 
-									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<div class="dropdown-menu pull-right" aria-labelledby="navbarDropdown">
 										<ul>
 											<li>
 												<a class="dropdown-item" href="{{ route('team.profile') }}">&nbsp;&nbsp;&nbsp;Profile</a>

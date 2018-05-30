@@ -31,9 +31,9 @@
 
 	<!-- countdown -->
 	
-	<section class="bg-primary background-multiply pt240 pb240 pt-xs-120 pb-xs-120 overlay image-bg parallax">
+	<section class=" pt240 pb240 pt-xs-120 pb-xs-120 overlay image-bg parallax">
 		<div class="background-image-holder">
-			<img alt="image" class="background-image" src="img/feed6.jpg">
+			<img alt="image" class="background-image" src="img/feed6.png">
 		</div>
 		<div class="container">
 			<div class="row">
