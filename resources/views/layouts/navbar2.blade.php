@@ -46,7 +46,7 @@
 										{{ Auth::user()->name }} <span class="caret"></span>
 									</a>
 
-									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<div class="dropdown-menu pull-right" aria-labelledby="navbarDropdown">
 										<ul>
 											<li>
 												<a class="dropdown-item" href="{{ route('team.profile') }}">&nbsp;&nbsp;&nbsp;Profile</a>
@@ -77,8 +77,8 @@
 							<li><a style="font-size: 16px;" href="#">Event <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 		                        <ul>
 									<li><a href="{{route('seminar')}}">National Seminar</a></li>
-									<!--<li><a href="{{route('workshop')}}">Workshop</a></li>
-									<li><a href="{{route('pascaevent')}}">Post Event</a></li>-->
+									<li><a href="{{route('workshop')}}">Workshop</a></li>
+									<li><a href="{{route('postevent')}}">Post Event</a></li>
 		                        </ul>
 							</li>
 		                </ul>
