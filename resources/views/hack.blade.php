@@ -43,9 +43,9 @@
 		                        <li>
 		                            <a href="#rewards">Rewards</a>
 		                        </li>
-		                        <li>
+		                        <!--<li>
 		                            <a href="#testimonies">Testimonies</a>
-		                        </li>
+		                        </li>-->
 		                        <li>
 		                            <a href="#faq">FAQ</a>
 		                        </li>
@@ -207,21 +207,22 @@
 		                    <ul class="accordion accordion-2 one-open">
 		                        <li>
 		                            <div class="title">
-		                                <h4 class="inline-block mb0">Kapan hacktoday dilaksanakan?</h4>
+		                                <h4 class="inline-block mb0">Kapan dan dimana HackToday dilaksanakan?</h4>
 		                            </div>
 		                            <div class="content">
 		                                <p>
-                                        Hacktoday terdiri dari 2 Tahap, Tahap Penyisihan bersifat Remote yaitu via online yang artinya peserta dapat mengerjakan soal dimanapun pada hari.
+                                        Hacktoday terdiri dari 2 Tahap, Tahap Penyisihan bersifat Remote yaitu via online yang artinya peserta dapat mengerjakan soal dimanapun pada hari Sabtu tanggal 4 Agustus 2018 pukul 09.00 WIB sampai dengan 16.00 WIB.
+										Tahap final dilaksanakan secara onsite di FMIPA IPB, Kampus IPB Dramaga, Bogor pada hari Minggu, 9 September 2018 pukul 10.00 WIB sampai 16.00 WIB.
 		                                </p>
 		                            </div>
 		                        </li>
 		                        <li>
 		                            <div class="title">
-		                                <h4 class="inline-block mb0">Apakah hacktoday 2018 dipungut biaya?</h4>
+		                                <h4 class="inline-block mb0">Apakah HackToday 2018 dipungut biaya?</h4>
 		                            </div>
 		                            <div class="content">
 		                                <p>
-                                        Tidak, HackToday 2018 gratis. 
+                                        Tidak, HackToday 2018 <b>gratis</b>. 
 		                                </p>
 		                            </div>
 		                        </li>
@@ -231,7 +232,7 @@
 		                            </div>
 		                            <div class="content">
 		                                <p>
-                                        Betul, namun tidak akan ada perbedaan kesulitan soal atau hal lain. Setiap peserta mendapatkan porsi jumlah dan kesulitan soal yang sama dalam hacktoday 2018.
+                                        Benar, namun tidak akan ada perbedaan kesulitan soal atau hal lain. Setiap peserta mendapatkan porsi jumlah dan kesulitan soal yang sama dalam HackToday 2018.
 		                                </p>
 		                            </div>
 		                        </li>
@@ -241,27 +242,27 @@
 		                            </div>
 		                            <div class="content">
 		                                <p>
-                                        Apabila ada peserta sma/smk atau sederajat yang dapat masuk ke dalam 3 tim terbaik pada hacktoday 2018 akan mendapatkan penghargaan khusus yaitu tim sma/smk atau sederajat terbaik dalam hacktoday. Maka tim tersebut akan mendapatkan kejuaraan ganda yaitu tim terbaik sma/smk atau sederajat dan tim juara 1/2/3.
+                                        Apabila ada peserta SMA/SMK atau sederajat yang dapat masuk ke dalam 3 tim terbaik pada HackToday 2018 akan mendapatkan penghargaan khusus yaitu tim SMA/SMK atau sederajat terbaik dalam HackToday. Maka tim tersebut akan mendapatkan kejuaraan ganda yaitu tim terbaik SMA/SMK atau sederajat dan tim juara 1/2/3.
 		                                </p>
 		                            </div>
                                 </li>
                                 <li>
 		                            <div class="title">
-		                                <h4 class="inline-block mb0">Bagaimana cara mendaftar hacktoday?</h4>
+		                                <h4 class="inline-block mb0">Bagaimana cara mendaftar HackToday?</h4>
 		                            </div>
 		                            <div class="content">
 		                                <p>
-                                        Pendaftaran melewati website resmi ITTODAY 2018 yaitu ittoday.web.id
+                                        Pendaftaran melewati website resmi ITTODAY 2018 yaitu ittoday.web.id.
 		                                </p>
 		                            </div>
                                 </li>
                                 <li>
 		                            <div class="title">
-		                                <h4 class="inline-block mb0">Apakah persyaratan administrasi peserta dalam hacktoday 2018?</h4>
+		                                <h4 class="inline-block mb0">Apakah persyaratan administrasi peserta dalam HackToday 2018?</h4>
 		                            </div>
 		                            <div class="content">
 		                                <p>
-                                        Setiap peserta dalam tim wajib menyertakan surat keterangan mahasiswa aktif dan kartu tanda mahasiswa (KTM) dan untuk sma/smk wajib menyertakan kartu tanda siswa dan surat keterangan siswa dari sekolah asal peserta. Apabila ada peserta dengan administrasi yang tidak lengkap maka peserta tersebut dianggap gugur dan jumlah peserta tim yang diakui hanyalah yang melengkapi persyaratan administrasi.
+                                        Setiap peserta dalam tim wajib menyertakan surat keterangan mahasiswa aktif dan kartu tanda mahasiswa (KTM) dan untuk SMA/SMK wajib menyertakan kartu tanda siswa dan surat keterangan siswa dari sekolah asal peserta. Apabila ada peserta dengan administrasi yang tidak lengkap maka peserta tersebut dianggap gugur dan jumlah peserta tim yang diakui hanyalah yang melengkapi persyaratan administrasi.
 		                                </p>
 		                            </div>
                                 </li>
@@ -291,7 +292,7 @@
 		                            </div>
 		                            <div class="content">
 		                                <p>
-                                        write up adalah dokumentasi peserta yang berisi bagaimana peserta tersebut menyelesaikan soal. 
+                                        Write up adalah dokumentasi peserta yang berisi bagaimana peserta tersebut menyelesaikan soal. 
 		                                </p>
 		                            </div>
                                 </li>
@@ -311,7 +312,7 @@
 		                            </div>
 		                            <div class="content">
 		                                <p>
-                                        write up merupakan sebuah aspek peniliaian untuk memastikan peserta memang menyelesaikan soal tersebut, juga menghindari adanya plagiarisme dalam penyelesaian soal. Apabila peserta tersebut tidak mengumpulkan atau menyertakan write up keseluruhan maka seluruh point yang peserta dapatkan akan hangus. Apabila peserta hanya tidak menyertakan write up untuk soal tertentu maka point untuk soal tersebut dianggap hangus.
+                                        Write up merupakan sebuah aspek peniliaian untuk memastikan peserta memang menyelesaikan soal tersebut, juga menghindari adanya plagiarisme dalam penyelesaian soal. Apabila peserta tersebut tidak mengumpulkan atau menyertakan write up keseluruhan maka seluruh point yang peserta dapatkan akan hangus. Apabila peserta hanya tidak menyertakan write up untuk soal tertentu maka point untuk soal tersebut dianggap hangus.
 		                                </p>
 		                            </div>
                                 </li>
@@ -321,17 +322,17 @@
 		                            </div>
 		                            <div class="content">
 		                                <p>
-                                        write up akan bergantung terhadap kretifitas peserta dalam menyelesaikan soal. Singkat maupun tidak, tidak akan berpengaruh terhadap penilian asalkan write up memang dapat menyelesaikan soalnya. Apabila write up dinilai tidak menyelesaikan soal ataupun tidak lengkap, maka point peserta untuk soal tersebut dianggap hangus.
+                                        Write up akan bergantung terhadap kretifitas peserta dalam menyelesaikan soal. Singkat maupun tidak, tidak akan berpengaruh terhadap penilian asalkan write up memang dapat menyelesaikan soalnya. Apabila write up dinilai tidak menyelesaikan soal ataupun tidak lengkap, maka point peserta untuk soal tersebut dianggap hangus.
 		                                </p>
 		                            </div>
                                 </li>
                                 <li>
 		                            <div class="title">
-		                                <h4 class="inline-block mb0">Apakah kami atau orang lain dapat mengakses write up peserta hacktoday?</h4>
+		                                <h4 class="inline-block mb0">Apakah kami atau orang lain dapat mengakses write up peserta HackToday?</h4>
 		                            </div>
 		                            <div class="content">
 		                                <p>
-                                        write up 10 tim terbaik pada tahap penyisihan 1 akan dipublikasikan di facebook page resmi Cyber Security IPB https://www.facebook.com/cysecipb/
+                                        Write up 10 tim terbaik pada tahap penyisihan 1 akan dipublikasikan di facebook page resmi Cyber Security IPB https://www.facebook.com/cysecipb/
 		                                </p>
 		                            </div>
                                 </li>
@@ -341,7 +342,7 @@
 		                            </div>
 		                            <div class="content">
 		                                <p>
-                                        Tim yang akan lolos ke final berjumlah 10 tim terbaik pada saat penyisihan tahap 1 apabila terdapat tim sma/smk. Apabila tidak ada tim sma/smk dalam 10 tim terbaik maka hanya akan diambil 9 dan diambil 1 tim terbaik sma/smk. Pengumuman akan dilaksanakan pada tanggal 22 Agustus 2018.
+                                        Tim yang akan lolos ke final berjumlah 10 tim terbaik pada saat penyisihan tahap 1 apabila terdapat tim SMA/SMK. Apabila tidak ada tim SMA/SMK dalam 10 tim terbaik maka hanya akan diambil 9 dan diambil 1 tim terbaik SMA/SMK. Pengumuman akan dilaksanakan pada tanggal 22 Agustus 2018.
 		                                </p>
 		                            </div>
                                 </li>
@@ -352,16 +353,16 @@
 		                            </div>
 		                            <div class="content">
 		                                <p>
-                                        Sistem jeopardy.
+                                        Final CTF menggunakan sistem Jeopardy.
 		                                </p>
 		                            </div>
-                                </li>
+                                </li><li>
 		                            <div class="title">
 		                                <h4 class="inline-block mb0">Dimanakah final akan dilaksanakan?</h4>
 		                            </div>
 		                            <div class="content">
 		                                <p>
-                                        final dilaksanakan pada hari Minggu,9 September 2018 pada pukul 10.00 hingga 16.00 di Fakultas MIPA,Institut Pertanian Bogor, Dramaga, Bogor.
+                                        Final dilaksanakan pada hari Minggu,9 September 2018 pada pukul 10.00 hingga 16.00 di Fakultas MIPA,Institut Pertanian Bogor, Dramaga, Bogor.
 		                                </p>
 		                            </div>
                                 </li>
@@ -371,7 +372,7 @@
 		                            </div>
 		                            <div class="content">
 		                                <p>
-                                        Tidak,namun peserta akan dibantu oleh pj hacktoday untuk dicarikan akomodasi selama berada di IPB.
+                                        Tidak,namun peserta akan dibantu oleh pj HackToday untuk dicarikan akomodasi selama berada di IPB.
 		                                </p>
 		                            </div>
                                 </li>

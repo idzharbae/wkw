@@ -21,7 +21,7 @@
 		        <div class="background-image-holder">
 		            <img alt="image" class="background-image" src="img/bglogin.png">
 		        </div>
-		        <div class="container v-align-transform">
+		        <div class="container">
 		            <div class="row">
 		                <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
 		                    <div class="feature bordered text-center">

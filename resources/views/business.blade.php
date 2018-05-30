@@ -43,9 +43,9 @@
 		                        <li>
 		                            <a href="#rewards">Rewards</a>
 		                        </li>
-		                        <li>
+		                       <!-- <li>
 		                            <a href="#testimonies">Testimonies</a>
-		                        </li>
+		                        </li> -->
 		                        <li>
 		                            <a href="#faq">FAQ</a>
 		                        </li>

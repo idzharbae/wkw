@@ -33,8 +33,11 @@
 		                            <a href="#about">About</a>
 		                        </li>
 		                        <li>
-		                            <a href="#testimonies">Testimonies</a>
+		                            <a href="#speakers">Speakers</a>
 		                        </li>
+								<!-- <li>
+		                            <a href="#testimonies">Testimonies</a>
+		                        </li> -->
 		                        <li>
 		                            <a href="#faq">FAQ</a>
 		                        </li>
@@ -46,7 +49,7 @@
 		        
 		    </section>
           
-            <section>
+            <section id="about">
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-10 col-sm-offset-1 text-center">
@@ -62,7 +65,19 @@
 		        
 		    </section>
             
-            <section id="testimonies">
+            <section id="speakers">
+		        <div class="container">
+				<div class="row">
+		                <div class="col-sm-6 col-md-offset-3 text-center feature bordered text-center">
+		                    <h3 class="mb16">SPEAKERS</h3>
+							<h4>To be announced</h4>
+		                </div>
+		            </div>
+		            
+		        </div>
+		        
+		    </section>
+             <!-- <section id="testimonies" style="padding-bottom: 0px">
 		        <div class="container">
 		            <div class="row mb64 mb-xs-24">
 		                <div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
@@ -72,14 +87,14 @@
 		            
 		            <div class="row">
 		                <div class="col-sm-4 text-center">
-		                    <div class="feature boxed cast-shadow-light">
-		                        <img alt="Pic" class="image-small inline-block mb24" src="img/avatar2.png">
-		                        <h4>"Customer For Life"</h4>
+		                    <div class="feature boxed cast-shadow-light"> 
+		                        <img alt="Pic" class="image-small inline-block mb24" src="img/avatar1.png">
+		                        <h4>"Polished, Incredible!"</h4>
 		                        <p>
-		                            I love the ease-of-use the builder provides - I can quickly test different combinations and experiment with font and color combinations to find that sweet spot.
+		                            It's clear to see just how seriously these guys take design. I've never come across a template with the level of polish as this!
 		                        </p>
 		                        <span>
-		                            <strong>Jake Sims</strong> - via Twitter</span>
+		                            <strong>Anne Potter</strong> - via Envato</span>
 		                    </div>
 		                </div>
 		                <div class="col-sm-4 text-center">
@@ -105,19 +120,13 @@
 		                    </div>
 		                </div>
 		            </div>
-		            
 		        </div>
-		        
-		    </section>
-            
-            <section id="faq">
+		    </section> -->
+			<section id="faq">
 		        <div class="container">
 		            <div class="row">
-		                <div class="col-sm-12 text-center">
+		                <div class="col-sm-6 col-md-offset-3 text-center feature bordered text-center">
 		                    <h3 class="mb16">FREQUENTLY ASKED QUESTIONS</h3>
-		                    <p class="lead mb64">
-		                        Holla @mrareweb if you've got more questions and we'll do our best to answer.
-		                    </p>
 		                </div>
 		            </div>
 		            
@@ -126,44 +135,64 @@
 		                    <ul class="accordion accordion-2 one-open">
 		                        <li>
 		                            <div class="title">
-		                                <h4 class="inline-block mb0">Is Foundry fully responsive?</h4>
+		                                <h4 class="inline-block mb0">Kapan dan dimana seminar ini akan diadakan?</h4>
 		                            </div>
 		                            <div class="content">
 		                                <p>
-		                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										 Tanggal 16 September 2018 di Auditorium CCR IPB
 		                                </p>
 		                            </div>
 		                        </li>
 		                        <li>
 		                            <div class="title">
-		                                <h4 class="inline-block mb0">Where can I purchase this template?</h4>
+		                                <h4 class="inline-block mb0">Apakah Seminar ini berbayar?</h4>
 		                            </div>
 		                            <div class="content">
 		                                <p>
-		                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Seminar ini <b>gratis</b>
 		                                </p>
 		                            </div>
 		                        </li>
 		                        <li>
 		                            <div class="title">
-		                                <h4 class="inline-block mb0">Do I need to be a pro to use this?</h4>
+		                                <h4 class="inline-block mb0">Kapan pendaftaran seminar dibuka?</h4>
 		                            </div>
 		                            <div class="content">
 		                                <p>
-		                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Pendaftaran seminar dibuka tanggal 5-20 Agustus 2018, konfirmasi seminar dilaksanakan pada tanggal 5-10 September 2018.
 		                                </p>
 		                            </div>
 		                        </li>
 		                        <li>
 		                            <div class="title">
-		                                <h4 class="inline-block mb0">Is it ok if I buy 400 copies?</h4>
+		                                <h4 class="inline-block mb0">Jam berapa seminar dimulai dan berakhir?</h4>
 		                            </div>
 		                            <div class="content">
 		                                <p>
-		                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										Seminar akan open gate pukul 08.00 dan dimulai pukul 08.30 berakhir pada pukul 17.00
 		                                </p>
 		                            </div>
-		                        </li>
+                                </li>
+                                <li>
+		                            <div class="title">
+		                                <h4 class="inline-block mb0">Apa saja yang akan di dapatkan peserta?</h4>
+		                            </div>
+		                            <div class="content">
+		                                <p>
+                                        Peserta akan mendapatkan e-certificate, snack, dan konsumsi makan siang.
+		                                </p>
+		                            </div>
+                                </li>
+                                <li>
+		                            <div class="title">
+		                                <h4 class="inline-block mb0">Siapa saja yang boleh ikut seminar?</h4>
+		                            </div>
+		                            <div class="content">
+		                                <p>
+                                        Mahasiswa, professional muda, atau khalayak umum yang tertarik dengan bidang IT.
+		                                </p>
+		                            </div>
+                                </li>
 		                    </ul>
 		                    
 		                </div>

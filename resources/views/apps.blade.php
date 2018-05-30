@@ -43,9 +43,9 @@
 		                        <li>
 		                            <a href="#rewards">Rewards</a>
 		                        </li>
-		                        <li>
+		                        <!--<li>
 		                            <a href="#testimonies">Testimonies</a>
-		                        </li>
+		                        </li>-->
 		                        <li>
 		                            <a href="#faq">FAQ</a>
 		                        </li>
@@ -221,7 +221,7 @@
 		                            </div>
 		                            <div class="content">
 		                                <p>
-                                        yaitu salah satu rangkaian lomba IT TODAY yang merujuk pada pembuatan app yang kreatif dan inovatif dalam memecahkan berbagai permasalahan yang mendasar dalam kegiatan sehari-hari.
+                                       AppsToday merupakan salah satu rangkaian lomba IT TODAY yang merujuk pada pembuatan aplikasi yang kreatif dan inovatif dalam memecahkan berbagai permasalahan yang mendasar dalam kegiatan sehari-hari.
 		                                </p>
 		                            </div>
 		                        </li>
@@ -231,7 +231,7 @@
 		                            </div>
 		                            <div class="content">
 		                                <p>
-                                        Tahap pertama registrasi dan menyelesaikan submisi 1. Tahap kedua membuat video dan prototype app. Tahap final yaitu presentasi karya kepada juri maupun pengunjung melalui stand.
+                                        Tahap pertama: Registrasi dan menyelesaikan submisi 1.<br> Tahap kedua: Membuat video dan prototype aplikasi. <br>Tahap final: Presentasi karya kepada juri maupun pengunjung melalui stand.
 		                                </p>
 		                            </div>
 		                        </li>
@@ -241,7 +241,7 @@
 		                            </div>
 		                            <div class="content">
 		                                <p>
-                                        Tidak karena tidak diperkenankan menggunakan atribut universitas seperti yang dijelaskan dalam rulebook agar penilaian berlangsung secara objektif.
+                                        <b>Tidak diperkenankan</b> menggunakan atribut universitas seperti yang dijelaskan dalam rulebook agar penilaian berlangsung secara objektif.
 		                                </p>
 		                            </div>
 		                        </li>
@@ -261,7 +261,7 @@
 		                            </div>
 		                            <div class="content">
 		                                <p>
-                                        Mahasiswa S1/D3 seluruh indonesia
+                                        Mahasiswa S1/D3 seluruh Indonesia.
 		                                </p>
 		                            </div>
                                 </li>
@@ -271,13 +271,13 @@
 		                            </div>
 		                            <div class="content">
 		                                <p>
-                                        Untuk tahap pendaftaran Early Bird akan dibuka pada tanggal 30 Mei-20 Juni 2018, sedangkan thap pendaftaran reguler dibuka pada tanggal 21 Juni-11 Juli 2018.
+                                        Untuk tahap pendaftaran Early Bird akan dibuka pada tanggal 30 Mei-20 Juni 2018, sedangkan tahap pendaftaran reguler dibuka pada tanggal 21 Juni-11 Juli 2018.
 		                                </p>
 		                            </div>
                                 </li>
                                 <li>
 		                            <div class="title">
-		                                <h4 class="inline-block mb0">Berapa biaya pendaftaran untuk mengikuti kompeitisi business IT case?</h4>
+		                                <h4 class="inline-block mb0">Berapa biaya pendaftaran untuk mengikuti kompeitisi AppsToday?</h4>
 		                            </div>
 		                            <div class="content">
 		                                <p>
@@ -291,7 +291,7 @@
 		                            </div>
 		                            <div class="content">
 		                                <p>
-                                        Untuk pengumpulan BMC dan proposal Business Plan, dikumpulkan dalam format pdf. 
+                                        Proposal aplikasi dikumpulkan dalam format pdf. Submisi tahap dua dikumpulkan dalam format .zip.
 		                                </p>
 		                            </div>
                                 </li>
