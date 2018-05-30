@@ -19,3 +19,6 @@
 #myBtn:hover {
     background-color: #555;
 }
+.nav-link.dropdown-toggle{
+    color:white;
+}
