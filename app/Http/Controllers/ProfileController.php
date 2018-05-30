@@ -8,62 +8,26 @@ use Illuminate\Http\UploadedFile;
 use Illuminate\Http\Request;
 use App\Team;
 use Auth;
-class TeamController extends Controller
+class ProfileController extends Controller
 {
     public function __construct(){
-    	// $this->middleware('auth'); //matiin kalo lagi testing mode
-	} 
-	
-	public function start(){
-
-		return view('index', compact('users'));
-	
+    	$this->middleware('auth'); //matiin kalo lagi testing mode
 	}
-
-
-    public function appsToday(){
-        return view('apps');
+    public function teamProfile(){
+        $user_id = Auth::user()->id;
+        $data = Team::where('team_id',$user_id)->first();
+        if($data == NULL){    	
+		    return view('reg_stp1', compact('user_id')); 
+        }
+        else{
+	        return view('profile',compact('data'));
+        }
     }
-
-    public function hackToday(){
-        return view('hack');
-    }
-
-    public function businessIT(){
-        return view('business');
-    }
-
-    public function seminarIT(){
-        return view('seminar');
-    }
-    
-    public function workshop(){
-        return view('workshop');
-    }
-
-    public function postEvent(){
-        return view('postevent');
-    }
-    public function showForm(){
-    
-        $users = Auth::user()->id;
-	    return view('reg_stp1', compact('users')); 
-
-    }
-
-<<<<<<< HEAD
-=======
     public function payment(){
         $user_id = Auth::user()->id;
         $data = Team::where('team_id',$user_id)->first();
         return view('payment',compact('data'));
 
-    }
-    public function adminhome(){
-        return view('adminhome');
-    }
-    public function admindetail(){
-        return view('admindetail');
     }
 
 
@@ -112,34 +76,4 @@ class TeamController extends Controller
         Team::where('team_id',$id)->update($data);
         return redirect('/profile/');
     }
-
->>>>>>> f4b8a9101496ed257f6a587643869445ad277a3b
-    public function addTeam(Request $request,$id){
-        $this->validate($request,[
-            'member_one'=>'required',
-            'school'=>'required',
-            'province'=>'required',
-            'phone_num'=>'required',
-            'tipe' =>'required'
-        ]);
-
-        $team = new Team;
-        //cek kalo member 2 ama 3 ada atau tidak
-        $team->team_id = $id;
-        $team->member_one = $request->input('member_one');
-        $team->member_two = $request->input('member_two');
-        $team->member_three = $request->input('member_three');
-        $team->school = $request->input('school');
-        $team->province = $request->input('province');
-        $team->phone_num = $request->input('phone_num');
-        $team->type = $request->input('type');
-        $team->phone_num = $request->input('phone_num');
-        //not required, maybe null
-        $team->line_id = $request->input('line_id');
-        $team->type = $request->input('tipe');
-        $team->save();
-        return redirect()->route('team.profile');
-    }
-
-    
 }
