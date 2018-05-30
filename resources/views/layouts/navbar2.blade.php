@@ -77,8 +77,8 @@
 							<li><a style="font-size: 16px;" href="#">Event <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 		                        <ul>
 									<li><a href="{{route('seminar')}}">National Seminar</a></li>
-									<li><a href="{{route('workshop')}}">Workshop</a></li>
-									<li><a href="{{route('pascaevent')}}">Post Event</a></li>
+									<!--<li><a href="{{route('workshop')}}">Workshop</a></li>
+									<li><a href="{{route('pascaevent')}}">Post Event</a></li>-->
 		                        </ul>
 							</li>
 		                </ul>

@@ -88,7 +88,7 @@
                 <div class="panel-body">
                     <div class="tab-content">
                         <div class="tab-pane fade in active" id="tab1primary">
-                            <h4 align="center">26 Mei – 28 Juli 2018</h4>
+                            <h4 align="center">30 Mei – 28 Juli 2018</h4>
                             <h4 align="center">Pendaftaran</h4>
                         </div>
                         <div class="tab-pane fade" id="tab2primary">
@@ -100,7 +100,7 @@
                             <h4 align="center">Submisi Writeup</h4>
                         </div>
                         <div class="tab-pane fade" id="tab4primary">
-                            <h4 align="center">31 Agustus 2018</h4>
+                            <h4 align="center">22 Agustus 2018</h4>
                             <h4 align="center">Pengumuman Finalis</h4>
                         </div>
                         <div class="tab-pane fade" id="tab5primary">
