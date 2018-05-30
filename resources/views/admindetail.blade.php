@@ -1,5 +1,10 @@
 
 <!doctype html>
+
+@extends('layouts.navbar3')
+
+@section('content')
+
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,21 +19,8 @@
     <body style="background:url({{url('img/footer.png')}}) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">
 		
 		<div class="main-container">
-		<section class="page-title page-title-4 bg-secondary">
-		        <div class="container">
-		            <div class="row">
-		                <div class="col-md-6">
-		                    <h1 align="center" class="uppercase mb0">Admin Page</h1>
-		                </div>
-		                <div class="col-md-6 text-right" align="center">
-							<a class="btn btn-lg btn-white mb8 mt-xs-24" href="/admin/home">Home</a>      
-		                </div>
-		            </div>
-		        </div>
-		        
-		    </section><section>
-		       
-                <section  style="padding: 20px 0;">
+
+            <section  style="padding: 20px 0;">
 		        <div class="container">
 		            <div class="row">
 					
@@ -84,7 +76,7 @@
 									<h3 class="uppercase mb0">{{$user->member_one}}</h3>  
 			                        <img alt="Pic" src="{{asset($user->ktm_img1)}}" style="display: block; max-width:400px; max-height:200px; width: auto; height: auto; margin: auto">
 			                        <div class="title mb16">
-										<a href="{{asset($user->ktm_img1)}}">Lihat KTM</a>
+										<a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{asset($user->ktm_img1)}}">Lihat KTM</a>
 			                        </div>
 			                        
 			                    </div>
@@ -100,7 +92,7 @@
 									<h3 class="uppercase mb0">{{$user->member_two}}</h3>
 			                        <img alt="Pic" src="{{asset($user->ktm_img2)}}" style="display: block; max-width:400px; max-height:200px; width: auto; height: auto; margin: auto">
 			                        <div class="title mb16">
-										<a href="{{asset($user->ktm_img2)}}">Lihat KTM</a>
+										<a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{asset($user->ktm_img2)}}">Lihat KTM</a>
 			                        </div>
 			                    </div>
 			                </div>
@@ -115,7 +107,7 @@
 									<h3 class="uppercase mb0">{{$user->member_three}}</h3>	
 			                        <img alt="Pic" src="{{asset($user->ktm_img3)}}" style="display: block; max-width:400px; max-height:200px; width: auto; height: auto; margin: auto">
 			                        <div class="title mb16">
-										<a href="{{asset($user->ktm_img3)}}">Lihat KTM</a>	                            
+										<a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{asset($user->ktm_img3)}}">Lihat KTM</a>	                            
 			                        </div>
 			                    </div>
 			                </div>
@@ -130,7 +122,7 @@
 						<div class="feed-item mb96 mb-xs-48 text-center" align="center">
 							<h4 align="center">Surat Keterangan Siswa Aktif</h4><br>	                
 								@if($user->letter !=NULL)
-								<a target="_blank" href="{{asset($user->letter)}}">Download Surat Keterangan</a>
+								<a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{asset($user->letter)}}">Download Surat Keterangan</a>
 								@else
 								NOT UPLOADED
 								@endif		                
@@ -144,7 +136,7 @@
 								<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1" align="center">
 									@if($user->payment!=NULL)
 									<img alt="Article Image" class="mb32 mb-xs-16" src="{{asset($user->payment)}}" style="display: block; max-width:400px; max-height:200px; width: auto; height: auto; margin: auto">
-									<a href="{{asset($user->payment)}}">Lihat Bukti Pembayaran</a>
+									<a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{asset($user->payment)}}">Lihat Bukti Pembayaran</a>
 									@else
 									NOT UPLOADED
 									@endif        
@@ -172,4 +164,5 @@
         <script src="{{asset('js/scripts.js')}}"></script>
     </body>
 </html>
-				
+
+@endsection

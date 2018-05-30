@@ -29,7 +29,7 @@
             padding: 15px;
         }
         table {
-        width: 50%;
+        width: 100%;
         align: center;
         counter-reset: row-num;
         }
@@ -42,46 +42,35 @@
         </style>
     </head>
     <body style="background:url( {{url('img/footer.png')}}) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">
-				
-		<div class="nav-container">
-		</div>
-		
-		<div class="main-container">
-		<section class="page-title page-title-4 bg-secondary">
-		        <div class="container">
-		            <div class="row">
-		                <div class="col-md-6">
-		                    <h3 class="uppercase mb0">Admin Page</h3>
-		                </div>
-		                <div class="col-md-6 text-right">
-		                    <ol class="breadcrumb breadcrumb-2">
-		                        <li>
-		                            <a href="/adminhome">Home</a>
-		                        </li>
-		                       
-		                    </ol>
-		                </div>
-		            </div>
-		            
-		        </div>
-		        
-		    </section><section>
+
+            <section>
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-10 col-sm-offset-1">
 		                    <div class="post-snippet mb64">
 		                        <div class="post-title">
-		                            <h4 class="inline-block">Tabel Peserta Lomba</h4><br>
-		                        </div>
+                                    <h3 class="uppercase mb0" align="center">Admin Page</h3>
+                                    <div class="col-md-6 text-right" align="center">
+                                        <ol class="breadcrumb breadcrumb-2">
+                                            <li>
+                                                <a href="/adminhome">Home</a>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="inline-block">Tabel Peserta Lomba</h4><br>
+                                </div>
                                 <table>
                                     <tr>
-                                        <th>Nama Grup</th>
-                                        <th width="250px">Status</th>
-                                        <th width="200px">Konfirmasi</th>
+                                        <th width="20px">Nomor</th>
+                                        <th width="150px">Nama Grup</th>
+                                        <th width="100px">Status</th>
+                                        <th width="100px">Konfirmasi</th>
                                     </tr>
                                     @foreach($user as $human )
                                     <tr>
-                                        <td><a href='{{ url("/admin/detail/{$human->id}") }}'>{{App\User::find($human->team_id)->name}}</a></td>
+                                        <td></td><td><a href='{{ url("/admin/detail/{$human->id}") }}'>{{App\User::find($human->team_id)->name}}</a></td>
                                         <td>@if($human->verify == 1)Confirmed @else Not Confirmed @endif</td>
                                         <td><div class="col-lg-5" style="padding: 0px"><a href='{{ url("/admin/verify/{$human->id}") }}' type="submit" class="btn btn-primary form-control" style="text-transform: uppercase;border-radius:0; background-color: #7c6bee;">Konfirmasi</a></div></td>
                                     </tr>
@@ -100,8 +89,8 @@
 				
     	<script src="{{asset('js/jquery.min.js')}}"></script>
         <script src="{{asset('js/bootstrap.min.js')}}"></script>
-        <script src="{{asset('js/parallax.js">')}}</script>
-        <script src="{{asset('js/scripts.js">')}}</script>
+        <script src="{{asset('js/parallax.js')}}"></script>
+        <script src="{{asset('js/scripts.js')}}"></script>
     </body>
 </html>
 
