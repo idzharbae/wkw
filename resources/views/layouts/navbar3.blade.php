@@ -26,7 +26,6 @@
 							@guest
 								<ul class="menu inline-block pull-right">
 									<li><a class="btn btn-sm hidden-xs hidden-sm hidden-md" style="font-size: 16px;" href="{{ route('login') }}">Login</a></li>
-									<!-- <li><a href="{{ route('register') }}">Register</a></li> -->
 								</ul>
 							@else
 								<li class="nav-item dropdown pull-right">
