@@ -28,8 +28,6 @@ Route::get('/business','TeamController@businessIT')->name('business');
 Route::get('/seminar','TeamController@seminarIT')->name('seminar');
 Route::get('/workshop','TeamController@workshop')->name('workshop');
 Route::get('/postevent','TeamController@postEvent')->name('postevent');
-Route::get('/adminhome','TeamController@adminhome')->name('adminhome');
-Route::get('/admindetail','TeamController@admindetail')->name('admindetail');
 
 Route::get('/profile','TeamController@teamProfile')->name('team.profile');
 Route::get('/payment','TeamController@payment')->name('payment');
@@ -43,7 +41,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 /***
 *ADMIN ROUTE, GAUSAH DIGANTI JADI PREFIX, tp klo mau, monggo. 
 ***/
-Route::GET('admin/home','AdminController@main');
+Route::get('admin/home','AdminController@main');
 Route::GET('admin','Admin\LoginController@showLoginForm')->name('admin.login');
 Route::POST('admin','Admin\LoginController@login');
 Route::GET('admin/main','AdminController@main');

@@ -43,29 +43,36 @@
 						<div class="mb40">
 							<h6 class="mb8 uppercase">Members</h6>
 							<p style="color:black !important;">
-								Restu<br/>
-								Iqoh<br />
-								Leni
+								@if($user->member_one !=NULL)
+								{{$user->member_one}}<br />
+								@endif
+								@if($user->member_two !=NULL)
+								{{$user->member_two}}
+								<br />
+								@endif
+								@if($user->member_three !=NULL)
+								{{$user->member_three}}
+								@endif
 							</p>
 						</div>
 						<div class="mb40">
 							<h6 class="mb8 uppercase">School</h6>
 							<p style="color:black !important;">
-								IPB
+								{{$user->school}}
 							</p>
 						</div>
 						<div class="mb40">
 							<h6 class="mb8 uppercase">Province</h6>
 							<p style="color:black !important;">
-								Jabar
+								{{$user->province}}
 							</p>
 						</div>
 						<div class="mb40">
 							<h6 class="mb8 uppercase">Contact</h6>
 							<p style="color:black !important;">
-								restu@gmail.com<br>
-								08123456789<br>
-								res23adi
+								{{App\User::find($user->team_id)->email}}<br>
+								{{$user->phone_num}}<br>
+								{{$user->line_id}}
 							</p>
 						</div>
 					</div>
@@ -76,36 +83,55 @@
 			<section>
 		        <div class="container">
 		            <div class="row">
-		                <div class="col-md-4 col-sm-6">
-		                    <div class="image-tile outer-title text-center">
-		                        <img alt="Pic" src="img/team-1.jpg">
-		                        <div class="title mb16">
-		                            <h5 class="uppercase mb0">Restu</h5>
-		                            
-		                        </div>
-		                        
-		                    </div>
-		                </div>
-		                <div class="col-md-4 col-sm-6">
-		                    <div class="image-tile outer-title text-center">
-		                        <img alt="Pic" src="img/team-2.jpg">
-		                        <div class="title mb16">
-		                            <h5 class="uppercase mb0">Leni</h5>
-		                            
-		                        </div>
-		                        
-		                    </div>
-		                </div>
-		                <div class="col-md-4 col-sm-6">
-		                    <div class="image-tile outer-title text-center">
-		                        <img alt="Pic" src="img/team-3.jpg">
-		                        <div class="title mb16">
-		                            <h5 class="uppercase mb0">Iqoh</h5>
-		                            
-		                        </div>
-		                        
-		                    </div>
-		                </div>
+
+						@if($user->member_one !=NULL)
+							@if($user->ktm_img1!=NULL)
+							<div class="col-md-4 col-sm-6">
+			                    <div class="image-tile outer-title text-center">
+			                        <img alt="Pic" src="{{asset($user->ktm_img1)}}">
+			                        <div class="title mb16">
+			                            <h5 class="uppercase mb0">{{$user->member_one}}</h5>
+			                            
+			                        </div>
+			                        
+			                    </div>
+			                </div>
+			                @else
+			                NOT UPLOADED<br />
+			                @endif
+						@endif
+						@if($user->member_two !=NULL)
+							@if($user->ktm_img2)
+							<div class="col-md-4 col-sm-6">
+			                    <div class="image-tile outer-title text-center">
+			                        <img alt="Pic" src="{{asset($user->ktm_img2)}}">
+			                        <div class="title mb16">
+			                            <h5 class="uppercase mb0">{{$user->member_two}}</h5>
+			                            
+			                        </div>
+			                        
+			                    </div>
+			                </div>
+			                @else
+			                NOT UPLOADED<br />
+			                @endif
+						@endif
+						@if($user->member_three !=NULL)
+							@if($user->ktm_img3 != NULL)
+							<div class="col-md-4 col-sm-6">
+			                    <div class="image-tile outer-title text-center">
+			                        <img alt="Pic" src="{{asset($user->ktm_img3)}}">
+			                        <div class="title mb16">
+			                            <h5 class="uppercase mb0">{{$user->member_three}}</h5>
+			                            
+			                        </div>
+			                        
+			                    </div>
+			                </div>
+			                @else
+			                NOT UPLOADED<br />
+			                @endif
+						@endif
 		            </div>
 		            
 		        </div>
@@ -114,7 +140,11 @@
                 <div class="container">
 		            <div class="feed-item mb96 mb-xs-48 text-center">
 		                <h4>Surat Keterangan Siswa Aktif</h4><br>	                
-		                		                
+		                	@if($user->letter !=NULL)
+	                		<a href="{{asset($user->letter)}}">Download Berkas Here</a>
+		                	@else
+		                	NOT UPLOADED
+		                	@endif		                
 		            </div>
 		            
 		        </div></section>
@@ -123,13 +153,16 @@
 		                <h4>Bukti Pembayaran</h4><br>	                
 		                <div class="row mb32 mb-xs-16">
 		                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-		                        <img alt="Article Image" class="mb32 mb-xs-16" src="img/blog-single.jpg">
-		                        		                        
+		                    	@if($user->payment!=NULL)
+		                        <img alt="Article Image" class="mb32 mb-xs-16" src="{{asset($user->payment)}}">
+								@else
+								NOT UPLOADED
+								@endif        
 		                    </div>
 		                </div>
 		                
 		                <div class="row">
-                        <a class="btn btn-lg btn-white mb8 mt-xs-24" href="/adminhome">Konfirmasi Pendaftaran</a>
+                        <a class="btn btn-lg btn-white mb8 mt-xs-24" href='{{ url("admin/verify/{$user->id}") }}'>Konfirmasi Pendaftaran</a>
 		                </div>
 		            </div>
 		            

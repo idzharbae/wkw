@@ -29,7 +29,7 @@
         }
         </style>
     </head>
-    <body style="background:url({{url('img/footer.png')}}) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">
+    <body style="background:url( {{url('img/footer.png')}}) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">
 				
 		<div class="nav-container">
 		</div>
@@ -67,12 +67,13 @@
                                         <th width="250px">Status</th>
                                         <th width="200px">Konfirmasi</th>
                                     </tr>
+                                    @foreach($user as $human )
                                     <tr>
-                                        <td><a href="/admindetail">Restu</a></td>
-                                        <td>Belum Dikonfirmasi</td>
-                                        <td><div class="col-lg-5" style="padding: 0px"><button type="submit" class="btn btn-primary form-control" style="text-transform: uppercase;border-radius:0; background-color: #7c6bee;">Konfirmasi</button></div></td>
+                                        <td><a href='{{ url("/admin/detail/{$human->id}") }}'>{{App\User::find($human->team_id)->name}}</a></td>
+                                        <td>@if($human->verify == 1)Confirmed @else Not Confirmed @endif</td>
+                                        <td><div class="col-lg-5" style="padding: 0px"><a href='{{ url("/admin/verify/{$human->id}") }}' type="submit" class="btn btn-primary form-control" style="text-transform: uppercase;border-radius:0; background-color: #7c6bee;">Konfirmasi</a></div></td>
                                     </tr>
-                                    
+                                    @endforeach
                                     </table> 
 		                    
 		                    </div>

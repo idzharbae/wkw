@@ -33,16 +33,16 @@ class AdminController extends Controller
 
     public function main(){
         $user = Team::all();
-        return view('admin.index',compact('user'));
+        return view('adminhome',compact('user'));
     }
     public function detail($id){
         $user = Team::where('id',$id)->first();
-        return $user;
+        return view('admindetail',compact('user'));
     }
     public function verify($id){
         $user = Team::where('id',$id)->first();
         $user->verify = 1;
         $user->save();
-        return $user;
+        return redirect('admin/home');
     }
 }
