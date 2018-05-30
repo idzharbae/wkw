@@ -70,6 +70,9 @@ class TeamController extends Controller
     public function adminhome(){
         return view('adminhome');
     }
+    public function admindetail(){
+        return view('admindetail');
+    }
 
 
     public function uploadLetter(Request $request,$id){//ini id di tabel teams

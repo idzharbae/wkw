@@ -20,6 +20,7 @@
 
         table {
             border-collapse: collapse;
+            align: center;
             width: 100%;
         }
 
@@ -63,13 +64,13 @@
                                 <table>
                                     <tr>
                                         <th>Nama Grup</th>
-                                        <th>Status</th>
-                                        <th>Konfirmasi</th>
+                                        <th width="250px">Status</th>
+                                        <th width="200px">Konfirmasi</th>
                                     </tr>
                                     <tr>
-                                        <td>Restu</td>
+                                        <td><a href="/admindetail">Restu</a></td>
                                         <td>Belum Dikonfirmasi</td>
-                                        <td>Konfirmasi</td>
+                                        <td><div class="col-lg-5" style="padding: 0px"><button type="submit" class="btn btn-primary form-control" style="text-transform: uppercase;border-radius:0; background-color: #7c6bee;">Konfirmasi</button></div></td>
                                     </tr>
                                     
                                     </table> 

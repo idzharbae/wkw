@@ -29,6 +29,7 @@ Route::get('/seminar','TeamController@seminarIT')->name('seminar');
 Route::get('/workshop','TeamController@workshop')->name('workshop');
 Route::get('/postevent','TeamController@postEvent')->name('postevent');
 Route::get('/adminhome','TeamController@adminhome')->name('adminhome');
+Route::get('/admindetail','TeamController@admindetail')->name('admindetail');
 
 Route::get('/profile','TeamController@teamProfile')->name('team.profile');
 Route::get('/payment','TeamController@payment')->name('payment');
