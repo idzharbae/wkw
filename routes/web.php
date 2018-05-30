@@ -27,7 +27,7 @@ Route::get('/hacktoday','TeamController@hackToday')->name('hacktoday');
 Route::get('/business','TeamController@businessIT')->name('business');
 Route::get('/seminar','TeamController@seminarIT')->name('seminar');
 Route::get('/workshop','TeamController@workshop')->name('workshop');
-Route::get('/pascaevent','TeamController@pascaEvent')->name('pascaevent');
+Route::get('/postevent','TeamController@postEvent')->name('postevent');
 
 Route::get('/profile','TeamController@teamProfile')->name('team.profile');
 Route::get('/payment','TeamController@payment')->name('payment');

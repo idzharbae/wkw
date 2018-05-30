@@ -51,8 +51,8 @@ class TeamController extends Controller
         return view('workshop');
     }
 
-    public function pascaEvent(){
-        return view('pascaevent');
+    public function postEvent(){
+        return view('postevent');
     }
     public function showForm(){
     

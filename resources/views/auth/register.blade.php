@@ -17,7 +17,7 @@
     <body>
 				
 		<div class="main-container">
-		<section class="cover fullscreen image-bg" style="padding-top: 40px">
+		<section class="cover fullscreen image-bg overlay" style="padding-top: 7%">
 		        <div class="background-image-holder">
 		            <img alt="image" class="background-image" src="img/bglogin.png">
 		        </div>

@@ -15,13 +15,13 @@
 						<div class="col-md-5 col-sm-7">
 							
 							<p>Setiap tim harus melengkapi persyaratan administrasi pendaftaran dan pembayaran <b>maksimal tanggal 11 Juli 2018.<br><br></b>Jumlah pembayaran menyesuaikan pada tanggal ketika pembayaran lunas sebagai berikut :
-		<br><b>a.	Early Bird 	: 30 Mei - 20 Juni 2018 , sebesar Rp 100.000
-		<br>b.	Reguler 	: 21 Juni - 11 Juli 2018 , sebesar Rp 150.000</b><br></p>
-        <p>Pembayaran dilakukan melalui transfer ke:</p>
+							<br><b>a.	Early Bird 	: 30 Mei - 20 Juni 2018 , sebesar Rp 100.000
+							<br>b.	Reguler 	: 21 Juni - 11 Juli 2018 , sebesar Rp 150.000</b><br></p>
+							<p>Pembayaran dilakukan melalui transfer ke:</p>
                             <h4 style="color: white ;">AppsToday</h4>
-							<p>Nomor Rekening: xxxxxx<br>Atas Nama: Iyang Aneka Wibowo</p>
+							<p>Nomor Rekening: BNI 0450376377<br>Atas Nama: Iyang Aneka Wibowo</p>
                             <h4 style="color: white ;">Business IT Case</h4>
-							<p>Nomor Rekening: xxxxxx<br>Atas Nama: Leni Angraeni</p>
+							<p>Nomor Rekening: BNI 0450376082<br>Atas Nama: Leni Angraeni</p>
 							<h4 style="color: white ;">HackToday</h4>
 							<p><b>Tidak ada biaya pendaftaran yang dibebankan kepada peserta HackToday.</b></p>
 							<div class="col-md-8">
