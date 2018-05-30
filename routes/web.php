@@ -41,7 +41,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 /***
 *ADMIN ROUTE, GAUSAH DIGANTI JADI PREFIX, tp klo mau, monggo. 
 ***/
-Route::GET('admin/home','AdminController@main');
+Route::get('admin/home','AdminController@main');
 Route::GET('admin','Admin\LoginController@showLoginForm')->name('admin.login');
 Route::POST('admin','Admin\LoginController@login');
 Route::GET('admin/main','AdminController@main');
