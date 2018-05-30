@@ -17,8 +17,8 @@ Route::get('/register','RegisterController@create')->name('register');
 Route::get('/','TeamController@start')->name('index');
 
 Route::post('/daftar/{id}','TeamController@addTeam');
-Route::post('/bayar/{id}','TeamController@uploadPay');
-Route::post('/berkas/{id}','TeamController@uploadLetter');
+Route::post('/bayar/{id}','ProfileController@uploadPay');
+Route::post('/berkas/{id}','ProfileController@uploadLetter');
 
 Route::get('/stp1','TeamController@showForm');
 
@@ -29,8 +29,8 @@ Route::get('/seminar','TeamController@seminarIT')->name('seminar');
 Route::get('/workshop','TeamController@workshop')->name('workshop');
 Route::get('/postevent','TeamController@postEvent')->name('postevent');
 
-Route::get('/profile','TeamController@teamProfile')->name('team.profile');
-Route::get('/payment','TeamController@payment')->name('payment');
+Route::get('/profile','ProfileController@teamProfile')->name('team.profile');
+Route::get('/payment','ProfileController@payment')->name('payment');
 
 Auth::routes();
 
@@ -39,12 +39,15 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 /***
-*ADMIN ROUTE
+*ADMIN ROUTE, GAUSAH DIGANTI JADI PREFIX, tp klo mau, monggo. 
 ***/
-Route::GET('admin/home','AdminController@index');
+Route::get('admin/home','AdminController@main');
 Route::GET('admin','Admin\LoginController@showLoginForm')->name('admin.login');
 Route::POST('admin','Admin\LoginController@login');
+Route::GET('admin/main','AdminController@main');
 Route::POST('admin-password/email','Admin\ForgotPasswordController@sendResetLinkEmail')->name('admin.password.email');
 Route::GET('admin-password/reset','Admin\ForgotPasswordController@showLinkRequestForm')->name('admin.password.request');
 Route::POST('admin-password/reset','Admin\ResetPasswordController@reset');
 Route::GET('admin-password/reset/{token}','Admin\ResetPasswordController@showResetForm');
+Route::GET('admin/detail/{id}','AdminController@detail');
+Route::GET('admin/verify/{id}','AdminController@verify');

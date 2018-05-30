@@ -9,13 +9,20 @@
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-12 text-center">
-		                    <h2 class="uppercase mb0">PROFILE</h2>
+		                	@if($data->type == "AppsToday")
+		                		<img alt="Screenshot" align="left" class="mb-xs-24" src="img/iconapps.png" style="width: 150px; height: 200px;">
+		                	@elseif($data->type == "HackToday")
+								<img alt="Screenshot" align="left" class="mb-xs-24" src="img/iconhack.png" style="width: 150px; height: 200px;">
+		                	@elseif($data->type == "Business IT Case")
+			                	<img alt="Screenshot" align="left" class="mb-xs-24" src="img/iconbisnis.png" style="width: 150px; height: 200px;">
+		                	@endif
 		                </div>
 		            </div>
 		            
 		        </div>
 		        
 		        <ol class="breadcrumb breadcrumb-2">
+					<h3> {{$data->type}} </h3>
 		            <li>
 		                <a href="#profil">Profile</a>
 		            </li>
@@ -27,50 +34,53 @@
 		            </li>
 		        </ol>
 			</section>
+			
 			<section style="background-color:#26c99e;" id="profil">
 		        <div class="container">
 		            <div class="row">
-                    <div class="feature bordered text-center bg-secondary" style=" box-shadow: 0 9px 30px 10px rgba(0, 0, 0, 0.2);">
-		                        <h3 class="uppercase mb40 mb-xs-24">{{App\User::find($data->team_id)->name}}</h3>
-		                        <div class="mb40">
-		                            <h6 class="mb8 uppercase">Members</h6>
-		                            <p style="color:black !important;">
-		                            	@if($data->member_one!=NULL)
-		                            	{{$data->member_one}}<br />
-		                            	@endif
-		                            	@if($data->member_two!=NULL)
-		                            	{{$data->member_two}}<br />
-		                            	@endif
-		                            	@if($data->member_three!=NULL)
-		                            	{{$data->member_three}}
-		                            	@endif
-		                            </p>
-		                        </div>
-		                        <div class="mb40">
-		                            <h6 class="mb8 uppercase">School</h6>
-		                            <p style="color:black !important;">
-		                                {{$data->school}}
-		                            </p>
-		                        </div>
-		                        <div class="mb40">
-		                            <h6 class="mb8 uppercase">Province</h6>
-		                            <p style="color:black !important;">
-		                                {{$data->province}}
-		                            </p>
-                                </div>
-                                <div class="mb40">
-		                            <h6 class="mb8 uppercase">Contact</h6>
-		                            <p style="color:black !important;">
-                                        {{App\User::find($data->team_id)->email}}<br>
-                                        {{$data->phone_num}}<br>
-                                        {{$data->line_id}}
-		                            </p>
-                                </div>
-		                    </div>
+					
+                    <div class="feature bordered text-center bg-secondary" style="box-shadow: 0 9px 30px 10px rgba(0, 0, 0, 0.2);">
+						<h3 class="uppercase mb40 mb-xs-24">{{App\User::find($data->team_id)->name}}</h3>
+						<div class="mb40">
+							<h6 class="mb8 uppercase">Members</h6>
+							<p style="color:black !important;">
+								@if($data->member_one!=NULL)
+								{{$data->member_one}}<br />
+								@endif
+								@if($data->member_two!=NULL)
+								{{$data->member_two}}<br />
+								@endif
+								@if($data->member_three!=NULL)
+								{{$data->member_three}}
+								@endif
+							</p>
+						</div>
+						<div class="mb40">
+							<h6 class="mb8 uppercase">School</h6>
+							<p style="color:black !important;">
+								{{$data->school}}
+							</p>
+						</div>
+						<div class="mb40">
+							<h6 class="mb8 uppercase">Province</h6>
+							<p style="color:black !important;">
+								{{$data->province}}
+							</p>
+						</div>
+						<div class="mb40">
+							<h6 class="mb8 uppercase">Contact</h6>
+							<p style="color:black !important;">
+								{{App\User::find($data->team_id)->email}}<br>
+								{{$data->phone_num}}<br>
+								{{$data->line_id}}
+							</p>
+						</div>
+					</div>
 		            </div>
-		            
 		        </div>
-		    </section><section style="background-color: #6290e0;" id="berkas">
+			</section>
+			
+			<section style="background-color: #6290e0;" id="berkas">
 		        <form method="POST" action='{{ url("/berkas/{$data->team_id}") }}' enctype="multipart/form-data" >
 		        	{{csrf_field()}}
 		        <div class="container">
