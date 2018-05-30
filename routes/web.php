@@ -17,8 +17,8 @@ Route::get('/register','RegisterController@create')->name('register');
 Route::get('/','TeamController@start')->name('index');
 
 Route::post('/daftar/{id}','TeamController@addTeam');
-Route::post('/bayar/{id}','TeamController@uploadPay');
-Route::post('/berkas/{id}','TeamController@uploadLetter');
+Route::post('/bayar/{id}','ProfileController@uploadPay');
+Route::post('/berkas/{id}','ProfileController@uploadLetter');
 
 Route::get('/stp1','TeamController@showForm');
 
@@ -29,8 +29,8 @@ Route::get('/seminar','TeamController@seminarIT')->name('seminar');
 Route::get('/workshop','TeamController@workshop')->name('workshop');
 Route::get('/postevent','TeamController@postEvent')->name('postevent');
 
-Route::get('/profile','TeamController@teamProfile')->name('team.profile');
-Route::get('/payment','TeamController@payment')->name('payment');
+Route::get('/profile','ProfileController@teamProfile')->name('team.profile');
+Route::get('/payment','ProfileController@payment')->name('payment');
 
 Auth::routes();
 
