@@ -73,47 +73,59 @@
         </section>
             
         <section id="timeline" style="padding-bottom: 0px">
-            <div class="col-md-4 col-md-offset-4 feature bordered text-center">
-                <h3 align="center">TIMELINE</h3>
-                <div class="panel-heading">
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a href="#tab1primary" style="color: black;" data-toggle="tab">1</a></li>
-                            <li><a href="#tab2primary" style="color: black;" data-toggle="tab">2</a></li>
-                            <li><a href="#tab3primary" style="color: black;" data-toggle="tab">3</a></li>
-                            <li><a href="#tab4primary" style="color: black;" data-toggle="tab">4</a></li>
-                            <li><a href="#tab5primary" style="color: black;" data-toggle="tab">5</a></li>
-                            <li><a href="#tab6primary" style="color: black;" data-toggle="tab">6</a></li>
-                        </ul>
-                </div>
-                <div class="panel-body">
-                    <div class="tab-content">
-                        <div class="tab-pane fade in active" id="tab1primary">
-                            <h4 align="center">30 Mei – 11 Juli 2018</h4>
-                            <h4 align="center">Pendaftaran</h4>
-                        </div>
-                        <div class="tab-pane fade" id="tab2primary">
-                            <h4 align="center">10 Juni – 18 Juli 2018</h4>
-                            <h4 align="center">Submisi Tahap 1</h4>
-                        </div>
-                        <div class="tab-pane fade" id="tab3primary">
-                            <h4 align="center">2 Agustus 2018</h4>
-                            <h4 align="center">Pengumuman Lolos Tahap 2</h4>
-                        </div>
-                        <div class="tab-pane fade" id="tab4primary">
-                            <h4 align="center">3 – 17  Agustus 2018</h4>
-                            <h4 align="center">Submisi Tahap 2</h4>
-                        </div>
-                        <div class="tab-pane fade" id="tab5primary">
-                            <h4 align="center">22 Agustus 2018</h4>
-                            <h4 align="center">Pengumuman Finalis</h4>
-                        </div>
-                        <div class="tab-pane fade" id="tab6primary">
-                            <h4 align="center">15 September 2018</h4>
-                            <h4 align="center">Final</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
+			<div class="col-md-4 col-md-offset-4 feature bordered text-center">
+				<h3 align="center">TIMELINE</h3>
+			</div>
+		<ul class="timeline">
+				<li>
+				  <div class="direction-r">
+					<div class="flag-wrapper">
+					  <span class="hexa"></span>
+					  <span class="flag">Pendaftaran</span>
+					  <span class="time-wrapper"><span class="time" style="color:white">30 Mei – 11 Juli 2018</span></span>
+					</div>
+				</li>
+				<li>
+				  <div class="direction-l">
+					<div class="flag-wrapper">
+					  <span class="hexa"></span>
+					  <span class="flag">Submisi Tahap 1</span>
+					  <span class="time-wrapper"><span class="time" style="color:white">10 Juni – 18 Juli 2018</span></span>
+					</div>
+				</li>
+				<li>
+				  <div class="direction-r">
+					<div class="flag-wrapper">
+					  <span class="hexa"></span>
+					  <span class="flag">Pengumuman Peserta Tahap 2</span>
+					  <span class="time-wrapper"><span class="time" style="color:white">2 Agustus 2018</span></span>
+					</div>
+				</li>
+				<li>
+				<div class="direction-l">
+					<div class="flag-wrapper">
+					<span class="hexa"></span>
+					<span class="flag">Submisi Tahap 2</span>
+					<span class="time-wrapper"><span class="time" style="color:white">3 – 17  Agustus 2018</span></span>
+					</div>
+				</li>
+				<li>
+				<div class="direction-r">
+					<div class="flag-wrapper">
+					<span class="hexa"></span>
+					<span class="flag">Pengumuman Finalis</span>
+					<span class="time-wrapper"><span class="time" style="color:white">22 Agustus 2018</span></span>
+					</div>
+				</li>
+				<li>
+				<div class="direction-l">
+					<div class="flag-wrapper">
+					<span class="hexa"></span>
+					<span class="flag">Final</span>
+					<span class="time-wrapper"><span class="time" style="color:white">15 September 2018</span></span>
+					</div>
+				</li>
+			  </ul>
         </section>
         
         <section id="rewards" style="padding-bottom: 0px">

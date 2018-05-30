@@ -2851,7 +2851,7 @@ button[type="submit"] .form-loading {
 }
 .page-title-1,
 .page-title-2 {
-  height: 200px;
+  height: 400px;
 }
 .page-title-1 .breadcrumb,
 .page-title-3 .breadcrumb {
@@ -2869,7 +2869,7 @@ button[type="submit"] .form-loading {
 .nav-is-overlay.page-title-1.bg-dark:first-child,
 .nav-is-overlay .page-title-2.image-bg:first-child,
 .nav-is-overlay.page-title-2.bg-dark:first-child {
-  height: 200px;
+  height: 250px;
   padding-top: 55px;
 }
 @media all and (max-width: 767px) {
@@ -2880,7 +2880,7 @@ button[type="submit"] .form-loading {
 }
 .page-title-3,
 .page-title-4 {
-  height: 100px;
+  height: 400px;
 }
 .page-title-4 .breadcrumb {
   position: relative;
@@ -2891,7 +2891,7 @@ button[type="submit"] .form-loading {
 .nav-is-overlay.page-title-3.bg-dark:first-child,
 .nav-is-overlay .page-title-4.image-bg:first-child,
 .nav-is-overlay.page-title-4.bg-dark:first-child {
-  height: 100px;
+  height: 300px;
   padding-top: 55px;
 }
 @media all and (max-width: 767px) {
