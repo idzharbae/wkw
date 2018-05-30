@@ -59,7 +59,7 @@
                     <div class="feature bordered text-center">
                         <p class="lead mb40" style="color: white">
 						National Seminar ITTODAY 2018 merupakan seminar bertaraf nasional yang diisi oleh pembicara yang berasal dari perusahaan, startup, ataupun praktisi-praktisi di bidang IT. Seminar berisi presentasi dan interaksi antara pembicara dengan peserta.
-                        </p>
+                        </h5>
                         <a class="btn btn-lg btn-white mb8 mt-xs-24" onclick="alert('Pendaftaran seminar belum dibuka.')">Register Now</a>
                     </div>
                 </div>
@@ -92,9 +92,9 @@
 		                    <div class="feature boxed cast-shadow-light"> 
 		                        <img alt="Pic" class="image-small inline-block mb24" src="img/avatar1.png">
 		                        <h4>"Polished, Incredible!"</h4>
-		                        <p>
+		                        <h5>
 		                            It's clear to see just how seriously these guys take design. I've never come across a template with the level of polish as this!
-		                        </p>
+		                        </h5>
 		                        <span>
 		                            <strong>Anne Potter</strong> - via Envato</span>
 		                    </div>
@@ -103,9 +103,9 @@
 		                    <div class="feature boxed cast-shadow-light">
 		                        <img alt="Pic" class="image-small inline-block mb24" src="img/avatar2.png">
 		                        <h4>"Customer For Life"</h4>
-		                        <p>
+		                        <h5>
 		                            I love the ease-of-use the builder provides - I can quickly test different combinations and experiment with font and color combinations to find that sweet spot.
-		                        </p>
+		                        </h5>
 		                        <span>
 		                            <strong>Jake Sims</strong> - via Twitter</span>
 		                    </div>
@@ -114,9 +114,9 @@
 		                    <div class="feature boxed cast-shadow-light">
 		                        <img alt="Pic" class="image-small inline-block mb24" src="img/avatar3.png">
 		                        <h4>"Almost too easy!"</h4>
-		                        <p>
+		                        <h5>
 		                            As a seasoned template user, I really appreciate the consistent styling for all common tags, it makes customising the sections that much easier.
-		                        </p>
+		                        </h5>
 		                        <span>
 		                            <strong>Larry Smith</strong> - via Envato</span>
 		                    </div>
@@ -140,9 +140,9 @@
 		                                <h4 class="inline-block mb0">Kapan dan dimana seminar ini akan diadakan?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
 										 Tanggal 16 September 2018 di Auditorium CCR IPB
-		                                </p>
+		                                </h5>
 		                            </div>
 		                        </li>
 		                        <li>
@@ -150,9 +150,9 @@
 		                                <h4 class="inline-block mb0">Apakah Seminar ini berbayar?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Seminar ini <b>gratis</b>
-		                                </p>
+		                                </h5>
 		                            </div>
 		                        </li>
 		                        <li>
@@ -160,9 +160,9 @@
 		                                <h4 class="inline-block mb0">Kapan pendaftaran seminar dibuka?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Pendaftaran seminar dibuka tanggal 5-20 Agustus 2018, konfirmasi seminar dilaksanakan pada tanggal 5-10 September 2018.
-		                                </p>
+		                                </h5>
 		                            </div>
 		                        </li>
 		                        <li>
@@ -170,9 +170,9 @@
 		                                <h4 class="inline-block mb0">Jam berapa seminar dimulai dan berakhir?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
 										Seminar akan open gate pukul 08.00 dan dimulai pukul 08.30 berakhir pada pukul 17.00
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -180,9 +180,9 @@
 		                                <h4 class="inline-block mb0">Apa saja yang akan di dapatkan peserta?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Peserta akan mendapatkan e-certificate, snack, dan konsumsi makan siang.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -190,9 +190,9 @@
 		                                <h4 class="inline-block mb0">Siapa saja yang boleh ikut seminar?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Mahasiswa, professional muda, atau khalayak umum yang tertarik dengan bidang IT.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
 		                    </ul>

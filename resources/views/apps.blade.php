@@ -237,16 +237,6 @@
 		                        </li>
 		                        <li>
 		                            <div class="title">
-		                                <h4 class="inline-block mb0">Apakah diperbolehkan menggunakan almamater saat tahap final?</h4>
-		                            </div>
-		                            <div class="content">
-		                                <h5>
-                                        <b>Tidak diperkenankan</b> menggunakan atribut universitas seperti yang dijelaskan dalam rulebook agar penilaian berlangsung secara objektif.
-		                                </h5>
-		                            </div>
-		                        </li>
-		                        <li>
-		                            <div class="title">
 		                                <h4 class="inline-block mb0">Apakah peserta harus berasal dari satu institusi yang sama?</h4>
 		                            </div>
 		                            <div class="content">
