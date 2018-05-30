@@ -16,9 +16,9 @@ Route::get('/register','RegisterController@create')->name('register');
 
 Route::get('/','TeamController@start')->name('index');
 
-Route::post('/daftar/{id}','TeamController@addTeam');
-Route::post('/bayar/{id}','ProfileController@uploadPay');
-Route::post('/berkas/{id}','ProfileController@uploadLetter');
+Route::post('/daftar','TeamController@addTeam');
+Route::post('/bayar','ProfileController@uploadPay');
+Route::post('/berkas','ProfileController@uploadLetter');
 
 Route::get('/stp1','TeamController@showForm');
 

@@ -1,5 +1,9 @@
-
 <!doctype html>
+
+@extends('layouts.navbar3')
+
+@section('content')
+
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -21,15 +25,19 @@
             color: #000000;
             background-color: #fff;
         }
-
-        table {
-            border-collapse: collapse;
-            align: center;
-            width: 100%;
-        }
-
         th, td {
             padding: 15px;
+        }
+        table {
+        width: 50%;
+        align: center;
+        counter-reset: row-num;
+        }
+        table tr {
+        counter-increment: row-num;
+        }
+        table tr td:first-child::before {
+            content: counter(row-num) ". ";
         }
         </style>
     </head>
@@ -96,4 +104,5 @@
         <script src="{{asset('js/scripts.js">')}}</script>
     </body>
 </html>
-				
+
+@endsection

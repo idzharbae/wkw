@@ -20,7 +20,6 @@ class TeamController extends Controller
 	
 	}
 
-
     public function appsToday(){
         return view('apps');
     }
@@ -60,6 +59,7 @@ class TeamController extends Controller
     public function adminhome(){
         return view('adminhome');
     }
+
     public function admindetail(){
         return view('admindetail');
     }
