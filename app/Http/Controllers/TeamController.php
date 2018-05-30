@@ -63,7 +63,7 @@ class TeamController extends Controller
     public function admindetail(){
         return view('admindetail');
     }
-    public function addTeam(Request $request,$id){
+    public function addTeam(Request $request){
         $this->validate($request,[
             'member_one'=>'required',
             'school'=>'required',
