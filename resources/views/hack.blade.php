@@ -194,7 +194,7 @@
 		        </div>
 		    </section> -->
             
-            <section id="faq" style="background-color:blue">
+            <section id="faq">
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-6 col-md-offset-3 text-center feature bordered text-center">
