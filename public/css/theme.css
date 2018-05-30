@@ -276,6 +276,9 @@ textarea {
   margin-top: 0;
   padding: 0;
 }
+.content h5{
+  color:white;
+}
 h1,
 h2,
 h3,
@@ -2632,7 +2635,7 @@ button[type="submit"] .form-loading {
   background: #fff;
 }
 .feature.bordered {
-  padding: 32px;
+  padding: 24px;
   border: 2px solid #ccc;
 }
 .feature {
@@ -2851,7 +2854,7 @@ button[type="submit"] .form-loading {
 }
 .page-title-1,
 .page-title-2 {
-  height: 400px;
+  height: 200px;
 }
 .page-title-1 .breadcrumb,
 .page-title-3 .breadcrumb {
@@ -2880,7 +2883,7 @@ button[type="submit"] .form-loading {
 }
 .page-title-3,
 .page-title-4 {
-  height: 240px;
+  height: 100px;
 }
 .page-title-4 .breadcrumb {
   position: relative;
@@ -2891,7 +2894,7 @@ button[type="submit"] .form-loading {
 .nav-is-overlay.page-title-3.bg-dark:first-child,
 .nav-is-overlay .page-title-4.image-bg:first-child,
 .nav-is-overlay.page-title-4.bg-dark:first-child {
-  height: 295px;
+  height: 100px;
   padding-top: 55px;
 }
 @media all and (max-width: 767px) {

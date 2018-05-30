@@ -16,7 +16,7 @@
         <link rel="stylesheet" type="text/css" href="css/timeline.css">
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     </head>
     <body style="background:url({{url('img/footer.png')}}) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">	
 		<div class="nav-container">
@@ -63,7 +63,7 @@
                 <div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
                     <!-- <h1 class="large mb40 mb-xs-16">Sleek, Smart and Modern.</h1> -->
                     <div class="feature bordered text-center">
-                        <p class="lead mb40" style="color: #282825;">
+                        <p class="lead mb40" style="color: white">
                         AppsToday merupakan salah satu cabang kompetisi IT Today 2018 pada bidang inovasi aplikasi. Lomba ini dibuat sebagai wadah bagi peserta yang akan menjadi generasi developer baru yang kreatif dan inovatif untuk memajukan daya saing Indonesia di bidang teknologi informasi.
                         </p>
                         <a class="btn btn-lg btn-white mb8 mt-xs-24" target="_blank" href="https://drive.google.com/a/apps.ipb.ac.id/uc?authuser=0&id=1o1vxfQcdhxorBuDZRMBvc9qKYI08wvQq&export=download">DOWNLOAD RULEBOOK</a>
@@ -128,7 +128,7 @@
 		                <div class="col-sm-4 text-center">
 		                    <div class="feature">
 		                        <i class="fa fa-trophy icon fade-3-4 inline-block mb16"></i>
-		                        <h4>3rd WINNER</h4>
+		                        <h4>3<font size=5><sup>rd</sup></font> WINNER</h4>
 		                        <p>
                                 Rp 1.500.000 + SERTIFIKAT + PLAKAT
 		                        </p>
@@ -137,7 +137,7 @@
 		                <div class="col-sm-4 text-center">
 		                    <div class="feature">
 		                        <i class="fa fa-trophy icon fade-3-4 inline-block mb16"></i>
-		                        <h3>1st WINNER</h3>
+		                        <h3>1<font size=5><sup>st</sup></font> WINNER</h3>
 		                        <p>
                                 Rp 5.000.000 + SERTIFIKAT + PLAKAT
 		                        </p>
@@ -146,7 +146,7 @@
 		                <div class="col-sm-4 text-center">
 		                    <div class="feature">
 		                        <i class="fa fa-trophy icon fade-3-4 inline-block mb16"></i>
-		                        <h4>2nd WINNER</h4>
+		                        <h4>2<font size=5><sup>nd</sup></font> WINNER</h4>
 		                        <p>
                                 Rp 3.000.000 + SERTIFIKAT + PLAKAT
 		                        </p>
@@ -214,15 +214,15 @@
 		            
 		            <div class="row">
 		                <div class="col-sm-10 col-sm-offset-1">
-		                    <ul class="accordion accordion-2 one-open">
+		                    <ul class="accordion accordion-2">
 		                        <li>
 		                            <div class="title">
 		                                <h4 class="inline-block mb0">Apa itu AppsToday?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                        AppsToday merupakan salah satu rangkaian lomba IT TODAY yang merujuk pada pembuatan aplikasi yang kreatif dan inovatif dalam memecahkan berbagai permasalahan yang mendasar dalam kegiatan sehari-hari.
-		                                </p>
+										</h5>
 		                            </div>
 		                        </li>
 		                        <li>
@@ -230,9 +230,9 @@
 		                                <h4 class="inline-block mb0">Bagaimana susunan rangkaian lomba AppsToday?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Tahap pertama: Registrasi dan menyelesaikan submisi 1.<br> Tahap kedua: Membuat video dan prototype aplikasi. <br>Tahap final: Presentasi karya kepada juri maupun pengunjung melalui stand.
-		                                </p>
+		                                </h5>
 		                            </div>
 		                        </li>
 		                        <li>
@@ -240,9 +240,9 @@
 		                                <h4 class="inline-block mb0">Apakah diperbolehkan menggunakan almamater saat tahap final?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         <b>Tidak diperkenankan</b> menggunakan atribut universitas seperti yang dijelaskan dalam rulebook agar penilaian berlangsung secara objektif.
-		                                </p>
+		                                </h5>
 		                            </div>
 		                        </li>
 		                        <li>
@@ -250,9 +250,9 @@
 		                                <h4 class="inline-block mb0">Apakah peserta harus berasal dari satu institusi yang sama?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Ya, anggota tim harus berasal dari universitas/institusi yang sama tapi boleh lintas jurusan Berapa anggota per tim yang diperbolehkan. Tim terdiri dari 1-3 anggota.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -260,9 +260,9 @@
 		                                <h4 class="inline-block mb0">Siapa saja yang boleh mengikuti kompetisi ini?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Mahasiswa S1/D3 seluruh Indonesia.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -270,9 +270,9 @@
 		                                <h4 class="inline-block mb0">Kapan periode pendaftaran dibuka?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Untuk tahap pendaftaran Early Bird akan dibuka pada tanggal 30 Mei-20 Juni 2018, sedangkan tahap pendaftaran reguler dibuka pada tanggal 21 Juni-11 Juli 2018.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -280,9 +280,9 @@
 		                                <h4 class="inline-block mb0">Berapa biaya pendaftaran untuk mengikuti kompeitisi AppsToday?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Untuk tahap pendaftaran Early Bird, biaya pendaftaran sebesar Rp 100.000, sedangkan untuk tahap pendaftaran reguler biaya sebesar Rp 150.000.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -290,9 +290,9 @@
 		                                <h4 class="inline-block mb0">Bagaimana dengan format pengumpulan?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Proposal aplikasi dikumpulkan dalam format pdf. Submisi tahap dua dikumpulkan dalam format .zip.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -300,9 +300,9 @@
 		                                <h4 class="inline-block mb0">Berapa banyak tim yang lolos ke tahap final?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Tim yang lolos tahap final sebanyak 5 tim.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -310,9 +310,9 @@
 		                                <h4 class="inline-block mb0">Berapa tim yang lolos ke tahap dua?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                         Tim yang lolos tahap dua sebanyak 15 tim.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
                                 <li>
@@ -320,9 +320,9 @@
 		                                <h4 class="inline-block mb0">Apakah ada ketentuan penggunaan bahasa?</h4>
 		                            </div>
 		                            <div class="content">
-		                                <p>
+		                                <h5>
                                             Tidak ada, gunakan bahasa yang mudah dimengerti oleh orang lain.
-		                                </p>
+		                                </h5>
 		                            </div>
                                 </li>
 		                    </ul>
