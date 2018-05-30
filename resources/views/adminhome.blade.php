@@ -1,58 +1,93 @@
-<html>
-	<head>
-		<meta charset="utf-8">
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
         <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
-		<link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-		{{-- <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet">
-		<link href="{{asset('css/themify-icons.css')}}" rel="stylesheet">
-		<link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
-		<link href="{{asset('css/theme.css')}}" rel="stylesheet">
-		<link href="{{asset('css/custom.css')}}" rel="stylesheet"> --}}
-		<link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
-	</head>
-	<body>
-		<div class="nav-container">
-		    <nav class="">
-		        <div class="nav-bar text-center" style="border-bottom: 0px">
-		            <div class="col-md-2 col-md-push-5 col-sm-12 text-center">
-		                <a href="/">
-		                    <img alt="logo" style="height: 45px; width: auto;" src="img/logoittoday.png">
-		                </a>
-		            </div>
-		
-		            <div class="col-sm-12 col-md-5 col-md-pull-2 overflow-hidden-xs">
-		                <ul class="menu inline-block pull-right">
-		                    <li><a href="/adminhome" style="font-size: 16px;">Home</a></li>
-		                </ul>
-		            </div>
-		        
-		            <div class="module right">
-                    <a class="btn btn-sm hidden-xs hidden-sm hidden-md" style="font-size: 16px;" href="#">Login</a>
-		            </div>
-		               
-		            </div>
-		        </div>
-		
-		        <div class="module widget-handle mobile-toggle right visible-sm visible-xs absolute-xs">
-		            <i class="ti-menu"></i>
-		        </div>
-			</nav>
-			
-		<main class="py-4" >
-			@yield('content')
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+        <style>
+        table, td, th {    
+            border: 1px solid #ddd;
+            text-align: left;
+            color: #000000;
+            background-color: #fff;
+        }
 
-		</main>
-		{{-- Back to top button --}}
-		{{-- <a href="#" id="myBtn" title="Go to top">Back to top</a> --}}
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            padding: 15px;
+        }
+        </style>
+    </head>
+    <body style="background:url({{url('img/footer.png')}}) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">
+				
+		<div class="nav-container">
 		</div>
 		
-	</body>
-	<script src="{{asset('js/app.js')}}"></script>
-	{{-- animation --}}
-	<script src="{{asset('js/main.js')}}"></script>
+		<div class="main-container">
+		<section class="page-title page-title-4 bg-secondary">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-md-6">
+		                    <h3 class="uppercase mb0">Admin Page</h3>
+		                </div>
+		                <div class="col-md-6 text-right">
+		                    <ol class="breadcrumb breadcrumb-2">
+		                        <li>
+		                            <a href="/adminhome">Home</a>
+		                        </li>
+		                       
+		                    </ol>
+		                </div>
+		            </div>
+		            
+		        </div>
+		        
+		    </section><section>
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-sm-10 col-sm-offset-1">
+		                    <div class="post-snippet mb64">
+		                        <div class="post-title">
+		                            <h4 class="inline-block">Tabel Peserta Lomba</h4><br>
+		                        </div>
+                                <table>
+                                    <tr>
+                                        <th>Nama Grup</th>
+                                        <th>Status</th>
+                                        <th>Konfirmasi</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Restu</td>
+                                        <td>Belum Dikonfirmasi</td>
+                                        <td>Konfirmasi</td>
+                                    </tr>
+                                    
+                                    </table> 
+		                    
+		                    </div>
+		                </div>
+		                
+		            </div>
+		            
+		        </div>
+		        
+		    </section></div>
+		
+				
+	<script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
+				
