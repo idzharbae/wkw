@@ -67,6 +67,9 @@ class TeamController extends Controller
         return view('payment',compact('data'));
 
     }
+    public function adminhome(){
+        return view('adminhome');
+    }
 
 
     public function uploadLetter(Request $request,$id){//ini id di tabel teams

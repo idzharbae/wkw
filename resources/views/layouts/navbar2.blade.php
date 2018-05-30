@@ -78,7 +78,7 @@
 		                        <ul>
 									<li><a href="{{route('seminar')}}">National Seminar</a></li>
 									<!--<li><a href="{{route('workshop')}}">Workshop</a></li>
-									<li><a href="{{route('pascaevent')}}">Post Event</a></li>-->
+									-->
 		                        </ul>
 							</li>
 		                </ul>
