@@ -86,3 +86,43 @@ $(window).scroll(function() {
         $('#myBtn').fadeOut();
     }
 });
+
+function preview1(input) {
+  if (input.files && input.files[0]) {
+    var freader = new FileReader();
+    freader.onload = function (e) {
+      $("#preview1").show();
+      $('#preview1').attr('src', e.target.result);
+    }
+    freader.readAsDataURL(input.files[0]);
+  }
+}function preview2(input) {
+  if (input.files && input.files[0]) {
+    var freader = new FileReader();
+    freader.onload = function (e) {
+      $("#preview2").show();
+      $('#preview2').attr('src', e.target.result);
+    }
+    freader.readAsDataURL(input.files[0]);
+  }
+}
+function preview3(input) {
+  if (input.files && input.files[0]) {
+    var freader = new FileReader();
+    freader.onload = function (e) {
+      $("#preview3").show();
+      $('#preview3').attr('src', e.target.result);
+    }
+    freader.readAsDataURL(input.files[0]);
+  }
+}
+
+$("#selectedFile1").change(function(){
+  preview1(this);
+});
+$("#selectedFile2").change(function(){
+  preview2(this);
+});
+$("#selectedFile3").change(function(){
+  preview3(this);
+});
