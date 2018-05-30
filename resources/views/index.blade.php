@@ -139,7 +139,7 @@
 				<div class="col-md-5 col-sm-6 col-md-push-7 col-sm-push-6">
 					<h2>NATIONAL SEMINAR</h2>
 					<p class="lead mb48 mb-xs-32">
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.
+					National Seminar ITTODAY 2018 merupakan seminar bertaraf nasional yang diisi oleh pembicara yang berasal dari perusahaan, startup, ataupun praktisi-praktisi di bidang IT.
 					</p>
 				</div>
 			</div>

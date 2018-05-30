@@ -20,7 +20,7 @@
 		<div class="main-container">
 		<section class="page-title page-title-4 image-bg overlay parallax">
 		        <div class="background-image-holder">
-		            <img alt="Background Image" class="background-image" src="img/seminar.png">
+		            <img alt="Background Image" class="background-image" src="img/bggradien.png">
 		        </div>
 		        <div class="container">
 		            <div class="row">
@@ -49,21 +49,23 @@
 		        
 		    </section>
           
-            <section id="about">
-		        <div class="container">
-		            <div class="row">
-		                <div class="col-sm-10 col-sm-offset-1 text-center">
-		                    <h3>ABOUT</h3>
-		                    <p class="lead">
-		                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-                            </p>
-                            <a class="btn btn-lg btn-white mb0" href="#">Register Now</a>
-		                </div>
-		            </div>
-		            
-		        </div>
-		        
-		    </section>
+			<section id="about" class="image-edge" style="padding-bottom: 0px">
+            <div class="col-md-6 col-sm-4 p0 col-md-push-6 col-sm-push-8">
+                <img alt="Screenshot" class="mb-xs-24" src="img/iconseminar.png">
+            </div>
+            <div class="container">
+                <div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
+                    <!-- <h1 class="large mb40 mb-xs-16">Sleek, Smart and Modern.</h1> -->
+                    <div class="feature bordered text-center">
+                        <p class="lead mb40" style="color: #282825;">
+						National Seminar ITTODAY 2018 merupakan seminar bertaraf nasional yang diisi oleh pembicara yang berasal dari perusahaan, startup, ataupun praktisi-praktisi di bidang IT. Seminar berisi presentasi dan interaksi antara pembicara dengan peserta.
+                        </p>
+                        <a class="btn btn-lg btn-white mb8 mt-xs-24" onclick="alert('Pendaftaran seminar belum dibuka.')">Register Now</a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
             
             <section id="speakers">
 		        <div class="container">

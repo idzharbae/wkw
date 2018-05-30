@@ -25,7 +25,7 @@
 		<div class="main-container">
 		<section class="page-title page-title-4 image-bg overlay parallax">
 		        <div class="background-image-holder">
-		            <img alt="Background Image" class="background-image" src="img/bisnis.png">
+		            <img alt="Background Image" class="background-image" src="img/bggradien.png">
 		        </div>
 		        <div class="container">
 		            <div class="row">
@@ -57,7 +57,7 @@
 
         <section id="rulebook" class="image-edge" style="padding-bottom: 0px">
             <div class="col-md-6 col-sm-4 p0 col-md-push-6 col-sm-push-8">
-                <img alt="Screenshot" class="mb-xs-24" src="img/phone2.png">
+                <img alt="Screenshot" class="mb-xs-24" src="img/iconbisnis.png">
             </div>
             <div class="container">
                 <div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
