@@ -55,7 +55,6 @@
             </div>
             <div class="container">
                 <div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
-                    <!-- <h1 class="large mb40 mb-xs-16">Sleek, Smart and Modern.</h1> -->
                     <div class="feature bordered text-center">
                         <p class="lead mb40" style="color: white">
 						National Seminar ITTODAY 2018 merupakan seminar bertaraf nasional yang diisi oleh pembicara yang berasal dari perusahaan, startup, ataupun praktisi-praktisi di bidang IT. Seminar berisi presentasi dan interaksi antara pembicara dengan peserta.
@@ -79,51 +78,7 @@
 		        </div>
 		        
 		    </section>
-             <!-- <section id="testimonies" style="padding-bottom: 0px">
-		        <div class="container">
-		            <div class="row mb64 mb-xs-24">
-		                <div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
-		                    <h3>TESTIMONIES</h3>
-		                </div>
-		            </div>
-		            
-		            <div class="row">
-		                <div class="col-sm-4 text-center">
-		                    <div class="feature boxed cast-shadow-light"> 
-		                        <img alt="Pic" class="image-small inline-block mb24" src="img/avatar1.png">
-		                        <h4>"Polished, Incredible!"</h4>
-		                        <h5>
-		                            It's clear to see just how seriously these guys take design. I've never come across a template with the level of polish as this!
-		                        </h5>
-		                        <span>
-		                            <strong>Anne Potter</strong> - via Envato</span>
-		                    </div>
-		                </div>
-		                <div class="col-sm-4 text-center">
-		                    <div class="feature boxed cast-shadow-light">
-		                        <img alt="Pic" class="image-small inline-block mb24" src="img/avatar2.png">
-		                        <h4>"Customer For Life"</h4>
-		                        <h5>
-		                            I love the ease-of-use the builder provides - I can quickly test different combinations and experiment with font and color combinations to find that sweet spot.
-		                        </h5>
-		                        <span>
-		                            <strong>Jake Sims</strong> - via Twitter</span>
-		                    </div>
-		                </div>
-		                <div class="col-sm-4 text-center">
-		                    <div class="feature boxed cast-shadow-light">
-		                        <img alt="Pic" class="image-small inline-block mb24" src="img/avatar3.png">
-		                        <h4>"Almost too easy!"</h4>
-		                        <h5>
-		                            As a seasoned template user, I really appreciate the consistent styling for all common tags, it makes customising the sections that much easier.
-		                        </h5>
-		                        <span>
-		                            <strong>Larry Smith</strong> - via Envato</span>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </section> -->
+
 			<section id="faq" style="padding-bottom: 0px">
 		        <div class="container">
 		            <div class="row">
