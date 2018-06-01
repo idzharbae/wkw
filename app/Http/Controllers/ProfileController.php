@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Http\Request;
 use App\Team;
+use App\User;
 use Auth;
 class ProfileController extends Controller
 {
@@ -21,34 +22,35 @@ class ProfileController extends Controller
 		    return view('reg_stp1', compact('users')); 
         }
         else{
-	        return view('editprofile',compact('data'));
+	        return view('editprofile',compact('data','users'));
         }
     }
 
     public function saveProfile(Request $request){
         $this->validate($request,[
+            'groupname'=>'required',
             'member_one'=>'required',
             'school'=>'required',
             'province'=>'required',
             'phone_num'=>'required',
             // 'tipe' =>'required'
         ]);
-        
         $id = $request->input('id');
-        $team = new Team;
-        //cek kalo member 2 ama 3 ada atau tidak
-        $team->team_id = $id;
-        $team->member_one = $request->input('member_one');
-        $team->member_two = $request->input('member_two');
-        $team->member_three = $request->input('member_three');
-        $team->school = $request->input('school');
-        $team->province = $request->input('province');
-        $team->phone_num = $request->input('phone_num');
-        $team->type = $request->input('type');
-        //not required, maybe null
-        $team->line_id = $request->input('line_id');
-        // $team->type = $request->input('tipe');
-        $team->save();
+        
+        $data=array(
+            'member_one'=>$request->input('member_one'),
+            'member_two'=>$request->input('member_two'),
+            'member_three'=>$request->input('member_three'),
+            'school'=>$request->input('school'),
+            'province'=>$request->input('province'),
+            'phone_num'=>$request->input('phone_num'),
+            'line_id'=>$request->input('line_id')
+        );
+        Team::where('team_id',$id)->update($data);
+        $data2 = array(
+            'name'=>$request->input('groupname')
+        );
+        User::find($id)->update($data2);
         return redirect()->route('team.profile');
     }
 

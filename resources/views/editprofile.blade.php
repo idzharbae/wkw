@@ -26,13 +26,14 @@
 		                    <div class="feature bordered text-center">
 		                        <h3 class="uppercase">Edit Profile</h3>
                                         
-                                <form method="POST" action = ''>
-                                
+                                <form method="POST" action = '{{url("/saveprofile")}}'>
+                                @csrf
                                 <div class="form-group row">
+                                    <input type="hidden" name="id" value="{{$users}}">
                                         <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> University/School </label> -->
 
                                         <div class="col-md-10 col-md-offset-1">
-                                            <input type = 'text' name = 'groupname'  placeholder="Group Name" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Group Name'" required/>
+                                            <input type = 'text' name = 'groupname'  placeholder="Group Name" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Group Name'" required value="{{App\User::find($users)->name}}" />
                                         </div>
                                     </div>
 
@@ -40,9 +41,9 @@
                                         <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> Group Member </label> -->
 
                                         <div class="col-md-10 col-md-offset-1">
-                                            <input type = 'text' name = 'member_one' placeholder="Group Leader" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Group Leader'" required />
-                                            <input type = 'text' name = 'member_two' placeholder="Group Member 1" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Group Member 1'"/>
-                                            <input type = 'text' name = 'member_three' placeholder="Group Member 2" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Group Member 2'" />
+                                            <input type = 'text' name = 'member_one' placeholder="Group Leader" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Group Leader'" required value="{{$data->member_one}}" />
+                                            <input type = 'text' name = 'member_two' placeholder="Group Member 1" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Group Member 1'" value="{{$data->member_two}}"/>
+                                            <input type = 'text' name = 'member_three' placeholder="Group Member 2" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Group Member 2'" value="{{$data->member_three}}"/>
                                         </div>
                                     </div>
 
@@ -50,7 +51,7 @@
                                         <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> University/School </label> -->
 
                                         <div class="col-md-10 col-md-offset-1">
-                                            <input type = 'text' name = 'school'  placeholder="Institution Name" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Institution Name'" required/>
+                                            <input type = 'text' name = 'school'  placeholder="Institution Name" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Institution Name'" required value="{{$data->school}}"/>
                                         </div>
                                     </div>
 
@@ -58,7 +59,7 @@
                                         <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> Province </label> -->
 
                                         <div class="col-md-10 col-md-offset-1">
-                                            <input type = 'text' name = 'province'  placeholder="Province" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Province'"  required/>
+                                            <input type = 'text' name = 'province'  placeholder="Province" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Province'"  required value="{{$data->province}}"/>
                                         </div>
                                     </div>
 
@@ -66,7 +67,7 @@
                                         <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> Phone Number </label> -->
 
                                         <div class="col-md-10 col-md-offset-1">
-                                            <input type = 'text' name = 'phone_num'  onkeypress='validate(event)' placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'" onkeypress="return isNumberKey(event);"/>
+                                            <input type = 'text' name = 'phone_num'  onkeypress='validate(event)' placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'" onkeypress="return isNumberKey(event);" value="{{$data->phone_num}}"/>
                                         </div>
                                     </div>
 
@@ -74,7 +75,7 @@
                                         <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> Line ID </label> -->
 
                                         <div class="col-md-10 col-md-offset-1">
-                                            <input type = 'text' name = 'line_id'  placeholder="LINE ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'LINE ID'"  required/>
+                                            <input type = 'text' name = 'line_id'  placeholder="LINE ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'LINE ID'"  required value="{{$data->line_id}}"/>
                                         </div>
                                     </div>
                                     <div class="row col-md-offset-2">
