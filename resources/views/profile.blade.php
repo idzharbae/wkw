@@ -53,7 +53,7 @@
 		            <div class="row">
 					
                     <div class="feature bordered text-center bg-secondary" style="box-shadow: 0 9px 30px 10px rgba(0, 0, 0, 0.2); font-size: 18px">
-						<a class="bbtn tn-warning pull-right" href="{{url('/editprofile')}}"  style="border-radius: 0;"><i class="fa fa-pencil-square-o"></i>EDIT PROFILE<a><br>
+						<a class="bbtn tn-warning pull-right" href="{{url('/editprofile')}}"  style="border-radius: 0;"><i class="fa fa-pencil-square-o"></i>EDIT PROFILE</a><br>
 						<h2 class="uppercase mb40 mb-xs-24">{{App\User::find($data->team_id)->name}}</h2>
 						<div class="mb40">
 							<h6 class="mb8 uppercase">Members</h6>
