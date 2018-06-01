@@ -81,13 +81,8 @@
                                 </a>
                             </div> -->
                             <div class="row col-md-offset-1">
-                                <div class="col-lg-5" style="padding: 0px"><button type="submit" class="btn btn-primary form-control" style="text-transform: uppercase;border-radius:0; background-color: #7c6bee;">Login</button></div>
-                                <div class="col-lg-6" style="padding: 0px"><a href="{{ route('admin.password.request') }}" class="btn btn-link" style="text-decoration: none; text-transform: uppercase;border-radius:0;">Forgot Password?</a></div>
-                            </div>
-                            Not a member yet?
-                            <a class="btn btn-link col-md-10 col-md-offset-1" href="{{ route('register') }}" style="text-decoration: none; background-color: #7c6bee;">
-                                Register
-                            </a>          
+                                <div class="col-lg-10" style="padding: 0px"><button type="submit" class="btn btn-primary form-control" style="text-transform: uppercase;border-radius:0; background-color: #7c6bee;">Login</button></div>
+                            </div>    
                         </div>
                     </form>
 		                    </div>

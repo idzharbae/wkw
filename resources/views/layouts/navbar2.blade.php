@@ -38,11 +38,11 @@
 							<!-- Authentication Links -->
 							@guest
 								<ul class="menu inline-block pull-right">
-									<li><a class="btn btn-sm hidden-xs hidden-sm hidden-md" style="font-size: 12px;" href="{{ route('login') }}">Login</a></li>
+									<li><a class="btn btn-sm btn-white hidden-xs hidden-sm hidden-md" style="font-size: 12px;" href="{{ route('login') }}">Login</a></li>
 								</ul>
 							@else
 								<li class="nav-item dropdown pull-right">
-									<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#b2c0ff;">
+									<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#ffff; font-size: 16px">
 										{{ Auth::user()->name }} <span class="caret"></span>
 									</a>
 

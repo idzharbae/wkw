@@ -20,7 +20,8 @@
 		            </div>
 		            
 		        </div>
-		        
+
+				@if($data->type != 'HackToday')		        
 		        <ol class="breadcrumb breadcrumb-2">
 					<h3> {{$data->type}} </h3>
 		            <li>
@@ -33,6 +34,17 @@
 		                <a href="#buktibayar">Upload Bukti Pembayaran</a>
 		            </li>
 		        </ol>
+				@else
+				<ol class="breadcrumb breadcrumb-2">
+					<h3> {{$data->type}} </h3>
+		            <li>
+		                <a href="#profil">Profile</a>
+		            </li>
+		            <li>
+		                <a href="#berkas">Upload Berkas</a>
+		            </li>
+		        </ol>
+				@endif
 			</section>
 			
 			<section style="background-color:#26c99e;" id="profil">
@@ -115,6 +127,9 @@
 									@endif
 								@else
 									<img alt="Pic" id="preview1" src="img/restricted.ico" style="width: 577px; height: 224px; object-fit:cover;">
+									<h5 class="uppercase mb0">
+										<b style="color: red"> Member 1 Not Found </b>
+									</h5>
 								@endif
                             </div>
 		                </div>
@@ -144,6 +159,9 @@
 									@endif
 								@else
 									<img alt="Pic" id="preview2" src="img/restricted.ico" style="width: 577px; height: 224px; object-fit:cover;">
+									<h5 class="uppercase mb0">
+										<b style="color: red"> Member 2 Not Found </b>
+									</h5>
 								@endif
                             </div>
 		                </div>
@@ -173,6 +191,9 @@
 									@endif
 								@else
 									<img alt="Pic" id="preview3" src="img/restricted.ico" style="width: 577px; height: 224px; object-fit:cover;">
+									<h5 class="uppercase mb0">
+										<b style="color: red"> Member 3 Not Found </b>
+									</h5>
 								@endif
                             </div>
 		                </div>
@@ -197,31 +218,33 @@
 		        </div>
 		        </form>
 		        </section>
-		        @if($data->payment == NULL)
-		        <section style="background-color: #ff3333" id="buktibayar">
-		        @else
-		        	@if($data->verify == 1)
-		        	<section style="background-color: #26c99e" id="buktibayar">
-		        	@else
-					<section style="background-color: #fff83f" id="buktibayar">
-		        	@endif
-		        @endif
+				@if($data->type != 'HackToday')
+					@if($data->payment == NULL)
+					<section style="background-color: #ff3333" id="buktibayar">
+					@else
+						@if($data->verify == 1)
+						<section style="background-color: #26c99e" id="buktibayar">
+						@else
+						<section style="background-color: #fff83f" id="buktibayar">
+						@endif
+					@endif
+				@endif
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-12 text-center">
-		                    @if($data->payment == NULL)
-                            <h3 class="uppercase mb40 mb-xs-24" style="color:white;">BUKTI PEMBAYARAN BELUM DIUPLOAD</h3>
-							<a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{route('payment')}}">Upload Bukti Pembayaran</a>
-                            @else
-								@if($data->verify == 1)
-								<h3 class="uppercase mb40 mb-xs-24" style="color:white;">PEMBAYARAN BERHASIL DIVERIFIKASI</h3>
+							@if($data->type != 'HackToday')
+								@if($data->payment == NULL)
+								<h3 class="uppercase mb40 mb-xs-24" style="color:white;">BUKTI PEMBAYARAN BELUM DIUPLOAD</h3>
+								<a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{route('payment')}}">Upload Bukti Pembayaran</a>
 								@else
-								<h3 class="uppercase mb40 mb-xs-24" style="color:black;">MENUNGGU VERIFIKASI PEMBAYARAN</h3>
-								<a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{route('payment')}}">Update Bukti Pembayaran</a>
+									@if($data->verify == 1)
+									<h3 class="uppercase mb40 mb-xs-24" style="color:white;">PEMBAYARAN BERHASIL DIVERIFIKASI</h3>
+									@else
+									<h3 class="uppercase mb40 mb-xs-24" style="color:black;">MENUNGGU VERIFIKASI PEMBAYARAN</h3>
+									<a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{route('payment')}}">Update Bukti Pembayaran</a>
+									@endif
 								@endif
-                            
-                            @endif
-		                    
+							@endif
 		                </div>
 		            </div>
 		            

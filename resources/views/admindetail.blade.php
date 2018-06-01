@@ -23,21 +23,27 @@
             <section  style="padding: 20px 0;">
 		        <div class="container">
 		            <div class="row">
-					
+					<h1 align="center"> ADMIN PANEL </h1>
                     <div class="feature bordered text-center bg-secondary" style="background-color: white; box-shadow: 0 9px 30px 10px rgba(0, 0, 0, 0.2);" align="center">
-						<h3 class="uppercase mb40 mb-xs-24">Member Details</h3>
+						<h4 class="uppercase mb40 mb-xs-24">Member Details</h4>
 						<div class="mb40">
 							<h6 class="mb8 uppercase">Members</h6>
 							<p style="color:black !important;">
 								@if($user->member_one !=NULL)
 								{{$user->member_one}}<br />
+								@else
+								<b style="color: red">Member 1 Not Found</b>
 								@endif
 								@if($user->member_two !=NULL)
 								{{$user->member_two}}
 								<br />
+								@else
+								<b style="color: red">Member 2 Not Found</b>
 								@endif
 								@if($user->member_three !=NULL)
 								{{$user->member_three}}
+								@else
+								<b style="color: red">Member 3 Not Found</b>
 								@endif
 							</p>
 						</div>
@@ -82,8 +88,14 @@
 			                    </div>
 			                </div>
 			                @else
-			                NOT UPLOADED<br />
-			                @endif
+							<h3 align="center">
+				                KTM MEMBER 1 NOT UPLOADED<br>
+							</h3>
+							@endif
+						@else
+						<h3 align="center">
+							MEMBER 1 NOT FOUND<br>
+						</h3>
 						@endif
 						@if($user->member_two !=NULL)
 							@if($user->ktm_img2)
@@ -97,8 +109,14 @@
 			                    </div>
 			                </div>
 			                @else
-			                NOT UPLOADED<br />
-			                @endif
+							<h3 align="center">
+				                KTM MEMBER 2 NOT UPLOADED<br>
+							</h3>
+							@endif
+						@else
+						<h3 align="center">
+							MEMBER 2 NOT FOUND<br>
+						</h3>
 						@endif
 						@if($user->member_three !=NULL)
 							@if($user->ktm_img3 != NULL)
@@ -112,8 +130,14 @@
 			                    </div>
 			                </div>
 			                @else
-			                NOT UPLOADED<br />
+							<h3 align="center">
+				                KTM MEMBER 3 NOT UPLOADED<br>
+							</h3>
 			                @endif
+						@else
+							<h3 align="center">
+				               MEMBER 3 NOT FOUND<br>
+							</h3>
 						@endif
 		            </div>
 		        </div><br>
@@ -122,9 +146,14 @@
 						<div class="feed-item mb96 mb-xs-48 text-center" align="center">
 							<h4 align="center">Surat Keterangan Siswa Aktif</h4><br>	                
 								@if($user->letter !=NULL)
-								<a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{asset($user->letter)}}">Download Surat Keterangan</a>
+									<h3 align="center">
+										SURAT KETERANGAN TELAH DIUPLOAD
+									</h3>
+									<a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{asset($user->letter)}}">Download Surat Keterangan</a>
 								@else
-								NOT UPLOADED
+									<h3 align="center">
+										SURAT KETERANGAN BELUM DIUPLOAD
+									</h3>
 								@endif		                
 						</div>
 					</div><br>
@@ -136,7 +165,7 @@
 								<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1" align="center">
 									@if($user->payment!=NULL)
 									<img alt="Article Image" class="mb32 mb-xs-16" src="{{asset($user->payment)}}" style="display: block; max-width:400px; max-height:200px; width: auto; height: auto; margin: auto">
-									<a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{asset($user->payment)}}">Lihat Bukti Pembayaran</a>
+									<br><a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{asset($user->payment)}}">Lihat Bukti Pembayaran</a>
 									@else
 									NOT UPLOADED
 									@endif        
@@ -144,8 +173,8 @@
 							</div>
 							<br>
 							<div class="row" align="center">
-							<a class="btn btn-lg btn-white mb8 mt-xs-24" href='{{ url("admin/verify/{$user->id}") }}'>Konfirmasi Pendaftaran</a>
-							</div><br>
+							<a class="btn btn-lg btn-danger mb8 mt-xs-24" href='{{ url("admin/verify/{$user->id}") }}'>Konfirmasi Pendaftaran</a>
+							</div>
 						</div>
 					</div>
 				</section>
