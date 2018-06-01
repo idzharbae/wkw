@@ -14,8 +14,44 @@ class ProfileController extends Controller
     	$this->middleware('auth'); //matiin kalo lagi testing mode
     }
     
-    public function editprofile(){
-        return view('editprofile');
+    public function editProfile(){
+        $users = Auth::user()->id;
+        $data = Team::where('team_id',$users)->first();
+        if($data == NULL){    	
+		    return view('reg_stp1', compact('users')); 
+        }
+        else{
+	        return view('editprofile',compact('data'));
+        }
+    }
+
+    public function saveProfile(Request $request){
+        $this->validate($request,[
+            'member_one'=>'required',
+            'school'=>'required',
+            'province'=>'required',
+            'phone_num'=>'required',
+            // 'tipe' =>'required'
+        ]);
+        
+        $id = $request->input('id');
+        $team = new Team;
+        //cek kalo member 2 ama 3 ada atau tidak
+        $team->team_id = $id;
+        $team->member_one = $request->input('member_one');
+        $team->member_two = $request->input('member_two');
+        $team->member_three = $request->input('member_three');
+        $team->school = $request->input('school');
+        $team->province = $request->input('province');
+        $team->phone_num = $request->input('phone_num');
+        $team->type = $request->input('type');
+        //not required, maybe null
+        $team->line_id = $request->input('line_id');
+        // $team->type = $request->input('tipe');
+        $team->save();
+        return redirect()->route('team.profile');
+
+        return "done";
     }
 
     public function teamProfile(){
