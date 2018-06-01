@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-        <title></title>
+        <title>Admin - IT TODAY 2018</title>
+        <link rel="shortcut icon" href="img/logoittodayhitam.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
         <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />

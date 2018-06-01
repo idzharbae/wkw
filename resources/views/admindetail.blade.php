@@ -26,20 +26,19 @@
 		            <div class="row">
 					<h1 align="center"> ADMIN PANEL </h1>
                     <div class="feature bordered text-center bg-secondary" style="background-color: white; box-shadow: 0 9px 30px 10px rgba(0, 0, 0, 0.2);" align="center">
-						<h4 class="uppercase mb40 mb-xs-24">Member Details</h4>
+						<h4 class="uppercase mb40 mb-xs-24">{{$user->type}}</h4>
 						<div class="mb40">
 							<h6 class="mb8 uppercase">Members</h6>
 							<p style="color:black !important;">
 								@if($user->member_one !=NULL)
-								{{$user->member_one}}<br />
+								{{$user->member_one}}<br>
 								@else
-								<b style="color: red">Member 1 Not Found</b>
+								<b style="color: red">Member 1 Not Found</b><br>
 								@endif
 								@if($user->member_two !=NULL)
-								{{$user->member_two}}
-								<br />
+								{{$user->member_two}}<br>
 								@else
-								<b style="color: red">Member 2 Not Found</b>
+								<b style="color: red">Member 2 Not Found</b><br>
 								@endif
 								@if($user->member_three !=NULL)
 								{{$user->member_three}}
@@ -162,16 +161,18 @@
 			</section>
 			<section style="padding-top: 0px; padding-bottom: 0px">	
 				<div class="container">
-					<div class="feed-item mb96 mb-xs-48 text-center">
-						<h4 align="center">Bukti Pembayaran</h4>                
+					<div class="feed-item mb96 mb-xs-48 text-center">              
 						<div class="row mb32 mb-xs-16">
 							<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1" align="center">
+							@if($user->type != 'HackToday')
+							<h4 align="center">Bukti Pembayaran</h4>  
 								@if($user->payment!=NULL)
 								<img alt="Article Image" class="mb32 mb-xs-16" src="{{asset($user->payment)}}" style="display: block; max-width:400px; max-height:200px; width: auto; height: auto; margin: auto">
 								<br><a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{asset($user->payment)}}">Lihat Bukti Pembayaran</a>
 								@else
-								NOT UPLOADED
-								@endif        
+								<b style="color: red">NOT UPLOADED</b>
+								@endif  
+							@endif      
 							</div>
 						</div>
 						<br>
