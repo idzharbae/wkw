@@ -71,7 +71,7 @@
                                         <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> Phone Number </label> -->
 
                                         <div class="col-md-10 col-md-offset-1">
-                                            <input type = 'text' name = 'phone_num'  placeholder="Phone Number" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Phone Number'" />
+                                            <input type = 'text' name = 'phone_num'  placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'" onkeypress="return isNumberKey(event);"/>
                                         </div>
                                     </div>
 
@@ -79,7 +79,7 @@
                                         <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> Line ID </label> -->
 
                                         <div class="col-md-10 col-md-offset-1">
-                                            <input type = 'text' name = 'line_id'  placeholder="LINE ID" onfocus="this.placeholder = ''"onblur="this.placeholder = 'LINE ID'"  required/>
+                                            <input type = 'text' name = 'line_id'  placeholder="LINE ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'LINE ID'"  required/>
                                         </div>
                                     </div>
 
