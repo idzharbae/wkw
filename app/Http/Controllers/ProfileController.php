@@ -50,8 +50,6 @@ class ProfileController extends Controller
         // $team->type = $request->input('tipe');
         $team->save();
         return redirect()->route('team.profile');
-
-        return "done";
     }
 
     public function teamProfile(){
