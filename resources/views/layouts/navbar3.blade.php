@@ -29,15 +29,15 @@
 								</ul>
 							@else
 								<li class="nav-item dropdown pull-right">
+								<a class="nav-link" href="/admin/home" role="button" style="color:#ffff; font-size: 16px">
+										Home
+								</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#ffff; font-size: 16px">
 										{{ Auth::user()->name }} <span class="caret"></span>
-									</a>
+								</a>
 
 									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 										<ul>
-											<li>
-												<a class="dropdown-item" href="#">&nbsp;&nbsp;&nbsp;Profile</a>
-											</li>
 											<li><a class="dropdown-item" href="{{ route('logout') }}"
 												onclick="event.preventDefault();
 																document.getElementById('logout-form').submit();">

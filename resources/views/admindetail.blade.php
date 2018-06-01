@@ -8,7 +8,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Admin - IT TODAY 2018</title>
+        <link rel="shortcut icon" href="img/logoittodayhitam.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="{{asset('css/themify-icons.css')}}" rel="stylesheet" type="text/css" media="all" />
         <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
@@ -72,7 +73,7 @@
 		        </div>
 			</section>
 			
-			<section>
+			<section style="padding-top: 0px; padding-bottom: 0px">
 		        <div class="container">
 		            <div class="row">
 						@if($user->member_one !=NULL)
@@ -80,8 +81,8 @@
 							<div class="col-md-4 col-sm-6">
 			                    <div class="image-tile outer-title text-center" align="center">
 									<h3 class="uppercase mb0">{{$user->member_one}}</h3>  
-			                        <img alt="Pic" src="{{asset($user->ktm_img1)}}" style="display: block; max-width:400px; max-height:200px; width: auto; height: auto; margin: auto">
-			                        <div class="title mb16">
+			                        <img alt="Pic" src="{{asset($user->ktm_img1)}}" style="display: block; max-width:400px; max-height:200px; width: auto; height: auto; margin: auto;">
+			                        <div class="title mb16"><br>
 										<a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{asset($user->ktm_img1)}}">Lihat KTM</a>
 			                        </div>
 			                        
@@ -103,7 +104,7 @@
 			                    <div class="image-tile outer-title text-center" align="center">
 									<h3 class="uppercase mb0">{{$user->member_two}}</h3>
 			                        <img alt="Pic" src="{{asset($user->ktm_img2)}}" style="display: block; max-width:400px; max-height:200px; width: auto; height: auto; margin: auto">
-			                        <div class="title mb16">
+			                        <div class="title mb16"><br>
 										<a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{asset($user->ktm_img2)}}">Lihat KTM</a>
 			                        </div>
 			                    </div>
@@ -124,7 +125,7 @@
 			                    <div class="image-tile outer-title text-center" align="center">
 									<h3 class="uppercase mb0">{{$user->member_three}}</h3>	
 			                        <img alt="Pic" src="{{asset($user->ktm_img3)}}" style="display: block; max-width:400px; max-height:200px; width: auto; height: auto; margin: auto">
-			                        <div class="title mb16">
+			                        <div class="title mb16"><br>
 										<a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{asset($user->ktm_img3)}}">Lihat KTM</a>	                            
 			                        </div>
 			                    </div>
@@ -140,50 +141,51 @@
 							</h3>
 						@endif
 		            </div>
-		        </div><br>
-                <section>
-					<div class="container">
-						<div class="feed-item mb96 mb-xs-48 text-center" align="center">
-							<h4 align="center">Surat Keterangan Siswa Aktif</h4><br>	                
-								@if($user->letter !=NULL)
-									<h3 align="center">
-										SURAT KETERANGAN TELAH DIUPLOAD
-									</h3>
-									<a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{asset($user->letter)}}">Download Surat Keterangan</a>
-								@else
-									<h3 align="center">
-										SURAT KETERANGAN BELUM DIUPLOAD
-									</h3>
-								@endif		                
-						</div>
-					</div><br>
-				</section>
-					<div class="container">
-						<div class="feed-item mb96 mb-xs-48 text-center">
-							<h4 align="center">Bukti Pembayaran</h4>                
-							<div class="row mb32 mb-xs-16">
-								<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1" align="center">
-									@if($user->payment!=NULL)
-									<img alt="Article Image" class="mb32 mb-xs-16" src="{{asset($user->payment)}}" style="display: block; max-width:400px; max-height:200px; width: auto; height: auto; margin: auto">
-									<br><a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{asset($user->payment)}}">Lihat Bukti Pembayaran</a>
-									@else
-									NOT UPLOADED
-									@endif        
-								</div>
-							</div>
-							<br>
-							<div class="row" align="center">
-							<a class="btn btn-lg btn-danger mb8 mt-xs-24" href='{{ url("admin/verify/{$user->id}") }}'>Konfirmasi Pendaftaran</a>
-							</div>
-						</div>
+		        </div>
+			</section>
+			<section style="padding-top: 0px; padding-bottom: 0px">
+				<div class="container">
+					<div class="feed-item mb96 mb-xs-48 text-center" align="center">
+						<h4 align="center">Surat Keterangan Siswa Aktif</h4>	                
+							@if($user->letter !=NULL)
+								<h4 align="center" style="color: green; font-weight: bold">
+									SURAT KETERANGAN TELAH DIUPLOAD
+								</h4>
+								<a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{asset($user->letter)}}">Download Surat Keterangan</a>
+							@else
+								<h4 align="center" style="color: red; font-weight: bold">
+									SURAT KETERANGAN BELUM DIUPLOAD
+								</h4>
+							@endif		                
 					</div>
-				</section>
-		                    
+				</div>
+			</section>
+			<section style="padding-top: 0px; padding-bottom: 0px">	
+				<div class="container">
+					<div class="feed-item mb96 mb-xs-48 text-center">
+						<h4 align="center">Bukti Pembayaran</h4>                
+						<div class="row mb32 mb-xs-16">
+							<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1" align="center">
+								@if($user->payment!=NULL)
+								<img alt="Article Image" class="mb32 mb-xs-16" src="{{asset($user->payment)}}" style="display: block; max-width:400px; max-height:200px; width: auto; height: auto; margin: auto">
+								<br><a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{asset($user->payment)}}">Lihat Bukti Pembayaran</a>
+								@else
+								NOT UPLOADED
+								@endif        
+							</div>
+						</div>
+						<br>
+						<div class="row" align="center">
+						<a class="btn btn-lg btn-white mb8 mt-xs-24 col-md-10 col-md-offset-1" href='{{ url("admin/verify/{$user->id}") }}'>Konfirmasi Pendaftaran</a>
 						</div>
 					</div>
 				</div>
+			</section>
+		                    
+					</div>
+				</div>
 			</div>
-		</section>
+		</div>
 	</div>
 		
 				
