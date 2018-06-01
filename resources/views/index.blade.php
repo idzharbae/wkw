@@ -127,42 +127,42 @@
 						<ul>
 							<li>
 								<div class="background-image-holder">
-									<img alt="image" class="background-image" src="img/feed1.png">
+									<img alt="image" class="background-image" src="img/feed1.jpg">
 								</div>
 							</li>
 							<li>
 								<div class="background-image-holder">
-									<img alt="image" class="background-image" src="img/feed3.png">
+									<img alt="image" class="background-image" src="img/feed3.jpg">
 								</div>
 							</li>
 							<li>
 								<div class="background-image-holder">
-									<img alt="image" class="background-image" src="img/feed2.png">
+									<img alt="image" class="background-image" src="img/feed2.jpg">
 								</div>
 							</li>
 							<li>
 								<div class="background-image-holder">
-									<img alt="image" class="background-image" src="img/feed5.png">
+									<img alt="image" class="background-image" src="img/feed5.jpg">
 								</div>
 							</li>
 							<li>
 								<div class="background-image-holder">
-									<img alt="image" class="background-image" src="img/feed6.png">
+									<img alt="image" class="background-image" src="img/feed6.jpg">
 								</div>
 							</li>
 							<li>
 								<div class="background-image-holder">
-									<img alt="image" class="background-image" src="img/feed8.png">
+									<img alt="image" class="background-image" src="img/feed8.jpg">
 								</div>
 							</li>
 							<li>
 								<div class="background-image-holder">
-									<img alt="image" class="background-image" src="img/feed7.png">
+									<img alt="image" class="background-image" src="img/feed7.jpg">
 								</div>
 							</li>
 							<li>
 								<div class="background-image-holder">
-									<img alt="image" class="background-image" src="img/feed4.png">
+									<img alt="image" class="background-image" src="img/feed4.jpg">
 								</div>
 							</li>
 						</ul>
