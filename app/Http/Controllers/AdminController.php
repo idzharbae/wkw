@@ -43,6 +43,6 @@ class AdminController extends Controller
         $user = Team::where('id',$id)->first();
         $user->verify = 1;
         $user->save();
-        return redirect('admin/home');
+        return redirect('antiribetclub/home');
     }
 }
