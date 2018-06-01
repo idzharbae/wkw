@@ -6,7 +6,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Edit Profile - IT TODAY 2018</title>
+        <link rel="shortcut icon" href="img/logoittodayhitam.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
@@ -15,7 +16,7 @@
     </head>
     <body>	
 		<div class="main-container">
-		    <section class="image-bg overlay" style="padding-top:100px">
+		    <section class="image-bg overlay" style="padding-top:80px; padding-bottom: 0px">
 		        <div class="background-image-holder">
 		            <img alt="image" class="background-image" src="img/bglogin.png" style="background-repeat: no-repeat; background-attachment: fixed;">
 		        </div>
@@ -49,7 +50,7 @@
                                         <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> University/School </label> -->
 
                                         <div class="col-md-10 col-md-offset-1">
-                                            <input type = 'text' name = 'school'  placeholder="University/School Name" onfocus="this.placeholder = ''"onblur="this.placeholder = 'University/School Name'" required/>
+                                            <input type = 'text' name = 'school'  placeholder="Institution Name" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Institution Name'" required/>
                                         </div>
                                     </div>
 
@@ -65,7 +66,7 @@
                                         <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> Phone Number </label> -->
 
                                         <div class="col-md-10 col-md-offset-1">
-                                            <input type = 'text' name = 'phone_num'  placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'" onkeypress="return isNumberKey(event);"/>
+                                            <input type = 'text' name = 'phone_num'  onkeypress='validate(event)' placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'" onkeypress="return isNumberKey(event);"/>
                                         </div>
                                     </div>
 
@@ -76,13 +77,12 @@
                                             <input type = 'text' name = 'line_id'  placeholder="LINE ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'LINE ID'"  required/>
                                         </div>
                                     </div>
-
-                                    <button type="submit" name='submit' class="btn">
-                                        Edit
-                                    </button>
-                                    <button type="cancel" name='cancel' class="btn">
-                                        Cancel
-                                    </button>
+                                    <div class="row col-md-offset-2">
+                                        <div class="col-lg-9" style="padding: 0px">
+                                            <button type="submit" name="submit" class="btn btn-primary form-control" style="text-transform: uppercase;border-radius:0; background-color: #7c6bee;">SAVE CHANGES</button>
+                                            <button type="cancel" name="cancel" class="btn">Cancel</button>
+                                        </div>
+                                    </div>
                                 </form>
 		                    </div>
 		                </div>
@@ -94,6 +94,18 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/scripts.js"></script>
+        <script>
+            function validate(evt) {
+                var theEvent = evt || window.event;
+                var key = theEvent.keyCode || theEvent.which;
+                key = String.fromCharCode( key );
+                var regex = /[0-9]|\./;
+                if( !regex.test(key) ) {
+                    theEvent.returnValue = false;
+                    if(theEvent.preventDefault) theEvent.preventDefault();
+                }
+            }
+        </script>
     </body>
 </html>
 				

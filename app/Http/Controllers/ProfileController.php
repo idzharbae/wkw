@@ -102,7 +102,7 @@ class ProfileController extends Controller
             $team->letter = $name;
         }
         $team->save();
-        return redirect('/profile/');
+        return redirect('/profile/')->with('msg',"Profile Picture Changed Successfully");
     }
     public function uploadPay(Request $request){
         

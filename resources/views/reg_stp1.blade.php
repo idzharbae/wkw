@@ -6,7 +6,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Register - IT TODAY 2018</title>
+        <link rel="shortcut icon" href="img/logoittodayhitam.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
@@ -15,7 +16,7 @@
     </head>
     <body>	
 		<div class="main-container">
-		    <section class="image-bg overlay" style="padding-top:100px">
+		    <section class="image-bg overlay" style="padding-top:80px; padding-bottom: 0px">
 		        <div class="background-image-holder">
 		            <img alt="image" class="background-image" src="img/bglogin.png" style="background-repeat: no-repeat; background-attachment: fixed;">
 		        </div>
@@ -41,13 +42,16 @@
 
                                     <div class="form-group row">
                                         <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> Competition </label> -->
-
-                                        <div class="col-md-10 col-md-offset-1">
-                                            <select name="tipe" class="select-option">
-                                                <option value="AppsToday">AppsToday</option>
-                                                <option value="HackToday">HackToday</option>
-                                                <option value="Business IT Case">Business IT Case</option>
-                                            </select>
+                                        <div class="col-md-10 col-md-offset-1 dropdown">
+                                            <div class="select-option">
+                                                <i class="ti-angle-down"></i>
+                                                <select name="tipe" class="select-option">
+                                                    <option selected value="Default">Select a Competition</option>
+                                                    <option value="AppsToday">AppsToday</option>
+                                                    <option value="HackToday">HackToday</option>
+                                                    <option value="Business IT Case">Business IT Case</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -55,7 +59,7 @@
                                         <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> University/School </label> -->
 
                                         <div class="col-md-10 col-md-offset-1">
-                                            <input type = 'text' name = 'school'  placeholder="University/School Name" onfocus="this.placeholder = ''"onblur="this.placeholder = 'University/School Name'" required/>
+                                            <input type = 'text' name = 'school'  placeholder="Institution Name" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Institution Name'" required/>
                                         </div>
                                     </div>
 
@@ -71,7 +75,7 @@
                                         <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> Phone Number </label> -->
 
                                         <div class="col-md-10 col-md-offset-1">
-                                            <input type = 'text' name = 'phone_num'  placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'" onkeypress="return isNumberKey(event);"/>
+                                            <input type = 'text'  onkeypress='validate(event)' name = 'phone_num' placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'" onkeypress="return isNumberKey(event);"/>
                                         </div>
                                     </div>
 
@@ -98,6 +102,18 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/scripts.js"></script>
+        <script>
+            function validate(evt) {
+                var theEvent = evt || window.event;
+                var key = theEvent.keyCode || theEvent.which;
+                key = String.fromCharCode( key );
+                var regex = /[0-9]|\./;
+                if( !regex.test(key) ) {
+                    theEvent.returnValue = false;
+                    if(theEvent.preventDefault) theEvent.preventDefault();
+                }
+            }
+        </script>
     </body>
 </html>
 				

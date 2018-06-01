@@ -92,10 +92,6 @@
 				                KTM MEMBER 1 NOT UPLOADED<br>
 							</h3>
 							@endif
-						@else
-						<h3 align="center">
-							MEMBER 1 NOT FOUND<br>
-						</h3>
 						@endif
 						@if($user->member_two !=NULL)
 							@if($user->ktm_img2)
@@ -113,10 +109,6 @@
 				                KTM MEMBER 2 NOT UPLOADED<br>
 							</h3>
 							@endif
-						@else
-						<h3 align="center">
-							MEMBER 2 NOT FOUND<br>
-						</h3>
 						@endif
 						@if($user->member_three !=NULL)
 							@if($user->ktm_img3 != NULL)
@@ -134,10 +126,6 @@
 				                KTM MEMBER 3 NOT UPLOADED<br>
 							</h3>
 			                @endif
-						@else
-							<h3 align="center">
-				               MEMBER 3 NOT FOUND<br>
-							</h3>
 						@endif
 		            </div>
 		        </div>
