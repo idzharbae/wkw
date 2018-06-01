@@ -39,11 +39,11 @@
 		        <div class="container">
 		            <div class="row">
 					
-                    <div class="feature bordered text-center bg-secondary" style="box-shadow: 0 9px 30px 10px rgba(0, 0, 0, 0.2);">
-						<h3 class="uppercase mb40 mb-xs-24">{{App\User::find($data->team_id)->name}}</h3>
+                    <div class="feature bordered text-center bg-secondary" style="box-shadow: 0 9px 30px 10px rgba(0, 0, 0, 0.2); font-size: 18px">
+						<h2 class="uppercase mb40 mb-xs-24">{{App\User::find($data->team_id)->name}}</h2>
 						<div class="mb40">
 							<h6 class="mb8 uppercase">Members</h6>
-							<p style="color:black !important;">
+							<p style="color:black; !important;">
 								@if($data->member_one!=NULL)
 								{{$data->member_one}}<br />
 								@endif
@@ -91,47 +91,89 @@
 		            <div class="row">
 		                <div class="col-md-4 col-sm-6">
 		                    <div class="image-tile outer-title text-center">
-		                        @if($data->ktm_img1 != NULL)
-		                        <img alt="Pic" id="preview1" src="{{asset($data->ktm_img1)}}" style="width: 577px; height: 224px; object-fit:cover;">
-		                        @else
-		                        <img alt="Pic" id="preview1" src="img/team-1.jpg" style="width: 577px; height: 224px; object-fit:cover;">
-		                        @endif
-		                        <div class="title mb16">
-		                            <h5 class="uppercase mb0">@if($data->member_one!=NULL){{$data->member_one}}@else NONE @endif</h5>
-		                        </div>
-		                        <input type="file" name="ktm_img1" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile1" style="display: none;" />
-								<input type="button"  class="btn btn-lg btn-white mb8 mt-xs-24" value="Upload KTM/Kartu Pelajar" onclick="document.getElementById('selectedFile1').click();" />
-		                        <p>Foto/hasil scan KTM/Kartu Pelajar diupload dalam format .jpg,.jpeg, atau .png dengan ukuran file tidak lebih dari 2 MB</p>
+								@if($data->member_one!=NULL)
+									@if($data->ktm_img1 != NULL)
+										<img alt="Pic" id="preview1" src="{{asset($data->ktm_img1)}}" style="width: 577px; height: 224px; object-fit:cover;">
+										<div class="title mb16">
+		                            		<h5 class="uppercase mb0">
+												<b> {{$data->member_one}} </b>
+											</h5>
+										</div>
+										<input type="file" name="ktm_img1" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile1" style="display: none;" />
+										<input type="button"  class="btn btn-lg btn-white mb8 mt-xs-24" value="Upload KTM/Kartu Pelajar" onclick="document.getElementById('selectedFile1').click();" />
+										<p>Foto/hasil scan KTM/Kartu Pelajar diupload dalam format .jpg,.jpeg, atau .png dengan ukuran file < 2 MB</p>    
+									@else
+										<img alt="Pic" id="preview1" src="img/team-1.jpg" style="width: 577px; height: 224px; object-fit:cover;">
+										<div class="title mb16">
+		                            		<h5 class="uppercase mb0">
+												<b> {{$data->member_one}} </b>
+											</h5>
+										</div>
+										<input type="file" name="ktm_img1" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile1" style="display: none;" />
+										<input type="button"  class="btn btn-lg btn-white mb8 mt-xs-24" value="Upload KTM/Kartu Pelajar" onclick="document.getElementById('selectedFile1').click();" />
+										<p>Foto/hasil scan KTM/Kartu Pelajar diupload dalam format .jpg,.jpeg, atau .png dengan ukuran file < 2 MB</p>
+									@endif
+								@else
+									<img alt="Pic" id="preview1" src="img/restricted.ico" style="width: 577px; height: 224px; object-fit:cover;">
+								@endif
                             </div>
 		                </div>
 		                <div class="col-md-4 col-sm-6">
 		                    <div class="image-tile outer-title text-center">
-		                        @if($data->ktm_img2 != NULL)
-		                        <img alt="Pic" id="preview2" src="{{asset($data->ktm_img2)}}" style="width: 577px; height: 224px; object-fit:cover;">
-		                        @else
-		                        <img alt="Pic" id="preview2" src="img/team-2.jpg" style="width: 577px; height: 224px; object-fit:cover;">
-		                        @endif<div class="title mb16">
-		                            <h5 class="uppercase mb0">@if($data->member_two!=NULL){{$data->member_two}}@else NONE @endif</h5>  
-		                        </div>
-		                        <input type="file" name="ktm_img2" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile2" style="display: none;" />
-								<input type="button"  class="btn btn-lg btn-white mb8 mt-xs-24" value="Upload KTM/Kartu Pelajar" onclick="document.getElementById('selectedFile2').click();" />
-		                        <p>Foto/hasil scan KTM/Kartu Pelajar diupload dalam format .jpg,.jpeg, atau .png dengan ukuran file tidak lebih dari 2 MB</p>                            
+								@if($data->member_two!=NULL)
+									@if($data->ktm_img2 != NULL)
+										<img alt="Pic" id="preview2" src="{{asset($data->ktm_img2)}}" style="width: 577px; height: 224px; object-fit:cover;">
+										<div class="title mb16">
+		                            		<h5 class="uppercase mb0">
+												<b> {{$data->member_two}} </b>
+											</h5>
+										</div>
+										<input type="file" name="ktm_img2" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile2" style="display: none;" />
+										<input type="button"  class="btn btn-lg btn-white mb8 mt-xs-24" value="Upload KTM/Kartu Pelajar" onclick="document.getElementById('selectedFile2').click();" />
+										<p>Foto/hasil scan KTM/Kartu Pelajar diupload dalam format .jpg,.jpeg, atau .png dengan ukuran file < 2 MB</p>    
+									@else
+										<img alt="Pic" id="preview2" src="img/team-2.jpg" style="width: 577px; height: 224px; object-fit:cover;">
+										<div class="title mb16">
+		                            		<h5 class="uppercase mb0">
+												<b> {{$data->member_two}} </b>
+											</h5>
+										</div>
+										<input type="file" name="ktm_img2" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile2" style="display: none;" />
+										<input type="button"  class="btn btn-lg btn-white mb8 mt-xs-24" value="Upload KTM/Kartu Pelajar" onclick="document.getElementById('selectedFile2').click();" />
+										<p>Foto/hasil scan KTM/Kartu Pelajar diupload dalam format .jpg,.jpeg, atau .png dengan ukuran file < 2 MB</p>  
+									@endif
+								@else
+									<img alt="Pic" id="preview2" src="img/restricted.ico" style="width: 577px; height: 224px; object-fit:cover;">
+								@endif
                             </div>
 		                </div>
 		                <div class="col-md-4 col-sm-6">
 		                    <div class="image-tile outer-title text-center">
-		                        @if($data->ktm_img3 != NULL)
-		                        <img alt="Pic" id="preview3" src="{{asset($data->ktm_img3)}}" style="width: 577px; height: 224px; object-fit:cover;">
-		                        @else
-		                        <img alt="Pic" id="preview3" src="img/team-3.jpg" style="width: 577px; height: 224px; object-fit:cover;">
-		                        @endif
-		                        <div class="title mb16">
-		                            <h5 class="uppercase mb0">@if($data->member_three!=NULL){{$data->member_three}}@else NONE @endif</h5>
-		                        </div>
-		                        <input type="file" name="ktm_img3" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile3" style="display: none;" />
-								<input type="button"  class="btn btn-lg btn-white mb8 mt-xs-24" value="Upload KTM/Kartu Pelajar" onclick="document.getElementById('selectedFile3').click();" />
-		                        <!-- <a class="btn btn-lg btn-white mb8 mt-xs-24" href="#">Upload KTM/Kartu Pelajar</a> -->
-                                <p>Foto/hasil scan KTM/Kartu Pelajar diupload dalam format .jpg,.jpeg, atau .png dengan ukuran file tidak lebih dari 2 MB</p>
+								@if($data->member_three!=NULL)
+									@if($data->ktm_img3 != NULL)
+										<img alt="Pic" id="preview3" src="{{asset($data->ktm_img3)}}" style="width: 577px; height: 224px; object-fit:cover;">
+										<div class="title mb16">
+		                            		<h5 class="uppercase mb0">
+												<b> {{$data->member_three}} </b>
+											</h5>
+										</div>
+										<input type="file" name="ktm_img3" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile3" style="display: none;" />
+										<input type="button"  class="btn btn-lg btn-white mb8 mt-xs-24" value="Upload KTM/Kartu Pelajar" onclick="document.getElementById('selectedFile3').click();" />
+										<p>Foto/hasil scan KTM/Kartu Pelajar diupload dalam format .jpg,.jpeg, atau .png dengan ukuran file < 2 MB</p>    
+									@else
+										<img alt="Pic" id="preview3" src="img/team-3.jpg" style="width: 577px; height: 224px; object-fit:cover;">
+										<div class="title mb16">
+		                            		<h5 class="uppercase mb0">
+												<b> {{$data->member_three}} </b>
+											</h5>
+										</div>
+										<input type="file" name="ktm_img3" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile3" style="display: none;" />
+										<input type="button"  class="btn btn-lg btn-white mb8 mt-xs-24" value="Upload KTM/Kartu Pelajar" onclick="document.getElementById('selectedFile3').click();" />
+										<p>Foto/hasil scan KTM/Kartu Pelajar diupload dalam format .jpg,.jpeg, atau .png dengan ukuran file < 2 MB</p> 
+									@endif
+								@else
+									<img alt="Pic" id="preview3" src="img/restricted.ico" style="width: 577px; height: 224px; object-fit:cover;">
+								@endif
                             </div>
 		                </div>
 		            </div>
@@ -144,12 +186,12 @@
                             <br><p>Surat keterangan semua anggota tim disatukan menjadi satu file dalam format .pdf dengan ukuran file tidak lebih dari 2 MB</p>
                             
                             @if($data->letter == NULL)
-                            <h5 class="uppercase mb0">Surat <b>Belum </b> Diupload</h5>                       
+                            <h5 class="uppercase mb0" style="color: #a3031b; font-weight: bold">Surat Keterangan Mahasiswa Aktif Belum Diupload</h5>                       
                             @else
-                            <h5 class="uppercase mb0">Surat Telah Diupload</h5>                       
+                            <h5 class="uppercase mb0" style="color: #1a8e02; font-weight: bold">Surat Keterangan Mahasiswa Aktif Berhasil Diupload</h5>                       
                             @endif
 							<br>
-							<input class="btn btn-lg btn-white mb8 mt-xs-24" type="submit" value="SAVE CHANGES" style="background-color: #7c6bee;">
+							<input class="btn btn-lg btn-white mb8 mt-xs-24" type="submit" value="SIMPAN PERUBAHAN" >
                         </div>
 		            </div>
 		        </div>
@@ -169,10 +211,17 @@
 		                <div class="col-sm-12 text-center">
 		                    @if($data->payment == NULL)
                             <h3 class="uppercase mb40 mb-xs-24" style="color:white;">BUKTI PEMBAYARAN BELUM DIUPLOAD</h3>
+							<a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{route('payment')}}">Upload Bukti Pembayaran</a>
                             @else
-                            <h3 class="uppercase mb40 mb-xs-24" style="color:white;">BUKTI PEMBAYARAN TELAH DIUPLOAD</h3>
+								@if($data->verify == 1)
+								<h3 class="uppercase mb40 mb-xs-24" style="color:white;">PEMBAYARAN BERHASIL DIVERIFIKASI</h3>
+								@else
+								<h3 class="uppercase mb40 mb-xs-24" style="color:black;">MENUNGGU VERIFIKASI PEMBAYARAN</h3>
+								<a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{route('payment')}}">Update Bukti Pembayaran</a>
+								@endif
+                            
                             @endif
-		                    <a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{route('payment')}}">Upload Bukti Pembayaran</a>
+		                    
 		                </div>
 		            </div>
 		            

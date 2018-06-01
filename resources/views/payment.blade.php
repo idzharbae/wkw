@@ -29,7 +29,7 @@
 							<input type="button" class="btn btn-lg btn-white mb8 mt-xs-24" value="UPLOAD BUKTI PEMBAYARAN" onclick="document.getElementById('selectedFile4').click();" />
 							<p>Bukti pembayaran difoto dan diupload dalam format .jpg atau .png.</p>
 							</div>
-							<div class="col-md-5" style="padding: 0px;"><input class="btn btn-lg mb8 mt-xs-24" type="submit" value="SAVE CHANGES" style="background-color: #7c6bee;"/></div>
+							<div class="col-md-5" style="padding: 0px;"><input class="btn btn-lg mb8 mt-xs-24" type="submit" value="SIMPAN PERUBAHAN" style="background-color: #7c6bee;"/></div>
 						</div>
 					</div>
 				</div>

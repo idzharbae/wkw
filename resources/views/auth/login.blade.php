@@ -6,7 +6,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Login - IT TODAY 2018</title>
+        <link rel="shortcut icon" href="img/logoittodayhitam.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
@@ -58,7 +59,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-6 col-md-offset-0">
+                            <div class="col-md-6 col-md-offset-1">
                                 <div class="checkbox" style="color: #FFFFFF !important;">
                                     <label>
                                         <input type="checkbox"  name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
@@ -80,12 +81,12 @@
                                     Register
                                 </a>
                             </div> -->
-                            <div class="row col-md-offset-1">
-                                <div class="col-lg-5" style="padding: 0px"><button type="submit" class="btn btn-primary form-control" style="text-transform: uppercase;border-radius:0; background-color: #7c6bee;">Login</button></div>
-                                <div class="col-lg-6" style="padding: 0px"><a href="{{ route('password.request') }}" class="btn btn-link" style="text-decoration: none; text-transform: uppercase;border-radius:0;">Forgot Password?</a></div>
+                            <div class="row col-md-offset-2">
+                                <div class="col-lg-9" style="padding: 0px"><button type="submit" class="btn btn-primary form-control" style="text-transform: uppercase;border-radius:0; background-color: #7c6bee;">Login</button></div>
+                                <!-- <div class="col-lg-6" style="padding: 0px"><a href="{{ route('password.request') }}" class="btn btn-link" style="text-decoration: none; text-transform: uppercase;border-radius:0;">Forgot Password?</a></div> -->
                             </div>
                             Not a member yet?
-                            <a class="btn btn-link col-md-10 col-md-offset-1" href="{{ route('register') }}" style="text-decoration: none; background-color: #7c6bee;">
+                            <a class="btn btn-white col-md-10 col-md-offset-1" href="{{ route('register') }}" style="text-decoration: none;">
                                 Register
                             </a>          
                         </div>

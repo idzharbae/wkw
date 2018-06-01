@@ -4,7 +4,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>AppsToday - IT TODAY 2018</title>
+        <link rel="shortcut icon" href="img/logoittodayhitam.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
         <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
@@ -23,7 +24,7 @@
 		</div>
 		
 		<div class="main-container">
-		<section class="page-title page-title-4 image-bg overlay parallax">
+		<section class="page-title page-title-4 image-bg overlay parallax" >
 		        <div class="background-image-holder">
 		            <img alt="Background Image" class="background-image" src="img/bggradien.png">
 		        </div>
@@ -65,7 +66,7 @@
                         <p class="lead mb40" style="color: white">
                         AppsToday merupakan salah satu cabang kompetisi IT Today 2018 pada bidang inovasi aplikasi. Lomba ini dibuat sebagai wadah bagi peserta yang akan menjadi generasi developer baru yang kreatif dan inovatif untuk memajukan daya saing Indonesia di bidang teknologi informasi.
                         </p>
-                        <a class="btn btn-lg btn-white mb8 mt-xs-24" href="https://drive.google.com/open?id=1lQc9DxfVOvRKZCbtMoQsbwf0_EbIjhw0">DOWNLOAD RULEBOOK</a>
+                        <a class="btn btn-lg btn-white mb8 mt-xs-24" href="http://ittoday.web.id/rulebook/Rulebook%20AppsToday.pdf">DOWNLOAD RULEBOOK</a>
                     </div>
                 </div>
             </div>

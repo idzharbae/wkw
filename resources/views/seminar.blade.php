@@ -4,7 +4,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Seminar - IT TODAY 2018</title>
+        <link rel="shortcut icon" href="img/logoittodayhitam.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
         <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
@@ -35,9 +36,6 @@
 		                        <li>
 		                            <a href="#speakers">Speakers</a>
 		                        </li>
-								<!-- <li>
-		                            <a href="#testimonies">Testimonies</a>
-		                        </li> -->
 		                        <li>
 		                            <a href="#faq">FAQ</a>
 		                        </li>
@@ -49,16 +47,17 @@
 		        
 		    </section>
           
-			<section id="rulebook" class="image-edge" style="padding-bottom: 0px; padding-top: 10px">
+		<section id="about" class="image-edge" style="padding-bottom: 0px; padding-top: 10px">
             <div class="col-md-6 col-sm-4 p0 col-md-push-6 col-sm-push-8">
                 <img alt="Screenshot" class="mb-xs-24" src="img/iconseminar.png" style="height: 600px; weight: 450px">
             </div>
+
             <div class="container">
                 <div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
                     <div class="feature bordered text-center">
                         <p class="lead mb40" style="color: white">
 						National Seminar ITTODAY 2018 merupakan seminar bertaraf nasional yang diisi oleh pembicara yang berasal dari perusahaan, startup, ataupun praktisi-praktisi di bidang IT. Seminar berisi presentasi dan interaksi antara pembicara dengan peserta.
-                        </h5>
+                        </h5><br>
                         <a class="btn btn-lg btn-white mb8 mt-xs-24" onclick="alert('Pendaftaran seminar belum dibuka.')">Register Now</a>
                     </div>
                 </div>

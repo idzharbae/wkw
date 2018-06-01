@@ -4,7 +4,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>HackToday - IT TODAY 2018</title>
+        <link rel="shortcut icon" href="img/logoittodayhitam.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
         <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
@@ -65,7 +66,7 @@
                         <p class="lead mb40" style="color: white">
                         HackToday atau yang lebih dikenal dengan Capture The Flag adalah salah satu cabang kompetisi IT Today 2018 dalam bidang keamanan teknologi informasi. Dalam lomba ini, peserta  diharuskan untuk mencari celah-celah keamanan jaringan sehingga peserta mampu untuk menembus target yang disediakan oleh panitia. Lomba HackToday yang diadakan IT Today 2018 bertujuan agar setiap peserta mampu mengembangkan kemampuannya pada bidang Information Security.
                         </p>
-                        <a class="btn btn-lg btn-white mb8 mt-xs-24" href="https://drive.google.com/open?id=1tgn-e5uFenXeSkZkeDgWAep7_GJTRjUR">DOWNLOAD RULEBOOK</a>
+                        <a class="btn btn-lg btn-white mb8 mt-xs-24" href="http://ittoday.web.id/rulebook/Rulebook%20HackToday.pdf">DOWNLOAD RULEBOOK</a>
                     </div>
                 </div>
             </div>

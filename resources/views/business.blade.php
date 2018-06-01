@@ -4,7 +4,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Business IT Case - IT TODAY 2018</title>
+        <link rel="shortcut icon" href="img/logoittodayhitam.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
         <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
@@ -65,7 +66,7 @@
                         <p class="lead mb40" style="color: white">
                         Business IT Case merupakan salah satu cabang kompetisi IT Today 2018 berbasis case-solving bisnis berskala nasional. Business IT Case menguji kemampuan problem solving peserta dalam menganalisa dan memecahkan kasus bisnis yang diberikan dengan memberikan solusi melalui pendekatan Teknologi Informasi.
                         </p>
-                        <a class="btn btn-lg btn-white mb8 mt-xs-24" href="https://drive.google.com/open?id=1eDe7B75vpPh__vq1AnR1CMB2AFcEEAqE">DOWNLOAD RULEBOOK</a>
+                        <a class="btn btn-lg btn-white mb8 mt-xs-24" href="http://ittoday.web.id/rulebook/Rulebook%20Business%20IT%20Case.pdf">DOWNLOAD RULEBOOK</a>
                     </div>
                 </div>
             </div>

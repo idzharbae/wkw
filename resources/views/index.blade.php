@@ -3,37 +3,12 @@
 @extends('layouts.navbar2')
 
 @section('content')
+
 	<div class="main-container" style="">
-	<!-- image slider -->
-	<!-- <section>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="image-slider slider-all-controls controls-inside">
-							<ul class="slides">
-								<li>
-									<img alt="Image" src="img/cover14.jpg">
-								</li>
-								<li>
-									<img alt="Image" src="img/cover15.jpg">
-								</li>
-								<li>
-									<img alt="Image" src="img/cover16.jpg">
-								</li>
-							</ul>
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-	</section> -->
-
-	<!-- countdown -->
 	
 	<section class=" pt240 pb240 pt-xs-120 pb-xs-120 overlay image-bg parallax">
 		<div class="background-image-holder">
-			<img alt="image" class="background-image" src="img/feed6.png">
+			<img alt="image" class="background-image" src="img/maincover.png">
 		</div>
 		<div class="container">
 			<div class="row">
@@ -154,56 +129,56 @@
 							<li>
 								<a href="img/feed1.jpg" data-lightbox="true">
 									<div class="background-image-holder">
-										<img alt="image" class="background-image" src="img/feed1.jpg">
+										<img alt="image" class="background-image" src="img/feed1.png">
 									</div>
 								</a>
 							</li>
 							<li>
 								<a href="img/feed3.jpg" data-lightbox="true">
 									<div class="background-image-holder">
-										<img alt="image" class="background-image" src="img/feed3.jpg">
+										<img alt="image" class="background-image" src="img/feed3.png">
 									</div>
 								</a>
 							</li>
 							<li>
 								<a href="img/feed2.jpg" data-lightbox="true">
 									<div class="background-image-holder">
-										<img alt="image" class="background-image" src="img/feed2.jpg">
+										<img alt="image" class="background-image" src="img/feed2.png">
 									</div>
 								</a>
 							</li>
 							<li>
 								<a href="img/feed5.jpg" data-lightbox="true">
 									<div class="background-image-holder">
-										<img alt="image" class="background-image" src="img/feed5.jpg">
+										<img alt="image" class="background-image" src="img/feed5.png">
 									</div>
 								</a>
 							</li>
 							<li>
 								<a href="img/feed6.jpg" data-lightbox="true">
 									<div class="background-image-holder">
-										<img alt="image" class="background-image" src="img/feed6.jpg">
+										<img alt="image" class="background-image" src="img/feed6.png">
 									</div>
 								</a>
 							</li>
 							<li>
 								<a href="img/feed8.jpg" data-lightbox="true">
 									<div class="background-image-holder">
-										<img alt="image" class="background-image" src="img/feed8.jpg">
+										<img alt="image" class="background-image" src="img/feed8.png">
 									</div>
 								</a>
 							</li>
 							<li>
 								<a href="img/feed7.jpg" data-lightbox="true">
 									<div class="background-image-holder">
-										<img alt="image" class="background-image" src="img/feed7.jpg">
+										<img alt="image" class="background-image" src="img/feed7.png">
 									</div>
 								</a>
 							</li>
 							<li>
 								<a href="img/feed4.jpg" data-lightbox="true">
 									<div class="background-image-holder">
-										<img alt="image" class="background-image" src="img/feed4.jpg">
+										<img alt="image" class="background-image" src="img/feed4.png">
 									</div>
 								</a>
 							</li>
@@ -241,20 +216,7 @@
 							</ul>
 						</div>
 					</div>
-<!-- 				
-					<div class="row fade-half">
-						<div class="col-sm-4 text-center-xs">
-							<span>© Copyright 2015 Medium Rare</span>
-						</div>
-					
-						<div class="col-sm-4 text-center hidden-xs">
-							<span>Website Design &amp; Development</span>
-						</div>
-					
-						<div class="col-sm-4 text-right hidden-xs">
-							<span>hello@mrare.co</span>
-						</div>
-					</div> -->
+
 				</div>
 			</footer>
 		</section>
