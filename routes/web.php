@@ -31,6 +31,7 @@ Route::get('/postevent','TeamController@postEvent')->name('postevent');
 
 Route::get('/profile','ProfileController@teamProfile')->name('team.profile');
 Route::get('/payment','ProfileController@payment')->name('payment');
+Route::get('/editprofile','ProfileController@editprofile')->name('editprofile');
 
 Auth::routes();
 

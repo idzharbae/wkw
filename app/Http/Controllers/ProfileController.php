@@ -12,7 +12,12 @@ class ProfileController extends Controller
 {
     public function __construct(){
     	$this->middleware('auth'); //matiin kalo lagi testing mode
-	}
+    }
+    
+    public function editprofile(){
+        return view('editprofile');
+    }
+
     public function teamProfile(){
         $users = Auth::user()->id;
         $data = Team::where('team_id',$users)->first();
