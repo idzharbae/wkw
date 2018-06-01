@@ -191,7 +191,7 @@
 		                        </li>
 		                        <li>
 		                            <div class="title">
-		                                <h4 class="inline-block mb0">Bagaimana bentuk perlombaan dari business IT case?</h4>
+		                                <h4 class="inline-block mb0">Bagaimana bentuk perlombaan dari Business IT Case?</h4>
 		                            </div>
 		                            <div class="content">
 		                                <h5>
@@ -244,7 +244,7 @@
                                 </li>
                                 <li>
 		                            <div class="title">
-		                                <h4 class="inline-block mb0">Berapa biaya pendaftaran untuk mengikuti kompeitisi business IT case?</h4>
+		                                <h4 class="inline-block mb0">Berapa biaya pendaftaran untuk mengikuti kompetisi Business IT Case?</h4>
 		                            </div>
 		                            <div class="content">
 		                                <h5>

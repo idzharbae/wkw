@@ -95,7 +95,7 @@
 		                            </div>
 		                            <div class="content">
 		                                <h5>
-										 Tanggal 16 September 2018 di Auditorium CCR IPB
+										 Tanggal 16 September 2018 di Auditorium CCR IPB.
 		                                </h5>
 		                            </div>
 		                        </li>
@@ -105,7 +105,7 @@
 		                            </div>
 		                            <div class="content">
 		                                <h5>
-                                        Seminar ini <b>gratis</b>
+                                        Seminar ini <b>gratis</b>.
 		                                </h5>
 		                            </div>
 		                        </li>
@@ -125,7 +125,7 @@
 		                            </div>
 		                            <div class="content">
 		                                <h5>
-										Seminar akan open gate pukul 08.00 dan dimulai pukul 08.30 berakhir pada pukul 17.00
+										Open gate seminar pukul 08.00 dan dimulai pukul 08.30 berakhir pada pukul 17.00.
 		                                </h5>
 		                            </div>
                                 </li>
@@ -135,7 +135,7 @@
 		                            </div>
 		                            <div class="content">
 		                                <h5>
-                                        Peserta akan mendapatkan e-certificate, snack, dan konsumsi makan siang.
+                                        Peserta akan mendapatkan E-Certificate, snack, dan konsumsi makan siang.
 		                                </h5>
 		                            </div>
                                 </li>
@@ -145,7 +145,7 @@
 		                            </div>
 		                            <div class="content">
 		                                <h5>
-                                        Mahasiswa, professional muda, atau khalayak umum yang tertarik dengan bidang IT.
+                                        Mahasiswa, profesional muda, atau khalayak umum yang tertarik dengan bidang IT.
 		                                </h5>
 		                            </div>
                                 </li>

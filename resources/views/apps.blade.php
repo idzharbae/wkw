@@ -207,11 +207,21 @@
 		                        </li>
 		                        <li>
 		                            <div class="title">
-		                                <h4 class="inline-block mb0">Apakah peserta harus berasal dari satu institusi yang sama?</h4>
+		                                <h4 class="inline-block mb0">Apakah peserta harus berasal dari institusi yang sama?</h4>
 		                            </div>
 		                            <div class="content">
 		                                <h5>
-                                        Ya, anggota tim harus berasal dari universitas/institusi yang sama tapi boleh lintas jurusan Berapa anggota per tim yang diperbolehkan. Tim terdiri dari 1-3 anggota.
+                                        Ya, anggota tim harus berasal dari universitas/institusi yang sama tapi boleh lintas jurusan.
+		                                </h5>
+		                            </div>
+                                </li>
+								<li>
+		                            <div class="title">
+		                                <h4 class="inline-block mb0"> Berapa anggota per tim yang diperbolehkan?</h4>
+		                            </div>
+		                            <div class="content">
+		                                <h5>
+										Tim terdiri dari 1-3 anggota.
 		                                </h5>
 		                            </div>
                                 </li>
@@ -251,7 +261,7 @@
 		                            </div>
 		                            <div class="content">
 		                                <h5>
-                                        Proposal aplikasi dikumpulkan dalam format pdf. Submisi tahap dua dikumpulkan dalam format .zip.
+                                        Proposal aplikasi dikumpulkan dalam format .pdf, Submisi tahap dua dikumpulkan dalam format .zip.
 		                                </h5>
 		                            </div>
                                 </li>

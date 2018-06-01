@@ -1,8 +1,10 @@
 @extends('layouts.navbar2')
 
 @section('content')
+
     <div class="main-container">
 		<section class="page-title page-title-1 image-bg overlay parallax">
+			<div class="container">
 		        <div class="background-image-holder">
 		            <img alt="Background Image" class="background-image" src="img/footer.png">
 		        </div>
@@ -46,7 +48,7 @@
 		        </ol>
 				@endif
 			</section>
-			
+
 			<section style="background-color:#26c99e;" id="profil">
 		        <div class="container">
 		            <div class="row">
