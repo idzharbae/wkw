@@ -83,7 +83,7 @@
 		            </div>
 		        </div>
 		
-		        <div class="module widget-handle mobile-toggle right visible-sm visible-xs absolute-xs">
+				<div class="module widget-handle mobile-toggle right visible-sm visible-xs absolute-xs">
 		            <i class="ti-menu"></i>
 		        </div>
 			</nav>

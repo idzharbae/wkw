@@ -56,11 +56,11 @@
 		        </div>   
         </section>
 
-        <section id="rulebook" class="image-edge" style="padding-bottom: 0px; padding-top: 10px">
+        <section class="image-edge" style="padding-bottom: 0px; padding-top: 10px">
             <div class="col-md-6 col-sm-4 p0 col-md-push-6 col-sm-push-8">
-                <img alt="Screenshot" class="mb-xs-24" src="img/iconhack.png" style="height: 600px; weight: 450px">
+                <img alt="Screenshot" class="mb-xs-24" src="img/iconhack.png" style="height: auto; weight: 450px">
             </div>
-            <div class="container">
+            <div class="container"  id="rulebook">
                 <div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
                     <div class="feature bordered text-center">
                         <p class="lead mb40" style="color: white">
