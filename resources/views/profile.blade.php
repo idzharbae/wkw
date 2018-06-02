@@ -1,6 +1,7 @@
 @extends('layouts.navbar2')
 
 @section('content')
+<<<<<<< HEAD
     <div class="main-container">
 		<section class="page-title page-title-1 image-bg overlay parallax">
 		        <div class="background-image-holder">
@@ -20,38 +21,62 @@
 		            </div>
 		            
 		        </div>
+=======
+
+    	<div class="main-container">
+			<section class="page-title page-title-1 image-bg overlay parallax">
+				<div class="background-image-holder">
+					<img alt="Background Image" class="background-image" src="img/footer.png">
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							@if($data->type == "AppsToday")
+								<img alt="Screenshot" align="left" class="mb-xs-24" src="img/iconapps.png" style="width: 150px; height: 200px;">
+							@elseif($data->type == "HackToday")
+								<img alt="Screenshot" align="left" class="mb-xs-24" src="img/iconhack.png" style="width: 150px; height: 200px;">
+							@elseif($data->type == "Business IT Case")
+								<img alt="Screenshot" align="left" class="mb-xs-24" src="img/iconbisnis.png" style="width: 150px; height: 200px;">
+							@endif
+						</div>
+					</div>
+					
+				</div>
+>>>>>>> 1aa27096573ced6f6f067b58021453e78bc0fd27
 
 				@if($data->type != 'HackToday')		        
-		        <ol class="breadcrumb breadcrumb-2">
+				<ol class="breadcrumb breadcrumb-2">
 					<h3> {{$data->type}} </h3>
-		            <li>
-		                <a href="#profil">Profile</a>
-		            </li>
-		            <li>
-		                <a href="#berkas">Upload Berkas</a>
-		            </li>
-                    <li>
-		                <a href="#buktibayar">Upload Bukti Pembayaran</a>
-		            </li>
-		        </ol>
+					<li>
+						<a href="#profil">Profile</a>
+					</li>
+					<li>
+						<a href="#berkas">Upload Berkas</a>
+					</li>
+					<li>
+						<a href="#buktibayar">Upload Bukti Pembayaran</a>
+					</li>
+				</ol>
 				@else
 				<ol class="breadcrumb breadcrumb-2">
 					<h3> {{$data->type}} </h3>
-		            <li>
-		                <a href="#profil">Profile</a>
-		            </li>
-		            <li>
-		                <a href="#berkas">Upload Berkas</a>
-		            </li>
-		        </ol>
+					<li>
+						<a href="#profil">Profile</a>
+					</li>
+					<li>
+						<a href="#berkas">Upload Berkas</a>
+					</li>
+				</ol>
 				@endif
 			</section>
-			
+
+
 			<section style="background-color:#26c99e;" id="profil">
 		        <div class="container">
 		            <div class="row">
 					
                     <div class="feature bordered text-center bg-secondary" style="box-shadow: 0 9px 30px 10px rgba(0, 0, 0, 0.2); font-size: 18px">
+						<a class="bbtn tn-warning pull-right" href="{{url('/editprofile')}}"  style="border-radius: 0;"><i class="fa fa-pencil-square-o"></i>EDIT PROFILE<a><br>
 						<h2 class="uppercase mb40 mb-xs-24">{{App\User::find($data->team_id)->name}}</h2>
 						<div class="mb40">
 							<h6 class="mb8 uppercase">Members</h6>

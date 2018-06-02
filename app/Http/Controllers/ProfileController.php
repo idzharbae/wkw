@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Http\Request;
 use App\Team;
+use App\User;
 use Auth;
 class ProfileController extends Controller
 {
@@ -14,8 +15,43 @@ class ProfileController extends Controller
     	$this->middleware('auth'); //matiin kalo lagi testing mode
     }
     
-    public function editprofile(){
-        return view('editprofile');
+    public function editProfile(){
+        $users = Auth::user()->id;
+        $data = Team::where('team_id',$users)->first();
+        if($data == NULL){    	
+		    return view('reg_stp1', compact('users')); 
+        }
+        else{
+	        return view('editprofile',compact('data','users'));
+        }
+    }
+
+    public function saveProfile(Request $request){
+        $this->validate($request,[
+            'groupname'=>'required',
+            'member_one'=>'required',
+            'school'=>'required',
+            'province'=>'required',
+            'phone_num'=>'required',
+            // 'tipe' =>'required'
+        ]);
+        $id = $request->input('id');
+        
+        $data=array(
+            'member_one'=>$request->input('member_one'),
+            'member_two'=>$request->input('member_two'),
+            'member_three'=>$request->input('member_three'),
+            'school'=>$request->input('school'),
+            'province'=>$request->input('province'),
+            'phone_num'=>$request->input('phone_num'),
+            'line_id'=>$request->input('line_id')
+        );
+        Team::where('team_id',$id)->update($data);
+        $data2 = array(
+            'name'=>$request->input('groupname')
+        );
+        User::find($id)->update($data2);
+        return redirect()->route('team.profile');
     }
 
     public function teamProfile(){
@@ -68,7 +104,7 @@ class ProfileController extends Controller
             $team->letter = $name;
         }
         $team->save();
-        return redirect('/profile/');
+        return redirect('/profile/')->with('msg',"Profile Picture Changed Successfully");
     }
     public function uploadPay(Request $request){
         

@@ -287,7 +287,7 @@
 		                            </div>
 		                            <div class="content">
 		                                <h5>
-                                        Final dilaksanakan pada hari Minggu,9 September 2018 pada pukul 10.00 hingga 16.00 di Fakultas MIPA,Institut Pertanian Bogor, Dramaga, Bogor.
+                                        Final dilaksanakan pada hari Minggu, 9 September 2018 pada pukul 10.00 hingga 16.00 di Fakultas MIPA,Institut Pertanian Bogor, Dramaga, Bogor.
 										</h5>
 		                            </div>
                                 </li>
@@ -297,7 +297,7 @@
 		                            </div>
 		                            <div class="content">
 		                                <h5>
-                                        Tidak,namun peserta akan dibantu oleh pj HackToday untuk dicarikan akomodasi selama berada di IPB.
+                                        Tidak, namun peserta akan dibantu oleh pj HackToday untuk dicarikan akomodasi selama berada di IPB.
 										</h5>
 		                            </div>
                                 </li>

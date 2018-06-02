@@ -83,7 +83,6 @@ class TeamController extends Controller
         $team->province = $request->input('province');
         $team->phone_num = $request->input('phone_num');
         $team->type = $request->input('type');
-        $team->phone_num = $request->input('phone_num');
         //not required, maybe null
         $team->line_id = $request->input('line_id');
         $team->type = $request->input('tipe');

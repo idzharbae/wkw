@@ -88,7 +88,8 @@
                             Not a member yet?
                             <a class="btn btn-white col-md-10 col-md-offset-1" href="{{ route('register') }}" style="text-decoration: none;">
                                 Register
-                            </a>          
+                            </a>         
+                            <a href="{{route('password.request')}}">Forget ur pw?</a> 
                         </div>
                     </form>
 		                    </div>

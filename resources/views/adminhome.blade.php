@@ -12,7 +12,8 @@
 
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <title></title>
+        <title>Admin - IT TODAY 2018</title>
+        <link rel="shortcut icon" href="img/logoittodayhitam.png" />
         <link href="{{asset('css/themify-icons')}}.css" rel="stylesheet" type="text/css" media="all" />
         <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
         <link href="{{asset('css/theme.css')}}" rel="stylesheet" type="text/css" media="all" />
@@ -49,17 +50,10 @@
 		                <div class="col-sm-10 col-sm-offset-1">
 		                    <div class="post-snippet mb64">
 		                        <div class="post-title">
-                                    <h3 class="uppercase mb0" align="center">Admin Page</h3>
-                                    <div class="col-md-6 text-right" align="center">
-                                        <ol class="breadcrumb breadcrumb-2">
-                                            <li>
-                                                <a href="/adminhome">Home</a>
-                                            </li>
-                                        </ol>
-                                    </div>
+                                    <h1 class="uppercase mb0" align="center">Admin Panel</h1><br>
                                 </div>
                                 <div>
-                                    <h4 class="inline-block">Tabel Peserta Lomba</h4><br>
+                                    <h4 class="inline-block">   Tabel Peserta Lomba</h4><br>
                                 </div>
                                 <table>
                                     <tr>
@@ -70,9 +64,9 @@
                                     </tr>
                                     @foreach($user as $human )
                                     <tr>
-                                        <td></td><td><a href='{{ url("/admin/detail/{$human->id}") }}'>{{App\User::find($human->team_id)->name}}</a></td>
-                                        <td>@if($human->verify == 1)Confirmed @else Not Confirmed @endif</td>
-                                        <td><div class="col-lg-5" style="padding: 0px"><a href='{{ url("/admin/verify/{$human->id}") }}' type="submit" class="btn btn-primary form-control" style="text-transform: uppercase;border-radius:0; background-color: #7c6bee;">Konfirmasi</a></div></td>
+                                        <td></td><td><a style="font-size: 18px" href='{{ url("/admin/detail/{$human->id}") }}'>{{App\User::find($human->team_id)->name}}</a></td>
+                                        <td>@if($human->verify == 1)<b style="color:green">CONFIRMED</b> @else <b style="color:red">NOT CONFIRMED</b> @endif</td>
+                                        <td><div class="col-lg-5" style="padding: 0px"><a href='{{ url("/admin/verify/{$human->id}") }}' type="submit" class="btn btn-white form-control" style="text-transform: uppercase;border-radius:0; background-color: #7c6bee;">Konfirmasi</a></div></td>
                                     </tr>
                                     @endforeach
                                     </table> 
