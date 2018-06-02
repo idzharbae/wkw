@@ -1,7 +1,6 @@
 @extends('layouts.navbar2')
 
 @section('content')
-<<<<<<< HEAD
     <div class="main-container">
 		<section class="page-title page-title-1 image-bg overlay parallax">
 		        <div class="background-image-holder">
@@ -21,28 +20,6 @@
 		            </div>
 		            
 		        </div>
-=======
-
-    	<div class="main-container">
-			<section class="page-title page-title-1 image-bg overlay parallax">
-				<div class="background-image-holder">
-					<img alt="Background Image" class="background-image" src="img/footer.png">
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 text-center">
-							@if($data->type == "AppsToday")
-								<img alt="Screenshot" align="left" class="mb-xs-24" src="img/iconapps.png" style="width: 150px; height: 200px;">
-							@elseif($data->type == "HackToday")
-								<img alt="Screenshot" align="left" class="mb-xs-24" src="img/iconhack.png" style="width: 150px; height: 200px;">
-							@elseif($data->type == "Business IT Case")
-								<img alt="Screenshot" align="left" class="mb-xs-24" src="img/iconbisnis.png" style="width: 150px; height: 200px;">
-							@endif
-						</div>
-					</div>
-					
-				</div>
->>>>>>> 1aa27096573ced6f6f067b58021453e78bc0fd27
 
 				@if($data->type != 'HackToday')		        
 				<ol class="breadcrumb breadcrumb-2">

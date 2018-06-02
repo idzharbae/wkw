@@ -31,7 +31,7 @@
 		                <div class="col-md-6 text-right">
 		                    <ol class="breadcrumb breadcrumb-2">
 		                        <li>
-		                            <a href="#about">About</a>
+		                            <a href="#register">Register</a>
 		                        </li>
 		                        <li>
 		                            <a href="#speakers">Speakers</a>
@@ -47,12 +47,12 @@
 		        
 		    </section>
           
-		<section id="about" class="image-edge" style="padding-bottom: 0px; padding-top: 10px">
+		<section class="image-edge" style="padding-bottom: 0px; padding-top: 10px">
             <div class="col-md-6 col-sm-4 p0 col-md-push-6 col-sm-push-8">
-                <img alt="Screenshot" class="mb-xs-24" src="img/iconseminar.png" style="height: 600px; weight: 450px">
+                <img alt="Screenshot" class="mb-xs-24" src="img/iconseminar.png" style="height: auto; weight: 450px">
             </div>
 
-            <div class="container">
+            <div class="container"  id="register">
                 <div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
                     <div class="feature bordered text-center">
                         <p class="lead mb40" style="color: white">
