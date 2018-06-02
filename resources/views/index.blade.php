@@ -13,7 +13,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-					<img alt="Logo" class="image mb40 mb-xs-0" src="img/logoittoday.png" style="display: block; max-width:400px; max-height:200px; width: auto; height: auto; margin: auto">
+					<img alt="Logo" class="image mb40 mb-xs-0" src="img/logoittoday.png" style="display: block; max-height:200px; width: auto; height: auto; margin: auto">
 					<h3 class="mb56 mb-xs-24"><br>
 						MAKE IT DISRUPTIVE!
 					</h3>
@@ -117,7 +117,7 @@
 			<div class="row">
 				<div class="col-sm-12 text-center">
 					<h4 class="uppercase mb16">DOKUMENTASI</h4>
-					<h2 class="uppercase bold italic"><i class="ti-instagram">&nbsp;</i>ittoday_ipb</h2>
+					<h3 class="uppercase bold italic"><i class="ti-instagram">&nbsp;</i>ittoday_ipb</h3>
 				</div>
 			</div>
 
