@@ -165,7 +165,7 @@
 						</div>
 						<br>
 						<div class="row" align="center">
-						<a class="btn btn-lg btn-white mb8 mt-xs-24 col-md-10 col-md-offset-1" href='{{ url("admin/verify/{$user->id}") }}'>Konfirmasi Pendaftaran</a>
+						<a class="btn btn-lg btn-white mb8 mt-xs-24 col-md-10 col-md-offset-1" href='{{ url("antiribetclub/verify/{$user->id}") }}'>Konfirmasi Pendaftaran</a>
 						</div>
 					</div>
 				</div>

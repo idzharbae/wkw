@@ -64,9 +64,9 @@
                                     </tr>
                                     @foreach($user as $human )
                                     <tr>
-                                        <td></td><td><a style="font-size: 18px" href='{{ url("/admin/detail/{$human->id}") }}'>{{App\User::find($human->team_id)->name}}</a></td>
+                                        <td></td><td><a style="font-size: 18px" href='{{ url("/antiribetclub/detail/{$human->id}") }}'>{{App\User::find($human->team_id)->name}}</a></td>
                                         <td>@if($human->verify == 1)<b style="color:green">CONFIRMED</b> @else <b style="color:red">NOT CONFIRMED</b> @endif</td>
-                                        <td><div class="col-lg-5" style="padding: 0px"><a href='{{ url("/admin/verify/{$human->id}") }}' type="submit" class="btn btn-white form-control" style="text-transform: uppercase;border-radius:0; background-color: #7c6bee;">Konfirmasi</a></div></td>
+                                        <td><div class="col-lg-5" style="padding: 0px"><a href='{{ url("/antiribetclub/verify/{$human->id}") }}' type="submit" class="btn btn-white form-control" style="text-transform: uppercase;border-radius:0; background-color: #7c6bee;">Konfirmasi</a></div></td>
                                     </tr>
                                     @endforeach
                                     </table> 
