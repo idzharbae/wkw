@@ -81,7 +81,7 @@
                                     <div class="row col-md-offset-2">
                                         <div class="col-lg-9" style="padding: 0px">
                                             <button type="submit" name="submit" class="btn btn-primary form-control" style="text-transform: uppercase;border-radius:0; background-color: #7c6bee;">SAVE CHANGES</button>
-                                            <button type="cancel" name="cancel" class="btn">Cancel</button>
+                                            <a href="/profile" type="cancel" name="cancel" class="btn">Cancel</a>
                                         </div>
                                     </div>
                                 </form>
