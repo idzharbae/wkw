@@ -78,15 +78,19 @@
                                     Register
                                 </a>
                             </div> -->
-                            <div class="row col-md-offset-2">
-                                <div class="col-lg-9" style="padding: 0px"><button type="submit" class="btn btn-primary form-control" style="text-transform: uppercase;border-radius:0; background-color: #7c6bee;">Login</button></div>
-                                <!-- <div class="col-lg-6" style="padding: 0px"><a href="{{ route('password.request') }}" class="btn btn-link" style="text-decoration: none; text-transform: uppercase;border-radius:0;">Forgot Password?</a></div> -->
+                            <div class="form-group row mb-0">
+                            <div class="col-md-10 col-md-offset-1">
+                                <button style="font-size: 14px; background-color: #7c6bee" type="submit" class="btn btn-primary">
+                                    Login
+                                </button>
                             </div>
-                            Not a member yet?
+                        </div>
+                            <a href="{{route('password.request')}}">Forget your password?</a> 
+                            <div>
+                            <p style="margin-bottom:0px;">Not a member yet?</p>
                             <a class="btn btn-white col-md-10 col-md-offset-1" href="{{ route('register') }}" style="text-decoration: none;">
                                 Register
-                            </a>         
-                            <a href="{{route('password.request')}}">Forget ur pw?</a> 
+                            </a> </div>
                         </div>
                     </form>
 		                    </div>
