@@ -19,74 +19,84 @@
 	</head>
 	<body>
 		<div class="nav-container">
-		    <nav class="transparent absolute">
-		        <div class="nav-bar text-center" style="border-bottom: 0px">
-		            <div class="col-md-2 col-md-push-5 col-sm-12 text-center">
+		<nav class=" transparent absolute">
+		        <div class="nav-bar">
+		            <div class="module left">
 		                <a href="/">
-		                    <img alt="logo" style="height: 45px; width: auto;" src="img/logoittoday.png">
+		                    <img class=" image-xs logo logo-light" alt="ITToday" src="img/logoittoday.png">
+		                    <img class="image-xs logo logo-dark" alt="ITToday" src="img/logoittoday.png">
 		                </a>
 		            </div>
-		
-		            <div class="col-sm-12 col-md-5 col-md-pull-2 overflow-hidden-xs">
-		                <ul class="menu inline-block pull-right">
-		                    <li><a href="/" style="font-size: 16px;">Home</a></li>
-		                </ul>
+		            <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+		                <i class="ti-menu"></i>
 		            </div>
-		        
-		            <div class="module right">
-						<ul class="navbar-nav ml-auto">
-							<!-- Authentication Links -->
+		            <div class="module-group right">
+		                <div class="module left">
+		                    <ul class="menu">
+		                        <li>
+		                            <a href="/">Home</a>
+		                        </li>
+		                        <li class="has-dropdown">
+		                            <a href="#">
+		                                Competition
+		                            </a>
+		                            <ul>
+									<li><a href="{{route('appstoday')}}">AppsToday</a></li>
+									<li><a href="{{route('hacktoday')}}">HackToday</a></li>
+									<li><a href="{{route('business')}}">Business IT Case</a></li>
+		                            </ul>
+		                        </li>
+								<li class="has-dropdown">
+		                            <a href="#">
+		                                Event
+		                            </a>
+		                            <ul>
+		                                <li class="has-dropdown">
+										<a href="{{route('seminar')}}">National Seminar</a>
+		                                </li>
+		                            </ul>
+		                        </li>
+		                    </ul>
+		                </div>
+		               
+		                <div class="module widget-handle left">
+		                    <ul class="menu">
 							@guest
-								<ul class="menu inline-block pull-right">
-									<li><a class="btn btn-sm btn-white hidden-xs hidden-sm hidden-md" style="font-size: 12px;" href="{{ route('login') }}">Login</a></li>
-								</ul>
+							<li class="has-dropdown">
+		                            <a href="#">
+		                                Login
+		                            </a>
+		                            <ul>
+		                                <li>
+										<a href="{{route('login')}}">Login</a>
+		                                </li>
+										<li>
+										<a href="{{route('register')}}">Register</a>
+		                                </li>
+		                            </ul>
+		                        </li>
 							@else
-								<li class="nav-item dropdown pull-right">
-									<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#ffff; font-size: 16px">
-										{{ Auth::user()->name }} <span class="caret"></span>
-									</a>
-
-									<div class="dropdown-menu pull-right" aria-labelledby="navbarDropdown">
+								<li>
+										<a href="#" class="has-dropdown">{{ Auth::user()->name }}</a>
 										<ul>
 											<li>
-												<a class="dropdown-item" href="{{ route('team.profile') }}">&nbsp;&nbsp;&nbsp;Profile</a>
+												<a href="{{ route('team.profile') }}">Profile</a>
 											</li>
-											<li><a class="dropdown-item" href="{{ route('logout') }}"
-												onclick="event.preventDefault();
-																document.getElementById('logout-form').submit();">
-													&nbsp;&nbsp;&nbsp;Logout
-												</a>
+											<li>
+												<a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
 											</li>
 										</ul>
 										<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
 											@csrf
 										</form>
-									</div>
 								</li>
 							@endguest
-						</ul>
+		                    </ul>
+		                </div>
 		            </div>
-		                <ul class="menu inline-block pull-left">
-		                    <li><a style="font-size: 16px;" href="#">Competition <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-		                        <ul>
-									<li><a href="{{route('appstoday')}}">AppsToday</a></li>
-									<li><a href="{{route('hacktoday')}}">HackToday</a></li>
-									<li><a href="{{route('business')}}">Business IT Case</a></li>
-		                        </ul>
-							</li>
-							<li><a style="font-size: 16px;" href="#">Event <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-		                        <ul>
-									<li><a href="{{route('seminar')}}">National Seminar</a></li>
-		                        </ul>
-							</li>
-		                </ul>
-		            </div>
+		            
 		        </div>
-		
-				<div class="module widget-handle mobile-toggle right visible-sm visible-xs absolute-xs">
-		            <i class="ti-menu"></i>
-		        </div>
-			</nav>
+		    </nav>
 			
 		<main class="py-4" >
 			@yield('content')

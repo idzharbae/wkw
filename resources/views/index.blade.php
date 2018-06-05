@@ -1,4 +1,3 @@
-<!doctype html>
 
 @extends('layouts.navbar2')
 
@@ -207,17 +206,16 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/scripts.js"></script>
+		<script src="js/flexslider.min.js"></script>
+	<script src="js/lightbox.min.js"></script>
+	<script src="js/spectragram.min.js"></script>
+	<script src="js/countdown.min.js"></script>
 
 
 	</div>
 	
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/flexslider.min.js"></script>
-	<script src="js/lightbox.min.js"></script>
-	<script src="js/spectragram.min.js"></script>
-	<script src="js/countdown.min.js"></script>
-	<script src="js/parallax.js"></script>
-	<script src="js/scripts.js"></script>
+	
+	
+	
 
 @endsection
