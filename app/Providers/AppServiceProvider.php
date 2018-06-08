@@ -17,10 +17,10 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
-        
-        if(env('REDIRECT_HTTPS')) {
-            $url->formatScheme('https');
-        }
+        //tidak perlu
+        //if(env('REDIRECT_HTTPS')) {
+        //    $url->formatScheme('https');
+        //}
     }
 
     /**
@@ -30,8 +30,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        if(env('REDIRECT_HTTPS')) {
-            $this->app['request']->server->set('HTTPS', true);
-        }
+        //tidak perlu
+        //if(env('REDIRECT_HTTPS')) {
+          //  $this->app['request']->server->set('HTTPS', true);
+        //}
     }
 }
