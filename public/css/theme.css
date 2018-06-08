@@ -1529,12 +1529,13 @@ nav.transparent {
 }
 @media all and (max-width: 990px) {
   nav.transparent .nav-open {
-    background: #fff;
+    background: #292929;
+
   }
   nav.transparent .nav-open .menu > li > a,
   nav.transparent .nav-open .module.widget-handle i,
   nav.transparent .nav-open .nav-utility {
-    color: #292929;
+    color: #ccc;
   }
   nav.transparent .nav-open .logo-dark {
     display: inline;

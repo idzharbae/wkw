@@ -16,16 +16,13 @@
     </head>
     <body>
 				
-		<div class="main-container">
-		<section class="cover fullscreen image-bg overlay" style="padding-top: 40px">
-		        <div class="background-image-holder">
-		            <img alt="image" class="background-image" src="img/bglogin.png" style=" background-repeat: no-repeat; background-attachment: fixed;">
-		        </div>
+		<div class="main-container" style="background: url('/img/footer.png') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">
+		<section class="fullscreen overlay">
 		        <div class="container v-align-transform">
 		            <div class="row">
 		                <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
 		                    <div class="feature bordered text-center">  
-		                        <h3 class="uppercase" >Login</h3>
+		                        <h3 class="uppercase" style="color:white;">Login</h3>
 		                       
 		                        <form method="POST" action="{{ route('login') }}">
                         @csrf
@@ -81,17 +78,26 @@
                                     Register
                                 </a>
                             </div> -->
-                            <div class="row col-md-offset-2">
-                                <div class="col-lg-9" style="padding: 0px"><button type="submit" class="btn btn-primary form-control" style="text-transform: uppercase;border-radius:0; background-color: #7c6bee;">Login</button></div>
-                                <!-- <div class="col-lg-6" style="padding: 0px"><a href="{{ route('password.request') }}" class="btn btn-link" style="text-decoration: none; text-transform: uppercase;border-radius:0;">Forgot Password?</a></div> -->
+                            <div class="form-group row mb-0">
+                            <div class="col-md-10 col-md-offset-1">
+                                <button style="font-size: 14px; background-color: #7c6bee" type="submit" class="btn btn-primary">
+                                    Login
+                                </button>
                             </div>
-                            Not a member yet?
+                        </div>
+                            <a href="{{route('password.request')}}">Forget your password?</a> 
+                            <div>
+                            <p style="margin-bottom:0px;">Not a member yet?</p>
                             <a class="btn btn-white col-md-10 col-md-offset-1" href="{{ route('register') }}" style="text-decoration: none;">
                                 Register
+<<<<<<< HEAD
                             </a>
                             <a class="btn btn-white col-md-10 col-md-offset-1" href="{{route('password.request')}}" style="text-decoration: none;">
                                 Forget Your Password?
                             </a>
+=======
+                            </a> </div>
+>>>>>>> f6a8451fc30f94073973975ce4e685554ce2b04a
                         </div>
                     </form>
 		                    </div>

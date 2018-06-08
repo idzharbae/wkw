@@ -17,12 +17,9 @@
 
     <body>
 				
-		<div class="main-container">
-		<section class="cover fullscreen image-bg overlay" style="padding-top: 7%">
-		        <div class="background-image-holder">
-		            <img alt="image" class="background-image" src="img/bglogin.png">
-		        </div>
-		        <div class="container">
+    <div class="main-container" style="background: url('/img/footer.png') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">
+		<section class="fullscreen overlay">
+		        <div class="container v-align-transform">
 		            <div class="row">
 		                <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
 		                    <div class="feature bordered text-center">

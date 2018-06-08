@@ -1,5 +1,4 @@
 @extends('layouts.navbar2')
-
 @section('content')
     <div class="main-container">
 		<section class="page-title page-title-1 image-bg overlay parallax">
@@ -59,17 +58,18 @@
 						<h2 class="uppercase mb40 mb-xs-24">{{App\User::find($data->team_id)->name}}</h2>
 						<div class="mb40">
 							<h6 class="mb8 uppercase">Members</h6>
-							<p style="color:black; !important;">
+							<p style="color:black; !important; margin-bottom:0px !important;">
 								@if($data->member_one!=NULL)
-								{{$data->member_one}}<br />
-								@endif
+								{{$data->member_one}}
+								@endif</p>
+								<p style="color:black !important; margin-bottom:0px !important;">
 								@if($data->member_two!=NULL)
-								{{$data->member_two}}<br />
-								@endif
+								{{$data->member_two}}
+								@endif</p>
+								<p style="color:black !important; margin-bottom:0px !important;">
 								@if($data->member_three!=NULL)
 								{{$data->member_three}}
-								@endif
-							</p>
+								@endif</p>
 						</div>
 						<div class="mb40">
 							<h6 class="mb8 uppercase">School</h6>
@@ -85,11 +85,9 @@
 						</div>
 						<div class="mb40">
 							<h6 class="mb8 uppercase">Contact</h6>
-							<p style="color:black !important;">
-								{{App\User::find($data->team_id)->email}}<br>
-								{{$data->phone_num}}<br>
-								{{$data->line_id}}
-							</p>
+							<p style="color:black !important;margin-bottom:0px !important;">{{App\User::find($data->team_id)->email}}</p>
+								<p style="color:black !important;margin-bottom:0px !important;">{{$data->phone_num}}</p>
+								<p style="color:black !important;margin-bottom:0px !important;">{{$data->line_id}}</p>
 						</div>
 					</div>
 		            </div>
@@ -208,7 +206,6 @@
 		                <div class="col-sm-12 text-center">
 		                	<input type="file" name="letter" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile4" style="display: none;" onchange="showname4();"/>
 							<input type="button" style="white-space: normal; height: auto;"  class="btn btn-lg btn-white mb8 mt-xs-24" value="Upload Surat Keterangan Mahasiswa/Siswa Aktif" onclick="document.getElementById('selectedFile4').click();" />
-							<!-- <a class="btn btn-lg btn-white mb8 mt-xs-24" href="#">Upload Surat Keterangan Mahasiswa/Siswa Aktif</a> -->
 							<div id="filename-4"></div>
 							<br><p>Surat keterangan semua anggota tim disatukan menjadi satu file dalam format .pdf dengan ukuran file tidak lebih dari 2 MB</p>
                             
