@@ -44,7 +44,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 *ADMIN ROUTE, GAUSAH DIGANTI JADI PREFIX, tp klo mau, monggo. 
 ***/
 Route::prefix('antiribetclub')->group(function(){
-	Route::get('/home','AdminController@main');
+	Route::get('/home','AdminController@main')->name('admin.home');
 	Route::get('/','Admin\LoginController@showLoginForm')->name('admin.login');
 	Route::post('/','Admin\LoginController@login');
 	Route::get('/main','AdminController@main');

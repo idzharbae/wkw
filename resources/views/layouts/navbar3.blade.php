@@ -30,7 +30,7 @@
 								</ul>
 							@else
 								<li class="nav-item dropdown pull-right">
-								<a class="nav-link" href="/admin/home" role="button" style="color:#ffff; font-size: 16px">
+								<a class="nav-link" href="{{route('admin.home')}}" role="button" style="color:#ffff; font-size: 16px">
 										Home
 								</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#ffff; font-size: 16px">
