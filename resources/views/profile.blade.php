@@ -72,7 +72,7 @@
 								<button type="button" class="close tutupktm">
 									<span aria-hidden="true">&times;</span>	
 								</button>
-								Kartu Tanda Mahasiswa / Kartu Pelajar Sedang Dalam Proses Verifikasi, Harap TUnggu Kurang Dari 2 x 24 Jam.
+								Kartu Tanda Mahasiswa / Kartu Pelajar Dalam Proses Verifikasi, Harap Tunggu Kurang Dari 2 x 24 Jam.
 							</div>
 							@endif
 						@else
@@ -106,7 +106,7 @@
 								<button type="button" class="close tutupktm">
 									<span aria-hidden="true">&times;</span>
 								</button>
-								Kartu Tanda Mahasiswa / Kartu Pelajar Sedang Dalam Proses Verifikasi, Harap TUnggu Kurang Dari 2 x 24 Jam.
+								Kartu Tanda Mahasiswa / Kartu Pelajar Dalam Proses Verifikasi, Harap Tunggu Kurang Dari 2 x 24 Jam.
 							</div>
 							@endif
 						@else
@@ -140,7 +140,7 @@
 								<button type="button" class="close tutupktm">
 									<span aria-hidden="true">&times;</span>
 								</button>
-								Kartu Tanda Mahasiswa / Kartu Pelajar Sedang Dalam Proses Verifikasi, Harap TUnggu Kurang Dari 2 x 24 Jam.
+								Kartu Tanda Mahasiswa / Kartu Pelajar Dalam Proses Verifikasi, Harap Tunggu Kurang Dari 2 x 24 Jam.
 							</div>
 							@endif
 						@else
@@ -181,7 +181,7 @@
 							<button type="button" class="close tutupletter">
 								<span aria-hidden="true">&times;</span>
 							</button>
-							Surat Keterangan Mahasiswa / Siswa Aktif Sedang Dalam Proses Verifikasi, Harap TUnggu Kurang Dari 2 x 24 Jam.
+							Surat Keterangan Mahasiswa / Siswa Aktif Dalam Proses Verifikasi, Harap Tunggu Kurang Dari 2 x 24 Jam.
 						</div>
 						@endif
 					@endif
@@ -215,7 +215,7 @@
 								<button type="button" class="close tutuppayment">
 									<span aria-hidden="true">&times;</span>
 								</button>
-								Bukti Pembayaran Sedang Dalam Proses Verifikasi, Harap TUnggu Kurang Dari 2 x 24 Jam.
+								Bukti Pembayaran Dalam Proses Verifikasi, Harap Tunggu Kurang Dari 2 x 24 Jam.
 							</div>
 							@endif
 						@endif

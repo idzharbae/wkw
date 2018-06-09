@@ -43,54 +43,54 @@ class AdminController extends Controller
         $user = Team::where('id',$id)->first();
         $user->verify_ktm = 1;
         $user->save();
-        return redirect('antiribetclub/home');
+        return redirect()->back();
     }
     public function verifyletter($id){
         $user = Team::where('id',$id)->first();
         $user->verify_letter = 1;
         $user->save();
-        return redirect('antiribetclub/home');
+        return redirect()->back();
     }
     public function verifypayment($id){
         $user = Team::where('id',$id)->first();
         $user->verify_payment = 1;
         $user->save();
-        return redirect('antiribetclub/home');
+        return redirect()->back();
     }
     public function unverifyktm($id){
         $user = Team::where('id',$id)->first();
         $user->verify_ktm = 0;
         $user->save();
-        return redirect('antiribetclub/home');
+        return redirect()->back();
     }
     public function unverifyletter($id){
         $user = Team::where('id',$id)->first();
         $user->verify_letter = 0;
         $user->save();
-        return redirect('antiribetclub/home');
+        return redirect()->back();
     }
     public function unverifypayment($id){
         $user = Team::where('id',$id)->first();
         $user->verify_payment = 0;
         $user->save();
-        return redirect('antiribetclub/home');
+        return redirect()->back();
     }
     public function tolakktm($id){
         $user = Team::where('id',$id)->first();
         $user->verify_ktm = 2;
         $user->save();
-        return redirect('antiribetclub/home');
+        return redirect()->back();
     }
     public function tolakletter($id){
         $user = Team::where('id',$id)->first();
         $user->verify_letter = 2;
         $user->save();
-        return redirect('antiribetclub/home');
+        return redirect()->back();
     }
     public function tolakpayment($id){
         $user = Team::where('id',$id)->first();
         $user->verify_payment = 2;
         $user->save();
-        return redirect('antiribetclub/home');
+        return redirect()->back();
     }
 }

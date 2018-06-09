@@ -25,7 +25,6 @@
 		                <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
 		                    <div class="feature bordered text-center">
 		                        <h3 class="uppercase">Edit Profile</h3>
-                                        
                                 <form method="POST" action = '{{url("/saveprofile")}}'>
                                 @csrf
                                 <div class="form-group row">
@@ -46,7 +45,8 @@
                                             <input type = 'text' name = 'member_three' placeholder="Group Member 2" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Group Member 2'" value="{{$data->member_three}}"/>
                                         </div>
                                     </div>
-
+									
+									
                                     <div class="form-group row">
                                         <!-- <label for="name" class="col-md-4 col-form-label text-md-right"> University/School </label> -->
 

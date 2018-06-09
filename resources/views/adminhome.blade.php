@@ -47,7 +47,7 @@
             <section>
 		        <div class="container">
 		            <div class="row">
-		                <div class="col-sm-10 col-sm-offset-1">
+		                <div class="col-sm-12">
 		                    <div class="post-snippet mb64">
 		                        <div class="post-title">
                                     <h1 class="uppercase mb0" align="center">Admin Panel</h1><br>
@@ -57,22 +57,33 @@
                                 </div>
                                 <table>
                                     <tr>
-                                        <th width="20px">Nomor</th>
-                                        <th width="150px">Nama Grup</th>
-                                        <th width="100px">Status KTM</th>
-                                        <th width="100px">Status Surat</th>
-                                        <th width="100px">Status Pembayaran</th>
+                                        <th width="10px">Nomor</th>
+                                        <th width="100px">Nama Grup</th>
+                                        <th width="100px">Email</th>
+                                        <th width="50px">Jenis Lomba</th>
+                                        <th width="50px">Status KTM</th>
+                                        <th width="50px">Status Surat</th>
+                                        <th width="50px">Status Pembayaran</th>
                                     </tr>
                                     @foreach($user as $human )
                                     <tr>
                                         <td></td><td><a style="font-size: 18px; color: blue;" href='{{ url("/antiribetclub/detail/{$human->id}") }}'>{{App\User::find($human->team_id)->name}}</a></td>
+                                        <td>{{App\User::find($human->team_id)->email}}</a></td>
+                                        <td>{{$human->type}}</td>
                                         <td>@if($human->verify_ktm == 1)<b style="color:green">CONFIRMED</b> @else <b style="color:red">NOT CONFIRMED</b> @endif</td>
                                         <td>@if($human->verify_letter == 1)<b style="color:green">CONFIRMED</b> @else <b style="color:red">NOT CONFIRMED</b> @endif</td>
-                                        <td>@if($human->verify_payment == 1)<b style="color:green">CONFIRMED</b> @else <b style="color:red">NOT CONFIRMED</b> @endif</td>
+                                        <td>@if($human->type != 'HackToday')
+												@if($human->verify_payment == 1)
+												<b style="color:green">CONFIRMED</b>
+												@else <b style="color:red">NOT CONFIRMED</b>
+												@endif
+											@else
+											<b style="color:green">FREE</b>
+											@endif
+										</td>
                                     </tr>
                                     @endforeach
                                     </table> 
-		                    
 		                    </div>
 		                </div>
 		                

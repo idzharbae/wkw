@@ -21,10 +21,186 @@
 		
 		<div class="main-container">
 
-            <section style="padding-top: 50px;">
+			<section style="padding-top: 60px; padding-bottom: 0px; background-color: #26c99e;">
+				<h1 align="center"> ADMIN PANEL </h1>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+					<!-- Alert Foto KTM -->
+					<!-- 3 Members -->
+					@if($user->member_one != NULL && $user->member_two != NULL && $user->member_three != NULL)
+						@if($user->ktm_img1 != NULL && $user->ktm_img2 != NULL && $user->ktm_img3 != NULL)
+							@if($user->verify_ktm == 1)
+							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
+								<button type="button" class="close tutupktm">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								Kartu Tanda Mahasiswa / Kartu Pelajar Berhasil Diverifikasi.
+							</div>
+							@elseif($user->verify_ktm == 2)
+							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+								<button type="button" class="close tutupktm">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								Kartu Tanda Mahasiswa / Kartu Pelajar Ditolak, Silakan Cek Email Untuk Melihat Kesalahan.
+							</div>
+							@else
+							<div class="alert alert-dismissible ktm" role="alert" style=" color: #fff !important; background-color: #d8ca04 !important;">
+								<button type="button" class="close tutupktm">
+									<span aria-hidden="true">&times;</span>	
+								</button>
+								Kartu Tanda Mahasiswa / Kartu Pelajar Dalam Proses Verifikasi, Harap Tunggu Kurang Dari 2 x 24 Jam.
+							</div>
+							@endif
+						@else
+						<div class="alert alert-dismissible ktm" role="alert" style=" color: #fff !important; background-color: #c64444 !important;">
+							<button type="button" class="close tutupktm">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							Harap Segera Mengunggah Kartu Tanda Mahasiswa / Kartu Pelajar Sebelum Tanggal 11 Juli 2018.
+						</div>
+						@endif
+					@endif
+					<!-- 2 Members -->
+					@if($user->member_one != NULL && $user->member_two != NULL && $user->member_three == NULL)
+						@if($user->ktm_img1 != NULL && $user->ktm_img2 != NULL)
+							@if($user->verify_ktm == 1)
+							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
+								<button type="button" class="close tutupktm">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								Kartu Tanda Mahasiswa / Kartu Pelajar Berhasil Diverifikasi.
+							</div>
+							@elseif($user->verify_ktm == 2)
+							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+								<button type="button" class="close tutupktm">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								Kartu Tanda Mahasiswa / Kartu Pelajar Ditolak, Silakan Cek Email Untuk Melihat Kesalahan.
+							</div>
+							@else
+							<div class="alert alert-dismissible ktm" role="alert" style=" color: #fff !important; background-color: #d8ca04 !important;">
+								<button type="button" class="close tutupktm">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								Kartu Tanda Mahasiswa / Kartu Pelajar Dalam Proses Verifikasi, Harap Tunggu Kurang Dari 2 x 24 Jam.
+							</div>
+							@endif
+						@else
+						<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+							<button type="button" class="close tutupktm">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							Harap Segera Mengunggah Kartu Tanda Mahasiswa / Kartu Pelajar Sebelum Tanggal 11 Juli 2018.
+						</div>
+						@endif
+					@endif
+					<!-- 1 Member -->
+					@if($user->member_one != NULL && $user->member_two == NULL && $user->member_three == NULL)
+						@if($user->ktm_img1 != NULL)
+							@if($user->verify_ktm == 1)
+							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
+								<button type="button" class="close tutupktm">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								Kartu Tanda Mahasiswa / Kartu Pelajar Berhasil Diverifikasi.
+							</div>
+							@elseif($user->verify_ktm == 2)
+							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+								<button type="button" class="close tutupktm">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								Kartu Tanda Mahasiswa / Kartu Pelajar Ditolak, Silakan Cek Email Untuk Melihat Kesalahan.
+							</div>
+							@else
+							<div class="alert alert-dismissible ktm" role="alert" style=" color: #fff !important; background-color: #d8ca04 !important;">
+								<button type="button" class="close tutupktm">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								Kartu Tanda Mahasiswa / Kartu Pelajar Dalam Proses Verifikasi, Harap Tunggu Kurang Dari 2 x 24 Jam.
+							</div>
+							@endif
+						@else
+						<div class="alert alert-dismissible ktm" role="alert"  style="color: #fff !important; background-color: #c64444 !important;">
+							<button type="button" class="close tutupktm">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							Harap Segera Mengunggah Kartu Tanda Mahasiswa / Kartu Pelajar Sebelum Tanggal 11 Juli 2018.
+						</div>
+						@endif
+					@endif
+
+					<!-- Alert Surat Keterangan Mahasiswa Aktif -->
+					@if($user->letter == NULL)
+					<div class="alert alert-dismissible letter" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+						<button type="button" class="close tutupletter">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						Harap Segera Mengunggah Surat Keterangan Mahasiswa / Siswa Aktif Sebelum Tanggal 11 Juli 2018.
+					</div>
+					@else
+						@if($user->verify_letter == 1)
+						<div class="alert alert-dismissible letter" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
+							<button type="button" class="close tutupletter">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							Surat Keterangan Mahasiswa / Siswa Aktif Berhasil Diverifikasi.
+						</div>
+						@elseif($user->verify_letter == 2)
+						<div class="alert alert-dismissible letter" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+							<button type="button" class="close tutupletter">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							Surat Keterangan Mahasiswa / Siswa Aktif Ditolak, Silakan Cek Email Untuk Melihat Kesalahan.
+						</div>
+						@else
+						<div class="alert alert-dismissible letter" role="alert" style=" color: #fff !important; background-color: #d8ca04 !important;">
+							<button type="button" class="close tutupletter">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							Surat Keterangan Mahasiswa / Siswa Aktif Dalam Proses Verifikasi, Harap Tunggu Kurang Dari 2 x 24 Jam.
+						</div>
+						@endif
+					@endif
+
+					<!-- Alert Bukti Pembayaran -->
+					@if($user->type != 'HackToday')
+						@if($user->payment == NULL)
+						<div class="alert alert-dismissible payment" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+							<button type="button" class="close tutuppayment">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							Harap Segera Mengunggah Bukti Pembayaran Sebelum Tanggal 11 Juli 2018.
+						</div>
+						@else
+							@if($user->verify_payment == 1)
+							<div class="alert alert-dismissible payment" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
+								<button type="button" class="close tutuppayment">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								Bukti Pembayaran Berhasil Diverifikasi.
+							</div>
+							@elseif($user->verify_payment == 2)
+							<div class="alert alert-dismissible payment" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+								<button type="button" class="close tutuppayment">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								Bukti Pembayaran Ditolak, Silakan Cek Email Untuk Melihat Kesalahan.
+							</div>
+							@else
+							<div class="alert alert-dismissible payment" role="alert" style=" color: #fff !important; background-color: #d8ca04 !important;">
+								<button type="button" class="close tutuppayment">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								Bukti Pembayaran Dalam Proses Verifikasi, Harap Tunggu Kurang Dari 2 x 24 Jam.
+							</div>
+							@endif
+						@endif
+					@endif
+			</section>
+
+            <section style="padding-top: 0px;">
 		        <div class="container">
 		            <div class="row">
-					<h1 align="center"> ADMIN PANEL </h1>
                     <div class="feature bordered text-center bg-secondary" style="background-color: white; box-shadow: 0 9px 30px 10px rgba(0, 0, 0, 0.2);" align="center">
 						<h4 class="uppercase mb40 mb-xs-24">{{$user->type}}</h4>
 						<div class="mb40">
@@ -39,7 +215,7 @@
 								@if($user->member_two !=NULL)
 								{{$user->member_two}}
 								@else
-								<b style="color: red">Member 2 Not Found</b><
+								<b style="color: red">Member 2 Not Found</b>
 								@endif</p>
 								<p style="color:black !important;">
 								@if($user->member_three !=NULL)
@@ -91,8 +267,8 @@
 			                    </div>
 			                </div>
 			                @else
-							<p><h5 align="center">
-				                KTM MEMBER 1 NOT UPLOADED
+							<p><h5 align="center" style="color:red">
+				                <b>KTM MEMBER 1 NOT UPLOADED</b>
 							</h5></p>
 							@endif
 						@endif
@@ -108,8 +284,8 @@
 			                    </div>
 			                </div>
 			                @else
-							<p><h5 align="center">
-				                KTM MEMBER 2 NOT UPLOADED
+							<p><h5 align="center" style="color:red">
+				                <b>KTM MEMBER 2 NOT UPLOADED</b>
 							</h5></p>
 							@endif
 						@endif
@@ -125,8 +301,8 @@
 			                    </div>
 			                </div>
 			                @else
-							<p><h5 align="center">
-				                KTM MEMBER 3 NOT UPLOADED
+							<p><h5 align="center" style="color:red">
+				                <b>KTM MEMBER 3 NOT UPLOADED</b>
 							</h5></p>
 			                @endif
 						@endif
@@ -183,7 +359,7 @@
 								<img alt="Article Image" class="mb32 mb-xs-16" src="{{asset($user->payment)}}" style="display: block; max-width:400px; max-height:200px; width: auto; height: auto; margin: auto">
 								<br><a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{asset($user->payment)}}">Lihat Bukti Pembayaran</a>
 								@else
-								<b style="color: red">NOT UPLOADED</b>
+								<h4><b style="color: red">BUKTI PEMBAYARAN BELUM DIUPLOAD</b></h4>
 								@endif 
 								<div class="row" align="center"><br>
 									<div style="margin-left: 50px;">
@@ -214,6 +390,25 @@
         <script src="{{asset('js/bootstrap.min.js')}}"></script>
         <script src="{{asset('js/parallax.js')}}"></script>
         <script src="{{asset('js/scripts.js')}}"></script>
+		<script>
+		$(document).ready(function(){
+			$(".tutupktm").click(function(){
+				$(".ktm").fadeTo(200, 0).slideUp(200,0);
+			});
+		});
+
+		$(document).ready(function(){
+			$(".tutupletter").click(function(){
+				$(".letter").fadeTo(200, 0).slideUp(200,0);
+			});
+		});
+
+		$(document).ready(function(){
+			$(".tutuppayment").click(function(){
+				$(".payment").fadeTo(200, 0).slideUp(200,0);
+			});
+		});	
+		</script>	
     </body>
 </html>
 

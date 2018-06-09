@@ -43,7 +43,7 @@
                                             <div class="select-option">
                                                 <i class="ti-angle-down"></i>
                                                 <select name="tipe" class="select-option">
-                                                    <option selected value="Default">Select a Competition</option>
+                                                    <option selected value="">Select a Competition</option>
                                                     <option value="AppsToday">AppsToday</option>
                                                     <option value="HackToday">HackToday</option>
                                                     <option value="Business IT Case">Business IT Case</option>
