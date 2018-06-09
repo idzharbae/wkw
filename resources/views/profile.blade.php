@@ -54,7 +54,7 @@
 					@if($data->member_one != NULL && $data->member_two != NULL && $data->member_three != NULL)
 						@if($data->ktm_img1 != NULL && $data->ktm_img2 != NULL && $data->ktm_img3 != NULL)
 							@if($data->verify_ktm == 1)
-							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #0f8ddb !important;">
+							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
 								<button type="button" class="close tutupktm">
 									<span aria-hidden="true">&times;</span>
 								</button>
@@ -88,7 +88,7 @@
 					@if($data->member_one != NULL && $data->member_two != NULL && $data->member_three == NULL)
 						@if($data->ktm_img1 != NULL && $data->ktm_img2 != NULL)
 							@if($data->verify_ktm == 1)
-							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #0f8ddb !important;">
+							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
 								<button type="button" class="close tutupktm">
 									<span aria-hidden="true">&times;</span>
 								</button>
@@ -122,7 +122,7 @@
 					@if($data->member_one != NULL && $data->member_two == NULL && $data->member_three == NULL)
 						@if($data->ktm_img1 != NULL)
 							@if($data->verify_ktm == 1)
-							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #0f8ddb !important;">
+							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
 								<button type="button" class="close tutupktm">
 									<span aria-hidden="true">&times;</span>
 								</button>
@@ -163,7 +163,7 @@
 					</div>
 					@else
 						@if($data->verify_letter == 1)
-						<div class="alert alert-dismissible letter" role="alert"  style=" color: #fff !important; background-color: #0f8ddb !important;">
+						<div class="alert alert-dismissible letter" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
 							<button type="button" class="close tutupletter">
 								<span aria-hidden="true">&times;</span>
 							</button>
@@ -197,7 +197,7 @@
 						</div>
 						@else
 							@if($data->verify_payment == 1)
-							<div class="alert alert-dismissible payment" role="alert"  style=" color: #fff !important; background-color: #0f8ddb !important;">
+							<div class="alert alert-dismissible payment" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
 								<button type="button" class="close tutuppayment">
 									<span aria-hidden="true">&times;</span>
 								</button>
@@ -290,11 +290,11 @@
 											</h5>
 										</div>
 										@if($data->verify_ktm != 1)
-										<input type="file" name="ktm_img1" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile1" style="display: none;" onchange="showname1();" />
+										<input type="file" accept=".jpg" name="ktm_img1" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile1" style="display: none;" onchange="showname1();" />
 										<input type="button"  class="btn btn-lg btn-white mb8 mt-xs-24" value="Upload KTM/Kartu Pelajar"  onclick="document.getElementById('selectedFile1').click();" />
 										<div id="filename-1" style="color: #c40f0f;"></div>
 										@else
-										<h3 align="center" style="color: #02f702"><b>VERIFIED</b></h3>
+										<h3 align="center" style="color: #02f702"><b>VERIFIED </b><img src="/img/check.png" style="max-height: 30px; max-width: 30px"></h3>
 										@endif										
 									@else
 										<img alt="Pic" id="preview1" src="img/team-1.jpg" style="width: 577px; height: 224px; object-fit:cover;">
@@ -303,7 +303,7 @@
 												<b> {{$data->member_one}} </b>
 											</h5>
 										</div>
-										<input type="file" name="ktm_img1" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile1" style="display: none;" onchange="showname1();"/>
+										<input type="file" accept=".jpg" name="ktm_img1" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile1" style="display: none;" onchange="showname1();"/>
 										<input type="button"  class="btn btn-lg btn-white mb8 mt-xs-24" value="Upload KTM/Kartu Pelajar"  onclick="document.getElementById('selectedFile1').click();" />
 										<div id="filename-1" style="color: #c40f0f;"></div>
 									@endif
@@ -326,11 +326,11 @@
 											</h5>
 										</div>
 										@if($data->verify_ktm != 1)
-										<input type="file" name="ktm_img2" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile2" style="display: none;" onchange="showname2();"/>
+										<input type="file" accept=".jpg" name="ktm_img2" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile2" style="display: none;" onchange="showname2();"/>
 										<input type="button"  class="btn btn-lg btn-white mb8 mt-xs-24" value="Upload KTM/Kartu Pelajar" onclick="document.getElementById('selectedFile2').click();" />
 										<div id="filename-2" style="color: #c40f0f;"></div>
 										@else
-										<h3 align="center" style="color: #02f702"><b>VERIFIED</b></h3>
+										<h3 align="center" style="color: #02f702"><b>VERIFIED </b><img src="/img/check.png" style="max-height: 30px; max-width: 30px"></h3>
 										@endif		
 									@else
 										<img alt="Pic" id="preview2" src="img/team-2.jpg" style="width: 577px; height: 224px; object-fit:cover;">
@@ -339,7 +339,7 @@
 												<b> {{$data->member_two}} </b>
 											</h5>
 										</div>
-										<input type="file" name="ktm_img2" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile2" style="display: none;" onchange="showname2();"/>
+										<input type="file" accept=".jpg" name="ktm_img2" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile2" style="display: none;" onchange="showname2();"/>
 										<input type="button"  class="btn btn-lg btn-white mb8 mt-xs-24" value="Upload KTM/Kartu Pelajar" onclick="document.getElementById('selectedFile2').click();" />
 										<div id="filename-2" style="color: #c40f0f;"></div>
 									@endif
@@ -362,11 +362,11 @@
 											</h5>
 										</div>
 										@if($data->verify_ktm != 1)
-										<input type="file" name="ktm_img3" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile3" style="display: none;" onchange="showname3();"/>
+										<input type="file" accept=".jpg" name="ktm_img3" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile3" style="display: none;" onchange="showname3();"/>
 										<input type="button"  class="btn btn-lg btn-white mb8 mt-xs-24" value="Upload KTM/Kartu Pelajar" onclick="document.getElementById('selectedFile3').click();" />
 										<div id="filename-3" style="color: #c40f0f;"></div>
 										@else
-										<h3 align="center" style="color: #02f702"><b>VERIFIED</b></h3>
+										<h3 align="center" style="color: #02f702"><b>VERIFIED </b><img src="/img/check.png" style="max-height: 30px; max-width: 30px"></h3>
 										@endif	
 									@else
 										<img alt="Pic" id="preview3" src="img/team-3.jpg" style="width: 577px; height: 224px; object-fit:cover;">
@@ -375,7 +375,7 @@
 												<b> {{$data->member_three}} </b>
 											</h5>
 										</div>
-										<input type="file" name="ktm_img3" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile3" style="display: none;" onchange="showname3();"/>
+										<input type="file" accept=".jpg" name="ktm_img3" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile3" style="display: none;" onchange="showname3();"/>
 										<input type="button"  class="btn btn-lg btn-white mb8 mt-xs-24" value="Upload KTM/Kartu Pelajar" onclick="document.getElementById('selectedFile3').click();" />
 										<div id="filename-3" style="color: #c40f0f;"></div>
 									@endif
@@ -410,7 +410,7 @@
 		            <div class="row">
 					
 		                <div class="col-sm-12 text-center">
-		                	<input type="file" name="letter" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile4" style="display: none;" onchange="showname4();"/>
+		                	<input type="file" accept="application/pdf" name="letter" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile4" style="display: none;" onchange="showname4();"/>
 							<div>
 								<input type="button" style="white-space: normal; height: auto;"  class="btn btn-lg btn-white mb8 mt-xs-24" value="Upload Surat Keterangan Mahasiswa/Siswa Aktif" onclick="document.getElementById('selectedFile4').click();" />
 							</div>
@@ -421,7 +421,7 @@
                             <h5 class="uppercase mb0" style="color: #a3031b; font-weight: bold">Surat Keterangan Mahasiswa Aktif Belum Diupload</h5>                       
 							@else
 								@if($data->verify_letter == 0)
-								<h5 class="uppercase mb0" style="color: yellow; font-weight: bold">Surat Keterangan Mahasiswa Aktif Sedang Diverifikasi</h5>
+								<h5 class="uppercase mb0" style="color: yellow; font-weight: bold">Surat Keterangan Mahasiswa Aktif Dalam Proses Verifikasi</h5>
 								@elseif($data->verify_letter == 1)
                             	<h5 class="uppercase mb0" style="color: #1a8e02; font-weight: bold">Surat Keterangan Mahasiswa Aktif Berhasil Diupload</h5>                       
 								@elseif($data->verify_letter == 2)
@@ -432,7 +432,7 @@
 							<br>
 							
 							@if($data->verify_letter == 1)
-							<h3 align="center" style="color: #02f702"><b>VERIFIED</b></h3>
+							<h3 align="center" style="color: #02f702"><b>VERIFIED </b><img src="/img/check.png" style="max-height: 30px; max-width: 30px"></h3>
 							<!-- <h5 style="color: #c40f0f; font-weight: bold"> *Surat keterangan berhasil tersimpan. Hubungi admin@ittoday.web.id apabila ada perubahan data. </h5> -->
 							@else
 							<input class="btn btn-lg btn-white mb8 mt-xs-24" type="submit" value="SIMPAN SURAT KETERANGAN MAHASISWA / SISWA AKTIF" >

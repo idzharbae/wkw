@@ -25,10 +25,10 @@
 							<h4 style="color: white ;">HackToday</h4>
 							<p><b>Tidak ada biaya pendaftaran yang dibebankan kepada peserta HackToday.</b></p>
 							<div class="col-md-8" style="padding: 0px;">
-							<input type="file" name="payment" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile4" style="display: none;" onchange="showname4();" />
+							<input type="file" accept=".jpg" name="payment" class="btn btn-lg btn-white mb8 mt-xs-24" id="selectedFile4" style="display: none;" onchange="showname4();" />
 							<input type="button" class="btn btn-lg btn-white mb8 mt-xs-24" value="UPLOAD BUKTI PEMBAYARAN" onclick="document.getElementById('selectedFile4').click();" />
 							<div id="filename-4" style="color: #c40f0f;"></div>
-							<p>Bukti pembayaran difoto dan diupload dalam format .jpg atau .png.</p>
+							<p>Bukti pembayaran difoto dan diupload dalam format .jpg</p>
 
 							</div>
 							<div class="col-md-5" style="padding: 0px;"><input class="btn btn-lg mb8 mt-xs-24" type="submit" value="SIMPAN PERUBAHAN" style="background-color: #7c6bee;"/></div>

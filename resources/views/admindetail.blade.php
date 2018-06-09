@@ -91,9 +91,9 @@
 			                    </div>
 			                </div>
 			                @else
-							<h3 align="center">
-				                KTM MEMBER 1 NOT UPLOADED<br>
-							</h3>
+							<p><h5 align="center">
+				                KTM MEMBER 1 NOT UPLOADED
+							</h5></p>
 							@endif
 						@endif
 						@if($user->member_two !=NULL)
@@ -108,9 +108,9 @@
 			                    </div>
 			                </div>
 			                @else
-							<h3 align="center">
-				                KTM MEMBER 2 NOT UPLOADED<br>
-							</h3>
+							<p><h5 align="center">
+				                KTM MEMBER 2 NOT UPLOADED
+							</h5></p>
 							@endif
 						@endif
 						@if($user->member_three !=NULL)
@@ -125,24 +125,24 @@
 			                    </div>
 			                </div>
 			                @else
-							<h3 align="center">
-				                KTM MEMBER 3 NOT UPLOADED<br>
-							</h3>
+							<p><h5 align="center">
+				                KTM MEMBER 3 NOT UPLOADED
+							</h5></p>
 			                @endif
 						@endif
 		            </div>
-					<div class="row" align="center">
-						<div style="margin-left: 50px">
-							<a class="btn btn-lg btn-danger mb8 mt-xs-24 col-md-3 col-md-offset-1" style="color: white" href='{{ url("antiribetclub/tolakktm/{$user->id}") }}'>Tolak KTM</a>
-						</div>
-						<div>
-							<a class="btn btn-lg btn-primary mb8 mt-xs-24 col-md-3" style="color: white" href='{{ url("antiribetclub/verifyktm/{$user->id}") }}'>Konfirmasi KTM</a>
-						</div>
-						<div>
-							<a class="btn btn-lg btn-warning mb8 mt-xs-24 col-md-3" style="color: white" href='{{ url("antiribetclub/unverifyktm/{$user->id}") }}'>Batalkan Konfirmasi KTM</a>
-						</div>
+				</div>
+				<div class="row" align="center">
+					<div style="margin-left: 50px">
+						<a class="btn btn-lg btn-danger mb8 mt-xs-24 col-md-3 col-md-offset-1" style="color: white" href='{{ url("antiribetclub/tolakktm/{$user->id}") }}'>Tolak KTM</a>
 					</div>
-		        </div>
+					<div>
+						<a class="btn btn-lg btn-primary mb8 mt-xs-24 col-md-3" style="color: white" href='{{ url("antiribetclub/verifyktm/{$user->id}") }}'>Konfirmasi KTM</a>
+					</div>
+					<div>
+						<a class="btn btn-lg btn-warning mb8 mt-xs-24 col-md-3" style="color: white" href='{{ url("antiribetclub/unverifyktm/{$user->id}") }}'>Batalkan Konfirmasi KTM</a>
+					</div>
+				</div>
 			</section>
 			<section style="padding-top: 50px; padding-bottom: 0px">
 				<div class="container">
@@ -158,26 +158,25 @@
 									SURAT KETERANGAN BELUM DIUPLOAD
 								</h4>
 							@endif
-						<br><br>
-						<div class="row" align="center">
-							<div style="margin-left: 50px;">
-								<a class="btn btn-lg btn-danger mb8 mt-xs-24 col-md-3 col-md-offset-1" style="color: white" href='{{ url("antiribetclub/tolakletter/{$user->id}") }}'>Tolak Surat Keterangan</a>
-							</div>
-							<div>
-								<a class="btn btn-lg btn-primary mb8 mt-xs-24 col-md-3" style="color: white" href='{{ url("antiribetclub/verifyletter/{$user->id}") }}'>Konfirmasi Surat Keterangan</a>
-							</div>
-							<div>
-								<a class="btn btn-lg btn-warning mb8 mt-xs-24 col-md-3" style="color: white" href='{{ url("antiribetclub/unverifyletter/{$user->id}") }}'>Batalkan Konfirmasi Surat</a>
-							</div>
-						</div>
+					</div>
+				</div>
+				<div class="row" align="center">
+					<div style="margin-left: 50px;">
+						<a class="btn btn-lg btn-danger mb8 mt-xs-24 col-md-3 col-md-offset-1" style="color: white" href='{{ url("antiribetclub/tolakletter/{$user->id}") }}'>Tolak Surat Keterangan</a>
+					</div>
+					<div>
+						<a class="btn btn-lg btn-primary mb8 mt-xs-24 col-md-3" style="color: white" href='{{ url("antiribetclub/verifyletter/{$user->id}") }}'>Konfirmasi Surat Keterangan</a>
+					</div>
+					<div>
+						<a class="btn btn-lg btn-warning mb8 mt-xs-24 col-md-3" style="color: white" href='{{ url("antiribetclub/unverifyletter/{$user->id}") }}'>Batalkan Konfirmasi Surat</a>
 					</div>
 				</div>
 			</section>
-			<section style="padding-top: 0px; padding-bottom: 0px">	
+			<section style="padding-top: 50px; padding-bottom: 0px">	
 				<div class="container">
 					<div class="feed-item mb96 mb-xs-48 text-center">              
 						<div class="row mb32 mb-xs-16">
-							<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1" align="center">
+							<div align="center">
 							@if($user->type != 'HackToday')
 							<h4 align="center"><b>Bukti Pembayaran</b></h4>  
 								@if($user->payment!=NULL)
@@ -185,19 +184,19 @@
 								<br><a class="btn btn-lg btn-white mb8 mt-xs-24" href="{{asset($user->payment)}}">Lihat Bukti Pembayaran</a>
 								@else
 								<b style="color: red">NOT UPLOADED</b>
-								@endif  
+								@endif 
+								<div class="row" align="center"><br>
+									<div style="margin-left: 50px;">
+										<a class="btn btn-lg btn-danger mb8 mt-xs-24 col-md-3 col-md-offset-1" style="color: white" href='{{ url("antiribetclub/tolakpayment/{$user->id}") }}'>Tolak Pembayaran</a>
+									</div>
+									<div>
+										<a class="btn btn-lg btn-primary mb8 mt-xs-24 col-md-3" style="color: white" href='{{ url("antiribetclub/verifypayment/{$user->id}") }}'>Konfirmasi Pembayaran</a>
+									</div>
+									<div>
+										<a class="btn btn-lg btn-warning mb8 mt-xs-24 col-md-3" style="color: white" href='{{ url("antiribetclub/unverifypayment/{$user->id}") }}'>Batalkan Konfirmasi Pembayaran</a>
+									</div>
+								</div>  
 							@endif      
-							</div>
-						</div>
-						<div class="row" align="center">
-							<div style="margin-left: 50px;">
-								<a class="btn btn-lg btn-danger mb8 mt-xs-24 col-md-3 col-md-offset-1" style="color: white" href='{{ url("antiribetclub/tolakpayment/{$user->id}") }}'>Tolak Pembayaran</a>
-							</div>
-							<div>
-								<a class="btn btn-lg btn-primary mb8 mt-xs-24 col-md-3" style="color: white" href='{{ url("antiribetclub/verifypayment/{$user->id}") }}'>Konfirmasi Pembayaran</a>
-							</div>
-							<div>
-								<a class="btn btn-lg btn-warning mb8 mt-xs-24 col-md-3" style="color: white" href='{{ url("antiribetclub/unverifypayment/{$user->id}") }}'>Batalkan Konfirmasi Pembayaran</a>
 							</div>
 						</div>
 					</div>
