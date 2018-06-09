@@ -1641,12 +1641,12 @@ nav.transparent.absolute.fixed.outOfSight.scrolled .col-md-2.col-md-push-5.col-s
   font-weight: 400;
 }
 .alert-warning {
-  border: 1px solid #d88519;
-  color: #d88519;
+  border: 1px solid #d8ca04;
+  color: #d8ca04;
 }
 .alert-success {
-  border: 1px solid #60b963;
-  color: #60b963;
+  border: 1px solid #1d8368;
+  color: #1d8368;
 }
 .alert-danger {
   border: 1px solid #c64444;

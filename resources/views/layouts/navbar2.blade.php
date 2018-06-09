@@ -15,7 +15,7 @@
 		<link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
 		<link href="{{asset('css/theme.css')}}" rel="stylesheet">
 		<link href="{{asset('css/custom.css')}}" rel="stylesheet"> --}}
-		<link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<div class="nav-container">
@@ -51,7 +51,7 @@
 		                                Event
 		                            </a>
 		                            <ul>
-		                                <li class="has-dropdown">
+		                                <li>
 										<a href="{{route('seminar')}}">National Seminar</a>
 		                                </li>
 		                            </ul>

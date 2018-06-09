@@ -19,11 +19,9 @@
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     </head>
-    <body style="background:url({{url('img/footer.png')}}) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">	
-		<div class="nav-container">
-		</div>
-		
-		<div class="main-container">
+    <body>	
+			
+		<div class="main-container" style="background:url({{url('img/footer.png')}}) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">
 		<section class="page-title page-title-4 image-bg overlay parallax">
 		        <div class="background-image-holder">
 		            <img alt="Background Image" class="background-image" src="img/bggradien.png">
