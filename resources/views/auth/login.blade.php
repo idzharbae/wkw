@@ -12,7 +12,7 @@
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
     </head>
     <body>
 				
@@ -25,81 +25,62 @@
 		                        <h3 class="uppercase" style="color:white;">Login</h3>
 		                       
 		                        <form method="POST" action="{{ route('login') }}">
-                        @csrf
+                                @csrf
+                                <div class="form-group row">
+                                    <!-- <label for="email" style="color: white;" class="col-sm-4 col-form-label text-md-right">E-Mail Address</label> -->
 
-                        <div class="form-group row">
-                            <!-- <label for="email" style="color: white;" class="col-sm-4 col-form-label text-md-right">E-Mail Address</label> -->
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="E-Mail Address" onfocus="this.placeholder = ''"onblur="this.placeholder = 'E-Mail Address'" required>
 
-                            <div class="col-md-10 col-md-offset-1">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="E-Mail Address" onfocus="this.placeholder = ''"onblur="this.placeholder = 'E-Mail Address'" required>
-
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <!-- <label for="password" style="color: white;" class="col-md-4 col-form-label text-md-right">Password</label> -->
-
-                            <div class="col-md-10 col-md-offset-1">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password"  placeholder="Password" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Password'"  required>
-
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-6 col-md-offset-1">
-                                <div class="checkbox" style="color: #FFFFFF !important;">
-                                    <label>
-                                        <input type="checkbox"  name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
-                                    </label>
+                                        @if ($errors->has('email'))
+                                            <span class="invalid-feedback">
+                                                <strong>{{ $errors->first('email') }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div class="form-group row mb-0">
-                            <!-- <div class="col-md-6 col-md-offset-0">
-                                <button style="font-size: 14px; background-color: #7c6bee;" type="submit" class="btn btn-primary">
-                                    Login
-                                </button>
-                                <a class="btn btn-link col-md-12" href="{{ route('password.request') }}" style="text-decoration: none;">
-                                    Forgot Your Password?
-                                </a>
-                                Not a member yet?
-                                <a class="btn btn-link col-md-12" href="{{ route('register') }}" style="text-decoration: none;">
-                                    Register
-                                </a>
-                            </div> -->
-                            <div class="form-group row mb-0">
-                            <div class="col-md-10 col-md-offset-1">
-                                <button style="font-size: 14px; background-color: #7c6bee" type="submit" class="btn btn-primary">
-                                    Login
-                                </button>
-                            </div>
-                        </div>
-                            <a href="{{route('password.request')}}">Forget your password?</a> 
-                            <div>
-                            <p style="margin-bottom:0px;">Not a member yet?</p>
-                            <a class="btn btn-white col-md-10 col-md-offset-1" href="{{ route('register') }}" style="text-decoration: none;">
-                                Register
-<<<<<<< HEAD
-                            </a>
-                            <a class="btn btn-white col-md-10 col-md-offset-1" href="{{route('password.request')}}" style="text-decoration: none;">
-                                Forget Your Password?
-                            </a>
-=======
-                            </a> </div>
->>>>>>> f6a8451fc30f94073973975ce4e685554ce2b04a
-                        </div>
-                    </form>
+                                <div class="form-group row">
+                                    <!-- <label for="password" style="color: white;" class="col-md-4 col-form-label text-md-right">Password</label> -->
+
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password"  placeholder="Password" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Password'"  required>
+
+                                        @if ($errors->has('password'))
+                                            <span class="invalid-feedback">
+                                                <strong>{{ $errors->first('password') }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <div class="col-md-6 col-md-offset-1">
+                                        <div class="checkbox" style="color: #FFFFFF !important;">
+                                            <label>
+                                                <input type="checkbox"  name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row mb-0">
+                                    <div class="form-group row mb-0">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <button style="font-size: 14px; background-color: #7c6bee" type="submit" class="btn btn-primary">
+                                                Login
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- <a href="{{route('password.request')}}">Forget your password?</a> -->
+                                    <div>
+                                        <p style="margin-bottom:0px;">Not a member yet?</p>
+                                        <a class="btn btn-white col-md-10 col-md-offset-1" href="{{ route('register') }}" style="text-decoration: none;">
+                                            Register
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
 		                    </div>
 		                </div>
 		            </div>

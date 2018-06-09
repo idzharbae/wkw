@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-        <title>Admin - IT TODAY 2018</title>
+        <title>IT TODAY 2018</title>
         <link rel="shortcut icon" href="img/logoittodayhitam.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
@@ -19,45 +19,46 @@
 	</head>
 	<body>
 		<div class="nav-container">
-		    <nav class="transparent absolute">
-		        <div class="nav-bar text-center" style="border-bottom: 0px">	        
-		            <div class="module right">
-						<ul class="navbar-nav ml-auto">
-							<!-- Authentication Links -->
+		<nav class=" transparent absolute">
+		        <div class="nav-bar">
+		            <div class="module left">
+		                <a href="/">
+		                    <img class=" image-xs logo logo-light" alt="ITToday" src="img/logoittoday.png">
+		                    <img class="image-xs logo logo-dark" alt="ITToday" src="img/logoittoday.png">
+		                </a>
+		            </div>
+		            <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+		                <i class="ti-menu"></i>
+		            </div>
+		            <div class="module-group right">
+		               
+		                <div class="module widget-handle left">
+		                    <ul class="menu">
 							@guest
 								<ul class="menu inline-block pull-right">
 									<li><a class="btn btn-sm hidden-xs hidden-sm hidden-md" style="font-size: 16px;" href="{{ route('login') }}">Login</a></li>
 								</ul>
 							@else
 								<li class="nav-item dropdown pull-right">
-								<a class="nav-link" href="{{route('admin.home')}}" role="button" style="color:#ffff; font-size: 16px">
-										Home
+								<a class="nav-link" href="{{route('admin.home')}}" role="button">
+									{{ Auth::user()->name }}
 								</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#ffff; font-size: 16px">
-										{{ Auth::user()->name }} <span class="caret"></span>
+								<a class="dropdown-item" href="{{ route('logout') }}"
+								onclick="event.preventDefault();
+												document.getElementById('logout-form').submit();">
+									Logout
 								</a>
-
-									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<ul>
-											<li><a class="dropdown-item" href="{{ route('logout') }}"
-												onclick="event.preventDefault();
-																document.getElementById('logout-form').submit();">
-													&nbsp;&nbsp;&nbsp;Logout
-												</a>
-											</li>
-										</ul>
-										<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-											@csrf
-										</form>
-									</div>
+								<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+									@csrf
+								</form>
 								</li>
 							@endguest
-						</ul>
+		                    </ul>
+		                </div>
 		            </div>
-		        <div class="module widget-handle mobile-toggle right visible-sm visible-xs absolute-xs">
-		            <i class="ti-menu"></i>
+		            
 		        </div>
-			</nav>
+		    </nav>
 			
 		<main class="py-4" >
 			@yield('content')

@@ -18,7 +18,8 @@ Route::get('/','TeamController@start')->name('index');
 
 Route::post('/daftar','TeamController@addTeam');
 Route::post('/bayar','ProfileController@uploadPay');
-Route::post('/berkas','ProfileController@uploadLetter');
+Route::post('/ktm','ProfileController@uploadKTM');
+Route::post('/letter','ProfileController@uploadLetter');
 
 Route::get('/stp1','TeamController@showForm');
 
@@ -49,5 +50,13 @@ Route::prefix('antiribetclub')->group(function(){
 	Route::post('/','Admin\LoginController@login');
 	Route::get('/main','AdminController@main');
 	Route::get('/detail/{id}','AdminController@detail');
-	Route::get('/verify/{id}','AdminController@verify');
+	Route::get('/verifyktm/{id}','AdminController@verifyktm');
+	Route::get('/verifyletter/{id}','AdminController@verifyletter');
+	Route::get('/verifypayment/{id}','AdminController@verifypayment');
+	Route::get('/unverifyktm/{id}','AdminController@unverifyktm');
+	Route::get('/unverifyletter/{id}','AdminController@unverifyletter');
+	Route::get('/unverifypayment/{id}','AdminController@unverifypayment');
+	Route::get('/tolakktm/{id}','AdminController@tolakktm');
+	Route::get('/tolakletter/{id}','AdminController@tolakletter');
+	Route::get('/tolakpayment/{id}','AdminController@tolakpayment');
 });

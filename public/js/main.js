@@ -116,9 +116,9 @@ function showname3 () {
   infoArea3.textContent = 'Selected file: ' + name3.files.item(0).name;
 };
 function showname4 () {
-  var name4 = document.getElementById('selectedFile4'); 
+  var name4 = document.getElementById('selectedFile4');
   var infoArea4 = document.getElementById( 'filename-4' );
-  infoArea4.textContent = 'Selected file: ' + name4.files.item(0).name;
+  infoArea4.textContent = 'Selected file: ' + name4.files.item(0).name; 
 };
 
 //Biar input cuma bisa number

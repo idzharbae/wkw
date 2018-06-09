@@ -29,7 +29,9 @@ class CreateTeamsTable extends Migration
             $table->string('type');//tipe lomba yang akan diikuti
             $table->string('letter')->nullable();//surat keterangan aktif
             $table->string('payment')->nullable();
-            $table->integer('verify')->nullable();
+            $table->integer('verify_ktm')->default(0);
+            $table->integer('verify_letter')->default(0);
+            $table->integer('verify_payment')->default(0);
             $table->timestamps();
         });
     }

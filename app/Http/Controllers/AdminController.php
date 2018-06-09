@@ -39,9 +39,57 @@ class AdminController extends Controller
         $user = Team::where('id',$id)->first();
         return view('admindetail',compact('user'));
     }
-    public function verify($id){
+    public function verifyktm($id){
         $user = Team::where('id',$id)->first();
-        $user->verify = 1;
+        $user->verify_ktm = 1;
+        $user->save();
+        return redirect('antiribetclub/home');
+    }
+    public function verifyletter($id){
+        $user = Team::where('id',$id)->first();
+        $user->verify_letter = 1;
+        $user->save();
+        return redirect('antiribetclub/home');
+    }
+    public function verifypayment($id){
+        $user = Team::where('id',$id)->first();
+        $user->verify_payment = 1;
+        $user->save();
+        return redirect('antiribetclub/home');
+    }
+    public function unverifyktm($id){
+        $user = Team::where('id',$id)->first();
+        $user->verify_ktm = 0;
+        $user->save();
+        return redirect('antiribetclub/home');
+    }
+    public function unverifyletter($id){
+        $user = Team::where('id',$id)->first();
+        $user->verify_letter = 0;
+        $user->save();
+        return redirect('antiribetclub/home');
+    }
+    public function unverifypayment($id){
+        $user = Team::where('id',$id)->first();
+        $user->verify_payment = 0;
+        $user->save();
+        return redirect('antiribetclub/home');
+    }
+    public function tolakktm($id){
+        $user = Team::where('id',$id)->first();
+        $user->verify_ktm = 2;
+        $user->save();
+        return redirect('antiribetclub/home');
+    }
+    public function tolakletter($id){
+        $user = Team::where('id',$id)->first();
+        $user->verify_letter = 2;
+        $user->save();
+        return redirect('antiribetclub/home');
+    }
+    public function tolakpayment($id){
+        $user = Team::where('id',$id)->first();
+        $user->verify_payment = 2;
         $user->save();
         return redirect('antiribetclub/home');
     }

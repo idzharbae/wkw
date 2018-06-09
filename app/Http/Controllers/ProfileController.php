@@ -71,10 +71,8 @@ class ProfileController extends Controller
 
     }
 
-
-    public function uploadLetter(Request $request){//ini id di tabel teams
+    public function uploadKTM(Request $request){//ini id di tabel teams
         $this->validate($request,[
-            'letter' => 'mimes:pdf|max:2048',
             'ktm_img1' => 'image|mimes:jpeg,png,jpg,svg|max:2048',
             'ktm_img2' => 'image|mimes:jpeg,png,jpg,svg|max:2048',
             'ktm_img3' => 'image|mimes:jpeg,png,jpg,svg|max:2048'
@@ -99,25 +97,39 @@ class ProfileController extends Controller
                 $team->ktm_img3 = $name;
             }
         }
+        $team->verify_ktm = 0;
+        $team->save();
+        return redirect('/profile/')->with('msg',"Profile Picture Changed Successfully");
+    }
+
+    public function uploadLetter(Request $request){//ini id di tabel teams
+        $this->validate($request,[
+            'letter' => 'mimes:pdf|max:2048',
+        ]);
+        $id = $request->input('id');
+        $team=Team::where('team_id',$id)->first();
         if($request->hasFile('letter')){
             $name = Storage::disk('local')->put('doc', $request->letter);
             $team->letter = $name;
         }
+        $team->verify_letter = 0;
         $team->save();
         return redirect('/profile/')->with('msg',"Profile Picture Changed Successfully");
     }
+
     public function uploadPay(Request $request){
         
         $this->validate($request,[
             'payment' => 'image|mimes:jpeg,png,jpg,svg|max:2048',
         ]);
-        
         $id = $request->input('id');
-        $name = Storage::disk('local')->put('images', $request->payment);   
-        $data=array(
-            'payment'=>$name,
-        );
-        Team::where('team_id',$id)->update($data);
+        $team=Team::where('team_id',$id)->first();
+        if($request->hasFile('payment')){
+            $name = Storage::disk('local')->put('images', $request->payment);
+            $team->payment = $name;
+        }
+        $team->verify_payment = 0;
+        $team->save();
         return redirect('/profile/');
     }
 }

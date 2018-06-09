@@ -59,14 +59,16 @@
                                     <tr>
                                         <th width="20px">Nomor</th>
                                         <th width="150px">Nama Grup</th>
-                                        <th width="100px">Status</th>
-                                        <th width="100px">Konfirmasi</th>
+                                        <th width="100px">Status KTM</th>
+                                        <th width="100px">Status Surat</th>
+                                        <th width="100px">Status Pembayaran</th>
                                     </tr>
                                     @foreach($user as $human )
                                     <tr>
-                                        <td></td><td><a style="font-size: 18px" href='{{ url("/antiribetclub/detail/{$human->id}") }}'>{{App\User::find($human->team_id)->name}}</a></td>
-                                        <td>@if($human->verify == 1)<b style="color:green">CONFIRMED</b> @else <b style="color:red">NOT CONFIRMED</b> @endif</td>
-                                        <td><div class="col-lg-5" style="padding: 0px"><a href='{{ url("/antiribetclub/verify/{$human->id}") }}' type="submit" class="btn btn-white form-control" style="text-transform: uppercase;border-radius:0; background-color: #7c6bee;">Konfirmasi</a></div></td>
+                                        <td></td><td><a style="font-size: 18px; color: blue;" href='{{ url("/antiribetclub/detail/{$human->id}") }}'>{{App\User::find($human->team_id)->name}}</a></td>
+                                        <td>@if($human->verify_ktm == 1)<b style="color:green">CONFIRMED</b> @else <b style="color:red">NOT CONFIRMED</b> @endif</td>
+                                        <td>@if($human->verify_letter == 1)<b style="color:green">CONFIRMED</b> @else <b style="color:red">NOT CONFIRMED</b> @endif</td>
+                                        <td>@if($human->verify_payment == 1)<b style="color:green">CONFIRMED</b> @else <b style="color:red">NOT CONFIRMED</b> @endif</td>
                                     </tr>
                                     @endforeach
                                     </table> 
