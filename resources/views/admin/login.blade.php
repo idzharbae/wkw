@@ -11,7 +11,34 @@
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/modena.css" rel="stylesheet" type="text/css" media="all" />
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+        <style>
+            .text-input {
+                -fx-text-fill: -fx-text-inner-color;
+                -fx-highlight-fill: derive(-fx-control-inner-background,-20%);
+                -fx-highlight-text-fill: -fx-text-inner-color;
+                -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+                -fx-background-color: linear-gradient(to bottom, derive(-fx-text-box-border, -10%), -fx-text-box-border),
+                    linear-gradient(from 0px 0px to 0px 5px, derive(-fx-control-inner-background, -9%), -fx-control-inner-background);
+                -fx-background-insets: 0, 1;
+                -fx-background-radius: 3, 2;
+                -fx-cursor: text;
+                -fx-padding: 0.333333em 0.583em 0.333333em 0.583em; /* 4 7 4 7 */
+            }
+            .text-input:focused {
+                -fx-highlight-fill: -fx-accent;
+                -fx-highlight-text-fill: white;
+                -fx-background-color: 
+                    -fx-focus-color,
+                    -fx-control-inner-background,
+                    -fx-faint-focus-color,
+                    linear-gradient(from 0px 0px to 0px 5px, derive(-fx-control-inner-background, -9%), -fx-control-inner-background);
+                -fx-background-insets: -0.2, 1, -1.4, 3;
+                -fx-background-radius: 3, 2, 4, 0;
+                -fx-prompt-text-fill: transparent;
+            }
+        </style>   
     </head>
     <body>
 				
@@ -32,7 +59,7 @@
                                         <!-- <label for="email" style="color: white;" class="col-sm-4 col-form-label text-md-right">E-Mail Address</label> -->
 
                                         <div class="col-md-10 col-md-offset-1">
-                                            <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="E-Mail Address" onfocus="this.placeholder = ''"onblur="this.placeholder = 'E-Mail Address'" required>
+                                            <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }} text-input" name="email" value="{{ old('email') }}" placeholder="E-Mail Address" onfocus="this.placeholder = ''"onblur="this.placeholder = 'E-Mail Address'" required>
 
                                             @if ($errors->has('email'))
                                                 <span class="invalid-feedback">
@@ -46,7 +73,7 @@
                                         <!-- <label for="password" style="color: white;" class="col-md-4 col-form-label text-md-right">Password</label> -->
 
                                         <div class="col-md-10 col-md-offset-1">
-                                            <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password"  placeholder="Password" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Password'"  required>
+                                            <input id="password" type="password" class="text-input form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password"  placeholder="Password" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Password'"  required>
 
                                             @if ($errors->has('password'))
                                                 <span class="invalid-feedback">

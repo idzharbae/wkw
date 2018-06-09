@@ -194,6 +194,7 @@
 								<li><a href="https://twitter.com/ittoday_ipb" target="_blank"><i class="icon icon-sm ti-twitter-alt"></i></a></li>
 								<li><a href="https://facebook.com/ipbittoday/" target="_blank"><i class="icon icon-sm ti-facebook"></i></a></li>
 								<li><a href="https://instagram.com/ittoday_ipb" target="_blank"><i class="icon icon-sm ti-instagram"></i></a></li>
+								<!-- <li><a href="#"><img src="https://png.icons8.com/color/50/000000/line-me.png"></a></li> -->
 								<!-- <li><a href="#"><i class="icon icon-sm ti-vimeo-alt"></i></a></li> -->
 							</ul>
 						</div>
