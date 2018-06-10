@@ -25,6 +25,41 @@
 				<h1 align="center"> ADMIN PANEL </h1>
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1">
+					<!-- Alert Kelengkapan -->
+					@if($user->type != 'HackToday')
+						@if($user->verify_ktm == 1 && $user->verify_letter == 1 && $user->verify_payment == 1)
+						<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
+							<button type="button" class="close tutupktm">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							Tim Anda Telah Terverifikasi, Terima Kasih Telah Melengkapi Berkas Pendaftaran dan Melakukan Pembayaran.
+						</div>
+						@else
+						<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+							<button type="button" class="close tutupktm">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							Tim Anda Belum Terverifikasi, Harap Segera Melengkapi Berkas Pendaftaran dan Melakukan Pembayaran, Terima Kasih.
+						</div>
+						@endif
+					@elseif($user->type == 'HackToday')
+						@if($user->verify_ktm == 1 && $user->verify_letter == 1)
+						<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
+							<button type="button" class="close tutupktm">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							Tim Anda Telah Terverifikasi, Terima Kasih Telah Melengkapi Berkas Pendaftaran.
+						</div>
+						@else
+						<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+							<button type="button" class="close tutupktm">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							Tim Anda Belum Terverifikasi, Harap Segera Melengkapi Berkas Pendaftaran, Terima Kasih.
+						</div>
+						@endif
+					@endif
+					
 					<!-- Alert Foto KTM -->
 					<!-- 3 Members -->
 					@if($user->member_one != NULL && $user->member_two != NULL && $user->member_three != NULL)
@@ -56,7 +91,7 @@
 							<button type="button" class="close tutupktm">
 								<span aria-hidden="true">&times;</span>
 							</button>
-							Harap Segera Mengunggah Kartu Tanda Mahasiswa / Kartu Pelajar Sebelum Tanggal 11 Juli 2018.
+							Kartu Tanda Mahasiswa / Kartu Pelajar Belum Diupload.
 						</div>
 						@endif
 					@endif
@@ -90,7 +125,7 @@
 							<button type="button" class="close tutupktm">
 								<span aria-hidden="true">&times;</span>
 							</button>
-							Harap Segera Mengunggah Kartu Tanda Mahasiswa / Kartu Pelajar Sebelum Tanggal 11 Juli 2018.
+							Kartu Tanda Mahasiswa / Kartu Pelajar Belum Diupload.
 						</div>
 						@endif
 					@endif
@@ -124,7 +159,7 @@
 							<button type="button" class="close tutupktm">
 								<span aria-hidden="true">&times;</span>
 							</button>
-							Harap Segera Mengunggah Kartu Tanda Mahasiswa / Kartu Pelajar Sebelum Tanggal 11 Juli 2018.
+							Kartu Tanda Mahasiswa / Kartu Pelajar Belum Diupload.
 						</div>
 						@endif
 					@endif
@@ -135,7 +170,7 @@
 						<button type="button" class="close tutupletter">
 							<span aria-hidden="true">&times;</span>
 						</button>
-						Harap Segera Mengunggah Surat Keterangan Mahasiswa / Siswa Aktif Sebelum Tanggal 11 Juli 2018.
+						Surat Keterangan Mahasiswa / Siswa Aktif Belum Diupload.
 					</div>
 					@else
 						@if($user->verify_letter == 1)
@@ -169,7 +204,7 @@
 							<button type="button" class="close tutuppayment">
 								<span aria-hidden="true">&times;</span>
 							</button>
-							Harap Segera Mengunggah Bukti Pembayaran Sebelum Tanggal 11 Juli 2018.
+							Bukti Pembayaran Belum Diupload.
 						</div>
 						@else
 							@if($user->verify_payment == 1)
@@ -225,7 +260,7 @@
 								@endif</p>
 						</div>
 						<div class="mb40">
-							<h6 class="mb8 uppercase">School</h6>
+							<h6 class="mb8 uppercase">Institution</h6>
 							<p style="color:black !important;">
 								{{$user->school}}
 							</p>

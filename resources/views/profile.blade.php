@@ -49,6 +49,42 @@
 			<section style="padding-top: 25px; padding-bottom: 0px; background-color: #26c99e;">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1">
+
+					<!-- Alert Kelengkapan -->
+					@if($data->type != 'HackToday')
+						@if($data->verify_ktm == 1 && $data->verify_letter == 1 && $data->verify_payment == 1)
+						<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
+							<button type="button" class="close tutupktm">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							Tim Anda Telah Terverifikasi, Terima Kasih Telah Melengkapi Berkas Pendaftaran dan Melakukan Pembayaran.
+						</div>
+						@else
+						<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+							<button type="button" class="close tutupktm">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							Tim Anda Belum Terverifikasi, Harap Segera Melengkapi Berkas Pendaftaran dan Melakukan Pembayaran, Terima Kasih.
+						</div>
+						@endif
+					@elseif($data->type == 'HackToday')
+						@if($data->verify_ktm == 1 && $data->verify_letter == 1)
+						<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
+							<button type="button" class="close tutupktm">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							Tim Anda Telah Terverifikasi, Terima Kasih Telah Melengkapi Berkas Pendaftaran.
+						</div>
+						@else
+						<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+							<button type="button" class="close tutupktm">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							Tim Anda Belum Terverifikasi, Harap Segera Melengkapi Berkas Pendaftaran, Terima Kasih.
+						</div>
+						@endif
+					@endif
+					
 					<!-- Alert Foto KTM -->
 					<!-- 3 Members -->
 					@if($data->member_one != NULL && $data->member_two != NULL && $data->member_three != NULL)
@@ -80,7 +116,7 @@
 							<button type="button" class="close tutupktm">
 								<span aria-hidden="true">&times;</span>
 							</button>
-							Harap Segera Mengunggah Kartu Tanda Mahasiswa / Kartu Pelajar Sebelum Tanggal 11 Juli 2018.
+							Kartu Tanda Mahasiswa / Kartu Pelajar Belum Diupload.
 						</div>
 						@endif
 					@endif
@@ -114,7 +150,7 @@
 							<button type="button" class="close tutupktm">
 								<span aria-hidden="true">&times;</span>
 							</button>
-							Harap Segera Mengunggah Kartu Tanda Mahasiswa / Kartu Pelajar Sebelum Tanggal 11 Juli 2018.
+							Kartu Tanda Mahasiswa / Kartu Pelajar Belum Diupload.
 						</div>
 						@endif
 					@endif
@@ -148,7 +184,7 @@
 							<button type="button" class="close tutupktm">
 								<span aria-hidden="true">&times;</span>
 							</button>
-							Harap Segera Mengunggah Kartu Tanda Mahasiswa / Kartu Pelajar Sebelum Tanggal 11 Juli 2018.
+							Kartu Tanda Mahasiswa / Kartu Pelajar Belum Diupload.
 						</div>
 						@endif
 					@endif
@@ -159,7 +195,7 @@
 						<button type="button" class="close tutupletter">
 							<span aria-hidden="true">&times;</span>
 						</button>
-						Harap Segera Mengunggah Surat Keterangan Mahasiswa / Siswa Aktif Sebelum Tanggal 11 Juli 2018.
+						Surat Keterangan Mahasiswa / Siswa Aktif Belum Diupload.
 					</div>
 					@else
 						@if($data->verify_letter == 1)
@@ -193,7 +229,7 @@
 							<button type="button" class="close tutuppayment">
 								<span aria-hidden="true">&times;</span>
 							</button>
-							Harap Segera Mengunggah Bukti Pembayaran Sebelum Tanggal 11 Juli 2018.
+							Bukti Pembayaran Belum Diupload.
 						</div>
 						@else
 							@if($data->verify_payment == 1)

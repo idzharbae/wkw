@@ -19,7 +19,23 @@
         <link href="{{asset('css/theme.css')}}" rel="stylesheet" type="text/css" media="all" />
         <link href="{{asset('css/custom.css')}}" rel="stylesheet" type="text/css" media="all" />
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
-        <style>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="../lib/js-xlsx/xlsx.core.min.js"></script>
+		<script type="text/javascript" src="../lib/FileSaver/FileSaver.min.js"></script> 
+		<script type="text/javascript" src="../lib/html2canvas/html2canvas.min.js"></script>
+		<script type="text/javascript" src="../tableExport.js"></script>
+		<script type="text/javaScript">         
+			var sFileName = 'ngophi';
+			// function ExportXLSX(){
+				// $('#participant').tableExport({fileName: sFileName,
+							// type: 'xlsx'
+						   // });
+			// }
+			function ExportCSV(){
+				$('#participant').tableExport({type:'csv'});
+			}
+		</script>
+	<style>
         table, td, th {    
             border: 1px solid #ddd;
             text-align: left;
@@ -55,6 +71,10 @@
                                 <div>
                                     <h4 class="inline-block">   Tabel Peserta Lomba</h4><br>
                                 </div>
+								<a href="#" onClick="ExportCSV();">DownloadCSV</a> 
+								<br/>
+								<br/>
+								<div id="participant">
                                 <table>
                                     <tr>
                                         <th width="10px">Nomor</th>
@@ -83,7 +103,8 @@
 										</td>
                                     </tr>
                                     @endforeach
-                                    </table> 
+                                    </table>
+									</div>
 		                    </div>
 		                </div>
 		                
