@@ -252,6 +252,16 @@
 		                                </h5>
 		                            </div>
                                 </li>
+								<li>
+		                            <div class="title">
+		                                <h4 class="inline-block mb0">Kapan case akan diberikan?</h4>
+		                            </div>
+		                            <div class="content">
+		                                <h5>
+                                       Case akan diberikan melalui email ketika tim sudah melengkapi semua berkas yang diperlukan dan sudah melakukan pembayaran. 
+		                                </h5>
+		                            </div>
+                                </li>
                                 <li>
 		                            <div class="title">
 		                                <h4 class="inline-block mb0">Bagaimana dengan format pengumpulan?</h4>
