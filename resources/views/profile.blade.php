@@ -392,7 +392,7 @@
 					<br>
 							 -->
 					@if($data->verify_ktm != 1)
-					<input class="btn btn-lg btn-white mb8 mt-xs-24" type="submit" value="SIMPAN KARTU TANDA MAHASISWA / PELAJAR">				
+					<input class="btn btn-lg btn-white mb8 mt-xs-24" style="white-space: normal;  height: auto;" type="submit" value="SIMPAN KARTU TANDA MAHASISWA / PELAJAR">				
 					@else
 					<!-- <h5 align="center" style="color: #c40f0f; font-weight: bold"> *Kartu Tanda Mahasiswa berhasil tersimpan. Hubungi admin@ittoday.web.id apabila ada perubahan data. </h5> -->
 					@endif
@@ -435,7 +435,7 @@
 							<h3 align="center" style="color: #02f702"><b>VERIFIED </b><img src="/img/check.png" style="max-height: 30px; max-width: 30px"></h3>
 							<!-- <h5 style="color: #c40f0f; font-weight: bold"> *Surat keterangan berhasil tersimpan. Hubungi admin@ittoday.web.id apabila ada perubahan data. </h5> -->
 							@else
-							<input class="btn btn-lg btn-white mb8 mt-xs-24" type="submit" value="SIMPAN SURAT KETERANGAN MAHASISWA / SISWA AKTIF" >
+							<input class="btn btn-lg btn-white mb8 mt-xs-24" style="white-space: normal;height:auto;" type="submit" value="SIMPAN SURAT KETERANGAN MAHASISWA / SISWA AKTIF" >
 							@endif
                         </div>
 		            </div>
