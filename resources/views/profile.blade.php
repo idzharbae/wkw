@@ -53,15 +53,15 @@
 					<!-- Alert Kelengkapan -->
 					@if($data->type != 'HackToday')
 						@if($data->verify_ktm == 1 && $data->verify_letter == 1 && $data->verify_payment == 1)
-						<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
-							<button type="button" class="close tutupktm">
+						<div class="alert alert-dismissible main" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
+							<button type="button" class="close tutupmain">
 								<span aria-hidden="true">&times;</span>
 							</button>
 							Tim Anda Telah Terverifikasi, Terima Kasih Telah Melengkapi Berkas Pendaftaran dan Melakukan Pembayaran.
 						</div>
 						@else
-						<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
-							<button type="button" class="close tutupktm">
+						<div class="alert alert-dismissible main" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+							<button type="button" class="close tutupmain">
 								<span aria-hidden="true">&times;</span>
 							</button>
 							Tim Anda Belum Terverifikasi, Harap Segera Melengkapi Berkas Pendaftaran dan Melakukan Pembayaran, Terima Kasih.
@@ -69,15 +69,15 @@
 						@endif
 					@elseif($data->type == 'HackToday')
 						@if($data->verify_ktm == 1 && $data->verify_letter == 1)
-						<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
-							<button type="button" class="close tutupktm">
+						<div class="alert alert-dismissible main" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
+							<button type="button" class="close tutupmain">
 								<span aria-hidden="true">&times;</span>
 							</button>
 							Tim Anda Telah Terverifikasi, Terima Kasih Telah Melengkapi Berkas Pendaftaran.
 						</div>
 						@else
-						<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
-							<button type="button" class="close tutupktm">
+						<div class="alert alert-dismissible main" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+							<button type="button" class="close tutupmain">
 								<span aria-hidden="true">&times;</span>
 							</button>
 							Tim Anda Belum Terverifikasi, Harap Segera Melengkapi Berkas Pendaftaran, Terima Kasih.
@@ -527,6 +527,12 @@
 		<script src="js/scripts.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script>
+		$(document).ready(function(){
+			$(".tutupmain").click(function(){
+				$(".main").fadeTo(200, 0).slideUp(200,0);
+			});
+		});
+		
 		$(document).ready(function(){
 			$(".tutupktm").click(function(){
 				$(".ktm").fadeTo(200, 0).slideUp(200,0);

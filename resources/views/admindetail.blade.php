@@ -18,25 +18,69 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
     </head>
     <body style="background:url({{url('img/footer.png')}}) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">
-		
 		<div class="main-container">
+		
+		<section class="page-title page-title-1 image-bg overlay parallax">
+		        <div class="background-image-holder">
+		            <img alt="Background Image" class="background-image" src="img/footer.png">
+		        </div>
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-sm-12 text-center">
+		                	@if($user->type == "AppsToday")
+		                		<img alt="Screenshot" align="left" class="mb-xs-24" src="img/iconapps.png" style="width: auto; height: 200px;">
+		                	@elseif($user->type == "HackToday")
+								<img alt="Screenshot" align="left" class="mb-xs-24" src="img/iconhack.png" style="width: auto; height: 200px;">
+		                	@elseif($user->type == "Business IT Case")
+			                	<img alt="Screenshot" align="left" class="mb-xs-24" src="img/iconbisnis.png" style="width: auto; height: 200px;">
+		                	@endif
+		                </div>
+		            </div>
+		            
+		        </div>
 
+				@if($user->type != 'HackToday')		        
+				<ol class="breadcrumb breadcrumb-2">
+					<h3> {{$user->type}} </h3>
+					<li>
+						<a href="#profil">Profile</a>
+					</li>
+					<li>
+						<a href="#berkas">Upload Berkas</a>
+					</li>
+					<li>
+						<a href="#buktibayar">Upload Bukti Pembayaran</a>
+					</li>
+				</ol>
+				@else
+				<ol class="breadcrumb breadcrumb-2">
+					<h3> {{$user->type}} </h3>
+					<li>
+						<a href="#profil">Profile</a>
+					</li>
+					<li>
+						<a href="#berkas">Upload Berkas</a>
+					</li>
+				</ol>
+				@endif
+			</section>
+			
 			<section style="padding-top: 60px; padding-bottom: 0px; background-color: #26c99e;">
-				<h1 align="center"> ADMIN PANEL </h1>
+				<h2 align="center"> ADMIN PANEL </h2>
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1">
 					<!-- Alert Kelengkapan -->
 					@if($user->type != 'HackToday')
 						@if($user->verify_ktm == 1 && $user->verify_letter == 1 && $user->verify_payment == 1)
-						<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
-							<button type="button" class="close tutupktm">
+						<div class="alert alert-dismissible main" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
+							<button type="button" class="close tutupmain">
 								<span aria-hidden="true">&times;</span>
 							</button>
 							Tim Anda Telah Terverifikasi, Terima Kasih Telah Melengkapi Berkas Pendaftaran dan Melakukan Pembayaran.
 						</div>
 						@else
-						<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
-							<button type="button" class="close tutupktm">
+						<div class="alert alert-dismissible main" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+							<button type="button" class="close tutupmain">
 								<span aria-hidden="true">&times;</span>
 							</button>
 							Tim Anda Belum Terverifikasi, Harap Segera Melengkapi Berkas Pendaftaran dan Melakukan Pembayaran, Terima Kasih.
@@ -44,15 +88,15 @@
 						@endif
 					@elseif($user->type == 'HackToday')
 						@if($user->verify_ktm == 1 && $user->verify_letter == 1)
-						<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
-							<button type="button" class="close tutupktm">
+						<div class="alert alert-dismissible main" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
+							<button type="button" class="close tutupmain">
 								<span aria-hidden="true">&times;</span>
 							</button>
 							Tim Anda Telah Terverifikasi, Terima Kasih Telah Melengkapi Berkas Pendaftaran.
 						</div>
 						@else
-						<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
-							<button type="button" class="close tutupktm">
+						<div class="alert alert-dismissible main" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+							<button type="button" class="close tutupmain">
 								<span aria-hidden="true">&times;</span>
 							</button>
 							Tim Anda Belum Terverifikasi, Harap Segera Melengkapi Berkas Pendaftaran, Terima Kasih.
@@ -237,7 +281,7 @@
 		        <div class="container">
 		            <div class="row">
                     <div class="feature bordered text-center bg-secondary" style="background-color: white; box-shadow: 0 9px 30px 10px rgba(0, 0, 0, 0.2);" align="center">
-						<h4 class="uppercase mb40 mb-xs-24">{{$user->type}}</h4>
+						<h4 class="uppercase mb40 mb-xs-24">{{App\User::find($user->team_id)->name}}</h4>
 						<div class="mb40">
 							<h6 class="mb8 uppercase">Members</h6>
 								<p style="color:black !important;">
@@ -273,11 +317,11 @@
 						</div>
 						<div class="mb40">
 							<h6 class="mb8 uppercase">Contact</h6>
-							<p style="color:black !important;">
-								{{App\User::find($user->team_id)->email}}<br>
-								{{$user->phone_num}}<br>
-								{{$user->line_id}}
-							</p>
+							<div style="color:black !important;">
+								<p> {{App\User::find($user->team_id)->email}} </p>
+								<p> {{$user->phone_num}} </p>
+								<p> {{$user->line_id}} </p>
+							</div>
 						</div>
 					</div>
 		            </div>
@@ -426,6 +470,12 @@
         <script src="{{asset('js/parallax.js')}}"></script>
         <script src="{{asset('js/scripts.js')}}"></script>
 		<script>
+		$(document).ready(function(){
+			$(".tutupmain").click(function(){
+				$(".main").fadeTo(200, 0).slideUp(200,0);
+			});
+		});	
+		
 		$(document).ready(function(){
 			$(".tutupktm").click(function(){
 				$(".ktm").fadeTo(200, 0).slideUp(200,0);

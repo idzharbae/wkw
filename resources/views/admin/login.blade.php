@@ -102,12 +102,6 @@
                                             </div>
                                         </div>
                                         <!-- <a href="{{route('password.request')}}">Forget your password?</a> -->
-                                        <div>
-                                            <p style="margin-bottom:0px;">Not a member yet?</p>
-                                            <a class="btn btn-white col-md-10 col-md-offset-1" href="{{ route('register') }}" style="text-decoration: none;">
-                                                Register
-                                            </a>
-                                        </div>
                                     </div>
                                 </form>
 		                    </div>

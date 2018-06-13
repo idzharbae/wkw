@@ -90,15 +90,78 @@
                                         <td></td><td><a style="font-size: 18px; color: blue;" href='{{ url("/antiribetclub/detail/{$human->id}") }}'>{{App\User::find($human->team_id)->name}}</a></td>
                                         <td>{{App\User::find($human->team_id)->email}}</a></td>
                                         <td>{{$human->type}}</td>
-                                        <td>@if($human->verify_ktm == 1)<b style="color:green">CONFIRMED</b> @else <b style="color:red">NOT CONFIRMED</b> @endif</td>
-                                        <td>@if($human->verify_letter == 1)<b style="color:green">CONFIRMED</b> @else <b style="color:red">NOT CONFIRMED</b> @endif</td>
+                                        <td>
+											<!-- 3 Members -->
+											@if($human->member_one != NULL && $human->member_two != NULL && $human->member_three != NULL)
+												@if($human->ktm_img1 != NULL && $human->ktm_img2 != NULL && $human->ktm_img3 != NULL)
+													@if($human->verify_ktm == 1)
+														<b style="color:green">CONFIRMED</b>
+													@elseif($human->verify_ktm == 2)
+														<b style="color:#aa00ff">DECLINED</b>
+													@else
+														<b style="color:#ff9000">PENDING</b>
+													@endif
+												@else
+													<b style="color:red">NOT CONFIRMED</b>
+												@endif
+											@endif
+											
+											<!-- 2 Members -->
+											@if($human->member_one != NULL && $human->member_two != NULL && $human->member_three == NULL)
+												@if($human->ktm_img1 != NULL && $human->ktm_img2 != NULL)
+													@if($human->verify_ktm == 1)
+														<b style="color:green">CONFIRMED</b>
+													@elseif($human->verify_ktm == 2)
+														<b style="color:#aa00ff">DECLINED</b>
+													@else
+														<b style="color:#ff9000">PENDING</b>
+													@endif
+												@else
+													<b style="color:red">NOT CONFIRMED</b>
+												@endif
+											@endif
+											
+											<!-- 1 Members -->
+											@if($human->member_one != NULL && $human->member_two == NULL && $human->member_three == NULL)
+												@if($human->ktm_img1 != NULL)
+													@if($human->verify_ktm == 1)
+														<b style="color:green">CONFIRMED</b>
+													@elseif($human->verify_ktm == 2)
+														<b style="color:#aa00ff">DECLINED</b>
+													@else
+														<b style="color:#ff9000">PENDING</b>
+													@endif
+												@else
+													<b style="color:red">NOT CONFIRMED</b>
+												@endif
+											@endif
+										</td>
+                                        <td>@if($human->letter == NULL)
+												<b style="color:red">NOT CONFIRMED</b>
+											@else
+												@if($human->verify_letter == 1)
+													<b style="color:green">CONFIRMED</b>
+												@elseif($human->verify_letter == 2)
+														<b style="color:#aa00ff">DECLINED</b>
+												@else
+													<b style="color:#ff9000">PENDING</b>
+												@endif
+											@endif
+										</td>
                                         <td>@if($human->type != 'HackToday')
-												@if($human->verify_payment == 1)
-												<b style="color:green">CONFIRMED</b>
-												@else <b style="color:red">NOT CONFIRMED</b>
+												@if($human->payment == NULL)
+													<b style="color:red">NOT CONFIRMED</b>
+												@else
+													@if($human->verify_payment == 1)
+														<b style="color:green">CONFIRMED</b>
+													@elseif($human->verify_payment == 2)
+														<b style="color:#aa00ff">DECLINED</b>
+													@else
+														<b style="color:#ff9000">PENDING</b>
+													@endif
 												@endif
 											@else
-											<b style="color:green">FREE</b>
+												<b style="color:green">FREE</b>
 											@endif
 										</td>
                                     </tr>
