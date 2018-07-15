@@ -83,7 +83,7 @@
 							<div class="flag-wrapper">
 							  <span class="hexa"></span>
 							  <span class="flag">Pendaftaran</span>
-							  <span class="time-wrapper"><span class="time" style="color:white">30 Mei – 11 Juli 2018</span></span>
+							  <span class="time-wrapper"><span class="time" style="color:white">30 Mei – 20 Juli 2018</span></span>
 							</div>
 						</li>
 						<li>
@@ -91,7 +91,7 @@
 							<div class="flag-wrapper">
 							  <span class="hexa"></span>
 							  <span class="flag">Submisi Tahap 1</span>
-							  <span class="time-wrapper"><span class="time" style="color:white">30 Mei – 18 Juli 2018</span></span>
+							  <span class="time-wrapper"><span class="time" style="color:white">30 Mei – 23 Juli 2018</span></span>
 							</div>
 						</li>
 						<li>

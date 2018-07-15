@@ -46,10 +46,10 @@
 						<a href="#profil">Profile</a>
 					</li>
 					<li>
-						<a href="#berkas">Upload Berkas</a>
+						<a href="#berkas">Berkas</a>
 					</li>
 					<li>
-						<a href="#buktibayar">Upload Bukti Pembayaran</a>
+						<a href="#buktibayar">Bukti Pembayaran</a>
 					</li>
 				</ol>
 				@else
@@ -69,61 +69,27 @@
 				<h2 align="center"> ADMIN PANEL </h2>
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1">
-					<!-- Alert Kelengkapan -->
-					@if($user->type != 'HackToday')
-						@if($user->verify_ktm == 1 && $user->verify_letter == 1 && $user->verify_payment == 1)
-						<div class="alert alert-dismissible main" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
-							<button type="button" class="close tutupmain">
-								<span aria-hidden="true">&times;</span>
-							</button>
-							Tim Anda Telah Terverifikasi, Terima Kasih Telah Melengkapi Berkas Pendaftaran dan Melakukan Pembayaran.
-						</div>
-						@else
-						<div class="alert alert-dismissible main" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
-							<button type="button" class="close tutupmain">
-								<span aria-hidden="true">&times;</span>
-							</button>
-							Tim Anda Belum Terverifikasi, Harap Segera Melengkapi Berkas Pendaftaran dan Melakukan Pembayaran, Terima Kasih.
-						</div>
-						@endif
-					@elseif($user->type == 'HackToday')
-						@if($user->verify_ktm == 1 && $user->verify_letter == 1)
-						<div class="alert alert-dismissible main" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
-							<button type="button" class="close tutupmain">
-								<span aria-hidden="true">&times;</span>
-							</button>
-							Tim Anda Telah Terverifikasi, Terima Kasih Telah Melengkapi Berkas Pendaftaran.
-						</div>
-						@else
-						<div class="alert alert-dismissible main" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
-							<button type="button" class="close tutupmain">
-								<span aria-hidden="true">&times;</span>
-							</button>
-							Tim Anda Belum Terverifikasi, Harap Segera Melengkapi Berkas Pendaftaran, Terima Kasih.
-						</div>
-						@endif
-					@endif
 					
 					<!-- Alert Foto KTM -->
 					<!-- 3 Members -->
 					@if($user->member_one != NULL && $user->member_two != NULL && $user->member_three != NULL)
 						@if($user->ktm_img1 != NULL && $user->ktm_img2 != NULL && $user->ktm_img3 != NULL)
 							@if($user->verify_ktm == 1)
-							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
+							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;" align="center">
 								<button type="button" class="close tutupktm">
 									<span aria-hidden="true">&times;</span>
 								</button>
 								Kartu Tanda Mahasiswa / Kartu Pelajar Berhasil Diverifikasi.
 							</div>
 							@elseif($user->verify_ktm == 2)
-							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;" align="center">
 								<button type="button" class="close tutupktm">
 									<span aria-hidden="true">&times;</span>
 								</button>
 								Kartu Tanda Mahasiswa / Kartu Pelajar Ditolak, Silakan Cek Email Untuk Melihat Kesalahan.
 							</div>
 							@else
-							<div class="alert alert-dismissible ktm" role="alert" style=" color: #fff !important; background-color: #d8ca04 !important;">
+							<div class="alert alert-dismissible ktm" role="alert" style=" color: #fff !important; background-color: #d8ca04 !important;" align="center">
 								<button type="button" class="close tutupktm">
 									<span aria-hidden="true">&times;</span>	
 								</button>
@@ -131,7 +97,7 @@
 							</div>
 							@endif
 						@else
-						<div class="alert alert-dismissible ktm" role="alert" style=" color: #fff !important; background-color: #c64444 !important;">
+						<div class="alert alert-dismissible ktm" role="alert" style=" color: #fff !important; background-color: #c64444 !important;" align="center">
 							<button type="button" class="close tutupktm">
 								<span aria-hidden="true">&times;</span>
 							</button>
@@ -143,21 +109,21 @@
 					@if($user->member_one != NULL && $user->member_two != NULL && $user->member_three == NULL)
 						@if($user->ktm_img1 != NULL && $user->ktm_img2 != NULL)
 							@if($user->verify_ktm == 1)
-							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
+							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;" align="center">
 								<button type="button" class="close tutupktm">
 									<span aria-hidden="true">&times;</span>
 								</button>
 								Kartu Tanda Mahasiswa / Kartu Pelajar Berhasil Diverifikasi.
 							</div>
 							@elseif($user->verify_ktm == 2)
-							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;" align="center">
 								<button type="button" class="close tutupktm">
 									<span aria-hidden="true">&times;</span>
 								</button>
 								Kartu Tanda Mahasiswa / Kartu Pelajar Ditolak, Silakan Cek Email Untuk Melihat Kesalahan.
 							</div>
 							@else
-							<div class="alert alert-dismissible ktm" role="alert" style=" color: #fff !important; background-color: #d8ca04 !important;">
+							<div class="alert alert-dismissible ktm" role="alert" style=" color: #fff !important; background-color: #d8ca04 !important;" align="center">
 								<button type="button" class="close tutupktm">
 									<span aria-hidden="true">&times;</span>
 								</button>
@@ -165,7 +131,7 @@
 							</div>
 							@endif
 						@else
-						<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+						<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;" align="center">
 							<button type="button" class="close tutupktm">
 								<span aria-hidden="true">&times;</span>
 							</button>
@@ -177,21 +143,21 @@
 					@if($user->member_one != NULL && $user->member_two == NULL && $user->member_three == NULL)
 						@if($user->ktm_img1 != NULL)
 							@if($user->verify_ktm == 1)
-							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
+							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;" align="center">
 								<button type="button" class="close tutupktm">
 									<span aria-hidden="true">&times;</span>
 								</button>
 								Kartu Tanda Mahasiswa / Kartu Pelajar Berhasil Diverifikasi.
 							</div>
 							@elseif($user->verify_ktm == 2)
-							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+							<div class="alert alert-dismissible ktm" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;" align="center">
 								<button type="button" class="close tutupktm">
 									<span aria-hidden="true">&times;</span>
 								</button>
 								Kartu Tanda Mahasiswa / Kartu Pelajar Ditolak, Silakan Cek Email Untuk Melihat Kesalahan.
 							</div>
 							@else
-							<div class="alert alert-dismissible ktm" role="alert" style=" color: #fff !important; background-color: #d8ca04 !important;">
+							<div class="alert alert-dismissible ktm" role="alert" style=" color: #fff !important; background-color: #d8ca04 !important;" align="center">
 								<button type="button" class="close tutupktm">
 									<span aria-hidden="true">&times;</span>
 								</button>
@@ -199,7 +165,7 @@
 							</div>
 							@endif
 						@else
-						<div class="alert alert-dismissible ktm" role="alert"  style="color: #fff !important; background-color: #c64444 !important;">
+						<div class="alert alert-dismissible ktm" role="alert"  style="color: #fff !important; background-color: #c64444 !important;" align="center">
 							<button type="button" class="close tutupktm">
 								<span aria-hidden="true">&times;</span>
 							</button>
@@ -210,7 +176,7 @@
 
 					<!-- Alert Surat Keterangan Mahasiswa Aktif -->
 					@if($user->letter == NULL)
-					<div class="alert alert-dismissible letter" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+					<div class="alert alert-dismissible letter" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;" align="center">
 						<button type="button" class="close tutupletter">
 							<span aria-hidden="true">&times;</span>
 						</button>
@@ -218,21 +184,21 @@
 					</div>
 					@else
 						@if($user->verify_letter == 1)
-						<div class="alert alert-dismissible letter" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
+						<div class="alert alert-dismissible letter" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;" align="center">
 							<button type="button" class="close tutupletter">
 								<span aria-hidden="true">&times;</span>
 							</button>
 							Surat Keterangan Mahasiswa / Siswa Aktif Berhasil Diverifikasi.
 						</div>
 						@elseif($user->verify_letter == 2)
-						<div class="alert alert-dismissible letter" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+						<div class="alert alert-dismissible letter" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;" align="center">
 							<button type="button" class="close tutupletter">
 								<span aria-hidden="true">&times;</span>
 							</button>
 							Surat Keterangan Mahasiswa / Siswa Aktif Ditolak, Silakan Cek Email Untuk Melihat Kesalahan.
 						</div>
 						@else
-						<div class="alert alert-dismissible letter" role="alert" style=" color: #fff !important; background-color: #d8ca04 !important;">
+						<div class="alert alert-dismissible letter" role="alert" style=" color: #fff !important; background-color: #d8ca04 !important;" align="center">
 							<button type="button" class="close tutupletter">
 								<span aria-hidden="true">&times;</span>
 							</button>
@@ -244,7 +210,7 @@
 					<!-- Alert Bukti Pembayaran -->
 					@if($user->type != 'HackToday')
 						@if($user->payment == NULL)
-						<div class="alert alert-dismissible payment" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+						<div class="alert alert-dismissible payment" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;" align="center">
 							<button type="button" class="close tutuppayment">
 								<span aria-hidden="true">&times;</span>
 							</button>
@@ -252,21 +218,21 @@
 						</div>
 						@else
 							@if($user->verify_payment == 1)
-							<div class="alert alert-dismissible payment" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;">
+							<div class="alert alert-dismissible payment" role="alert"  style=" color: #fff !important; background-color: #07f707 !important;" align="center">
 								<button type="button" class="close tutuppayment">
 									<span aria-hidden="true">&times;</span>
 								</button>
 								Bukti Pembayaran Berhasil Diverifikasi.
 							</div>
 							@elseif($user->verify_payment == 2)
-							<div class="alert alert-dismissible payment" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;">
+							<div class="alert alert-dismissible payment" role="alert"  style=" color: #fff !important; background-color: #c64444 !important;" align="center">
 								<button type="button" class="close tutuppayment">
 									<span aria-hidden="true">&times;</span>
 								</button>
 								Bukti Pembayaran Ditolak, Silakan Cek Email Untuk Melihat Kesalahan.
 							</div>
 							@else
-							<div class="alert alert-dismissible payment" role="alert" style=" color: #fff !important; background-color: #d8ca04 !important;">
+							<div class="alert alert-dismissible payment" role="alert" style=" color: #fff !important; background-color: #d8ca04 !important;" align="center">
 								<button type="button" class="close tutuppayment">
 									<span aria-hidden="true">&times;</span>
 								</button>
@@ -277,11 +243,33 @@
 					@endif
 			</section>
 
-            <section style="padding-top: 0px;">
+            <section style="padding-top: 0px;" id="profil">
 		        <div class="container">
 		            <div class="row">
                     <div class="feature bordered text-center bg-secondary" style="background-color: white; box-shadow: 0 9px 30px 10px rgba(0, 0, 0, 0.2);" align="center">
-						<h4 class="uppercase mb40 mb-xs-24">{{App\User::find($user->team_id)->name}}</h4>
+                            @if($user->type != 'HackToday')
+								@if($user->verify_ktm == 1 && $user->verify_letter == 1 && $user->verify_payment == 1)
+									<div class="alert alert-success col-md-2 pull-right" role="alert" style="margin-bottom: 0px; padding-right: 5px; padding-left: 5px;">
+										<strong>STATUS:</strong> VERIFIED
+									</div>
+								@else
+									<div class="alert alert-danger col-md-2 pull-right" role="alert" style="margin-bottom: 0px; padding-right: 5px; padding-left: 5px;">
+										<strong>STATUS:</strong> NOT VERIFIED
+									</div>
+								@endif
+
+							@elseif($user->type == 'HackToday')
+								@if($user->verify_ktm == 1 && $user->verify_letter == 1)
+                                <div class="alert alert-success col-md-2 pull-right" role="alert" style="margin-bottom: 0px; padding-right: 5px; padding-left: 5px;">
+                                    <strong>STATUS:</strong> VERIFIED
+                                </div>
+								@else
+                                <div class="alert alert-danger col-md-2 pull-right" role="alert" style="margin-bottom: 0px; padding-right: 5px; padding-left: 5px;">
+                                    <strong>STATUS:</strong> NOT VERIFIED
+                                </div>
+								@endif
+							@endif
+						<h4 class="uppercase mb40 mb-xs-24 col-md-offset-2">{{App\User::find($user->team_id)->name}}</h4>
 						<div class="mb40">
 							<h6 class="mb8 uppercase">Members</h6>
 								<p style="color:black !important;">
@@ -328,7 +316,7 @@
 		        </div>
 			</section>
 			
-			<section style="padding-top: 0px; padding-bottom: 20px">
+			<section style="padding-top: 0px; padding-bottom: 20px" id="berkas">
 		        <div class="container">
 		            <div class="row">
 					<div class="feed-item mb96 mb-xs-48 text-center" align="center">
@@ -427,7 +415,7 @@
 					</div>
 				</div>
 			</section>
-			<section style="padding-top: 50px; padding-bottom: 0px">	
+			<section style="padding-top: 50px; padding-bottom: 0px" id="buktibayar">	
 				<div class="container">
 					<div class="feed-item mb96 mb-xs-48 text-center">              
 						<div class="row mb32 mb-xs-16">

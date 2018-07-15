@@ -23,7 +23,7 @@
 		        <div class="nav-bar">
 		            <div class="module left">
 		                <a href="/">
-		                    <img class=" image-xs logo logo-light" alt="ITToday" src="img/logoittoday.png">
+		                    <img class="image-xs logo logo-light" alt="ITToday" src="img/logoittoday.png">
 		                    <img class="image-xs logo logo-dark" alt="ITToday" src="img/logoittoday.png">
 		                </a>
 		            </div>
