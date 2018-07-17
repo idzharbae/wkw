@@ -99,7 +99,7 @@
 					<div class="flag-wrapper">
 					  <span class="hexa"></span>
 					  <span class="flag">Pengumuman Peserta Tahap 2</span>
-					  <span class="time-wrapper"><span class="time" style="color:white">2 Agustus 2018</span></span>
+					  <span class="time-wrapper"><span class="time" style="color:white">27 Juli 2018</span></span>
 					</div>
 				</li>
 				<li>
@@ -107,7 +107,7 @@
 					<div class="flag-wrapper">
 					<span class="hexa"></span>
 					<span class="flag">Submisi Tahap 2</span>
-					<span class="time-wrapper"><span class="time" style="color:white">3 – 17  Agustus 2018</span></span>
+					<span class="time-wrapper"><span class="time" style="color:white">28 Juli – 13 Agustus 2018</span></span>
 					</div>
 				</li>
 				<li>
@@ -115,7 +115,7 @@
 					<div class="flag-wrapper">
 					<span class="hexa"></span>
 					<span class="flag">Pengumuman Finalis</span>
-					<span class="time-wrapper"><span class="time" style="color:white">22 Agustus 2018</span></span>
+					<span class="time-wrapper"><span class="time" style="color:white">31 Agustus 2018</span></span>
 					</div>
 				</li>
 				<li>

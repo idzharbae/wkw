@@ -115,7 +115,7 @@
 							<div class="flag-wrapper">
 							<span class="hexa"></span>
 							<span class="flag">Pengumuman Finalis</span>
-							<span class="time-wrapper"><span class="time" style="color:white">22 Agustus 2018</span></span>
+							<span class="time-wrapper"><span class="time" style="color:white">31 Agustus 2018</span></span>
 							</div>
 						</li>
 						<li>
