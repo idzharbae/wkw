@@ -152,7 +152,20 @@
 		            </div>
 		            
 		        </div>
-		        
+				<br><br>
+				<div class="container">
+		            <div class="row">
+		                <div class="text-center">
+		                    <div class="feature">
+		                        <i class="icon ti ti-medall fade-3-4 inline-block mb16"></i>
+		                        <h4>HONORABLE MENTIONS (2)</h4>
+		                        <p>
+                                Rp 1.000.000 + sertifikat + plakat
+		                        </p>
+		                    </div>
+		                </div>	            
+		        	</div>
+				</div>
 		    </section>
             
             <section id="faq">
